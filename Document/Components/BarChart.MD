@@ -1,0 +1,28 @@
+### BarChart
+
+#### 属性
+| 名称 | 说明 |
+|:---|:---|
+| EmptyDataText |  |
+| XAxisValues |  |
+| YValueFontSize |  |
+| DataSource |  |
+| SeriesMember |  |
+| XValueMember |  |
+| YValueMember |  |
+| DataMember |  |
+| Legend |  |
+| Data |  |
+| DefaultColors |  |
+| XAxis |  |
+
+#### 方法
+| 名称 | 说明 |
+|:---|:---|
+| DataBind |  |
+| Clear |  |
+
+#### 事件
+| 名称 | 说明 |
+|:---|:---|
+| ValueSelected |  |
