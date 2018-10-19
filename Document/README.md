@@ -90,14 +90,14 @@
 | [AliPay](Plugins/AliPay.MD) | 相册控件 | [AutoCompleteTextBox](Plugins/AutoCompleteTextBox.MD) | 图标菜单控件 |
 | [CalenderStrip](Plugins/CalenderStrip.MD) | 图片按钮 | [DropdownAert](Plugins/DropdownAert.MD) | 扩展图像控件 |
 | [FingerPrint](Plugins/FingerPrint.MD) | 列表菜单控件 | [HighLightLabel](Plugins/HighLightLabel.MD) | 节点控件 |
-| [IM](Plugins/IM.MD) | 数量控件 | [LiveStreamPlayer](Plugins/LiveStreamPlayer.MD) | 直播播放控件 |
+| [IM](Plugins/IM.MD) | 数量控件 | [LiveStreamPlayer](Plugins/LiveStreamPlayer.MD) | 列表选择控件 |
 | [MapRoute](Plugins/MapRoute.MD) | 选项按钮组控件 | [MapTrimView](Plugins/MapTrimView.MD) | 评价控件 |
 | [MapView](Plugins/MapView.MD) | 表格控件 | [MarqueeLabel](Plugins/MarqueeLabel.MD) | 标题栏控件 |
 | [MediaView](Plugins/MediaView.MD) | 工具栏 | [PDFView](Plugins/PDFView.MD) | 树形菜单控件 |
 | [PercentageCircle](Plugins/PercentageCircle.MD) | 工具栏 | [ProgressView](Plugins/ProgressView.MD) | 树形菜单控件 |
 | [PulseLoader](Plugins/PulseLoader.MD) | 工具栏 | [SignatureView](Plugins/SignatureView.MD) | 树形菜单控件 |
 | [SwitchSelector](Plugins/SwitchSelector.MD) | 工具栏 | [TextBoxField](Plugins/TextBoxField.MD) | 树形菜单控件 |
-| [WeiXin](Plugins/WeiXin.MD) | 微信 | [LiveStream](Plugins/LiveStream.MD) | 直播推送控件|
+| [WeiXin](Plugins/WeiXin.MD) | 工具栏 |  |  |
 
 ---
 

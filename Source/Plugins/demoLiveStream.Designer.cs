@@ -40,6 +40,7 @@ namespace Smobiler.Tutorials.Plugins
             this.liveStream1.Location = new System.Drawing.Point(0, 30);
             this.liveStream1.Name = "liveStream1";
             this.liveStream1.Size = new System.Drawing.Size(300, 372);
+            this.liveStream1.Url = "rtmp://192.168.2.230/live/livestream";
             this.liveStream1.OnChanged += new Smobiler.Plugins.LiveStreamOnChangedEventHandler(this.liveStream1_OnChanged);
             // 
             // btnstartStreaming

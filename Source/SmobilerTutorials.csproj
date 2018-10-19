@@ -44,6 +44,9 @@
     <Reference Include="AopSdk">
       <HintPath>..\DLL\AopSdk.dll</HintPath>
     </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\DLL\Autofac.dll</HintPath>
+    </Reference>
     <Reference Include="Smobiler.Core.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=276522cd3fa3b955, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Device" />
     <Reference Include="Smobiler.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9301bc54ca0d7a69, processorArchitecture=MSIL" />
@@ -52,6 +55,7 @@
     <Reference Include="Smobiler.Core" />
     <Reference Include="Smobiler.Utility.JPush" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
@@ -81,17 +85,366 @@
     <Compile Include="AI\demoSpeech.Designer.cs">
       <DependentUpon>demoSpeech.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\demoBarChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoBarChart.Designer.cs">
+      <DependentUpon>demoBarChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoBarCodeScanner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoBarCodeScanner.Designer.cs">
+      <DependentUpon>demoBarCodeScanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoBarcodeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoBarcodeView.Designer.cs">
+      <DependentUpon>demoBarcodeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoBubbleChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoBubbleChart.Designer.cs">
+      <DependentUpon>demoBubbleChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoButton.Designer.cs">
+      <DependentUpon>demoButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoCalendar.Designer.cs">
+      <DependentUpon>demoCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoCamera.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoCamera.Designer.cs">
+      <DependentUpon>demoCamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoCandleStickChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoCandleStickChart.Designer.cs">
+      <DependentUpon>demoCandleStickChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoCheckBox.Designer.cs">
+      <DependentUpon>demoCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoClient.Designer.cs">
+      <DependentUpon>demoClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoDatePicker.Designer.cs">
+      <DependentUpon>demoDatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoFontIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoFontIcon.Designer.cs">
+      <DependentUpon>demoFontIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\DemoGlobal.cs" />
+    <Compile Include="Components\demoGPS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoGPS.Designer.cs">
+      <DependentUpon>demoGPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoImage.Designer.cs">
+      <DependentUpon>demoImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoJPush.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoJPush.Designer.cs">
+      <DependentUpon>demoJPush.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoLabel.Designer.cs">
+      <DependentUpon>demoLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoLine.Designer.cs">
+      <DependentUpon>demoLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoLineChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoLineChart.Designer.cs">
+      <DependentUpon>demoLineChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoMapTagView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoMapTagView.Designer.cs">
+      <DependentUpon>demoMapTagView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoPageView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoPageView.Designer.cs">
+      <DependentUpon>demoPageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoPicker.Designer.cs">
+      <DependentUpon>demoPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoPieChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoPieChart.Designer.cs">
+      <DependentUpon>demoPieChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoProgress.Designer.cs">
+      <DependentUpon>demoProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoRadarChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoRadarChart.Designer.cs">
+      <DependentUpon>demoRadarChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoScatterChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoScatterChart.Designer.cs">
+      <DependentUpon>demoScatterChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoScrollablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoScrollablePanel.Designer.cs">
+      <DependentUpon>demoScrollablePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoSegmentedControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoSegmentedControl.Designer.cs">
+      <DependentUpon>demoSegmentedControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoSlider.Designer.cs">
+      <DependentUpon>demoSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoSpinner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoSpinner.Designer.cs">
+      <DependentUpon>demoSpinner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoSwitch.Designer.cs">
+      <DependentUpon>demoSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoTabPageView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoTabPageView.Designer.cs">
+      <DependentUpon>demoTabPageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoTextBox.Designer.cs">
+      <DependentUpon>demoTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoTimer.Designer.cs">
+      <DependentUpon>demoTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoTouchablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoTouchablePanel.Designer.cs">
+      <DependentUpon>demoTouchablePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoVoiceRecorder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoVoiceRecorder.Designer.cs">
+      <DependentUpon>demoVoiceRecorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoZoomImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoZoomImage.Designer.cs">
+      <DependentUpon>demoZoomImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoAlbumView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoAlbumView.Designer.cs">
+      <DependentUpon>demoAlbumView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoIconMenuView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoIconMenuView.Designer.cs">
+      <DependentUpon>demoIconMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoImageButton.Designer.cs">
+      <DependentUpon>demoImageButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoListMenuView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoListMenuView.Designer.cs">
+      <DependentUpon>demoListMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoNumeric.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoNumeric.Designer.cs">
+      <DependentUpon>demoNumeric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoPopList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoPopList.Designer.cs">
+      <DependentUpon>demoPopList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoRadioGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoRadioGroup.Designer.cs">
+      <DependentUpon>demoRadioGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoRatingBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoRatingBar.Designer.cs">
+      <DependentUpon>demoRatingBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoTitle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoTitle.Designer.cs">
+      <DependentUpon>demoTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoToolBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoToolBar.Designer.cs">
+      <DependentUpon>demoToolBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="demoControls.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="demoControls.Designer.cs">
       <DependentUpon>demoControls.cs</DependentUpon>
     </Compile>
+    <Compile Include="Devices\demoR100.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoR100.Designer.cs">
+      <DependentUpon>demoR100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devices\demoR1000.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoR1000.Designer.cs">
+      <DependentUpon>demoR1000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devices\demoR2000.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoR2000.Designer.cs">
+      <DependentUpon>demoR2000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devices\demoTC25.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoTC25.Designer.cs">
+      <DependentUpon>demoTC25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devices\demoV7000.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoV7000.Designer.cs">
+      <DependentUpon>demoV7000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoAliPay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoAliPay.Designer.cs">
+      <DependentUpon>demoAliPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoFingerPrint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoFingerPrint.Designer.cs">
+      <DependentUpon>demoFingerPrint.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoLiveStream.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Plugins\demoLiveStream.Designer.cs">
       <DependentUpon>demoLiveStream.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoSignatureView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoSignatureView.Designer.cs">
+      <DependentUpon>demoSignatureView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoWeiXin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoWeiXin.Designer.cs">
+      <DependentUpon>demoWeiXin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\demoPageViewTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usercontrol\demoPageViewTemplate.Designer.cs">
+      <DependentUpon>demoPageViewTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\demoTabPageViewTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usercontrol\demoTabPageViewTemplate.Designer.cs">
+      <DependentUpon>demoTabPageViewTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\SmobilerUserControl1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usercontrol\SmobilerUserControl1.Designer.cs">
+      <DependentUpon>SmobilerUserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="Windows\frmGenerateQRcode.cs">
       <SubType>Form</SubType>
@@ -140,8 +493,185 @@
     <EmbeddedResource Include="AI\demoSpeech.resx">
       <DependentUpon>demoSpeech.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoBarChart.resx">
+      <DependentUpon>demoBarChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoBarCodeScanner.resx">
+      <DependentUpon>demoBarCodeScanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoBarcodeView.resx">
+      <DependentUpon>demoBarcodeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoBubbleChart.resx">
+      <DependentUpon>demoBubbleChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoButton.resx">
+      <DependentUpon>demoButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoCalendar.resx">
+      <DependentUpon>demoCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoCamera.resx">
+      <DependentUpon>demoCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoCandleStickChart.resx">
+      <DependentUpon>demoCandleStickChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoCheckBox.resx">
+      <DependentUpon>demoCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoClient.resx">
+      <DependentUpon>demoClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoDatePicker.resx">
+      <DependentUpon>demoDatePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoFontIcon.resx">
+      <DependentUpon>demoFontIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoGPS.resx">
+      <DependentUpon>demoGPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoImage.resx">
+      <DependentUpon>demoImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoJPush.resx">
+      <DependentUpon>demoJPush.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoLabel.resx">
+      <DependentUpon>demoLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoLine.resx">
+      <DependentUpon>demoLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoLineChart.resx">
+      <DependentUpon>demoLineChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoMapTagView.resx">
+      <DependentUpon>demoMapTagView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoPageView.resx">
+      <DependentUpon>demoPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoPicker.resx">
+      <DependentUpon>demoPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoPieChart.resx">
+      <DependentUpon>demoPieChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoProgress.resx">
+      <DependentUpon>demoProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoRadarChart.resx">
+      <DependentUpon>demoRadarChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoScatterChart.resx">
+      <DependentUpon>demoScatterChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoScrollablePanel.resx">
+      <DependentUpon>demoScrollablePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoSegmentedControl.resx">
+      <DependentUpon>demoSegmentedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoSlider.resx">
+      <DependentUpon>demoSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoSpinner.resx">
+      <DependentUpon>demoSpinner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoSwitch.resx">
+      <DependentUpon>demoSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoTabPageView.resx">
+      <DependentUpon>demoTabPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoTextBox.resx">
+      <DependentUpon>demoTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoTimer.resx">
+      <DependentUpon>demoTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoTouchablePanel.resx">
+      <DependentUpon>demoTouchablePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoVoiceRecorder.resx">
+      <DependentUpon>demoVoiceRecorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoZoomImage.resx">
+      <DependentUpon>demoZoomImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoAlbumView.resx">
+      <DependentUpon>demoAlbumView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoIconMenuView.resx">
+      <DependentUpon>demoIconMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoImageButton.resx">
+      <DependentUpon>demoImageButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoListMenuView.resx">
+      <DependentUpon>demoListMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoNumeric.resx">
+      <DependentUpon>demoNumeric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoPopList.resx">
+      <DependentUpon>demoPopList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoRadioGroup.resx">
+      <DependentUpon>demoRadioGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoRatingBar.resx">
+      <DependentUpon>demoRatingBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoTitle.resx">
+      <DependentUpon>demoTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoToolBar.resx">
+      <DependentUpon>demoToolBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="demoControls.resx">
+      <DependentUpon>demoControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoR100.resx">
+      <DependentUpon>demoR100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoR1000.resx">
+      <DependentUpon>demoR1000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoR2000.resx">
+      <DependentUpon>demoR2000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoTC25.resx">
+      <DependentUpon>demoTC25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoV7000.resx">
+      <DependentUpon>demoV7000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoAliPay.resx">
+      <DependentUpon>demoAliPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoFingerPrint.resx">
+      <DependentUpon>demoFingerPrint.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoLiveStream.resx">
       <DependentUpon>demoLiveStream.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoSignatureView.resx">
+      <DependentUpon>demoSignatureView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoWeiXin.resx">
+      <DependentUpon>demoWeiXin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\demoPageViewTemplate.resx">
+      <DependentUpon>demoPageViewTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\demoTabPageViewTemplate.resx">
+      <DependentUpon>demoTabPageViewTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\SmobilerUserControl1.resx">
+      <DependentUpon>SmobilerUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\frmGenerateQRcode.resx">
       <DependentUpon>frmGenerateQRcode.cs</DependentUpon>

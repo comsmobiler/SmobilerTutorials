@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Smobiler.Core;
+using Smobiler.Core.Controls;
+
+namespace Smobiler.Tutorials.Components
+{
+    partial class demoCalendar : Smobiler.Core.Controls.MobileForm
+    {
+        public demoCalendar()
+            : base()
+        {
+            //This call is required by the SmobilerForm.
+            InitializeComponent();
+        }
+
+        private void title1_ImagePress(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void calendar3_DateChanged(object sender, EventArgs e)
+        {
+            Toast(calendar3.SelectDate.ToString());
+        }
+    }
+}
