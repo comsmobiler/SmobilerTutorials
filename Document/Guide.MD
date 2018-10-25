@@ -1,113 +1,113 @@
-#### Smobiler¼Ì³Ğ½á¹¹
-* MobileControl¡¾¿Ø¼ş£¬ÓĞUI£¬¿ÉÕ¹Ê¾¡¿
-	* MobileBindableControl¡¾ËùÓĞ¿É×öÊı¾İ°ó¶¨µÄ¿Ø¼ş***»ùÀà***¡¿
-		* Button¡¢Label¡¢TextBox¡¢Image...
-	* SegmentedControl¡¢WebView¡¢MapTagView¡¢Line...
-	* MobileNativeControl¡¾²å¼ş***»ùÀà***¡¿
-		* PDFView¡¢ProgressView¡¢MapView...
-	* MobileLayoutControl¡¾²¼¾Ö¿Ø¼ş***»ùÀà***¡¿
-		* ListView¡¢GridView¡¢ListMenuView...
-		* MobileContainerControl¡¾ÈİÆ÷¿Ø¼ş***»ùÀà***¡¿
-			* Panel¡¢SwipeView¡¢TabPageView...
-			* MobileParentControl¡¾¸¸¿Ø¼ş***»ùÀà***¡¿
-				* MobileForm¡¾´°Ìå¡¿
-				* MobileUserControl¡¾ÓÃ»§¿Ø¼ş¡¿
-			* MobileNativeContainerControl¡¾²å¼şÈİÆ÷¿Ø¼ş***»ùÀà***¡¿
+#### Smobilerç»§æ‰¿ç»“æ„
+* MobileControlã€æ§ä»¶ï¼Œæœ‰UIï¼Œå¯å±•ç¤ºã€‘
+	* MobileBindableControlã€æ‰€æœ‰å¯åšæ•°æ®ç»‘å®šçš„æ§ä»¶***åŸºç±»***ã€‘
+		* Buttonã€Labelã€TextBoxã€Image...
+	* SegmentedControlã€WebViewã€MapTagViewã€Line...
+	* MobileNativeControlã€æ’ä»¶***åŸºç±»***ã€‘
+		* PDFViewã€ProgressViewã€MapView...
+	* MobileLayoutControlã€å¸ƒå±€æ§ä»¶***åŸºç±»***ã€‘
+		* ListViewã€GridViewã€ListMenuView...
+		* MobileContainerControlã€å®¹å™¨æ§ä»¶***åŸºç±»***ã€‘
+			* Panelã€SwipeViewã€TabPageView...
+			* MobileParentControlã€çˆ¶æ§ä»¶***åŸºç±»***ã€‘
+				* MobileFormã€çª—ä½“ã€‘
+				* MobileUserControlã€ç”¨æˆ·æ§ä»¶ã€‘
+			* MobileNativeContainerControlã€æ’ä»¶å®¹å™¨æ§ä»¶***åŸºç±»***ã€‘
 				* PercentageCircle
-* MobileComponent¡¾×é¼ş£¬Ã»ÓĞUI£¬¹¦ÄÜĞÔ¡¿
-	* Camera¡¢GPS...
-	* WeiXin¡¢AliPay¡¢FingerPrint...
+* MobileComponentã€ç»„ä»¶ï¼Œæ²¡æœ‰UIï¼ŒåŠŸèƒ½æ€§ã€‘
+	* Cameraã€GPS...
+	* WeiXinã€AliPayã€FingerPrint...
 
 ---
 
 #### [MobileControl](Components/MobileControl.MD)
 
-#### »ù´¡¿Ø¼ş
-| Ãû³Æ | ËµÃ÷ | Ãû³Æ | ËµÃ÷ |
+#### åŸºç¡€æ§ä»¶
+| åç§° | è¯´æ˜ | åç§° | è¯´æ˜ |
 |:---|:---|:---|:---|
-| [Button](Components/Button.MD) | °´Å¥¿Ø¼ş | [Label](Components/Label.MD) | ÎÄ±¾¿Ø¼ş |
-| [TextBox](Components/TextBox.MD) | ÊäÈë¿ò¿Ø¼ş | [CheckBox](Components/CheckBox.MD) | µ¥Ñ¡¿Ø¼ş |
-| [Swith](Components/Swith.MD) | ¿ª¹Ø¿Ø¼ş | [Image](Components/Image.MD) | Í¼Ïñ¿Ø¼ş |
-| [FontIcon](Components/FontIcon.MD) | Í¼±ê¿Ø¼ş | [ZoomImage](Components/ZoomImage.MD) | Ëõ·ÅÍ¼Ïñ¿Ø¼ş |
-| [Line](Components/Line.MD) | ÏßÌõ¿Ø¼ş | [Slider](Components/Slider.MD) | ¹ö¶¯Ìõ¿Ø¼ş |
-| [DatePicker](Components/DatePicker.MD) | ÈÕÆÚÑ¡Ôñ¿Ø¼ş | [Calendar](Components/Calendar.MD) | ÈÕÀú¿Ø¼ş |
-| [Picker](Components/Picker.MD) | ÔªËØÑ¡Ôñ¿Ø¼ş | [Progress](Components/Progress.MD) | ½ø¶ÈÌõ¿Ø¼ş |
-| [Spinner](Components/Spinner.MD) | ÏÂÀ­ÁĞ±í¿Ø¼ş | [SegmentedControl](Components/SegmentedControl.MD) | µ¥Ôª¿Ø¼ş |
-| [WebView](Components/WebView.MD) | ä¯ÀÀÆ÷¿Ø¼ş | [MapTagView](Components/MapTagView.MD) | µØÀíÎ»ÖÃ±êÇ©¿Ø¼ş |
-| [BarcodeView](Components/BarcodeView.MD) | ÌõÂë¿Ø¼ş |  |  |
+| [Button](Components/Button.MD) | æŒ‰é’®æ§ä»¶ | [Label](Components/Label.MD) | æ–‡æœ¬æ§ä»¶ |
+| [TextBox](Components/TextBox.MD) | è¾“å…¥æ¡†æ§ä»¶ | [CheckBox](Components/CheckBox.MD) | å•é€‰æ§ä»¶ |
+| [Swith](Components/Swith.MD) | å¼€å…³æ§ä»¶ | [Image](Components/Image.MD) | å›¾åƒæ§ä»¶ |
+| [FontIcon](Components/FontIcon.MD) | å›¾æ ‡æ§ä»¶ | [ZoomImage](Components/ZoomImage.MD) | ç¼©æ”¾å›¾åƒæ§ä»¶ |
+| [Line](Components/Line.MD) | çº¿æ¡æ§ä»¶ | [Slider](Components/Slider.MD) | æ»šåŠ¨æ¡æ§ä»¶ |
+| [DatePicker](Components/DatePicker.MD) | æ—¥æœŸé€‰æ‹©æ§ä»¶ | [Calendar](Components/Calendar.MD) | æ—¥å†æ§ä»¶ |
+| [Picker](Components/Picker.MD) | å…ƒç´ é€‰æ‹©æ§ä»¶ | [Progress](Components/Progress.MD) | è¿›åº¦æ¡æ§ä»¶ |
+| [Spinner](Components/Spinner.MD) | ä¸‹æ‹‰åˆ—è¡¨æ§ä»¶ | [SegmentedControl](Components/SegmentedControl.MD) | å•å…ƒæ§ä»¶ |
+| [WebView](Components/WebView.MD) | æµè§ˆå™¨æ§ä»¶ | [MapTagView](Components/MapTagView.MD) | åœ°ç†ä½ç½®æ ‡ç­¾æ§ä»¶ |
+| [BarcodeView](Components/BarcodeView.MD) | æ¡ç æ§ä»¶ |  |  |
 
-#### MobileContainerControl ÈİÆ÷¿Ø¼ş
+#### MobileContainerControl å®¹å™¨æ§ä»¶
 * Panel
 	* TouchablePanel
 	* ScrollablePanel
 * TabPageView
 * SwipeView
 
-#### MobileParentControl ¸¸¿Ø¼ş
+#### MobileParentControl çˆ¶æ§ä»¶
 * [MobileForm](Components/MobileForm.MD)
 * [MobileUserControl](Components/MobileUserControl.MD)
 
-#### [MobileLayoutControl](Components/MobileLayoutControl.MD) Ä£°å¿Ø¼ş
+#### [MobileLayoutControl](Components/MobileLayoutControl.MD) æ¨¡æ¿æ§ä»¶
 * ListView
 * GridView
 * PageView
 
-#### MobileComponent ×é¼ş
-| Ãû³Æ | ËµÃ÷ | Ãû³Æ | ËµÃ÷ |
+#### MobileComponent ç»„ä»¶
+| åç§° | è¯´æ˜ | åç§° | è¯´æ˜ |
 |:---|:---|:---|:---|
-| [Camera](Components/Camera.MD) | Ïà»ú×é¼ş | [BarCodeScanner](Components/BarCodeScanner.MD) | ÌõÂëÉ¨Ãè×é¼ş |
-| [VoiceRecorder](Components/VoiceRecorder.MD) | Â¼Òô×é¼ş | [GPS](Components/GPS.MD) | ¶¨Î»×é¼ş |
-| [Timer](Components/Timer.MD) | ¼ÆÊ±Æ÷×é¼ş |  |  |
+| [Camera](Components/Camera.MD) | ç›¸æœºç»„ä»¶ | [BarCodeScanner](Components/BarCodeScanner.MD) | æ¡ç æ‰«æç»„ä»¶ |
+| [VoiceRecorder](Components/VoiceRecorder.MD) | å½•éŸ³ç»„ä»¶ | [GPS](Components/GPS.MD) | å®šä½ç»„ä»¶ |
+| [Timer](Components/Timer.MD) | è®¡æ—¶å™¨ç»„ä»¶ |  |  |
 
-#### Í¼±í¿Ø¼ş Chart
-| Ãû³Æ | ËµÃ÷ | Ãû³Æ | ËµÃ÷ |
+#### å›¾è¡¨æ§ä»¶ Chart
+| åç§° | è¯´æ˜ | åç§° | è¯´æ˜ |
 |:---|:---|:---|:---|
-| [LineChart](Components/LineChart.MD) | Ïß×´Í¼±í | [BarChart](Components/BarChart.MD) | Öù×´Í¼±í |
-| [PieChart](Components/PieChart.MD) | ±ı×´Í¼±í | [BubbleChart](Components/BubbleChart.MD) | ÆøÅİÍ¼±í |
-| [RadarChart](Components/RadarChart.MD) | À×´ïÍ¼ | [ScatterChart](Components/ScatterChart.MD) | É¢µãÍ¼ |
-| [CandleStickChart](Components/CandleStickChart.MD) | KÏßÍ¼ |  |  |
+| [LineChart](Components/LineChart.MD) | çº¿çŠ¶å›¾è¡¨ | [BarChart](Components/BarChart.MD) | æŸ±çŠ¶å›¾è¡¨ |
+| [PieChart](Components/PieChart.MD) | é¥¼çŠ¶å›¾è¡¨ | [BubbleChart](Components/BubbleChart.MD) | æ°”æ³¡å›¾è¡¨ |
+| [RadarChart](Components/RadarChart.MD) | é›·è¾¾å›¾ | [ScatterChart](Components/ScatterChart.MD) | æ•£ç‚¹å›¾ |
+| [CandleStickChart](Components/CandleStickChart.MD) | Kçº¿å›¾ |  |  |
 
 #### Client
 
 ---
 
 ### Controls
-| Ãû³Æ | ËµÃ÷ | Ãû³Æ | ËµÃ÷ |
+| åç§° | è¯´æ˜ | åç§° | è¯´æ˜ |
 |:---|:---|:---|:---|
-| [AlbumView](Controls/AlbumView.MD) | Ïà²á¿Ø¼ş | [IconMenuView](Controls/IconMenuView.MD) | Í¼±ê²Ëµ¥¿Ø¼ş |
-| [ImageButton](Controls/ImageButton.MD) | Í¼Æ¬°´Å¥ | [ImageEx](Controls/ImageEx.MD) | À©Õ¹Í¼Ïñ¿Ø¼ş |
-| [ListMenuView](Controls/ListMenuView.MD) | ÁĞ±í²Ëµ¥¿Ø¼ş | [NodeView](Controls/NodeView.MD) | ½Úµã¿Ø¼ş |
-| [Numeric](Controls/Numeric.MD) | ÊıÁ¿¿Ø¼ş | [PopList](Controls/PopList.MD) | ÁĞ±íÑ¡Ôñ¿Ø¼ş |
-| [RadioGroup](Controls/RadioGroup.MD) | Ñ¡Ïî°´Å¥×é¿Ø¼ş | [RatingBar](Controls/RatingBar.MD) | ÆÀ¼Û¿Ø¼ş |
-| [TableView](Controls/TableView.MD) | ±í¸ñ¿Ø¼ş | [Title](Controls/Title.MD) | ±êÌâÀ¸¿Ø¼ş |
-| [ToolBar](Controls/ToolBar.MD) | ¹¤¾ßÀ¸ | [TreeView](Controls/TreeView.MD) | Ê÷ĞÎ²Ëµ¥¿Ø¼ş |
+| [AlbumView](Controls/AlbumView.MD) | ç›¸å†Œæ§ä»¶ | [IconMenuView](Controls/IconMenuView.MD) | å›¾æ ‡èœå•æ§ä»¶ |
+| [ImageButton](Controls/ImageButton.MD) | å›¾ç‰‡æŒ‰é’® | [ImageEx](Controls/ImageEx.MD) | æ‰©å±•å›¾åƒæ§ä»¶ |
+| [ListMenuView](Controls/ListMenuView.MD) | åˆ—è¡¨èœå•æ§ä»¶ | [NodeView](Controls/NodeView.MD) | èŠ‚ç‚¹æ§ä»¶ |
+| [Numeric](Controls/Numeric.MD) | æ•°é‡æ§ä»¶ | [PopList](Controls/PopList.MD) | åˆ—è¡¨é€‰æ‹©æ§ä»¶ |
+| [RadioGroup](Controls/RadioGroup.MD) | é€‰é¡¹æŒ‰é’®ç»„æ§ä»¶ | [RatingBar](Controls/RatingBar.MD) | è¯„ä»·æ§ä»¶ |
+| [TableView](Controls/TableView.MD) | è¡¨æ ¼æ§ä»¶ | [Title](Controls/Title.MD) | æ ‡é¢˜æ æ§ä»¶ |
+| [ToolBar](Controls/ToolBar.MD) | å·¥å…·æ  | [TreeView](Controls/TreeView.MD) | æ ‘å½¢èœå•æ§ä»¶ |
 
 ---
 
 ### Plugins
-| Ãû³Æ | ËµÃ÷ | Ãû³Æ | ËµÃ÷ |
+| åç§° | è¯´æ˜ | åç§° | è¯´æ˜ |
 |:---|:---|:---|:---|
-| [AliPay](Plugins/AliPay.MD) | Ïà²á¿Ø¼ş | [AutoCompleteTextBox](Plugins/AutoCompleteTextBox.MD) | Í¼±ê²Ëµ¥¿Ø¼ş |
-| [CalenderStrip](Plugins/CalenderStrip.MD) | Í¼Æ¬°´Å¥ | [DropdownAert](Plugins/DropdownAert.MD) | À©Õ¹Í¼Ïñ¿Ø¼ş |
-| [FingerPrint](Plugins/FingerPrint.MD) | ÁĞ±í²Ëµ¥¿Ø¼ş | [HighLightLabel](Plugins/HighLightLabel.MD) | ½Úµã¿Ø¼ş |
-| [IM](Plugins/IM.MD) | ÊıÁ¿¿Ø¼ş | [LiveStreamPlayer](Plugins/LiveStreamPlayer.MD) | ÁĞ±íÑ¡Ôñ¿Ø¼ş |
-| [MapRoute](Plugins/MapRoute.MD) | Ñ¡Ïî°´Å¥×é¿Ø¼ş | [MapTrimView](Plugins/MapTrimView.MD) | ÆÀ¼Û¿Ø¼ş |
-| [MapView](Plugins/MapView.MD) | ±í¸ñ¿Ø¼ş | [MarqueeLabel](Plugins/MarqueeLabel.MD) | ±êÌâÀ¸¿Ø¼ş |
-| [MediaView](Plugins/MediaView.MD) | ¹¤¾ßÀ¸ | [PDFView](Plugins/PDFView.MD) | Ê÷ĞÎ²Ëµ¥¿Ø¼ş |
-| [PercentageCircle](Plugins/PercentageCircle.MD) | ¹¤¾ßÀ¸ | [ProgressView](Plugins/ProgressView.MD) | Ê÷ĞÎ²Ëµ¥¿Ø¼ş |
-| [PulseLoader](Plugins/PulseLoader.MD) | ¹¤¾ßÀ¸ | [SignatureView](Plugins/SignatureView.MD) | Ê÷ĞÎ²Ëµ¥¿Ø¼ş |
-| [SwitchSelector](Plugins/SwitchSelector.MD) | ¹¤¾ßÀ¸ | [TextBoxField](Plugins/TextBoxField.MD) | Ê÷ĞÎ²Ëµ¥¿Ø¼ş |
-| [WeiXin](Plugins/WeiXin.MD) | ¹¤¾ßÀ¸ |  |  |
+| [AliPay](Plugins/AliPay.MD) | ç›¸å†Œæ§ä»¶ | [AutoCompleteTextBox](Plugins/AutoCompleteTextBox.MD) | å›¾æ ‡èœå•æ§ä»¶ |
+| [CalenderStrip](Plugins/CalenderStrip.MD) | å›¾ç‰‡æŒ‰é’® | [DropdownAert](Plugins/DropdownAert.MD) | æ‰©å±•å›¾åƒæ§ä»¶ |
+| [FingerPrint](Plugins/FingerPrint.MD) | åˆ—è¡¨èœå•æ§ä»¶ | [HighLightLabel](Plugins/HighLightLabel.MD) | èŠ‚ç‚¹æ§ä»¶ |
+| [IM](Plugins/IM.MD) | æ•°é‡æ§ä»¶ | [LiveStreamPlayer](Plugins/LiveStreamPlayer.MD) | åˆ—è¡¨é€‰æ‹©æ§ä»¶ |
+| [MapRoute](Plugins/MapRoute.MD) | é€‰é¡¹æŒ‰é’®ç»„æ§ä»¶ | [MapTrimView](Plugins/MapTrimView.MD) | è¯„ä»·æ§ä»¶ |
+| [MapView](Plugins/MapView.MD) | è¡¨æ ¼æ§ä»¶ | [MarqueeLabel](Plugins/MarqueeLabel.MD) | æ ‡é¢˜æ æ§ä»¶ |
+| [MediaView](Plugins/MediaView.MD) | å·¥å…·æ  | [PDFView](Plugins/PDFView.MD) | æ ‘å½¢èœå•æ§ä»¶ |
+| [PercentageCircle](Plugins/PercentageCircle.MD) | å·¥å…·æ  | [ProgressView](Plugins/ProgressView.MD) | æ ‘å½¢èœå•æ§ä»¶ |
+| [PulseLoader](Plugins/PulseLoader.MD) | å·¥å…·æ  | [SignatureView](Plugins/SignatureView.MD) | æ ‘å½¢èœå•æ§ä»¶ |
+| [SwitchSelector](Plugins/SwitchSelector.MD) | å·¥å…·æ  | [TextBoxField](Plugins/TextBoxField.MD) | æ ‘å½¢èœå•æ§ä»¶ |
+| [WeiXin](Plugins/WeiXin.MD) | å·¥å…·æ  | [HTMLView](Plugins/HTMLView.MD)  | è¶…æ–‡æœ¬æ§ä»¶ |
 
 ---
 
 ### Devices
-| Ãû³Æ | ËµÃ÷ | Ãû³Æ | ËµÃ÷ |
+| åç§° | è¯´æ˜ | åç§° | è¯´æ˜ |
 |:---|:---|:---|:---|
-| [R100](Devices/R100.MD) | SmobilerÌõÂëÉ¨ÃèÇ¹ | [R200](Devices/R200.MD) | SmobilerÌõÂë´ø¼üÅÌÉ¨ÃèÇ¹ |
-| [R1000](Devices/R1000.MD) | Smobiler½ü¾àÀëRFIDÉ¨ÃèÇ¹ | [R2000](Devices/R2000.MD) | SmobilerÔ¶¾àÀëRFIDÉ¨ÃèÇ¹ |
-| [TC25](Devices/TC25.MD) | °ßÂíÌõÂëÉ¨ÃèÇ¹ | [V7000](Devices/V7000.MD) | SmobilerÌõÂëÉ¨ÃèÇ¹ |
-| [P370](Devices/P370.MD) | SmobilerPOS´òÓ¡»ú | [ZR338](Devices/ZR338.MD) | °ßÂí´òÓ¡»ú |
+| [R100](Devices/R100.MD) | Smobileræ¡ç æ‰«ææª | [R200](Devices/R200.MD) | Smobileræ¡ç å¸¦é”®ç›˜æ‰«ææª |
+| [R1000](Devices/R1000.MD) | Smobilerè¿‘è·ç¦»RFIDæ‰«ææª | [R2000](Devices/R2000.MD) | Smobilerè¿œè·ç¦»RFIDæ‰«ææª |
+| [TC25](Devices/TC25.MD) | æ–‘é©¬æ¡ç æ‰«ææª | [V7000](Devices/V7000.MD) | Smobileræ¡ç æ‰«ææª |
+| [P370](Devices/P370.MD) | SmobilerPOSæ‰“å°æœº | [ZR338](Devices/ZR338.MD) | æ–‘é©¬æ‰“å°æœº |
 
 ---
 
@@ -116,6 +116,6 @@
 ---
 
 ### AI
-| Ãû³Æ | ËµÃ÷ | Ãû³Æ | ËµÃ÷ |
+| åç§° | è¯´æ˜ | åç§° | è¯´æ˜ |
 |:---|:---|:---|:---|
-| [Plate](AI/Plate.MD) | ³µÅÆÊ¶±ğ²å¼ş | [Speech](AI/Speech.MD) | ÓïÒôÊ¶±ğ²å¼ş |
+| [Plate](AI/Plate.MD) | è½¦ç‰Œè¯†åˆ«æ’ä»¶ | [Speech](AI/Speech.MD) | è¯­éŸ³è¯†åˆ«æ’ä»¶ |
