@@ -44,9 +44,6 @@
     <Reference Include="AopSdk">
       <HintPath>..\DLL\AopSdk.dll</HintPath>
     </Reference>
-    <Reference Include="Autofac">
-      <HintPath>..\DLL\Autofac.dll</HintPath>
-    </Reference>
     <Reference Include="Smobiler.Core.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=276522cd3fa3b955, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Device" />
     <Reference Include="Smobiler.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9301bc54ca0d7a69, processorArchitecture=MSIL" />
@@ -434,23 +431,17 @@
     <Compile Include="Plugins\demoWeiXin.Designer.cs">
       <DependentUpon>demoWeiXin.cs</DependentUpon>
     </Compile>
-    <Compile Include="usercontrol\demoPageViewTemplate.cs">
+    <Compile Include="UserControls\demoPageViewTemplate.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="usercontrol\demoPageViewTemplate.Designer.cs">
+    <Compile Include="UserControls\demoPageViewTemplate.Designer.cs">
       <DependentUpon>demoPageViewTemplate.cs</DependentUpon>
     </Compile>
-    <Compile Include="usercontrol\demoTabPageViewTemplate.cs">
+    <Compile Include="UserControls\demoTabPageViewTemplate.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="usercontrol\demoTabPageViewTemplate.Designer.cs">
+    <Compile Include="UserControls\demoTabPageViewTemplate.Designer.cs">
       <DependentUpon>demoTabPageViewTemplate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="usercontrol\SmobilerUserControl1.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="usercontrol\SmobilerUserControl1.Designer.cs">
-      <DependentUpon>SmobilerUserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="Windows\frmGenerateQRcode.cs">
       <SubType>Form</SubType>
@@ -673,14 +664,11 @@
     <EmbeddedResource Include="Plugins\demoWeiXin.resx">
       <DependentUpon>demoWeiXin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usercontrol\demoPageViewTemplate.resx">
+    <EmbeddedResource Include="UserControls\demoPageViewTemplate.resx">
       <DependentUpon>demoPageViewTemplate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usercontrol\demoTabPageViewTemplate.resx">
+    <EmbeddedResource Include="UserControls\demoTabPageViewTemplate.resx">
       <DependentUpon>demoTabPageViewTemplate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="usercontrol\SmobilerUserControl1.resx">
-      <DependentUpon>SmobilerUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\frmGenerateQRcode.resx">
       <DependentUpon>frmGenerateQRcode.cs</DependentUpon>
