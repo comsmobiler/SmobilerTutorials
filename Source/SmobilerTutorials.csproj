@@ -410,6 +410,12 @@
     <Compile Include="Plugins\demoFingerPrint.Designer.cs">
       <DependentUpon>demoFingerPrint.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoHTMLView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoHTMLView.Designer.cs">
+      <DependentUpon>demoHTMLView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoLiveStream.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -654,6 +660,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoFingerPrint.resx">
       <DependentUpon>demoFingerPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoHTMLView.resx">
+      <DependentUpon>demoHTMLView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoLiveStream.resx">
       <DependentUpon>demoLiveStream.cs</DependentUpon>

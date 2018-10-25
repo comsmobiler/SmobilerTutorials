@@ -101,7 +101,8 @@ namespace Smobiler.Tutorials
             IconMenuViewGroup grpPlugins = new IconMenuViewGroup("插件");
             grpPlugins.Items.Add(new IconMenuViewItem("AliPay", "AliPay") { Tag = typeof(demoAliPay) });
             grpPlugins.Items.Add(new IconMenuViewItem("FingerPrint", "FingerPrint") { Tag = typeof(demoFingerPrint) });
-            //grpPlugins.Items.Add(new IconMenuViewItem("IM", "IM") { Tag = typeof(demoIM) });
+            grpPlugins.Items.Add(new IconMenuViewItem("HTMLView", "HTMLView") { Tag = typeof(demoHTMLView) });
+            
             grpPlugins.Items.Add(new IconMenuViewItem("LiveStream", "LiveStream") { Tag = typeof(demoLiveStream) });
             grpPlugins.Items.Add(new IconMenuViewItem("SignatureView", "SignatureView") { Tag = typeof(demoSignatureView) });
             grpPlugins.Items.Add(new IconMenuViewItem("WeiXin", "WeiXin") { Tag = typeof(demoWeiXin) });
