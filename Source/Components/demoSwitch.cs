@@ -7,9 +7,9 @@ using Smobiler.Core.Controls;
 
 namespace Smobiler.Tutorials.Components
 {
-    partial class demoSwith : Smobiler.Core.Controls.MobileForm
+    partial class demoSwitch : Smobiler.Core.Controls.MobileForm
     {
-        public demoSwith()
+        public demoSwitch()
             : base()
         {
             //This call is required by the SmobilerForm.

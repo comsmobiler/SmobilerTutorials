@@ -2,7 +2,7 @@
 using Smobiler.Core;
 namespace Smobiler.Tutorials.Components
 {
-    partial class demoSwith : Smobiler.Core.Controls.MobileForm
+    partial class demoSwitch : Smobiler.Core.Controls.MobileForm
     {
         #region "SmobilerForm generated code "
 
@@ -180,14 +180,14 @@ namespace Smobiler.Tutorials.Components
             this.switch7.Size = new System.Drawing.Size(70, 30);
             this.switch7.CheckedChanged += new System.EventHandler(this.switch7_CheckedChanged);
             // 
-            // demoSwith
+            // demoSwitch
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.title1,
             this.panel10});
-            this.Name = "demoSwith";
+            this.Name = "demoSwitch";
             this.Size = new System.Drawing.Size(300, 1000);
-            this.Name = "demoSwith";
+            this.Name = "demoSwitch";
 
         }
         #endregion

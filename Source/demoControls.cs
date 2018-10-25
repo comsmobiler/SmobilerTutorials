@@ -29,7 +29,7 @@ namespace Smobiler.Tutorials
             grpBasic.Items.Add(new IconMenuViewItem("Label", "Label") { Tag = typeof(demoLabel) });
             grpBasic.Items.Add(new IconMenuViewItem("TextBox", "TextBox") { Tag = typeof(demoTextBox) });
             grpBasic.Items.Add(new IconMenuViewItem("CheckBox", "CheckBox") { Tag = typeof(demoCheckBox) });
-            grpBasic.Items.Add(new IconMenuViewItem("Swith", "Swith") { Tag = typeof(demoSwith) });
+            grpBasic.Items.Add(new IconMenuViewItem("Switch", "Switch") { Tag = typeof(demoSwitch) });
             grpBasic.Items.Add(new IconMenuViewItem("Image", "Image") { Tag = typeof(demoImage) });
             grpBasic.Items.Add(new IconMenuViewItem("FontIcon", "FontIcon") { Tag = typeof(demoFontIcon) });
             grpBasic.Items.Add(new IconMenuViewItem("ZoomImage", "ZoomImage") { Tag = typeof(demoZoomImage) });
