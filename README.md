@@ -1,4 +1,6 @@
-﻿## Smobiler Tutorials
+## Smobiler Tutorials
+* SmobilerTutorials.sln 对应4.6版本
+* SmobilerTutorialsAlpha.sln 对应Alpha版本
 
 ### 快速入门 - 环境搭建
 
