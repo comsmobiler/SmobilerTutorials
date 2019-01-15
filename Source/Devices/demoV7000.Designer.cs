@@ -138,6 +138,8 @@ namespace Smobiler.Tutorials.Devices
             // 
             this.v7000Scanner1.Encoding = Smobiler.Device.V7000Encoding.GBK;
             this.v7000Scanner1.Name = "v7000Scanner1";
+            this.v7000Scanner1.DataCaptured += new Smobiler.Device.V7000ScanEventHandler(this.v7000Scan1_DataCaptured);
+            this.v7000Scanner1.OnNotify += new Smobiler.Device.V7000OnNotifyEventHandler(this.v7000Scan1_OnNotify);
             // 
             // label1
             // 

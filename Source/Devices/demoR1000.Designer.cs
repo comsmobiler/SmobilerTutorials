@@ -167,6 +167,10 @@ namespace Smobiler.Tutorials.Devices
             // r1000Scanner1
             // 
             this.r1000Scanner1.Name = "r1000Scanner1";
+            this.r1000Scanner1.BarcodeDataCaptured += new Smobiler.Device.R1000BarcodeScanEventHandler(this.r1000Scanner1_BarcodeDataCaptured);
+            this.r1000Scanner1.RFIDDataCaptured += new Smobiler.Device.R1000RFIDScanEventHandler(this.r1000Scanner1_RFIDDataCaptured);
+            this.r1000Scanner1.OnNotify += new Smobiler.Device.R1000ScannerOnNotifyEventHandler(this.r1000Scanner1_OnNotify);
+            this.r1000Scanner1.KeyDown += new Smobiler.Device.R1000ButtonEventHandler(this.r1000Scanner1_KeyDown);
             // 
             // label3
             // 
