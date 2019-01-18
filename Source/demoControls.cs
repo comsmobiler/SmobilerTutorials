@@ -111,6 +111,7 @@ namespace Smobiler.Tutorials
             //Devices
             IconMenuViewGroup grpDevices = new IconMenuViewGroup("硬件");
             grpDevices.Items.Add(new IconMenuViewItem("R100", "R100") { Tag = typeof(demoR100) });
+            grpDevices.Items.Add(new IconMenuViewItem("R200", "R200") { Tag = typeof(demoR200) });
             grpDevices.Items.Add(new IconMenuViewItem("R1000", "R1000") { Tag = typeof(demoR1000) });
             grpDevices.Items.Add(new IconMenuViewItem("R2000", "R2000") { Tag = typeof(demoR2000) });
             grpDevices.Items.Add(new IconMenuViewItem("TC25", "TC25") { Tag = typeof(demoTC25) });

@@ -383,6 +383,12 @@
     <Compile Include="Devices\demoR1000.Designer.cs">
       <DependentUpon>demoR1000.cs</DependentUpon>
     </Compile>
+    <Compile Include="Devices\demoR200.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoR200.Designer.cs">
+      <DependentUpon>demoR200.cs</DependentUpon>
+    </Compile>
     <Compile Include="Devices\demoR2000.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -651,6 +657,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Devices\demoR1000.resx">
       <DependentUpon>demoR1000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoR200.resx">
+      <DependentUpon>demoR200.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Devices\demoR2000.resx">
       <DependentUpon>demoR2000.cs</DependentUpon>
