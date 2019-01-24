@@ -106,6 +106,8 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("LiveStream", "LiveStream") { Tag = typeof(demoLiveStream) });
             grpPlugins.Items.Add(new IconMenuViewItem("SignatureView", "SignatureView") { Tag = typeof(demoSignatureView) });
             grpPlugins.Items.Add(new IconMenuViewItem("WeiXin", "WeiXin") { Tag = typeof(demoWeiXin) });
+            grpPlugins.Items.Add(new IconMenuViewItem("Bluetooth", "Bluetooth") { Tag = typeof(demoBluetooth) });
+            grpPlugins.Items.Add(new IconMenuViewItem("ScanBarcodeView", "ScanBarcodeView") { Tag = typeof(demoScanBarcodeView) });
             this.iconMenuView1.Groups.Add(grpPlugins);
 
             //Devices

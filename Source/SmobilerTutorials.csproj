@@ -419,6 +419,12 @@
     <Compile Include="Plugins\demoAliPay.Designer.cs">
       <DependentUpon>demoAliPay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoBluetooth.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoBluetooth.Designer.cs">
+      <DependentUpon>demoBluetooth.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoFingerPrint.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -436,6 +442,12 @@
     </Compile>
     <Compile Include="Plugins\demoLiveStream.Designer.cs">
       <DependentUpon>demoLiveStream.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoScanBarcodeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoScanBarcodeView.Designer.cs">
+      <DependentUpon>demoScanBarcodeView.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoSignatureView.cs">
       <SubType>Component</SubType>
@@ -676,6 +688,9 @@
     <EmbeddedResource Include="Plugins\demoAliPay.resx">
       <DependentUpon>demoAliPay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoBluetooth.resx">
+      <DependentUpon>demoBluetooth.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoFingerPrint.resx">
       <DependentUpon>demoFingerPrint.cs</DependentUpon>
     </EmbeddedResource>
@@ -684,6 +699,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoLiveStream.resx">
       <DependentUpon>demoLiveStream.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoScanBarcodeView.resx">
+      <DependentUpon>demoScanBarcodeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoSignatureView.resx">
       <DependentUpon>demoSignatureView.cs</DependentUpon>
