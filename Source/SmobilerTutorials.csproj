@@ -365,6 +365,12 @@
     <Compile Include="demoControls.Designer.cs">
       <DependentUpon>demoControls.cs</DependentUpon>
     </Compile>
+    <Compile Include="Devices\demoP380.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoP380.Designer.cs">
+      <DependentUpon>demoP380.cs</DependentUpon>
+    </Compile>
     <Compile Include="Devices\demoR100.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -377,11 +383,23 @@
     <Compile Include="Devices\demoR1000.Designer.cs">
       <DependentUpon>demoR1000.cs</DependentUpon>
     </Compile>
+    <Compile Include="Devices\demoR200.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoR200.Designer.cs">
+      <DependentUpon>demoR200.cs</DependentUpon>
+    </Compile>
     <Compile Include="Devices\demoR2000.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Devices\demoR2000.Designer.cs">
       <DependentUpon>demoR2000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devices\demoS5000.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoS5000.Designer.cs">
+      <DependentUpon>demoS5000.cs</DependentUpon>
     </Compile>
     <Compile Include="Devices\demoTC25.cs">
       <SubType>Component</SubType>
@@ -631,14 +649,23 @@
     <EmbeddedResource Include="demoControls.resx">
       <DependentUpon>demoControls.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoP380.resx">
+      <DependentUpon>demoP380.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Devices\demoR100.resx">
       <DependentUpon>demoR100.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Devices\demoR1000.resx">
       <DependentUpon>demoR1000.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoR200.resx">
+      <DependentUpon>demoR200.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Devices\demoR2000.resx">
       <DependentUpon>demoR2000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoS5000.resx">
+      <DependentUpon>demoS5000.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Devices\demoTC25.resx">
       <DependentUpon>demoTC25.cs</DependentUpon>
