@@ -25,7 +25,7 @@ namespace Smobiler.Tutorials.AI
         private void btnIFA_Press(object sender, EventArgs e)
         {
             this.plate1.PlateSource = Smobiler.AI.PlateSource.Album;
-            plate1.Recognize();
+            plate1.Recognize(); 
         }
 
         private void plate1_Recognized(object sender, Smobiler.AI.PlateRecognizedEventArgs e)
@@ -50,6 +50,12 @@ namespace Smobiler.Tutorials.AI
         private void title1_ImagePress(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnRC_Press(object sender, EventArgs e)
+        {
+            this.plate1.PlateSource = Smobiler.AI.PlateSource.RealtimeCapture;
+            plate1.Recognize();
         }
     }
 }

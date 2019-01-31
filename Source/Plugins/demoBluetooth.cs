@@ -82,7 +82,10 @@ namespace Smobiler.Tutorials.Plugins
         {
             string str = "690000001";
             string print = "SIZE 80 mm,40 mm\r\n" + "REFERENCE 0,0\r\n" + "SPEED 4.0\r\n" + "DENSITY 8\r\n" + "SET PEEL OFF\r\n" + "SET CUTTER OFF\r\n" + "SET TEAR ON\r\n" + "DIRECTION 0\r\n" + "SHIFT 0\r\n" + "OFFSET 0 mm\r\n" + "CLS\r\n" + "BARCODE 20,20,\"128M\",160,1,0,4,12,\"" + str + "\"\r\n" + "TEXT 20,190,\"ARIAL.TTF\",0,15,15,\"" + str + "\"\n" + "PRINT 3,1\r\n";
-            bluetooth1.WriteData(System.Text.Encoding.UTF8.GetBytes(print), (abj, args) =>
+
+            string print1 = "SIZE 50 mm,80 mm\r\n" + "GAP 2 mm,0 mm\r\n" + "TEXT 30,0,\"TST24.BF2  \",0,1,1,\"" + "Smobiler" + "\n" + "TEXT 30,60,\"ROMAN.TTF \",0,1,1,\"" + "110mm×300m" + "\r\n" + "TEXT 30,120,\"TST24.BF2  \",0,1,1,\"" + "石磨" + "\r\n" + "TEXT 30,180,\"ROMAN.TTF \",0,1,1,\"" + "上海石磨信息科技有限公司" + "\r\n" + "TEXT 30,240,\"ROMAN.TTF \",0,1,1,\"" + "Smobiler" + "\r\n" + "REFERENCE 0,0\r\n" + "SPEED 4.0\r\n" + "DENSITY 8\r\n" +
+             "SET PEEL OFF\r\n" + "SET CUTTER OFF\r\n" + "SET TEAR ON\r\n" + "DIRECTION 0\r\n" + "SHIFT 0\r\n" + "OFFSET 0 mm\r\n" + "CLS\r\n" + "QRCODE 350,0,H,4,A,0,M6,S7,\"" + str + "\"\r\n" + "TEXT 350,240,\"TSS24.BF2 \",0,1,1,\"" + "页数 1" + "\n" + "PRINT 1,1\r\n";
+            bluetooth1.WriteData(System.Text.Encoding.GetEncoding("gbk").GetBytes(print1), (abj, args) =>
             {
                 if (args.isError == true)
                     Toast(args.error);
@@ -95,7 +98,7 @@ namespace Smobiler.Tutorials.Plugins
         private void bluetooth1_DataReceived(object sender, Smobiler.Plugins.BluetoothDataReceivedEventArgs e)
         {
             Toast(e.Data.ToString());
-            MessageBox.Show(e.Data.ToString());
+            MessageBox.Show(System.Text.Encoding.GetEncoding("gbk").GetString(e.Data));
         }
 
         private void demoBluetooth_Load(object sender, EventArgs e)

@@ -33,6 +33,7 @@ namespace Smobiler.Tutorials.AI
             this.btnIFCA = new Smobiler.Core.Controls.Button();
             this.btnIFA = new Smobiler.Core.Controls.Button();
             this.title1 = new Smobiler.Core.Controls.Title();
+            this.btnRC = new Smobiler.Core.Controls.Button();
             // 
             // plate1
             // 
@@ -73,6 +74,14 @@ namespace Smobiler.Tutorials.AI
             this.title1.Text = "Plate";
             this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
             // 
+            // btnRC
+            // 
+            this.btnRC.Location = new System.Drawing.Point(38, 330);
+            this.btnRC.Name = "btnRC";
+            this.btnRC.Size = new System.Drawing.Size(228, 30);
+            this.btnRC.Text = "RealtimeCapture";
+            this.btnRC.Press += new System.EventHandler(this.btnRC_Press);
+            // 
             // demoPlate
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
@@ -81,7 +90,8 @@ namespace Smobiler.Tutorials.AI
             this.title1,
             this.btnIMC,
             this.btnIFCA,
-            this.btnIFA});
+            this.btnIFA,
+            this.btnRC});
             this.Name = "demoPlate";
 
         }
@@ -92,5 +102,6 @@ namespace Smobiler.Tutorials.AI
         private Smobiler.Core.Controls.Button btnIFCA;
         private Smobiler.Core.Controls.Button btnIFA;
         private Core.Controls.Title title1;
+        private Core.Controls.Button btnRC;
     }
 }
