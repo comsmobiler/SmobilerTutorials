@@ -108,6 +108,8 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("WeiXin", "WeiXin") { Tag = typeof(demoWeiXin) });
             grpPlugins.Items.Add(new IconMenuViewItem("Bluetooth", "Bluetooth") { Tag = typeof(demoBluetooth) });
             grpPlugins.Items.Add(new IconMenuViewItem("ScanBarcodeView", "ScanBarcodeView") { Tag = typeof(demoScanBarcodeView) });
+
+            grpPlugins.Items.Add(new IconMenuViewItem("Spinner", "MarqueeLabel") { Tag = typeof(demoMarqueeLabel) });
             this.iconMenuView1.Groups.Add(grpPlugins);
 
             //Devices
