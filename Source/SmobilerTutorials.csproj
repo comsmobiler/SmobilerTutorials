@@ -449,6 +449,12 @@
     <Compile Include="Plugins\demoLiveStream.Designer.cs">
       <DependentUpon>demoLiveStream.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoMarqueeLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoMarqueeLabel.Designer.cs">
+      <DependentUpon>demoMarqueeLabel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoScanBarcodeView.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -708,6 +714,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoLiveStream.resx">
       <DependentUpon>demoLiveStream.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoMarqueeLabel.resx">
+      <DependentUpon>demoMarqueeLabel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoScanBarcodeView.resx">
       <DependentUpon>demoScanBarcodeView.cs</DependentUpon>
