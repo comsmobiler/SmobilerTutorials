@@ -1,7 +1,7 @@
 ## Smobiler Tutorials
 * SmobilerTutorials.sln 对应4.6版本
 * SmobilerTutorialsAlpha.sln 对应Alpha版本
-
+* 也可前往Gitee码云获取源码，https://gitee.com/smobiler/SmobilerTutorials
 ### 快速入门 - 环境搭建
 
 ##### 服务端
@@ -128,20 +128,3 @@
 ---
 
 ### Devices
-| 名称 | 说明 | 名称 | 说明 |
-|:---|:---|:---|:---|
-| [R100](Document/Devices/R100.MD) | Smobiler条码扫描枪 | [R200](Document/Devices/R200.MD) | Smobiler条码带键盘扫描枪 |
-| [R1000](Document/Devices/R1000.MD) | Smobiler近距离RFID扫描枪 | [R2000](Document/Devices/R2000.MD) | Smobiler远距离RFID扫描枪 |
-| [TC25](Document/Devices/TC25.MD) | 斑马条码扫描枪 | [V7000](Document/Devices/V7000.MD) | Smobiler条码扫描枪 |
-| [P370](Document/Devices/P370.MD) | SmobilerPOS打印机 | [ZR338](Document/Devices/ZR338.MD) | 斑马打印机 |
-
----
-
-### Samples
-
----
-
-### AI
-| 名称 | 说明 | 名称 | 说明 |
-|:---|:---|:---|:---|
-| [Plate](Document/AI/Plate.MD) | 车牌识别插件 | [Speech](Document/AI/Speech.MD) | 语音识别插件 |
