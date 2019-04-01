@@ -45,6 +45,7 @@
       <HintPath>..\DLL\AopSdk.dll</HintPath>
     </Reference>
     <Reference Include="Smobiler.Core.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=276522cd3fa3b955, processorArchitecture=MSIL" />
+    <Reference Include="Smobiler.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f1ac7264a7cfc183, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Device" />
     <Reference Include="Smobiler.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9301bc54ca0d7a69, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Utility" />
@@ -365,6 +366,12 @@
     <Compile Include="demoControls.Designer.cs">
       <DependentUpon>demoControls.cs</DependentUpon>
     </Compile>
+    <Compile Include="Devices\demoHMT1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoHMT1.Designer.cs">
+      <DependentUpon>demoHMT1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Devices\demoN800.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -672,6 +679,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="demoControls.resx">
       <DependentUpon>demoControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoHMT1.resx">
+      <DependentUpon>demoHMT1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Devices\demoN800.resx">
       <DependentUpon>demoN800.cs</DependentUpon>

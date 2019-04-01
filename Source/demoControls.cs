@@ -123,6 +123,7 @@ namespace Smobiler.Tutorials
             grpDevices.Items.Add(new IconMenuViewItem("P380", "P380") { Tag = typeof(demoP380) });
             grpDevices.Items.Add(new IconMenuViewItem("S5000", "S5000") { Tag = typeof(demoS5000) });
             grpDevices.Items.Add(new IconMenuViewItem("N800", "N800") { Tag = typeof(demoN800) });
+            grpDevices.Items.Add(new IconMenuViewItem("HMT1", "HMT1") { Tag = typeof(demoHMT1) });
 
             this.iconMenuView1.Groups.Add(grpDevices);
 
