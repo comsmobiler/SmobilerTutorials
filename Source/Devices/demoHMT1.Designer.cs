@@ -19,38 +19,12 @@ namespace Smobiler.Tutorials.Devices
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            this.btnSynthesis = new Smobiler.Core.Controls.Button();
-            this.btnSetCommands = new Smobiler.Core.Controls.Button();
-            this.btnRestoreCommands = new Smobiler.Core.Controls.Button();
             this.title1 = new Smobiler.Core.Controls.Title();
-            this.label1 = new Smobiler.Core.Controls.Label();
-            this.label2 = new Smobiler.Core.Controls.Label();
-            this.label3 = new Smobiler.Core.Controls.Label();
             this.hmT11 = new Smobiler.Device.HMT1();
-            // 
-            // btnSynthesis
-            // 
-            this.btnSynthesis.Location = new System.Drawing.Point(68, 97);
-            this.btnSynthesis.Name = "btnSynthesis";
-            this.btnSynthesis.Size = new System.Drawing.Size(142, 30);
-            this.btnSynthesis.Text = "语音合成";
-            this.btnSynthesis.Press += new System.EventHandler(this.btnSynthesis_Press);
-            // 
-            // btnSetCommands
-            // 
-            this.btnSetCommands.Location = new System.Drawing.Point(68, 165);
-            this.btnSetCommands.Name = "btnSetCommands";
-            this.btnSetCommands.Size = new System.Drawing.Size(142, 30);
-            this.btnSetCommands.Text = "设置指令";
-            this.btnSetCommands.Press += new System.EventHandler(this.btnSetCommands_Press);
-            // 
-            // btnRestoreCommands
-            // 
-            this.btnRestoreCommands.Location = new System.Drawing.Point(68, 230);
-            this.btnRestoreCommands.Name = "btnRestoreCommands";
-            this.btnRestoreCommands.Size = new System.Drawing.Size(142, 30);
-            this.btnRestoreCommands.Text = "重置指令";
-            this.btnRestoreCommands.Press += new System.EventHandler(this.btnRestoreCommands_Press);
+            this.image1 = new Smobiler.Core.Controls.Image();
+            this.textBox1 = new Smobiler.Core.Controls.TextBox();
+            this.label1 = new Smobiler.Core.Controls.Label();
+            this.camera1 = new Smobiler.Core.Controls.Camera();
             // 
             // title1
             // 
@@ -61,56 +35,55 @@ namespace Smobiler.Tutorials.Devices
             this.title1.Text = "HMT1";
             this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
             // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(0, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 35);
-            this.label1.Text = "播放文字内容";
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(0, 130);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 35);
-            this.label2.Text = "注册语音识别词";
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(0, 195);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(210, 35);
-            this.label3.Text = "清空语音识别词";
-            // 
             // hmT11
             // 
             this.hmT11.Name = "hmT11";
             // 
+            // image1
+            // 
+            this.image1.Location = new System.Drawing.Point(39, 138);
+            this.image1.Name = "image1";
+            this.image1.Size = new System.Drawing.Size(211, 191);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(52, 97);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(188, 35);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(0, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(300, 55);
+            this.label1.Text = "语音\"文本\"可输入文本，\r\n语音\"拍照\"可调用拍照功能。\r\n";
+            // 
+            // camera1
+            // 
+            this.camera1.Name = "camera1";
+            this.camera1.ImageCaptured += new Smobiler.Core.Controls.CameraOnlineCallBackHandler(this.camera1_ImageCaptured);
+            // 
             // demoHMT1
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
-            this.hmT11});
+            this.hmT11,
+            this.camera1});
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.btnSynthesis,
-            this.btnSetCommands,
-            this.btnRestoreCommands,
             this.title1,
-            this.label1,
-            this.label2,
-            this.label3});
+            this.image1,
+            this.textBox1,
+            this.label1});
+            this.ForeGround += new System.EventHandler(this.demoHMT1_ForeGround);
             this.Load += new System.EventHandler(this.demoHMT1_Load);
             this.Name = "demoHMT1";
 
         }
         #endregion
-
-        private Core.Controls.Button btnSynthesis;
-        private Core.Controls.Button btnSetCommands;
-        private Core.Controls.Button btnRestoreCommands;
         private Core.Controls.Title title1;
-        private Core.Controls.Label label1;
-        private Core.Controls.Label label2;
-        private Core.Controls.Label label3;
         private Device.HMT1 hmT11;
+        private Core.Controls.Image image1;
+        private Core.Controls.TextBox textBox1;
+        private Core.Controls.Label label1;
+        private Core.Controls.Camera camera1;
     }
 }
