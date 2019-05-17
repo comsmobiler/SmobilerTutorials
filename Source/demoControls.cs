@@ -110,6 +110,8 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("ScanBarcodeView", "ScanBarcodeView") { Tag = typeof(demoScanBarcodeView) });
 
             grpPlugins.Items.Add(new IconMenuViewItem("Spinner", "MarqueeLabel") { Tag = typeof(demoMarqueeLabel) });
+            grpPlugins.Items.Add(new IconMenuViewItem("AndroidCodeCompiler", "AndroidCodeCompiler") { Tag = typeof(demoAndroidCodeCompiler) });
+            grpPlugins.Items.Add(new IconMenuViewItem("JsCodeCompiler", "JsCodeCompiler") { Tag = typeof(demoJsCodeCompiler) });
             this.iconMenuView1.Groups.Add(grpPlugins);
 
             //Devices

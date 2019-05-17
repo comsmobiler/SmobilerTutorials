@@ -89,7 +89,7 @@ namespace Smobiler.Tutorials.Plugins
                     break;
             }
         }
-        private void HandleWeiXinRPCResult(object sender, Smobiler.Core.RPC.RPCResultArgs e)
+        private void HandleWeiXinRPCResult(object sender, Smobiler.Core.Controls.ComponentResultArgs e)
         {
             this.Toast(string.Format("isError{0},error{1},errorCode{2}", e.isError, e.error, e.errorCode));
         }

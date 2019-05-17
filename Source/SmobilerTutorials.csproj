@@ -432,6 +432,12 @@
     <Compile Include="Plugins\demoAliPay.Designer.cs">
       <DependentUpon>demoAliPay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoAndroidCodeCompiler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoAndroidCodeCompiler.designer.cs">
+      <DependentUpon>demoAndroidCodeCompiler.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoBluetooth.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -449,6 +455,12 @@
     </Compile>
     <Compile Include="Plugins\demoHTMLView.Designer.cs">
       <DependentUpon>demoHTMLView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoJsCodeCompiler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoJsCodeCompiler.designer.cs">
+      <DependentUpon>demoJsCodeCompiler.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoLiveStream.cs">
       <SubType>Component</SubType>
@@ -713,6 +725,9 @@
     <EmbeddedResource Include="Plugins\demoAliPay.resx">
       <DependentUpon>demoAliPay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoAndroidCodeCompiler.resx">
+      <DependentUpon>demoAndroidCodeCompiler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoBluetooth.resx">
       <DependentUpon>demoBluetooth.cs</DependentUpon>
     </EmbeddedResource>
@@ -721,6 +736,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoHTMLView.resx">
       <DependentUpon>demoHTMLView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoJsCodeCompiler.resx">
+      <DependentUpon>demoJsCodeCompiler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoLiveStream.resx">
       <DependentUpon>demoLiveStream.cs</DependentUpon>

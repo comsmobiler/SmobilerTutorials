@@ -76,10 +76,10 @@ namespace Smobiler.Tutorials.Plugins
                 else
                 {
                     string result = "";
-                    foreach (KeyValuePair<string, object> item in args.result)
-                    {
-                        result += string.Format("{0}/{1}" + Environment.NewLine, item.Key, item.Value);
-                    }
+                    //foreach (KeyValuePair<string, object> item in args.result)
+                    //{
+                    //    result += string.Format("{0}/{1}" + Environment.NewLine, item.Key, item.Value);
+                    //}
                     MessageBox.Show(result);
                 }
             });
