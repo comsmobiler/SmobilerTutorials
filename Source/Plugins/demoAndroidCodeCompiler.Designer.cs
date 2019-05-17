@@ -48,7 +48,7 @@ namespace Smobiler.Tutorials.Plugins
             this.label2.Location = new System.Drawing.Point(18, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(268, 35);
-            this.label2.Text = "安卓设备有效";
+            this.label2.Text = "此插件仅支持android";
             // 
             // demoAndroidCodeCompiler
             // 

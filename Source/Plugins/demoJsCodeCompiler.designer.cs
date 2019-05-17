@@ -36,8 +36,9 @@ namespace Smobiler.Tutorials.Plugins
             // 
             this.label1.Location = new System.Drawing.Point(18, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 203);
-            this.label1.Text = "Js震动功能,可先网上搜索代码\r\n添加JsCodeCompiler组件\r\n可使用方法Run（编译并执行）";
+            this.label1.Size = new System.Drawing.Size(268, 265);
+            this.label1.Text = "Js震动功能,可先网上搜索代码\r\nplatform相关功能详见 https://reactnative.cn/docs/vibration/ 里面的 API\r\n添" +
+    "加JsCodeCompiler组件\r\n可使用方法Run（编译并执行）";
             // 
             // jsCodeCompiler1
             // 
@@ -48,7 +49,7 @@ namespace Smobiler.Tutorials.Plugins
             this.label2.Location = new System.Drawing.Point(18, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(268, 35);
-            this.label2.Text = "IOS设备有效";
+            this.label2.Text = "此插件仅支持ios";
             // 
             // demoJsCodeCompiler
             // 
