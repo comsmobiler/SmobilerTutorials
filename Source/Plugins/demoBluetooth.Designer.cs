@@ -31,6 +31,11 @@ namespace Smobiler.Tutorials.Plugins
             this.label2 = new Smobiler.Core.Controls.Label();
             this.bluetooth1 = new Smobiler.Plugins.Bluetooth();
             this.timer1 = new Smobiler.Core.Controls.Timer();
+            this.btnSearchBle = new Smobiler.Core.Controls.Button();
+            this.btnConnectBle = new Smobiler.Core.Controls.Button();
+            this.btnCloseConnectBle = new Smobiler.Core.Controls.Button();
+            this.btnWriteBleMessage = new Smobiler.Core.Controls.Button();
+            this.btnGetBleStatus = new Smobiler.Core.Controls.Button();
             // 
             // title1
             // 
@@ -43,49 +48,49 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnopen
             // 
-            this.btnopen.Location = new System.Drawing.Point(66, 42);
+            this.btnopen.Location = new System.Drawing.Point(0, 48);
             this.btnopen.Name = "btnopen";
-            this.btnopen.Size = new System.Drawing.Size(168, 44);
+            this.btnopen.Size = new System.Drawing.Size(144, 38);
             this.btnopen.Text = "Open";
             this.btnopen.Press += new System.EventHandler(this.btnopen_Press);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(66, 96);
+            this.btnClose.Location = new System.Drawing.Point(0, 102);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(168, 44);
+            this.btnClose.Size = new System.Drawing.Size(144, 38);
             this.btnClose.Text = "Close";
             this.btnClose.Press += new System.EventHandler(this.btnClose_Press);
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(66, 160);
+            this.btnSearch.Location = new System.Drawing.Point(0, 166);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(168, 44);
+            this.btnSearch.Size = new System.Drawing.Size(144, 38);
             this.btnSearch.Text = "Search";
             this.btnSearch.Press += new System.EventHandler(this.btnSearch_Press);
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(66, 210);
+            this.btnConnect.Location = new System.Drawing.Point(0, 216);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(168, 44);
+            this.btnConnect.Size = new System.Drawing.Size(144, 38);
             this.btnConnect.Text = "Connect";
             this.btnConnect.Press += new System.EventHandler(this.btnConnect_Press);
             // 
             // btnCloseConnect
             // 
-            this.btnCloseConnect.Location = new System.Drawing.Point(66, 274);
+            this.btnCloseConnect.Location = new System.Drawing.Point(0, 280);
             this.btnCloseConnect.Name = "btnCloseConnect";
-            this.btnCloseConnect.Size = new System.Drawing.Size(168, 44);
+            this.btnCloseConnect.Size = new System.Drawing.Size(144, 38);
             this.btnCloseConnect.Text = "CloseConnect";
             this.btnCloseConnect.Press += new System.EventHandler(this.btnCloseConnect_Press);
             // 
             // btnWriteMessage
             // 
-            this.btnWriteMessage.Location = new System.Drawing.Point(66, 326);
+            this.btnWriteMessage.Location = new System.Drawing.Point(0, 332);
             this.btnWriteMessage.Name = "btnWriteMessage";
-            this.btnWriteMessage.Size = new System.Drawing.Size(168, 44);
+            this.btnWriteMessage.Size = new System.Drawing.Size(144, 38);
             this.btnWriteMessage.Text = "WriteMessage";
             this.btnWriteMessage.Press += new System.EventHandler(this.btnWriteMessage_Press);
             // 
@@ -97,9 +102,9 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnGetStatus
             // 
-            this.btnGetStatus.Location = new System.Drawing.Point(66, 393);
+            this.btnGetStatus.Location = new System.Drawing.Point(0, 399);
             this.btnGetStatus.Name = "btnGetStatus";
-            this.btnGetStatus.Size = new System.Drawing.Size(168, 30);
+            this.btnGetStatus.Size = new System.Drawing.Size(144, 24);
             this.btnGetStatus.Text = "GetStatus";
             this.btnGetStatus.Press += new System.EventHandler(this.btnGetStatus_Press);
             // 
@@ -120,6 +125,46 @@ namespace Smobiler.Tutorials.Plugins
             this.timer1.Name = "timer1";
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnSearchBle
+            // 
+            this.btnSearchBle.Location = new System.Drawing.Point(156, 166);
+            this.btnSearchBle.Name = "btnSearchBle";
+            this.btnSearchBle.Size = new System.Drawing.Size(144, 38);
+            this.btnSearchBle.Text = "SearchBle";
+            this.btnSearchBle.Press += new System.EventHandler(this.btnSearchBle_Press);
+            // 
+            // btnConnectBle
+            // 
+            this.btnConnectBle.Location = new System.Drawing.Point(156, 216);
+            this.btnConnectBle.Name = "btnConnectBle";
+            this.btnConnectBle.Size = new System.Drawing.Size(144, 38);
+            this.btnConnectBle.Text = "ConnectBle";
+            this.btnConnectBle.Press += new System.EventHandler(this.btnConnectBle_Press);
+            // 
+            // btnCloseConnectBle
+            // 
+            this.btnCloseConnectBle.Location = new System.Drawing.Point(156, 280);
+            this.btnCloseConnectBle.Name = "btnCloseConnectBle";
+            this.btnCloseConnectBle.Size = new System.Drawing.Size(144, 38);
+            this.btnCloseConnectBle.Text = "CloseConnectBle";
+            this.btnCloseConnectBle.Press += new System.EventHandler(this.btnCloseConnectBle_Press);
+            // 
+            // btnWriteBleMessage
+            // 
+            this.btnWriteBleMessage.Location = new System.Drawing.Point(156, 332);
+            this.btnWriteBleMessage.Name = "btnWriteBleMessage";
+            this.btnWriteBleMessage.Size = new System.Drawing.Size(144, 38);
+            this.btnWriteBleMessage.Text = "WriteBleMessage";
+            this.btnWriteBleMessage.Press += new System.EventHandler(this.btnWriteBleMessage_Press);
+            // 
+            // btnGetBleStatus
+            // 
+            this.btnGetBleStatus.Location = new System.Drawing.Point(156, 399);
+            this.btnGetBleStatus.Name = "btnGetBleStatus";
+            this.btnGetBleStatus.Size = new System.Drawing.Size(144, 24);
+            this.btnGetBleStatus.Text = "GetBleStatus";
+            this.btnGetBleStatus.Press += new System.EventHandler(this.btnGetBleStatus_Press);
+            // 
             // demoBluetooth
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
@@ -135,7 +180,12 @@ namespace Smobiler.Tutorials.Plugins
             this.btnWriteMessage,
             this.label1,
             this.btnGetStatus,
-            this.label2});
+            this.label2,
+            this.btnSearchBle,
+            this.btnConnectBle,
+            this.btnCloseConnectBle,
+            this.btnWriteBleMessage,
+            this.btnGetBleStatus});
             this.Load += new System.EventHandler(this.demoBluetooth_Load);
             this.Name = "demoBluetooth";
 
@@ -154,5 +204,10 @@ namespace Smobiler.Tutorials.Plugins
         private Core.Controls.Label label2;
         private Smobiler.Plugins.Bluetooth bluetooth1;
         private Core.Controls.Timer timer1;
+        private Core.Controls.Button btnSearchBle;
+        private Core.Controls.Button btnConnectBle;
+        private Core.Controls.Button btnCloseConnectBle;
+        private Core.Controls.Button btnWriteBleMessage;
+        private Core.Controls.Button btnGetBleStatus;
     }
 }
