@@ -37,5 +37,10 @@ namespace Smobiler.Tutorials.Plugins
                     Toast("Sucess");
             });
         }
+
+        private void title1_ImagePress(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

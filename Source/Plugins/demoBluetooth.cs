@@ -143,7 +143,7 @@ namespace Smobiler.Tutorials.Plugins
 
         private void btnConnectBle_Press(object sender, EventArgs e)
         {
-            bluetooth1.ConnectBle("e24bf790-334a-4f2b-afa5-a5c960c29c06", "e24bf792-334a-4f2b-afa5-a5c960c29c06", "00:0D:18:00:19:98", (abj, args) =>
+            bluetooth1.ConnectBle("00:0D:18:00:19:98", "e24bf790-334a-4f2b-afa5-a5c960c29c06", "e24bf792-334a-4f2b-afa5-a5c960c29c06", "e24bf792-334a-4f2b-afa5-a5c960c29c06", (abj, args) =>
             {
                 if (args.isError == true)
                     Toast(args.error);

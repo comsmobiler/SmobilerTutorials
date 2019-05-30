@@ -23,6 +23,7 @@ namespace Smobiler.Tutorials.Plugins
             this.label1 = new Smobiler.Core.Controls.Label();
             this.jsCodeCompiler1 = new Smobiler.Plugins.JsCodeCompiler();
             this.label2 = new Smobiler.Core.Controls.Label();
+            this.title1 = new Smobiler.Core.Controls.Title();
             // 
             // button1
             // 
@@ -51,6 +52,15 @@ namespace Smobiler.Tutorials.Plugins
             this.label2.Size = new System.Drawing.Size(268, 35);
             this.label2.Text = "此插件仅支持ios";
             // 
+            // title1
+            // 
+            this.title1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            this.title1.Name = "title1";
+            this.title1.ResourceID = "angle-left";
+            this.title1.Size = new System.Drawing.Size(300, 30);
+            this.title1.Text = "JsCodeCompiler";
+            this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
+            // 
             // demoJsCodeCompiler
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
@@ -58,7 +68,8 @@ namespace Smobiler.Tutorials.Plugins
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.button1,
             this.label1,
-            this.label2});
+            this.label2,
+            this.title1});
             this.Name = "demoJsCodeCompiler";
 
         }
@@ -68,5 +79,6 @@ namespace Smobiler.Tutorials.Plugins
         private Smobiler.Core.Controls.Label label1;
         private Smobiler.Plugins.JsCodeCompiler jsCodeCompiler1;
         private Smobiler.Core.Controls.Label label2;
+        private Core.Controls.Title title1;
     }
 }

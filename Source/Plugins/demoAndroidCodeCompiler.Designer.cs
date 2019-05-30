@@ -23,6 +23,7 @@ namespace Smobiler.Tutorials.Plugins
             this.button1 = new Smobiler.Core.Controls.Button();
             this.androidCodeCompiler1 = new Smobiler.Plugins.AndroidCodeCompiler();
             this.label2 = new Smobiler.Core.Controls.Label();
+            this.title1 = new Smobiler.Core.Controls.Title();
             // 
             // label1
             // 
@@ -50,6 +51,15 @@ namespace Smobiler.Tutorials.Plugins
             this.label2.Size = new System.Drawing.Size(268, 35);
             this.label2.Text = "此插件仅支持android";
             // 
+            // title1
+            // 
+            this.title1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            this.title1.Name = "title1";
+            this.title1.ResourceID = "angle-left";
+            this.title1.Size = new System.Drawing.Size(300, 30);
+            this.title1.Text = "AndroidCodeCompiler";
+            this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
+            // 
             // demoAndroidCodeCompiler
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
@@ -57,7 +67,8 @@ namespace Smobiler.Tutorials.Plugins
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.label1,
             this.button1,
-            this.label2});
+            this.label2,
+            this.title1});
             this.Name = "demoAndroidCodeCompiler";
 
         }
@@ -66,5 +77,6 @@ namespace Smobiler.Tutorials.Plugins
         private Smobiler.Core.Controls.Button button1;
         private Smobiler.Plugins.AndroidCodeCompiler androidCodeCompiler1;
         private Smobiler.Core.Controls.Label label2;
+        private Core.Controls.Title title1;
     }
 }

@@ -438,6 +438,12 @@
     <Compile Include="Plugins\demoAndroidCodeCompiler.designer.cs">
       <DependentUpon>demoAndroidCodeCompiler.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoBarcodeReader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoBarcodeReader.Designer.cs">
+      <DependentUpon>demoBarcodeReader.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoBluetooth.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -727,6 +733,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoAndroidCodeCompiler.resx">
       <DependentUpon>demoAndroidCodeCompiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoBarcodeReader.resx">
+      <DependentUpon>demoBarcodeReader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoBluetooth.resx">
       <DependentUpon>demoBluetooth.cs</DependentUpon>
