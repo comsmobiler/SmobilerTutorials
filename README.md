@@ -1,6 +1,5 @@
 ## Smobiler Tutorials
-* SmobilerTutorials.sln 对应4.6版本
-* SmobilerTutorialsAlpha.sln 对应Alpha版本
+* SmobilerTutorials.sln 对应4.8版本
 * 也可前往Gitee码云获取源码，https://gitee.com/smobiler/SmobilerTutorials
 ### 快速入门 - 环境搭建
 
