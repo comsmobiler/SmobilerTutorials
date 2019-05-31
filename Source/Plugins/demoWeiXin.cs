@@ -26,6 +26,7 @@ namespace Smobiler.Tutorials.Plugins
         {
             ListMenuViewGroup g1 = new ListMenuViewGroup();
             g1.AddItem("logon", "注册", "Reg", "");
+            g1.AddItem("logon", "支付", "Pay", "");
             g1.AddItem("logon", "ShareNews", "ShareNews", "");
             g1.AddItem("logon", "ShareText", "ShareText", "");
             g1.AddItem("logon", "ShareImage", "ShareImage", "");
@@ -46,6 +47,9 @@ namespace Smobiler.Tutorials.Plugins
             {
                 case "Reg":
                     this.weiXin1.registerApp("");
+                    break;
+                case "Pay":
+                    Show(new demoWeixinPay());
                     break;
                 case "ShareNews":
                     entity = new WeiXinShareNewsEntity("百度一下你就知道News", "百度一下你就知道", "https://www.baidu.com/");

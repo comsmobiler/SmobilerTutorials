@@ -498,6 +498,12 @@
     <Compile Include="Plugins\demoWeiXin.Designer.cs">
       <DependentUpon>demoWeiXin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoWeixinPay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoWeixinPay.Designer.cs">
+      <DependentUpon>demoWeixinPay.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\demoPageViewTemplate.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -763,6 +769,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoWeiXin.resx">
       <DependentUpon>demoWeiXin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoWeixinPay.resx">
+      <DependentUpon>demoWeixinPay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\demoPageViewTemplate.resx">
       <DependentUpon>demoPageViewTemplate.cs</DependentUpon>
