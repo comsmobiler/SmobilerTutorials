@@ -80,6 +80,7 @@ namespace Smobiler.Tutorials.Plugins
 
         private void btnWriteMessage_Press(object sender, EventArgs e)
         {
+            //发送的TSPL指令
             string str = "690000001";
             string print = "SIZE 80 mm,40 mm\r\n" + "REFERENCE 0,0\r\n" + "SPEED 4.0\r\n" + "DENSITY 8\r\n" + "SET PEEL OFF\r\n" + "SET CUTTER OFF\r\n" + "SET TEAR ON\r\n" + "DIRECTION 0\r\n" + "SHIFT 0\r\n" + "OFFSET 0 mm\r\n" + "CLS\r\n" + "BARCODE 20,20,\"128M\",160,1,0,4,12,\"" + str + "\"\r\n" + "TEXT 20,190,\"ARIAL.TTF\",0,15,15,\"" + str + "\"\n" + "PRINT 3,1\r\n";
 
@@ -129,7 +130,10 @@ namespace Smobiler.Tutorials.Plugins
 
         private void btnSearchBle_Press(object sender, EventArgs e)
         {
-            bluetooth1.SearchBle("e24bf790-334a-4f2b-afa5-a5c960c29c06", "e24bf792-334a-4f2b-afa5-a5c960c29c06", "e24bf790-334a-4f2b-afa5-a5c960c29c06", (abj, args) =>
+            //参数uuidService:连接时的service uuid,需要蓝牙供应商提供
+            //参数uuidTransmitCharUuid:连接时发送内容的uuid,需要蓝牙供应商提供
+            //参数uuidReceiveCharUuid:连接时接收内容的uuid,如果与发送id相同,请填写相同id.需要蓝牙供应商提供
+            bluetooth1.SearchBle("", "", "", (abj, args) =>
             {
                 if (args.isError == true)
                     Toast(args.error);
@@ -143,7 +147,11 @@ namespace Smobiler.Tutorials.Plugins
 
         private void btnConnectBle_Press(object sender, EventArgs e)
         {
-            bluetooth1.ConnectBle("00:0D:18:00:19:98", "e24bf790-334a-4f2b-afa5-a5c960c29c06", "e24bf792-334a-4f2b-afa5-a5c960c29c06", "e24bf792-334a-4f2b-afa5-a5c960c29c06", (abj, args) =>
+            //macAddress:连接蓝牙的mac地址,如"00:0D:18:00:19:98"
+            //uuidService:连接时的service uuid,需要蓝牙供应商提供
+            //uuidTransmitCharUuid:连接时发送内容的uuid,需要蓝牙供应商提供
+            //uuidReceiveCharUuid:连接时接收内容的uuid,如果与发送id相同,请填写相同id.需要蓝牙供应商提供
+            bluetooth1.ConnectBle("", "", "", "", (abj, args) =>
             {
                 if (args.isError == true)
                     Toast(args.error);
@@ -165,6 +173,7 @@ namespace Smobiler.Tutorials.Plugins
 
         private void btnWriteBleMessage_Press(object sender, EventArgs e)
         {
+            //发送的TSPL指令
             string str = "690000001";
             string print = "SIZE 80 mm,40 mm\r\n" + "REFERENCE 0,0\r\n" + "SPEED 4.0\r\n" + "DENSITY 8\r\n" + "SET PEEL OFF\r\n" + "SET CUTTER OFF\r\n" + "SET TEAR ON\r\n" + "DIRECTION 0\r\n" + "SHIFT 0\r\n" + "OFFSET 0 mm\r\n" + "CLS\r\n" + "BARCODE 20,20,\"128M\",160,1,0,4,12,\"" + str + "\"\r\n" + "TEXT 20,190,\"ARIAL.TTF\",0,15,15,\"" + str + "\"\n" + "PRINT 3,1\r\n";
 

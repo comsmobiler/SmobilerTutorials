@@ -36,6 +36,7 @@ namespace Smobiler.Tutorials.Plugins
             this.btnCloseConnectBle = new Smobiler.Core.Controls.Button();
             this.btnWriteBleMessage = new Smobiler.Core.Controls.Button();
             this.btnGetBleStatus = new Smobiler.Core.Controls.Button();
+            this.label3 = new Smobiler.Core.Controls.Label();
             // 
             // title1
             // 
@@ -165,6 +166,13 @@ namespace Smobiler.Tutorials.Plugins
             this.btnGetBleStatus.Text = "GetBleStatus";
             this.btnGetBleStatus.Press += new System.EventHandler(this.btnGetBleStatus_Press);
             // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(164, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 92);
+            this.label3.Text = "使用Ble蓝牙通讯需填写相应的uuid";
+            // 
             // demoBluetooth
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
@@ -185,7 +193,8 @@ namespace Smobiler.Tutorials.Plugins
             this.btnConnectBle,
             this.btnCloseConnectBle,
             this.btnWriteBleMessage,
-            this.btnGetBleStatus});
+            this.btnGetBleStatus,
+            this.label3});
             this.Load += new System.EventHandler(this.demoBluetooth_Load);
             this.Name = "demoBluetooth";
 
@@ -209,5 +218,6 @@ namespace Smobiler.Tutorials.Plugins
         private Core.Controls.Button btnCloseConnectBle;
         private Core.Controls.Button btnWriteBleMessage;
         private Core.Controls.Button btnGetBleStatus;
+        private Core.Controls.Label label3;
     }
 }
