@@ -38,5 +38,27 @@ namespace Smobiler.Tutorials.Plugins
         {
             this.Close();
         }
+
+        private void button2_Press(object sender, EventArgs e)
+        {
+
+            AndroidCodeProvider provider = new AndroidCodeProvider();
+            provider.Imports.Add("android.content.Intent;");
+            provider.Imports.Add("android.content.ComponentName;");
+            provider.MethodBody = @"    
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            ComponentName cmp = new ComponentName(""com.tencent.mm"",""com.tencent.mm.ui.LauncherUI"");
+            intent.addCategory(Intent.CATEGORY_LAUNCHER);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setComponent(cmp);
+            activity.startActivity(intent); ";
+            this.androidCodeCompiler1.Run(provider, (obj, args) =>
+            {
+                if (args.isError == true)
+                    MessageBox.Show(args.error);
+                else
+                    Toast("success");
+            });
+        }
     }
 }

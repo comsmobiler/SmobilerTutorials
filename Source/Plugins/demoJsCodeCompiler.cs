@@ -42,5 +42,20 @@ namespace Smobiler.Tutorials.Plugins
         {
             this.Close();
         }
+
+        private void button2_Press(object sender, EventArgs e)
+        {
+            JsCodeProvider provider = new JsCodeProvider();
+            provider.MethodBody = @"
+            const error=null;
+            platform.Linking.openURL(value).catch(err => {error=err});";
+            this.jsCodeCompiler1.Run(provider, "weixin://", (obj, args) =>
+            {
+                if (args.isError == true)
+                    MessageBox.Show(args.error);
+                else
+                    Toast("success");
+            });
+        }
     }
 }
