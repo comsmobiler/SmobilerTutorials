@@ -47,7 +47,10 @@
     <Reference Include="Smobiler.Core.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=276522cd3fa3b955, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f1ac7264a7cfc183, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Device" />
-    <Reference Include="Smobiler.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9301bc54ca0d7a69, processorArchitecture=MSIL" />
+    <Reference Include="Smobiler.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9301bc54ca0d7a69, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SMOControls\SmobilerCorePlugins\bin\Debug\Smobiler.Plugins.dll</HintPath>
+    </Reference>
     <Reference Include="Smobiler.Utility" />
     <Reference Include="Smobiler.AI" />
     <Reference Include="Smobiler.Core" />
@@ -450,6 +453,18 @@
     <Compile Include="Plugins\demoBluetooth.Designer.cs">
       <DependentUpon>demoBluetooth.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoCN6508Printer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoCN6508Printer.designer.cs">
+      <DependentUpon>demoCN6508Printer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoCN6508Scan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoCN6508Scan.designer.cs">
+      <DependentUpon>demoCN6508Scan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoFingerPrint.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -739,6 +754,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoBluetooth.resx">
       <DependentUpon>demoBluetooth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoCN6508Printer.resx">
+      <DependentUpon>demoCN6508Printer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoCN6508Scan.resx">
+      <DependentUpon>demoCN6508Scan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoFingerPrint.resx">
       <DependentUpon>demoFingerPrint.cs</DependentUpon>
