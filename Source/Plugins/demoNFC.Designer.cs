@@ -41,6 +41,7 @@ namespace Smobiler.Tutorials.Plugins
             this.textBox2 = new Smobiler.Core.Controls.TextBox();
             this.btnMifareClassicWriteBlock = new Smobiler.Core.Controls.Button();
             this.btnmifareClassicGetSectorCount = new Smobiler.Core.Controls.Button();
+            this.nfc1 = new Smobiler.Plugins.NFC();
             // 
             // panel1
             // 
@@ -236,8 +237,18 @@ namespace Smobiler.Tutorials.Plugins
             this.btnmifareClassicGetSectorCount.Text = "mifareClassicGetSectorCount";
             this.btnmifareClassicGetSectorCount.Press += new System.EventHandler(this.btnmifareClassicGetSectorCount_Press);
             // 
+            // nfc1
+            // 
+            this.nfc1.Name = "nfc1";
+            this.nfc1.NFCTag += new Smobiler.Plugins.NFCTagEventHandler(this.nfc1_NFCTag);
+            this.nfc1.NdefWrite += new Smobiler.Plugins.NdefWriteEventHandler(this.nfc1_NdefWrite);
+            this.nfc1.RequestTech += new Smobiler.Plugins.RequestTechEventHandler(this.nfc1_RequestTech);
+            this.nfc1.NFCState += new Smobiler.Plugins.NFCStateEventHandler(this.nfc1_NFCState);
+            // 
             // demoNFC
             // 
+            this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
+            this.nfc1});
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});
             this.Name = "demoNFC";
@@ -267,5 +278,6 @@ namespace Smobiler.Tutorials.Plugins
         private Core.Controls.TextBox textBox2;
         private Core.Controls.Button btnMifareClassicWriteBlock;
         private Core.Controls.Button btnmifareClassicGetSectorCount;
+        private Smobiler.Plugins.NFC nfc1;
     }
 }
