@@ -450,6 +450,18 @@
     <Compile Include="Plugins\demoBluetooth.Designer.cs">
       <DependentUpon>demoBluetooth.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoCN6508Printer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoCN6508Printer.designer.cs">
+      <DependentUpon>demoCN6508Printer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoCN6508Scan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoCN6508Scan.designer.cs">
+      <DependentUpon>demoCN6508Scan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoFingerPrint.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -479,6 +491,12 @@
     </Compile>
     <Compile Include="Plugins\demoMarqueeLabel.Designer.cs">
       <DependentUpon>demoMarqueeLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoNFC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoNFC.Designer.cs">
+      <DependentUpon>demoNFC.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoScanBarcodeView.cs">
       <SubType>Component</SubType>
@@ -746,6 +764,12 @@
     <EmbeddedResource Include="Plugins\demoBluetooth.resx">
       <DependentUpon>demoBluetooth.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoCN6508Printer.resx">
+      <DependentUpon>demoCN6508Printer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoCN6508Scan.resx">
+      <DependentUpon>demoCN6508Scan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoFingerPrint.resx">
       <DependentUpon>demoFingerPrint.cs</DependentUpon>
     </EmbeddedResource>
@@ -760,6 +784,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoMarqueeLabel.resx">
       <DependentUpon>demoMarqueeLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoNFC.resx">
+      <DependentUpon>demoNFC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoScanBarcodeView.resx">
       <DependentUpon>demoScanBarcodeView.cs</DependentUpon>
