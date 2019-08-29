@@ -44,7 +44,10 @@
     <Reference Include="AopSdk">
       <HintPath>..\DLL\AopSdk.dll</HintPath>
     </Reference>
-    <Reference Include="Smobiler.Core.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=276522cd3fa3b955, processorArchitecture=MSIL" />
+    <Reference Include="Smobiler.Core.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=276522cd3fa3b955, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SMOControls\SmobilerCoreControls\bin\Debug\Smobiler.Core.Controls.dll</HintPath>
+    </Reference>
     <Reference Include="Smobiler.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f1ac7264a7cfc183, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Device" />
     <Reference Include="Smobiler.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9301bc54ca0d7a69, processorArchitecture=MSIL" />
@@ -451,6 +454,18 @@
     <Compile Include="Plugins\demoBluetooth.Designer.cs">
       <DependentUpon>demoBluetooth.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoCN6508Printer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoCN6508Printer.designer.cs">
+      <DependentUpon>demoCN6508Printer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoCN6508Scan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoCN6508Scan.designer.cs">
+      <DependentUpon>demoCN6508Scan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoFingerPrint.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -480,6 +495,12 @@
     </Compile>
     <Compile Include="Plugins\demoMarqueeLabel.Designer.cs">
       <DependentUpon>demoMarqueeLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoNFC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoNFC.Designer.cs">
+      <DependentUpon>demoNFC.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoScanBarcodeView.cs">
       <SubType>Component</SubType>
@@ -747,6 +768,12 @@
     <EmbeddedResource Include="Plugins\demoBluetooth.resx">
       <DependentUpon>demoBluetooth.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoCN6508Printer.resx">
+      <DependentUpon>demoCN6508Printer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoCN6508Scan.resx">
+      <DependentUpon>demoCN6508Scan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoFingerPrint.resx">
       <DependentUpon>demoFingerPrint.cs</DependentUpon>
     </EmbeddedResource>
@@ -761,6 +788,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoMarqueeLabel.resx">
       <DependentUpon>demoMarqueeLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoNFC.resx">
+      <DependentUpon>demoNFC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoScanBarcodeView.resx">
       <DependentUpon>demoScanBarcodeView.cs</DependentUpon>
