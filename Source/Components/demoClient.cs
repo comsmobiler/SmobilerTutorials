@@ -75,7 +75,7 @@ namespace Smobiler.Tutorials.Components
             g8.Title = "其他";
             g8.ShowTitle = true;
             g8.AddItem("logon", "获取当前网络类型", "GetNetWorkType", "");
-            g8.AddItem("logon", "获取状态栏高度", "GetStatusbarHeight",  "");
+            g8.AddItem("logon", "获取状态栏高度", "GetStatusbarHeight", "");
             g8.AddItem("logon", "播放音频", "PlayAudio", "");
             g8.AddItem("logon", "停止播放音频", "StopAudio", "");
             g8.AddItem("logon", "发送邮件", "SendEmail", "");
@@ -106,7 +106,12 @@ namespace Smobiler.Tutorials.Components
             g9.AddItem("logon", "关闭客户端", "Exit", "");
             g9.AddItem("logon", "关闭客户端并终止服务端会话", "ExitAndQuit", "");
 
-            listMenuView1.Groups.AddRange((new ListMenuViewGroup[] { g1, g2, g3,g4,g5,g6,g7,g8,g9 }));
+            ListMenuViewGroup g10 = new ListMenuViewGroup();
+            g10.Title = "APP自动更新";
+            g10.ShowTitle = true;
+            g10.AddItem("logon", "检查更新", "CheckUpdate", "");
+
+            listMenuView1.Groups.AddRange((new ListMenuViewGroup[] { g1, g2, g3, g4, g5, g6, g7, g8, g9, g10 }));
         }
 
         string clientPath = "";
@@ -477,7 +482,16 @@ namespace Smobiler.Tutorials.Components
                 case "ExitAndQuit":
                     this.Form.Client.ExitAndQuit();
                     break;
+                case "CheckUpdate":
+                    Version newest = new Version("4.8");//实际项目中可将最新版本号存在数据库中
+                    if (this.Client.Version < newest)
+                    {
+                        this.RedirectUrl("https://apps.smobiler.com/App/AppDetails?AppID=46");
+                    }
+                    else MessageBox.Show("已经是最新版了");
+
+                    break;
             }
-            }
+        }
     }
 }

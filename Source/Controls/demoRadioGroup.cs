@@ -31,7 +31,7 @@ namespace Smobiler.Tutorials.Controls
 
         private void demoRadioGroup_Load(object sender, EventArgs e)
         {
-            radioGroup4.SetRadioButtonCheckedByID("1");
+            //radioGroup4.SetRadioButtonCheckedByID("1");
         }
     }
 }

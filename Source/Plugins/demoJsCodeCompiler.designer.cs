@@ -24,6 +24,7 @@ namespace Smobiler.Tutorials.Plugins
             this.jsCodeCompiler1 = new Smobiler.Plugins.JsCodeCompiler();
             this.label2 = new Smobiler.Core.Controls.Label();
             this.title1 = new Smobiler.Core.Controls.Title();
+            this.button2 = new Smobiler.Core.Controls.Button();
             // 
             // button1
             // 
@@ -61,6 +62,14 @@ namespace Smobiler.Tutorials.Plugins
             this.title1.Text = "JsCodeCompiler";
             this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(96, 443);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 30);
+            this.button2.Text = "打开微信";
+            this.button2.Press += new System.EventHandler(this.button2_Press);
+            // 
             // demoJsCodeCompiler
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
@@ -69,7 +78,8 @@ namespace Smobiler.Tutorials.Plugins
             this.button1,
             this.label1,
             this.label2,
-            this.title1});
+            this.title1,
+            this.button2});
             this.Name = "demoJsCodeCompiler";
 
         }
@@ -80,5 +90,6 @@ namespace Smobiler.Tutorials.Plugins
         private Smobiler.Plugins.JsCodeCompiler jsCodeCompiler1;
         private Smobiler.Core.Controls.Label label2;
         private Core.Controls.Title title1;
+        private Core.Controls.Button button2;
     }
 }
