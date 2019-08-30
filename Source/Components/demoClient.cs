@@ -86,6 +86,7 @@ namespace Smobiler.Tutorials.Components
             g8.AddItem("logon", "获取粘贴板内容", "GetClipboard", "");
             g8.AddItem("logon", "设置粘贴板内容", "SetClipBoard", "");
             g8.AddItem("logon", "清除缓存", "ClearCache", "");
+            g8.AddItem("logon", "Socket", "Socket", "");
             ListMenuViewGroup g9 = new ListMenuViewGroup();
             g9.Title = "客户端信息";
             g9.ShowTitle = true;
@@ -489,7 +490,9 @@ namespace Smobiler.Tutorials.Components
                         this.RedirectUrl("https://apps.smobiler.com/App/AppDetails?AppID=46");
                     }
                     else MessageBox.Show("已经是最新版了");
-
+                    break;
+                case "Socket":
+                    this.Form.Show(new demoSocket());
                     break;
             }
         }

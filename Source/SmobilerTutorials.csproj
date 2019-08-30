@@ -256,6 +256,12 @@
     <Compile Include="Components\demoSlider.Designer.cs">
       <DependentUpon>demoSlider.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\demoSocket.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoSocket.Designer.cs">
+      <DependentUpon>demoSocket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\demoSpinner.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -668,6 +674,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\demoSlider.resx">
       <DependentUpon>demoSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoSocket.resx">
+      <DependentUpon>demoSocket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\demoSpinner.resx">
       <DependentUpon>demoSpinner.cs</DependentUpon>
