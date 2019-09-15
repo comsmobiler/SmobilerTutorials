@@ -25,8 +25,9 @@ namespace Smobiler.Tutorials.Components
             this.labContent = new Smobiler.Core.Controls.Label();
             this.labTitle = new Smobiler.Core.Controls.Label();
             this.button1 = new Smobiler.Core.Controls.Button();
-            this.pieChart1 = new Smobiler.Core.Controls.PieChart();
             this.popList1 = new Smobiler.Core.Controls.PopList();
+            this.panel2 = new Smobiler.Core.Controls.Panel();
+            this.pieChart1 = new Smobiler.Core.Controls.PieChart();
             // 
             // title1
             // 
@@ -41,7 +42,7 @@ namespace Smobiler.Tutorials.Components
             // 
             this.panel10.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1,
-            this.pieChart1});
+            this.panel2});
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(0, 30);
             this.panel10.Name = "panel10";
@@ -91,18 +92,26 @@ namespace Smobiler.Tutorials.Components
             this.button1.Text = "控件介绍";
             this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
-            // pieChart1
-            // 
-            this.pieChart1.Location = new System.Drawing.Point(0, 142);
-            this.pieChart1.Name = "pieChart1";
-            this.pieChart1.Size = new System.Drawing.Size(300, 300);
-            this.pieChart1.XAxisValues = new string[0];
-            this.pieChart1.ValueSelected += new Smobiler.Core.Controls.PieChartValueSelectedEventHandler(this.pieChart1_ValueSelected);
-            // 
             // popList1
             // 
             this.popList1.Name = "popList1";
             this.popList1.Selected += new System.EventHandler(this.popList1_Selected);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.pieChart1});
+            this.panel2.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.panel2.Location = new System.Drawing.Point(5, 140);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(290, 302);
+            // 
+            // pieChart1
+            // 
+            this.pieChart1.Name = "pieChart1";
+            this.pieChart1.Size = new System.Drawing.Size(300, 200);
+            this.pieChart1.XAxisValues = new string[0];
+            this.pieChart1.ValueSelected += new Smobiler.Core.Controls.PieChartValueSelectedEventHandler(this.pieChart1_ValueSelected);
             // 
             // demoPieChart
             // 
@@ -123,7 +132,8 @@ namespace Smobiler.Tutorials.Components
         private Core.Controls.Label labContent;
         private Core.Controls.Label labTitle;
         private Core.Controls.Button button1;
-        private Core.Controls.PieChart pieChart1;
         private Core.Controls.PopList popList1;
+        private Core.Controls.Panel panel2;
+        private Core.Controls.PieChart pieChart1;
     }
 }

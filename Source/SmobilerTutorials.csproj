@@ -365,6 +365,18 @@
     <Compile Include="demoControls.Designer.cs">
       <DependentUpon>demoControls.cs</DependentUpon>
     </Compile>
+    <Compile Include="Devices\demoB100.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoB100.Designer.cs">
+      <DependentUpon>demoB100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devices\demoB2000.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoB2000.Designer.cs">
+      <DependentUpon>demoB2000.cs</DependentUpon>
+    </Compile>
     <Compile Include="Devices\demoHMT1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -720,6 +732,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="demoControls.resx">
       <DependentUpon>demoControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoB100.resx">
+      <DependentUpon>demoB100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoB2000.resx">
+      <DependentUpon>demoB2000.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Devices\demoHMT1.resx">
       <DependentUpon>demoHMT1.cs</DependentUpon>
