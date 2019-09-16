@@ -56,7 +56,7 @@ namespace Smobiler.Tutorials.Devices
             // 
             // btnbarcodeSetting
             // 
-            this.btnbarcodeSetting.Location = new System.Drawing.Point(80, 254);
+            this.btnbarcodeSetting.Location = new System.Drawing.Point(80, 264);
             this.btnbarcodeSetting.Name = "btnbarcodeSetting";
             this.btnbarcodeSetting.Size = new System.Drawing.Size(100, 30);
             this.btnbarcodeSetting.Text = "barcodeSetting";
@@ -68,7 +68,7 @@ namespace Smobiler.Tutorials.Devices
         "One",
         "Two",
         "Three"};
-            this.spinner1.Location = new System.Drawing.Point(200, 200);
+            this.spinner1.Location = new System.Drawing.Point(200, 210);
             this.spinner1.Name = "spinner1";
             this.spinner1.Size = new System.Drawing.Size(100, 30);
             this.spinner1.Text = "扫描模式";
@@ -79,7 +79,7 @@ namespace Smobiler.Tutorials.Devices
             this.spinner2.Items = new string[] {
         "true",
         "false"};
-            this.spinner2.Location = new System.Drawing.Point(100, 200);
+            this.spinner2.Location = new System.Drawing.Point(100, 210);
             this.spinner2.Name = "spinner2";
             this.spinner2.Size = new System.Drawing.Size(100, 30);
             this.spinner2.Text = "震动";
@@ -90,7 +90,7 @@ namespace Smobiler.Tutorials.Devices
             this.spinner3.Items = new string[] {
         "true",
         "false"};
-            this.spinner3.Location = new System.Drawing.Point(0, 200);
+            this.spinner3.Location = new System.Drawing.Point(0, 210);
             this.spinner3.Name = "spinner3";
             this.spinner3.Size = new System.Drawing.Size(100, 30);
             this.spinner3.Text = "声音";
@@ -98,10 +98,10 @@ namespace Smobiler.Tutorials.Devices
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(0, 126);
+            this.label1.Location = new System.Drawing.Point(0, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(300, 63);
-            this.label1.Text = "下一行可分别选择设备：1.是否有提示音 2.是否震动 3.扫描模式";
+            this.label1.Size = new System.Drawing.Size(300, 100);
+            this.label1.Text = "下一行可分别选择设备：1.是否有提示音 2.是否震动 3.扫描模式(默认:one one:长按连扫,two:单次扫描,three:单次连扫)";
             // 
             // b100Scanner1
             // 

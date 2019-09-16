@@ -143,7 +143,7 @@ namespace Smobiler.Tutorials.Devices
         "One",
         "Two",
         "Three"};
-            this.spinner1.Location = new System.Drawing.Point(194, 164);
+            this.spinner1.Location = new System.Drawing.Point(200, 164);
             this.spinner1.Name = "spinner1";
             this.spinner1.Size = new System.Drawing.Size(100, 30);
             this.spinner1.Text = "扫描模式";
@@ -154,7 +154,7 @@ namespace Smobiler.Tutorials.Devices
             this.spinner2.Items = new string[] {
         "true",
         "false"};
-            this.spinner2.Location = new System.Drawing.Point(94, 164);
+            this.spinner2.Location = new System.Drawing.Point(100, 164);
             this.spinner2.Name = "spinner2";
             this.spinner2.Size = new System.Drawing.Size(100, 30);
             this.spinner2.Text = "震动";
@@ -176,7 +176,7 @@ namespace Smobiler.Tutorials.Devices
             this.label2.Location = new System.Drawing.Point(0, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(300, 63);
-            this.label2.Text = "下一行可分别选择设备：1.是否有提示音 2.是否震动 3.扫描模式";
+            this.label2.Text = "下一行可分别选择设备：1.是否有提示音 2.是否震动 3.扫描模式(默认:one one:长按连扫,two:单次扫描,three:单次连扫)\r\n";
             // 
             // demoB2000
             // 
