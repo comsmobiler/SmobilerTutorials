@@ -144,7 +144,8 @@ namespace Smobiler.Tutorials.Plugins
                     };
 
                     //按签名规范重新生成签名，注意package的值格式为Sign=WXPay
-                    string signTempStr = string.Format("appid={0}&nonceStr={1}&package={2}&partnerId ={3}&prepayId={4}&timeStamp={5}", resultEntity.appid, appPayEntity.nonceStr, appPayEntity.package, appPayEntity.partnerId, appPayEntity.prepayId, appPayEntity.timeStamp);
+                    //https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=4_3
+                    string signTempStr = string.Format("appid={0}&noncestr={1}&package={2}&partnerid={3}&prepayid={4}&timestamp={5}&key={6}", resultEntity.appid, appPayEntity.nonceStr, appPayEntity.package, appPayEntity.partnerId, appPayEntity.prepayId, appPayEntity.timeStamp, key);
                     var md5 = new System.Security.Cryptography.MD5CryptoServiceProvider();
                     appPayEntity.sign = BitConverter.ToString(md5.ComputeHash(System.Text.Encoding.UTF8.GetBytes(signTempStr))).Replace("-", "");
 
