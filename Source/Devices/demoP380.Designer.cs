@@ -28,10 +28,10 @@ namespace Smobiler.Tutorials.Devices
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(60, 164);
+            this.button1.Location = new System.Drawing.Point(50, 164);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 30);
-            this.button1.Text = "组协议打印";
+            this.button1.Size = new System.Drawing.Size(196, 30);
+            this.button1.Text = "TSC模式组协议打印";
             this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
             // demoP380
