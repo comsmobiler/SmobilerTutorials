@@ -534,6 +534,174 @@
     <Compile Include="Plugins\demoWeixinPay.Designer.cs">
       <DependentUpon>demoWeixinPay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\FilterView\userFilter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\FilterView\userFilter.Designer.cs">
+      <DependentUpon>userFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\FilterView\userFilterItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\FilterView\userFilterItem.Designer.cs">
+      <DependentUpon>userFilterItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\FilterView\userFilterItemTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\FilterView\userFilterItemTemplate.Designer.cs">
+      <DependentUpon>userFilterItemTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\GetData\demogetdata.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\GetData\demogetdata.Designer.cs">
+      <DependentUpon>demogetdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\GetData\demogetdataTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\GetData\demogetdataTemplate.Designer.cs">
+      <DependentUpon>demogetdataTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layout\demoLoginAbsoluteLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Layout\demoLoginAbsoluteLayout.Designer.cs">
+      <DependentUpon>demoLoginAbsoluteLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layout\demoLoginRelativeLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Layout\demoLoginRelativeLayout.Designer.cs">
+      <DependentUpon>demoLoginRelativeLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layout\demoTabToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Layout\demoTabToolbar.Designer.cs">
+      <DependentUpon>demoTabToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layout\UserControl\frmAnalyze.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Layout\UserControl\frmAnalyze.Designer.cs">
+      <DependentUpon>frmAnalyze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layout\UserControl\frmMasterData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Layout\UserControl\frmMasterData.Designer.cs">
+      <DependentUpon>frmMasterData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layout\UserControl\frmMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Layout\UserControl\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layout\UserControl\frmOrder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Layout\UserControl\frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layout\UserControl\frmUser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Layout\UserControl\frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewRefresh.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewRefresh.Designer.cs">
+      <DependentUpon>demoListViewRefresh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewRowBind.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewRowBind.Designer.cs">
+      <DependentUpon>demoListViewRowBind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewTemplateUpdate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewTemplateUpdate.Designer.cs">
+      <DependentUpon>demoListViewTemplateUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewTemplateUpdateControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewTemplateUpdateControl.Designer.cs">
+      <DependentUpon>demoListViewTemplateUpdateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewTemplateUpdateForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewTemplateUpdateForm.Designer.cs">
+      <DependentUpon>demoListViewTemplateUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewRemove.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewRemove.Designer.cs">
+      <DependentUpon>demoListViewRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewRemoveTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\ListView\demoListViewRemoveTemplate.designer.cs">
+      <DependentUpon>demoListViewRemoveTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Resource\demoCustomResource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Resource\demoCustomResource.Designer.cs">
+      <DependentUpon>demoCustomResource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Scroll\demoTwoWayScrolling.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Scroll\demoTwoWayScrolling.Designer.cs">
+      <DependentUpon>demoTwoWayScrolling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\ShowDialog\userDialogPassword.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\ShowDialog\userDialogPassword.Designer.cs">
+      <DependentUpon>userDialogPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\ShowDialog\userFooterDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\ShowDialog\userFooterDialog.Designer.cs">
+      <DependentUpon>userFooterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\demoSamples.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\demoSamples.designer.cs">
+      <DependentUpon>demoSamples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Transparent\demoTransparent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Transparent\demoTransparent.designer.cs">
+      <DependentUpon>demoTransparent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WebView\demoHtmlInteraction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\WebView\demoHtmlInteraction.Designer.cs">
+      <DependentUpon>demoHtmlInteraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WebView\demoWebView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\WebView\demoWebView.Designer.cs">
+      <DependentUpon>demoWebView.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\demoPageViewTemplate.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -815,6 +983,90 @@
     <EmbeddedResource Include="Plugins\demoWeixinPay.resx">
       <DependentUpon>demoWeixinPay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Samples\FilterView\userFilter.resx">
+      <DependentUpon>userFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\FilterView\userFilterItem.resx">
+      <DependentUpon>userFilterItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\FilterView\userFilterItemTemplate.resx">
+      <DependentUpon>userFilterItemTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\GetData\demogetdata.resx">
+      <DependentUpon>demogetdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\GetData\demogetdataTemplate.resx">
+      <DependentUpon>demogetdataTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\demoLoginAbsoluteLayout.resx">
+      <DependentUpon>demoLoginAbsoluteLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\demoLoginRelativeLayout.resx">
+      <DependentUpon>demoLoginRelativeLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\demoTabToolbar.resx">
+      <DependentUpon>demoTabToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\UserControl\frmAnalyze.resx">
+      <DependentUpon>frmAnalyze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\UserControl\frmMasterData.resx">
+      <DependentUpon>frmMasterData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\UserControl\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\UserControl\frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\UserControl\frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\ListView\demoListViewRefresh.resx">
+      <DependentUpon>demoListViewRefresh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\ListView\demoListViewRemove.resx">
+      <DependentUpon>demoListViewRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\ListView\demoListViewRowBind.resx">
+      <DependentUpon>demoListViewRowBind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\ListView\demoListViewTemplateUpdate.resx">
+      <DependentUpon>demoListViewTemplateUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\ListView\demoListViewTemplateUpdateControl.resx">
+      <DependentUpon>demoListViewTemplateUpdateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\ListView\demoListViewTemplateUpdateForm.resx">
+      <DependentUpon>demoListViewTemplateUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\ListView\demoListViewRemoveTemplate.resx">
+      <DependentUpon>demoListViewRemoveTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Resource\demoCustomResource.resx">
+      <DependentUpon>demoCustomResource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Scroll\demoTwoWayScrolling.resx">
+      <DependentUpon>demoTwoWayScrolling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\ShowDialog\userDialogPassword.resx">
+      <DependentUpon>userDialogPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\ShowDialog\userFooterDialog.resx">
+      <DependentUpon>userFooterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\demoSamples.resx">
+      <DependentUpon>demoSamples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Transparent\demoTransparent.resx">
+      <DependentUpon>demoTransparent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\WebView\demoHtmlInteraction.resx">
+      <DependentUpon>demoHtmlInteraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\WebView\demoWebView.resx">
+      <DependentUpon>demoWebView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\demoPageViewTemplate.resx">
       <DependentUpon>demoPageViewTemplate.cs</DependentUpon>
     </EmbeddedResource>
@@ -846,6 +1098,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Samples\Resources\Web\jsCookie.html" />
     <Content Include="Smobiler_128.ico" />
   </ItemGroup>
   <ItemGroup />

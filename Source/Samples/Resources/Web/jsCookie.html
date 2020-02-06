@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Js Cookie</title>
+    <script>
+        //在html中注册事件接收Smobiler的WebView控件发过来的数据并显示在html中
+        document.addEventListener('message', function (e) {
+            //e.data就是当前接收到的数据
+            document.getElementById('smoMessage').innerHTML =
+              '从Smobiler接收的消息: ' + e.data;
+            //请注意，下面的示例中使用了Json格式，这个和你业务代码中要使用的格式保持一致即可，不必须使用Json格式。
+            var entity = JSON.parse(e.data);
+            switch(entity.action)
+            {
+                case 'setCookie':
+                    setCookie(entity.data.name, entity.data.value);
+                    //此方法用于向WebView控件发送消息。
+                    window.ReactNativeWebView.postMessage(JSON.stringify({
+                        code: 0,
+                        message: '设置成功'
+                    }));
+                    break;
+                case 'getCookie':
+                    //此方法用于向WebView控件发送消息。
+                    window.ReactNativeWebView.postMessage(JSON.stringify({
+                        code: 0,
+                        message:'',
+                        data: getCookie(entity.data.name)
+                    }));
+                    break;
+                case 'delCookie':
+                    delCookie(entity.data.name);
+                    //此方法用于向WebView控件发送消息。
+                    window.ReactNativeWebView.postMessage(JSON.stringify({
+                        code: 0,
+                        message: '删除成功'
+                    }));
+                    break;
+                default:
+                    break;
+            }
+        });
+         window.addEventListener('message', function (e) {
+            //e.data就是当前接收到的数据
+            document.getElementById('smoMessage').innerHTML =
+              '从Smobiler接收的消息: ' + e.data;
+            //请注意，下面的示例中使用了Json格式，这个和你业务代码中要使用的格式保持一致即可，不必须使用Json格式。
+            var entity = JSON.parse(e.data);
+            switch(entity.action)
+            {
+                case 'setCookie':
+                    setCookie(entity.data.name, entity.data.value);
+                    //此方法用于向WebView控件发送消息。
+                    window.ReactNativeWebView.postMessage(JSON.stringify({
+                        code: 0,
+                        message: '设置成功'
+                    }));
+                    break;
+                case 'getCookie':
+                    //此方法用于向WebView控件发送消息。
+                    window.ReactNativeWebView.postMessage(JSON.stringify({
+                        code: 0,
+                        message:'',
+                        data: getCookie(entity.data.name)
+                    }));
+                    break;
+                case 'delCookie':
+                    delCookie(entity.data.name);
+                    //此方法用于向WebView控件发送消息。
+                    window.ReactNativeWebView.postMessage(JSON.stringify({
+                        code: 0,
+                        message: '删除成功'
+                    }));
+                    break;
+                default:
+                    break;
+            }
+        });
+        function setCookie(name, value)
+        {
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+            document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+        }
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg))
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+        function delCookie(name) {
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval = getCookie(name);
+            if (cval != null)
+                document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+        }
+        //向Smobiler的WebView控件发送消息
+        function SendSmoMessage() {
+            //获取input控件输入的内容
+            var message = document.getElementById('txtSmoMessage').value;
+            //此方法用于向WebView控件发送消息。
+            window.ReactNativeWebView.postMessage(message);
+        }
+    </script>
+</head>
+<body>
+    <p id="smoMessage">Smobiler WebView Js Cookie Demo</p>
+    <input id="txtSmoMessage" type="text" value="在这里输入给WebView控件发送消息的内容" />
+    <button id="btnSendSmoMessage" onclick="SendSmoMessage()">点击给Smobiler窗体发送消息</button>
+</body>
+</html>

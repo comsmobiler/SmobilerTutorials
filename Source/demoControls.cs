@@ -9,6 +9,7 @@ using Smobiler.Tutorials.Controls;
 using Smobiler.Tutorials.Devices;
 using Smobiler.Tutorials.Plugins;
 using Smobiler.Tutorials.AI;
+using Smobiler.Tutorials.Samples;
 
 namespace Smobiler.Tutorials
 {
@@ -138,6 +139,11 @@ namespace Smobiler.Tutorials
             grpAI.Items.Add(new IconMenuViewItem("Plate", "Plate") { Tag = typeof(demoPlate) });
             grpAI.Items.Add(new IconMenuViewItem("Speech", "Speech") { Tag = typeof(demoSpeech) });
             this.iconMenuView1.Groups.Add(grpAI);
+
+            //SmobilerSamples
+            IconMenuViewGroup grpSamples = new IconMenuViewGroup("SmobilerSamples");
+            grpSamples.Items.Add(new IconMenuViewItem("Samples", "Samples") { Tag = typeof(demoSamples) });
+            this.iconMenuView1.Groups.Add(grpSamples);
         }
 
         private void iconMenuView1_ItemPress(object sender, IconMenuViewItemPressEventArgs e)
