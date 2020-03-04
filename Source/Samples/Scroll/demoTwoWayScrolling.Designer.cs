@@ -22,6 +22,8 @@ namespace Smobiler.Tutorials.Samples
             this.title1 = new Smobiler.Core.Controls.Title();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.panel2 = new Smobiler.Core.Controls.Panel();
+            this.panel3 = new Smobiler.Core.Controls.Panel();
+            this.panel4 = new Smobiler.Core.Controls.Panel();
             // 
             // title1
             // 
@@ -40,7 +42,7 @@ namespace Smobiler.Tutorials.Samples
             this.panel1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.panel1.Name = "panel1";
             this.panel1.Scrollable = true;
-            this.panel1.Size = new System.Drawing.Size(0, 300);
+            this.panel1.Size = new System.Drawing.Size(0, 205);
             // 
             // panel2
             // 
@@ -49,11 +51,30 @@ namespace Smobiler.Tutorials.Samples
             this.panel2.Scrollable = true;
             this.panel2.Size = new System.Drawing.Size(600, 0);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.panel4});
+            this.panel3.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.panel3.Location = new System.Drawing.Point(0, 10);
+            this.panel3.Name = "panel3";
+            this.panel3.Scrollable = true;
+            this.panel3.Size = new System.Drawing.Size(0, 192);
+            // 
+            // panel4
+            // 
+            this.panel4.Horizontal = true;
+            this.panel4.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.panel4.Name = "panel4";
+            this.panel4.Scrollable = true;
+            this.panel4.Size = new System.Drawing.Size(300, 0);
+            // 
             // demoTwoWayScrolling
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.title1,
-            this.panel1});
+            this.panel1,
+            this.panel3});
             this.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.Load += new System.EventHandler(this.demoTwoWayScrolling_Load);
             this.Name = "demoTwoWayScrolling";
@@ -64,5 +85,7 @@ namespace Smobiler.Tutorials.Samples
         private Smobiler.Core.Controls.Title title1;
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Panel panel2;
+        private Core.Controls.Panel panel3;
+        private Core.Controls.Panel panel4;
     }
 }

@@ -27,6 +27,10 @@ namespace Smobiler.Tutorials.Samples
             {
                 panel2.Controls.Add(new Label() { Width=0,Text = "Label" + i,Border=new Border(0,0,0,1)});
             }
+            for (int i = 0; i < 20; i++)
+            {
+                panel4.Controls.Add(new Label() { Width = 600, Text = "Label" + i, Border = new Border(0, 0, 0, 1) });
+            }
         }
     }
 }

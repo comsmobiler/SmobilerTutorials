@@ -154,12 +154,12 @@ namespace Smobiler.Tutorials.Controls
             // numeric5
             // 
             this.numeric5.Location = new System.Drawing.Point(0, 385);
-            this.numeric5.MaxValue = 1000F;
-            this.numeric5.MinValue = 100F;
+            this.numeric5.MaxValue = 1000;
+            this.numeric5.MinValue = 100;
             this.numeric5.Name = "numeric5";
             this.numeric5.Size = new System.Drawing.Size(290, 25);
-            this.numeric5.Value = 100F;
-            this.numeric5.Variation = 100F;
+            this.numeric5.Value = 100;
+            this.numeric5.Variation = 100;
             // 
             // demoNumeric
             // 
