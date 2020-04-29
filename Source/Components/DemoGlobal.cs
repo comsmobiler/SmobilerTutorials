@@ -23,13 +23,13 @@ namespace Smobiler.Tutorials.Components
             dt.Columns.Add(new DataColumn("VO", typeof(float)));
             dt.Columns.Add(new DataColumn("VC", typeof(float)));
             dt.Columns.Add(new DataColumn("SP", typeof(int)));
-            for (int s = 1; s <= 2; s++)
+            for (int s = 1; s <= 12; s++)
             {
-                for (int i = 1; i <= 12; i++)
+                for (int i = 1; i <= 1; i++)
                 {
                     DataRow row = dt.NewRow();
                     row["S"] = s.ToString();
-                    row["X"] = i.ToString();
+                    row["X"] = "数值";
                     row["Y"] = i * s;
                     row["Z"] = i * s;
                     row["VH"] = i * s + i;

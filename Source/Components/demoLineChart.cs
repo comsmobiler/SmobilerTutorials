@@ -75,7 +75,7 @@ namespace Smobiler.Tutorials.Components
                     break;
                 case "SetData":
                     List<string> xLabels = new List<string>();
-                    xLabels.AddRange(new string[] { "1", "2", "3", "4" });
+                    xLabels.AddRange(new string[] { "2019-09-01", "2019-09-02", "2019-09-03", "2019-09-04", "2019-09-05", "2019-09-06", "2019-09-07", "2019-09-08", "2019-09-09", "2019-09-10", "2019-09-11", "2019-09-12", "2019-09-13", "2019-09-14", "2019-09-15", "2019-09-16", "2019-09-17", "2019-09-18", "2019-09-19", "2019-09-20", "2019-09-21", "2019-09-22", "2019-09-23", "2019-09-24", "2019-09-25", "2019-09-26", "2019-09-27", "2019-09-28", "2019-09-29", "2019-09-30", "2019-09-31"});
                     LineData data = new LineData(xLabels);
                     data.AddSeries(GetNewSerie(data));
                     this.lineChart1.Data = data;
