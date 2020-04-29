@@ -48,6 +48,12 @@ namespace Smobiler.Tutorials.Plugins
             g1.AddItem("logon", "TimeLineImage", "TimeLineImage", "");
             g1.AddItem("logon", "TimeLineVideo", "TimeLineVideo", "");
             g1.AddItem("logon", "TimeLineAudio", "TimeLineAudio", "");
+
+            g1.AddItem("logon", "isWXAppInstalled", "isWXAppInstalled", "");
+            g1.AddItem("logon", "isWXAppSupportApi", "isWXAppSupportApi", "");
+            g1.AddItem("logon", "getWXAppInstallUrl", "getWXAppInstallUrl", "");
+            g1.AddItem("logon", "getApiVersion", "getApiVersion", "");
+            g1.AddItem("logon", "openWXApp", "openWXApp", "");
             listMenuView1.Groups.Add(g1);
         }
 
@@ -104,6 +110,22 @@ namespace Smobiler.Tutorials.Plugins
                 case "TimeLineAudio":
                     entity = new WeiXinShareAudioEntity("这是一个分享标题Audio", "这是一个分享文本", "http://www.smobiler.com/images/index/logo.png");
                     this.weiXin1.shareToTimeline(entity, HandleWeiXinRPCResult);
+                    break;
+
+                case "isWXAppInstalled":
+                    this.weiXin1.isWXAppInstalled(HandleWeiXinRPCResult);
+                    break;
+                case "isWXAppSupportApi":
+                    this.weiXin1.isWXAppSupportApi(HandleWeiXinRPCResult);
+                    break;
+                case "getWXAppInstallUrl":
+                    this.weiXin1.getWXAppInstallUrl((s, ss) => { RedirectUrl(ss.args.ToString()); });
+                    break;
+                case "getApiVersion":
+                    this.weiXin1.getApiVersion(HandleWeiXinRPCResult);
+                    break;
+                case "openWXApp":
+                    this.weiXin1.openWXApp(HandleWeiXinRPCResult);
                     break;
             }
         }

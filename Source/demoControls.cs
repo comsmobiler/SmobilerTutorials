@@ -116,6 +116,8 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("BarcodeReader", "BarcodeReader") { Tag = typeof(demoBarcodeReader) });
             grpPlugins.Items.Add(new IconMenuViewItem("CN6508", "CN6508") { Tag = typeof(demoCN6508) });
             grpPlugins.Items.Add(new IconMenuViewItem("NFC", "NFC") { Tag = typeof(demoNFC) });
+            grpPlugins.Items.Add(new IconMenuViewItem("TTS", "TTS") { Tag = typeof(demoTTS) });
+            grpPlugins.Items.Add(new IconMenuViewItem("Audio", "Audio") { Tag = typeof(demoAudio) });
             this.iconMenuView1.Groups.Add(grpPlugins);
 
             //Devices
