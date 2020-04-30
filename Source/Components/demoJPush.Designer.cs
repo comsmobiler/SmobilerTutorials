@@ -25,6 +25,8 @@ namespace Smobiler.Tutorials.Components
             this.textBox2 = new Smobiler.Core.Controls.TextBox();
             this.label3 = new Smobiler.Core.Controls.Label();
             this.button1 = new Smobiler.Core.Controls.Button();
+            this.button12 = new Smobiler.Core.Controls.Button();
+            this.button13 = new Smobiler.Core.Controls.Button();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.button2 = new Smobiler.Core.Controls.Button();
             this.button4 = new Smobiler.Core.Controls.Button();
@@ -54,6 +56,8 @@ namespace Smobiler.Tutorials.Components
             this.textBox2,
             this.label3,
             this.button1,
+            this.button12,
+            this.button13,
             this.label1,
             this.button2,
             this.button4,
@@ -98,6 +102,20 @@ namespace Smobiler.Tutorials.Components
             this.button1.Size = new System.Drawing.Size(0, 30);
             this.button1.Text = "设置别名（devices）";
             this.button1.Press += new System.EventHandler(this.button1_Press);
+            // 
+            // button12
+            // 
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(0, 30);
+            this.button12.Text = "查询别名";
+            this.button12.Press += new System.EventHandler(this.button12_Press);
+            // 
+            // button13
+            // 
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(0, 30);
+            this.button13.Text = "删除别名";
+            this.button13.Press += new System.EventHandler(this.button13_Press);
             // 
             // label1
             // 
@@ -199,6 +217,8 @@ namespace Smobiler.Tutorials.Components
         private Core.Controls.TextBox textBox2;
         private Core.Controls.Label label3;
         private Core.Controls.Button button1;
+        private Core.Controls.Button button12;
+        private Core.Controls.Button button13;
         private Core.Controls.Label label1;
         private Core.Controls.Button button2;
         private Core.Controls.Button button4;

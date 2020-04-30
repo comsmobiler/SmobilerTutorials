@@ -85,5 +85,17 @@ namespace Smobiler.Tutorials.Components
             //client.PushBigTextAll(textBox2.Text, textBox2.Text, textBox1.Text,PushPlatform.all);
         }
 
+        private void button12_Press(object sender, EventArgs e)
+        {
+            this.Client.Push.QueryAlias((obj, args) => {
+                if (args.isError == true) Toast($"{args.isError.ToString()} - {args.error}");
+                else Toast(string.Join(",", args.Alias));
+            });
+        }
+
+        private void button13_Press(object sender, EventArgs e)
+        {
+            this.Client.Push.DeleteAlias((obj, args) => { Toast($"{args.isError.ToString()} - {args.error}"); });
+        }
     }
 }
