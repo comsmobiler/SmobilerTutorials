@@ -171,7 +171,7 @@ namespace Smobiler.Tutorials.Plugins
             this.label3.Location = new System.Drawing.Point(164, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 92);
-            this.label3.Text = "使用Ble蓝牙通讯需填写相应的uuid";
+            this.label3.Text = "使用Ble蓝牙通讯需填写相应的uuid\r\n连接返回true不等于连接上,仍需要GetStatus判断连接状态";
             // 
             // demoBluetooth
             // 
