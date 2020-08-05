@@ -23,6 +23,7 @@ namespace Smobiler.Tutorials.Plugins
 
         private string appid = ""; //微信开放平台审核通过的应用APPID（请登录open.weixin.qq.com查看，注意与公众号的APPID不同）
         private string secret = ""; //微信开放平台审核通过后的应用密钥AppSecret
+        private string universalLink = ""; //由于苹果iOS 13系统版本安全升级,ios需要配置,具体可以查看https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/iOS.html
         private const string accessTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token"; //登陆获取access token
         private const string userinfoUrl = "https://api.weixin.qq.com/sns/userinfo"; //根据openid获取用户信息
 
@@ -63,7 +64,7 @@ namespace Smobiler.Tutorials.Plugins
             switch (e.Item.SubContent)
             {
                 case "Reg":
-                    this.weiXin1.registerApp(appid);//每个设备只需注册一次,方法参数中的appid为微信平台注册应用的appid
+                    this.weiXin1.registerApp(appid,(obj, args) => { }, universalLink);//每个设备只需注册一次,方法参数中的appid为微信平台注册应用的appid
                     break;
                 case "Login":
                     WeiXinLogin();
