@@ -64,14 +64,10 @@ namespace Smobiler.Tutorials.Devices
                 mvi = false;
         }
 
-        private void b100Scanner1_RFIDTagRead(object sender, Smobiler.Device.B2000RFIDTagReadEventArgs e)
-        {
-            Toast(e.Message);
-        }
-
         private void b100Scanner1_BarcodeDataCaptured(object sender, Device.B100Scanner.B100BarcodeScanEventArgs e)
         {
             Toast(e.Data);
+            label2.Text = e.Data;
         }
     }
 }

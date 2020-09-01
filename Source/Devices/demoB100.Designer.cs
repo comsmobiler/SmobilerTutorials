@@ -28,6 +28,7 @@ namespace Smobiler.Tutorials.Devices
             this.spinner3 = new Smobiler.Core.Controls.Spinner();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.b100Scanner1 = new Smobiler.Device.B100Scanner();
+            this.label2 = new Smobiler.Core.Controls.Label();
             // 
             // title1
             // 
@@ -108,6 +109,13 @@ namespace Smobiler.Tutorials.Devices
             this.b100Scanner1.Name = "b100Scanner1";
             this.b100Scanner1.BarcodeDataCaptured += new Smobiler.Device.B100Scanner.B100BarcodeScannEventHandler(this.b100Scanner1_BarcodeDataCaptured);
             // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(16, 332);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(254, 35);
+            this.label2.Text = "label2";
+            // 
             // demoB100
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
@@ -120,7 +128,8 @@ namespace Smobiler.Tutorials.Devices
             this.spinner1,
             this.spinner2,
             this.spinner3,
-            this.label1});
+            this.label1,
+            this.label2});
             this.Name = "demoB100";
 
         }
@@ -135,5 +144,6 @@ namespace Smobiler.Tutorials.Devices
         private Core.Controls.Spinner spinner3;
         private Core.Controls.Label label1;
         private Device.B100Scanner b100Scanner1;
+        private Core.Controls.Label label2;
     }
 }
