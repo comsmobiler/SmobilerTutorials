@@ -47,7 +47,7 @@
       <HintPath>..\DLL\AopSdk.dll</HintPath>
     </Reference>
     <Reference Include="Smobiler.AI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1c93005509649d9e, processorArchitecture=MSIL" />
-    <Reference Include="Smobiler.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=c28d201d12639a97, processorArchitecture=MSIL" />
+    <Reference Include="Smobiler.Core, Version=6.0.0.0, Culture=neutral, PublicKeyToken=c28d201d12639a97, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Core.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=276522cd3fa3b955, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Device, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e0b1d6c313d28ffc, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9301bc54ca0d7a69, processorArchitecture=MSIL" />
@@ -554,6 +554,12 @@
     <Compile Include="Plugins\demoWeiXin.Designer.cs">
       <DependentUpon>demoWeiXin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoWeiXinApi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoWeiXinApi.Designer.cs">
+      <DependentUpon>demoWeiXinApi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoWeixinPay.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1020,6 +1026,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoWeiXin.resx">
       <DependentUpon>demoWeiXin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoWeiXinApi.resx">
+      <DependentUpon>demoWeiXinApi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoWeixinPay.resx">
       <DependentUpon>demoWeixinPay.cs</DependentUpon>
