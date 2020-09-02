@@ -117,7 +117,30 @@ namespace Smobiler.Tutorials.Plugins
                     });
                     break;
                 case "pay": //支付
-                   //可参考微信文档  https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=7_1
+                            //可参考微信文档  https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=7_1
+
+                    Smobiler.Plugins.WeiXinApiPayEntity PayEntity = new Smobiler.Plugins.WeiXinApiPayEntity()
+                    {
+                        nonceStr ="",
+                        signType = "MD5",
+                        package = "prepay_id=" + "",
+                        timestamp = ((int)((DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000)).ToString()
+                    };
+                    //调用支付功能
+                    this.weiXinApi1.pay(PayEntity, (obj, args) =>
+                    {
+                        if (args.isError == true)
+                        {
+                            MessageBox.Show(string.Format("APP Pay Error: {0}", args.error));
+                        }
+                        else
+                        {
+                            //如果没有返回错误，代表支付成功，那么这里直接去查询订单状态
+                            //商户系统对于支付结果通知的内容一定要做签名验证,并校验返回的订单金额是否与商户侧的订单金额一致，防止数据泄漏导致出现“假通知”，造成资金损失。
+                            //https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=9_7&index=8
+                            Toast("支付成功!");
+                        }
+                    });
                     break;
             }
         }
