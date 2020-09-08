@@ -35,7 +35,9 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // weiXinApi1
             // 
+            this.weiXinApi1.AppID = null;
             this.weiXinApi1.Name = "weiXinApi1";
+            this.weiXinApi1.Afterlogin += new Smobiler.Plugins.WeiXinApiLoginEventHandler(this.weiXinApi1_Afterlogin);
             // 
             // label1
             // 
