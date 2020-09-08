@@ -419,7 +419,7 @@ namespace Smobiler.Tutorials.Plugins
         {
             if (e.MiniLoginInfo != null)
             {
-                if (e.MiniLoginInfo.errcode != 0)
+                if (e.MiniLoginInfo.errcode == 0)
                 {
                     //可获取用户信息
                     Toast(e.MiniLoginInfo.userInfo.nickName);
