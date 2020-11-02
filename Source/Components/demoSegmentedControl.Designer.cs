@@ -24,20 +24,20 @@ namespace Smobiler.Tutorials.Components
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.labContent = new Smobiler.Core.Controls.Label();
             this.labTitle = new Smobiler.Core.Controls.Label();
+            this.segmentedControl1 = new Smobiler.Core.Controls.SegmentedControl();
             this.panel2 = new Smobiler.Core.Controls.Panel();
             this.label5 = new Smobiler.Core.Controls.Label();
-            this.panel3 = new Smobiler.Core.Controls.Panel();
-            this.label13 = new Smobiler.Core.Controls.Label();
-            this.panel4 = new Smobiler.Core.Controls.Panel();
-            this.label16 = new Smobiler.Core.Controls.Label();
-            this.panel5 = new Smobiler.Core.Controls.Panel();
-            this.label1 = new Smobiler.Core.Controls.Label();
-            this.segmentedControl1 = new Smobiler.Core.Controls.SegmentedControl();
             this.segmentedControl2 = new Smobiler.Core.Controls.SegmentedControl();
             this.segmentedControl3 = new Smobiler.Core.Controls.SegmentedControl();
             this.segmentedControl4 = new Smobiler.Core.Controls.SegmentedControl();
+            this.panel3 = new Smobiler.Core.Controls.Panel();
+            this.label13 = new Smobiler.Core.Controls.Label();
             this.segmentedControl5 = new Smobiler.Core.Controls.SegmentedControl();
+            this.panel4 = new Smobiler.Core.Controls.Panel();
+            this.label16 = new Smobiler.Core.Controls.Label();
             this.segmentedControl6 = new Smobiler.Core.Controls.SegmentedControl();
+            this.panel5 = new Smobiler.Core.Controls.Panel();
+            this.label1 = new Smobiler.Core.Controls.Label();
             this.segmentedControl7 = new Smobiler.Core.Controls.SegmentedControl();
             // 
             // title1
@@ -97,6 +97,16 @@ namespace Smobiler.Tutorials.Components
             this.labTitle.Size = new System.Drawing.Size(290, 26);
             this.labTitle.Text = "多按钮选择控件";
             // 
+            // segmentedControl1
+            // 
+            this.segmentedControl1.Items = new string[] {
+        "报销",
+        "请假",
+        "考勤"};
+            this.segmentedControl1.Location = new System.Drawing.Point(43, 83);
+            this.segmentedControl1.Name = "segmentedControl1";
+            this.segmentedControl1.Size = new System.Drawing.Size(200, 35);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -120,79 +130,6 @@ namespace Smobiler.Tutorials.Components
             this.label5.Size = new System.Drawing.Size(290, 74);
             this.label5.Text = "SelectedBorderRadius，SelectedBackColor、SelectedColor、SelectedFontSize、UnSelectedB" +
     "ackColor、UnSelectedColor、UnSelectedFontSize设置控件的不同样式";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Border = new Smobiler.Core.Controls.Border(1F);
-            this.panel3.BorderColor = System.Drawing.Color.Silver;
-            this.panel3.BorderRadius = 5;
-            this.panel3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.label13,
-            this.segmentedControl5});
-            this.panel3.Location = new System.Drawing.Point(5, 389);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(290, 131);
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label13.Name = "label13";
-            this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);
-            this.label13.Size = new System.Drawing.Size(290, 54);
-            this.label13.Text = "SelectedIndex设置选择单元索引\r\n\r\n";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Border = new Smobiler.Core.Controls.Border(1F);
-            this.panel4.BorderColor = System.Drawing.Color.Silver;
-            this.panel4.BorderRadius = 5;
-            this.panel4.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.label16,
-            this.segmentedControl6});
-            this.panel4.Location = new System.Drawing.Point(5, 531);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(290, 131);
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label16.Name = "label16";
-            this.label16.Padding = new Smobiler.Core.Controls.Padding(5F);
-            this.label16.Size = new System.Drawing.Size(290, 54);
-            this.label16.Text = "Enabled属性设置是否启用该控件\r\n";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Border = new Smobiler.Core.Controls.Border(1F);
-            this.panel5.BorderColor = System.Drawing.Color.Silver;
-            this.panel5.BorderRadius = 5;
-            this.panel5.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.label1,
-            this.segmentedControl7});
-            this.panel5.Location = new System.Drawing.Point(5, 675);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(290, 131);
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Name = "label1";
-            this.label1.Padding = new Smobiler.Core.Controls.Padding(5F);
-            this.label1.Size = new System.Drawing.Size(290, 54);
-            this.label1.Text = "SelectedIndexChanged事件在单元选择改变时触发。\r\nSelectedItem获取选择单元";
-            // 
-            // segmentedControl1
-            // 
-            this.segmentedControl1.Items = new string[] {
-        "报销",
-        "请假",
-        "考勤"};
-            this.segmentedControl1.Location = new System.Drawing.Point(43, 83);
-            this.segmentedControl1.Name = "segmentedControl1";
-            this.segmentedControl1.Size = new System.Drawing.Size(200, 35);
             // 
             // segmentedControl2
             // 
@@ -238,6 +175,27 @@ namespace Smobiler.Tutorials.Components
             this.segmentedControl4.UnSelectedColor = System.Drawing.Color.Black;
             this.segmentedControl4.UnSelectedFontSize = 11F;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Border = new Smobiler.Core.Controls.Border(1F);
+            this.panel3.BorderColor = System.Drawing.Color.Silver;
+            this.panel3.BorderRadius = 5;
+            this.panel3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.label13,
+            this.segmentedControl5});
+            this.panel3.Location = new System.Drawing.Point(5, 389);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(290, 131);
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.Name = "label13";
+            this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);
+            this.label13.Size = new System.Drawing.Size(290, 54);
+            this.label13.Text = "SelectedIndex设置选择单元索引\r\n\r\n";
+            // 
             // segmentedControl5
             // 
             this.segmentedControl5.Items = new string[] {
@@ -248,6 +206,27 @@ namespace Smobiler.Tutorials.Components
             this.segmentedControl5.Name = "segmentedControl5";
             this.segmentedControl5.SelectedIndex = 1;
             this.segmentedControl5.Size = new System.Drawing.Size(200, 35);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Border = new Smobiler.Core.Controls.Border(1F);
+            this.panel4.BorderColor = System.Drawing.Color.Silver;
+            this.panel4.BorderRadius = 5;
+            this.panel4.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.label16,
+            this.segmentedControl6});
+            this.panel4.Location = new System.Drawing.Point(5, 531);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(290, 131);
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label16.Name = "label16";
+            this.label16.Padding = new Smobiler.Core.Controls.Padding(5F);
+            this.label16.Size = new System.Drawing.Size(290, 54);
+            this.label16.Text = "Enabled属性设置是否启用该控件\r\n";
             // 
             // segmentedControl6
             // 
@@ -260,6 +239,27 @@ namespace Smobiler.Tutorials.Components
             this.segmentedControl6.Name = "segmentedControl6";
             this.segmentedControl6.SelectedIndex = 2;
             this.segmentedControl6.Size = new System.Drawing.Size(200, 35);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Border = new Smobiler.Core.Controls.Border(1F);
+            this.panel5.BorderColor = System.Drawing.Color.Silver;
+            this.panel5.BorderRadius = 5;
+            this.panel5.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.label1,
+            this.segmentedControl7});
+            this.panel5.Location = new System.Drawing.Point(5, 675);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(290, 131);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Name = "label1";
+            this.label1.Padding = new Smobiler.Core.Controls.Padding(5F);
+            this.label1.Size = new System.Drawing.Size(290, 54);
+            this.label1.Text = "SelectedIndexChanged事件在单元选择改变时触发。\r\nSelectedItem获取选择单元";
             // 
             // segmentedControl7
             // 

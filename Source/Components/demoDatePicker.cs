@@ -28,7 +28,7 @@ namespace Smobiler.Tutorials.Components
 
         private void btnShow_Press(object sender, EventArgs e)
         {
-           
+            Smobiler.Core.Controls.DatePicker.Show(this.Client.SessionID,(s,args)=> { Toast("触发事件"); });
         }
 
         private void datePicker12_ValueChanged(object sender, EventArgs e)

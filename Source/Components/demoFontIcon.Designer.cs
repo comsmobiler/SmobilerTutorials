@@ -30,6 +30,8 @@ namespace Smobiler.Tutorials.Components
             this.fontIcon4 = new Smobiler.Core.Controls.FontIcon();
             this.fontIcon5 = new Smobiler.Core.Controls.FontIcon();
             this.fontIcon6 = new Smobiler.Core.Controls.FontIcon();
+            this.performanceCounter1 = new System.Diagnostics.PerformanceCounter();
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).BeginInit();
             // 
             // title1
             // 
@@ -140,6 +142,7 @@ namespace Smobiler.Tutorials.Components
             this.panel10});
             this.Size = new System.Drawing.Size(300, 1000);
             this.Name = "demoFontIcon";
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
 
         }
         #endregion
@@ -155,5 +158,6 @@ namespace Smobiler.Tutorials.Components
         private Core.Controls.FontIcon fontIcon4;
         private Core.Controls.FontIcon fontIcon5;
         private Core.Controls.FontIcon fontIcon6;
+        private System.Diagnostics.PerformanceCounter performanceCounter1;
     }
 }

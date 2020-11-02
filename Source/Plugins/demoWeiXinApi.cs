@@ -87,10 +87,14 @@ namespace Smobiler.Tutorials.Plugins
                         mTicket = (string)Client.Session["Ticket"];
                         if (mTicket != "")
                         {
-                            string nonceStr = CreatenNonce_str();
-                            long timestamp = CreatenTimestamp();
-                            string signature = GetSignature(mTicket, nonceStr, timestamp, "http://neil.jx.smobiler.com/", out string1);
-                            Toast(string1);
+                            //string nonceStr = CreatenNonce_str();
+                            //long timestamp = CreatenTimestamp();
+                            //string signature = GetSignature(mTicket, nonceStr, timestamp, this.Client.WebUrl, out string1);
+                            //Toast(string1);
+                            string nonceStr = this.weiXinApi1.WeiXinApiCreatenNonce_str();
+                            long timestamp = this.weiXinApi1.WeiXinApiCreatenTimestamp();
+                            string signature = this.weiXinApi1.WeiXinApiGetSignature(mTicket, nonceStr, timestamp);
+                            
                             this.weiXinApi1.config(timestamp, nonceStr, signature, (obj, argss) => { Toast("isError:" + argss.isError + "ERROR:" + argss.error + " ARGS:" + argss.args); }, mdebug);
                         }
                     }
@@ -152,7 +156,10 @@ namespace Smobiler.Tutorials.Plugins
             myHttpWebRequest.ContentType = "application/x-www-form-urlencoded;charset=utf-8";
 
             SortedDictionary<string, string> payDict = new SortedDictionary<string, string>();
-            payDict.Add("appid", appid);//公众账号ID
+            if (this.Form.Client.ClientSource == Smobiler.Core.ClientSource.WeChatMiniProgram)
+                payDict.Add("appid", miniappid);//小程序中APPID
+            else
+                payDict.Add("appid", appid);//公众账号ID
             payDict.Add("mch_id", mch_id);//商户号
             payDict.Add("device_info", this.Client.DeviceID);//设备号
             payDict.Add("nonce_str", System.Guid.NewGuid().ToString("N"));//随机字符串
@@ -211,21 +218,35 @@ namespace Smobiler.Tutorials.Plugins
                     var md5 = new System.Security.Cryptography.MD5CryptoServiceProvider();
                     PayEntity.paySign = BitConverter.ToString(md5.ComputeHash(System.Text.Encoding.UTF8.GetBytes(signTempStr))).Replace("-", "");
 
-                    //调用支付功能
-                    this.weiXinApi1.pay(PayEntity, (obj, args) =>
+                    if (this.Form.Client.ClientSource == Smobiler.Core.ClientSource.WeChatMiniProgram)
                     {
-                        if (args.isError == true)
+                        //小程序调用支付功能
+                        this.weiXinApi1.minipay(PayEntity, (obj, args) =>
                         {
-                            MessageBox.Show(string.Format("APP Pay Error: {0}", args.error));
-                        }
-                        else
+                            if (args.isError == true)
+                            {
+                                MessageBox.Show(string.Format("APP Pay Error: {0}", args.error));
+                            }
+                        });
+                    }
+                    else
+                    {
+                        //调用公众号支付功能
+                        this.weiXinApi1.pay(PayEntity, (obj, args) =>
                         {
-                            //如果没有返回错误，代表支付成功，那么这里直接去查询订单状态
-                            //商户系统对于支付结果通知的内容一定要做签名验证,并校验返回的订单金额是否与商户侧的订单金额一致，防止数据泄漏导致出现“假通知”，造成资金损失。
-                            //https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=9_7&index=8
-                            Toast("支付成功!");
-                        }
-                    });
+                            if (args.isError == true)
+                            {
+                                MessageBox.Show(string.Format("APP Pay Error: {0}", args.error));
+                            }
+                            else
+                            {
+                                //如果没有返回错误，代表支付成功，那么这里直接去查询订单状态
+                                //一定要以具体查询的结果为准，不要以APP的返回状态为准
+                                //https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_2
+                                Toast("支付成功!");
+                            }
+                        });
+                    }
                 }
                 else
                     {
@@ -424,7 +445,6 @@ namespace Smobiler.Tutorials.Plugins
                     //可获取用户信息
                     Toast(e.MiniLoginInfo.userInfo.nickName);
                     Toast(e.MiniLoginInfo.GetMiniEncryptUserInfo(miniappid, miniappsecret).openId);
-                    this.Form.RedirectUrl(this.Client.HostUrl);//必须跳转起始地址，否则微信功能不能使用
                 }
             }
             else
@@ -436,9 +456,14 @@ namespace Smobiler.Tutorials.Plugins
                     Toast(userInfo.nickname);
                     Toast(userInfo.openid);
                     mopenid = userInfo.openid;
-                    this.Form.RedirectUrl(this.Client.HostUrl);//必须跳转起始地址，否则微信功能不能使用
                 }
             }
+        }
+
+        private void weiXinApi1_AfterMiniPay(object sender, WeiXinApiMiniPayEventArgs e)
+        {
+            //微信小程序支付后返回信息，需要另调用网页接口查询订单详情最后确认是否支付成功
+            Toast("是否支付成功：" + e.Success + " 错误信息：" + e.Error);
         }
 
 

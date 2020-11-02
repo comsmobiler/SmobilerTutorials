@@ -96,12 +96,14 @@ namespace Smobiler.Tutorials.Components
         "5"};
             this.spinner1.Location = new System.Drawing.Point(15, 113);
             this.spinner1.Name = "spinner1";
+            this.spinner1.ReadOnly = true;
             this.spinner1.Size = new System.Drawing.Size(120, 30);
             // 
             // spinner2
             // 
             this.spinner2.FontSize = 16F;
             this.spinner2.ForeColor = System.Drawing.Color.Red;
+            this.spinner2.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
             this.spinner2.Items = new string[] {
         "1",
         "2",
