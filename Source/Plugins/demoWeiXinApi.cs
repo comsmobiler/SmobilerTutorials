@@ -20,6 +20,7 @@ namespace Smobiler.Tutorials.Plugins
             //This call is required by the SmobilerForm.
             InitializeComponent();
         }
+
         private string appid = ""; //APPID 公众号的唯一标识
         private string appsecret = "";
         private string miniappid = "";//小程序中APPID
@@ -156,7 +157,7 @@ namespace Smobiler.Tutorials.Plugins
             myHttpWebRequest.ContentType = "application/x-www-form-urlencoded;charset=utf-8";
 
             SortedDictionary<string, string> payDict = new SortedDictionary<string, string>();
-            if (this.Form.Client.ClientSource == Smobiler.Core.ClientSource.WeChatMiniProgram)
+            if ((Form.Client.ClientSource & Smobiler.Core.ClientSource.WeChatMiniProgram) == Smobiler.Core.ClientSource.WeChatMiniProgram)
                 payDict.Add("appid", miniappid);//小程序中APPID
             else
                 payDict.Add("appid", appid);//公众账号ID
@@ -218,7 +219,7 @@ namespace Smobiler.Tutorials.Plugins
                     var md5 = new System.Security.Cryptography.MD5CryptoServiceProvider();
                     PayEntity.paySign = BitConverter.ToString(md5.ComputeHash(System.Text.Encoding.UTF8.GetBytes(signTempStr))).Replace("-", "");
 
-                    if (this.Form.Client.ClientSource == Smobiler.Core.ClientSource.WeChatMiniProgram)
+                    if ((Form.Client.ClientSource & Smobiler.Core.ClientSource.WeChatMiniProgram) == Smobiler.Core.ClientSource.WeChatMiniProgram)
                     {
                         //小程序调用支付功能
                         this.weiXinApi1.minipay(PayEntity, (obj, args) =>

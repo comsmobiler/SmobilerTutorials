@@ -1,11 +1,11 @@
 ## Smobiler Tutorials
-* SmobilerTutorials.sln 对应4.8版本
+* SmobilerTutorials.sln 对应6.0版本
 * 也可前往Gitee码云获取源码，https://gitee.com/smobiler/SmobilerTutorials
 ### 快速入门 - 环境搭建
 
 ##### 服务端
 * 操作系统：Windows XP SP2及以上版本
-* 开发环境：.NET Framework 4.0及以上版本
+* 开发环境：.NET Framework 4.5及以上版本
 * 开发工具：Visual Studio 2010及以上版本
 * 打开电脑上的浏览器，访问 https://www.smobiler.com/download.html ，并选择Designer，下载并安装。
 
