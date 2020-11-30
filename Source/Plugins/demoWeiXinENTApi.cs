@@ -33,6 +33,7 @@ namespace Smobiler.Tutorials.Plugins
         private void demoWeiXinENTApi_Load(object sender, EventArgs e)
         {
             ListMenuViewGroup g1 = new ListMenuViewGroup();
+            g1.AddItem("logon", "登陆", "login", "");
             g1.AddItem("logon", "获取ENTTicket", "ENTTicket", "");
             g1.AddItem("logon", "获取AgentTicket", "AgentTicket", "");
             g1.AddItem("logon", "注入权限验证配置config", "config", ""); 
@@ -47,6 +48,9 @@ namespace Smobiler.Tutorials.Plugins
            
             switch (e.Item.SubContent)
             {
+                case "login"://登陆
+                    weiXinENTApi1.login("12");
+                    break;
                 case "ENTTicket":
                     if (corpid != "")
                     {
