@@ -48,7 +48,8 @@ namespace Smobiler.Tutorials.Plugins
            
             switch (e.Item.SubContent)
             {
-                case "login"://登陆
+                case "login"://登陆 
+                //参数:state:  重定向后会带上state参数，企业可以填写a-z A-Z 0-9的参数值，长度不可超过128个字节
                     weiXinENTApi1.login("12");
                     break;
                 case "ENTTicket":
