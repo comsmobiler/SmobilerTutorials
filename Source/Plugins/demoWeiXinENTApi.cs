@@ -59,7 +59,7 @@ namespace Smobiler.Tutorials.Plugins
                         Client.Session["ENTTicket"] = ENTTicket;                       
                     }
                     break;
-                case "Ticket":
+                case "AgentTicket":
                     if (corpid != "")
                     {
                         AgentTicket = GetAgentTicket(GetAccessToken(corpid, corpsecret));
