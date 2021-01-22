@@ -107,7 +107,6 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("LiveStream", "LiveStream") { Tag = typeof(demoLiveStream) });
             grpPlugins.Items.Add(new IconMenuViewItem("SignatureView", "SignatureView") { Tag = typeof(demoSignatureView) });
             grpPlugins.Items.Add(new IconMenuViewItem("WeiXin", "WeiXin") { Tag = typeof(demoWeiXin) });
-            grpPlugins.Items.Add(new IconMenuViewItem("WeiXinApi", "WeiXinApi") { Tag = typeof(demoWeiXinApi) });
             grpPlugins.Items.Add(new IconMenuViewItem("WeiXinENTApi", "WeiXinENTApi") { Tag = typeof(demoWeiXinENTApi) });
             grpPlugins.Items.Add(new IconMenuViewItem("Bluetooth", "Bluetooth") { Tag = typeof(demoBluetooth) });
             grpPlugins.Items.Add(new IconMenuViewItem("ScanBarcodeView", "ScanBarcodeView") { Tag = typeof(demoScanBarcodeView) });
@@ -140,7 +139,6 @@ namespace Smobiler.Tutorials
             grpDevices.Items.Add(new IconMenuViewItem("B2000", "B2000") { Tag = typeof(demoB2000) });
             this.iconMenuView1.Groups.Add(grpDevices);
 
-
             //AI
             IconMenuViewGroup grpAI = new IconMenuViewGroup("AI");
             grpAI.Items.Add(new IconMenuViewItem("Plate", "Plate") { Tag = typeof(demoPlate) });
@@ -151,6 +149,12 @@ namespace Smobiler.Tutorials
             IconMenuViewGroup grpSamples = new IconMenuViewGroup("SmobilerSamples");
             grpSamples.Items.Add(new IconMenuViewItem("Samples", "Samples") { Tag = typeof(demoSamples) });
             this.iconMenuView1.Groups.Add(grpSamples);
+
+            //Web
+            IconMenuViewGroup grpWeb = new IconMenuViewGroup("Web");
+            grpWeb.Items.Add(new IconMenuViewItem("WeiXinApi", "WeiXinApi") { Tag = typeof(demoWeiXinApi) });
+            grpWeb.Items.Add(new IconMenuViewItem("ECharts", "ECharts") { Tag = typeof(demoEChart) });
+            this.iconMenuView1.Groups.Add(grpWeb);
         }
 
         private void iconMenuView1_ItemPress(object sender, IconMenuViewItemPressEventArgs e)

@@ -89,6 +89,7 @@ namespace Smobiler.Tutorials.Devices
             this.tC25Scanner1.Name = "tC25Scanner1";
             this.tC25Scanner1.DataCaptured += new Smobiler.Device.TC25BarcodeScanEventHandler(this.tC25Scanner1_DataCaptured);
             this.tC25Scanner1.OnNotify += new Smobiler.Device.TC25BarcodeOnNotifyEventHandler(this.tC25Scanner1_OnNotify);
+            this.tC25Scanner1.OnStatus += new Smobiler.Device.TC25BarcodeStatusEventHandler(this.tC25Scanner1_OnStatus);
             // 
             // label3
             // 

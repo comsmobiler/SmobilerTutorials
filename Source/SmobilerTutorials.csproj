@@ -500,6 +500,12 @@
     <Compile Include="Plugins\demoCN6508Scan.designer.cs">
       <DependentUpon>demoCN6508Scan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoECharts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoECharts.Designer.cs">
+      <DependentUpon>demoECharts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoFingerPrint.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1011,6 +1017,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoCN6508Scan.resx">
       <DependentUpon>demoCN6508Scan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoECharts.resx">
+      <DependentUpon>demoECharts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoFingerPrint.resx">
       <DependentUpon>demoFingerPrint.cs</DependentUpon>
