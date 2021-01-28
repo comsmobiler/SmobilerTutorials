@@ -55,6 +55,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
             this.button1.Location = new System.Drawing.Point(105, 132);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 30);
@@ -63,6 +64,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(99)))));
             this.button2.Location = new System.Drawing.Point(105, 184);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 30);
@@ -71,6 +73,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
             this.button3.Location = new System.Drawing.Point(105, 234);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 30);
@@ -79,6 +82,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(81)))));
             this.button4.Location = new System.Drawing.Point(105, 284);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 30);

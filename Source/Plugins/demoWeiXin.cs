@@ -39,22 +39,22 @@ namespace Smobiler.Tutorials.Plugins
             g1.AddItem("logon", "注册", "Reg", "");
             g1.AddItem("logon", "登录", "Login", "");
             g1.AddItem("logon", "支付", "Pay", "");
-            g1.AddItem("logon", "ShareNews", "ShareNews", "");
-            g1.AddItem("logon", "ShareText", "ShareText", "");
-            g1.AddItem("logon", "ShareImage", "ShareImage", "");
-            g1.AddItem("logon", "ShareVideo", "ShareVideo", "");
-            g1.AddItem("logon", "ShareAudio", "ShareAudio", "");
-            g1.AddItem("logon", "TimeLineNews", "TimeLineNews", "");
-            g1.AddItem("logon", "TimeLineText", "TimeLineText", "");
-            g1.AddItem("logon", "TimeLineImage", "TimeLineImage", "");
-            g1.AddItem("logon", "TimeLineVideo", "TimeLineVideo", "");
-            g1.AddItem("logon", "TimeLineAudio", "TimeLineAudio", "");
+            g1.AddItem("logon", "分享消息给好友", "ShareNews", "");
+            g1.AddItem("logon", "分享文本给好友", "ShareText", "");
+            g1.AddItem("logon", "分享图片给好友", "ShareImage", "");
+            g1.AddItem("logon", "分享视频给好友", "ShareVideo", "");
+            g1.AddItem("logon", "分享音频给好友", "ShareAudio", "");
+            g1.AddItem("logon", "分享消息到朋友圈", "TimeLineNews", "");
+            g1.AddItem("logon", "分享文本到朋友圈", "TimeLineText", "");
+            g1.AddItem("logon", "分享图片到朋友圈", "TimeLineImage", "");
+            g1.AddItem("logon", "分享视频到朋友圈", "TimeLineVideo", "");
+            g1.AddItem("logon", "分享音频到朋友圈", "TimeLineAudio", "");
 
-            g1.AddItem("logon", "isWXAppInstalled", "isWXAppInstalled", "");
-            g1.AddItem("logon", "isWXAppSupportApi", "isWXAppSupportApi", "");
-            g1.AddItem("logon", "getWXAppInstallUrl", "getWXAppInstallUrl", "");
-            g1.AddItem("logon", "getApiVersion", "getApiVersion", "");
-            g1.AddItem("logon", "openWXApp", "openWXApp", "");
+            g1.AddItem("logon", "检测是否安装微信", "isWXAppInstalled", "");
+            g1.AddItem("logon", "检测是否支持微信api", "isWXAppSupportApi", "");
+            g1.AddItem("logon", "获取微信itunes下载地址（ios独有）", "getWXAppInstallUrl", "");
+            g1.AddItem("logon", "获取微信api版本", "getApiVersion", "");
+            g1.AddItem("logon", "打开微信", "openWXApp", "");
             listMenuView1.Groups.Add(g1);
         }
 

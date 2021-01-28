@@ -53,7 +53,7 @@ namespace Smobiler.Tutorials.Controls
                     this.listMenuView1.Groups.Clear();
                     for (int i = 0; i < 5; i++)
                     {
-                        AddGroup();
+                        AddGroup(i);
                     }
                     labContent.Text = "设置菜单组集合";
                     break;
@@ -105,12 +105,12 @@ namespace Smobiler.Tutorials.Controls
                     break;
             }
         }
-        private void AddGroup()
+        private void AddGroup(int i)
         {
             ListMenuViewGroup mvg = new ListMenuViewGroup();
-            mvg.Title = DateTime.Now.ToString();
-            for (int j = 0; j < 5; j++)
-                mvg.Items.Add(new ListMenuViewItem("logon", DateTime.Now.ToString(), j.ToString(), "+"));
+            mvg.Title = "事项" + i.ToString(); ;
+            mvg.Items.Add(new ListMenuViewItem("拟定合同.png", "合同", "最近新增合同3", "+"));
+            mvg.Items.Add(new ListMenuViewItem("方案.png", "方案", "最近新增方案2", "+"));
             this.listMenuView1.Groups.Add(mvg);
         }
 

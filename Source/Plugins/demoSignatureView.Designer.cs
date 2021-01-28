@@ -80,6 +80,7 @@ namespace Smobiler.Tutorials.Plugins
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -122,11 +123,12 @@ namespace Smobiler.Tutorials.Plugins
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 14F;
             this.label5.Location = new System.Drawing.Point(0, 26);
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.label5.Size = new System.Drawing.Size(290, 54);
-            this.label5.Text = "StrokeColor、StrokeWidth来改变画笔";
+            this.label5.Text = "StrokeColor(线条颜色)、StrokeWidth(线条粗细)来改变画笔";
             // 
             // label6
             // 
@@ -141,6 +143,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnWidth
             // 
+            this.btnWidth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(80)))));
             this.btnWidth.Location = new System.Drawing.Point(159, 89);
             this.btnWidth.Name = "btnWidth";
             this.btnWidth.Size = new System.Drawing.Size(100, 30);
@@ -149,6 +152,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnColor
             // 
+            this.btnColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(81)))));
             this.btnColor.Location = new System.Drawing.Point(23, 89);
             this.btnColor.Name = "btnColor";
             this.btnColor.Size = new System.Drawing.Size(100, 30);
@@ -173,11 +177,12 @@ namespace Smobiler.Tutorials.Plugins
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(0, 26);
             this.label1.Name = "label1";
             this.label1.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.label1.Size = new System.Drawing.Size(290, 54);
-            this.label1.Text = "Save、Clear来保存、清除签字板";
+            this.label1.Text = "Save保存签字板、Clear清除签字板";
             // 
             // label2
             // 
@@ -192,6 +197,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnClear
             // 
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(100)))));
             this.btnClear.Location = new System.Drawing.Point(159, 91);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(100, 30);
@@ -200,6 +206,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
             this.btnSave.Location = new System.Drawing.Point(23, 91);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 30);
@@ -224,6 +231,7 @@ namespace Smobiler.Tutorials.Plugins
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.FontSize = 14F;
             this.label3.Location = new System.Drawing.Point(0, 26);
             this.label3.Name = "label3";
             this.label3.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -249,6 +257,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // label7
             // 
+            this.label7.FontSize = 14F;
             this.label7.Location = new System.Drawing.Point(0, 80);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(290, 35);

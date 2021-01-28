@@ -76,6 +76,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -105,7 +106,7 @@ namespace Smobiler.Tutorials.Components
             this.slider2.Location = new System.Drawing.Point(9, 133);
             this.slider2.Name = "slider2";
             this.slider2.Size = new System.Drawing.Size(268, 28);
-            this.slider2.TrackColor = System.Drawing.Color.Blue;
+            this.slider2.TrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
             this.slider2.ValueColor = System.Drawing.Color.Red;
             // 
             // panel2
@@ -127,6 +128,7 @@ namespace Smobiler.Tutorials.Components
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
             this.label5.Location = new System.Drawing.Point(0, 26);
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -151,6 +153,7 @@ namespace Smobiler.Tutorials.Components
             this.slider3.Name = "slider3";
             this.slider3.Size = new System.Drawing.Size(256, 20);
             this.slider3.Step = 1F;
+            this.slider3.TrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(81)))));
             // 
             // slider4
             // 
@@ -187,6 +190,7 @@ namespace Smobiler.Tutorials.Components
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.FontSize = 15F;
             this.label13.Location = new System.Drawing.Point(0, 26);
             this.label13.Name = "label13";
             this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -212,6 +216,7 @@ namespace Smobiler.Tutorials.Components
             this.slider6.Size = new System.Drawing.Size(252, 20);
             this.slider6.Step = 1F;
             this.slider6.Value = 3F;
+            this.slider6.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
             this.slider6.ValueChanged += new System.EventHandler(this.slider6_ValueChanged);
             // 
             // demoSlider

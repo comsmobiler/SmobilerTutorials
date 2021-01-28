@@ -70,6 +70,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -110,6 +111,7 @@ namespace Smobiler.Tutorials.Components
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.label5.Size = new System.Drawing.Size(290, 54);
@@ -141,6 +143,7 @@ namespace Smobiler.Tutorials.Components
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(0, 26);
             this.label1.Name = "label1";
             this.label1.Padding = new Smobiler.Core.Controls.Padding(5F);

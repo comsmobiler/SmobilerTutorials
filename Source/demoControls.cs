@@ -28,7 +28,7 @@ namespace Smobiler.Tutorials
             IconMenuViewGroup grpBasic = new IconMenuViewGroup("基础控件");
             grpBasic.Items.Add(new IconMenuViewItem("Button", "Button") { Tag = typeof(demoButton) });
             grpBasic.Items.Add(new IconMenuViewItem("Label", "Label") { Tag = typeof(demoLabel) });
-            grpBasic.Items.Add(new IconMenuViewItem("TextBox", "TextBox") { Tag = typeof(demoTextBox) });
+            grpBasic.Items.Add(new IconMenuViewItem("Textbox", "TextBox") { Tag = typeof(demoTextBox) });
             grpBasic.Items.Add(new IconMenuViewItem("CheckBox", "CheckBox") { Tag = typeof(demoCheckBox) });
             grpBasic.Items.Add(new IconMenuViewItem("Switch", "Switch") { Tag = typeof(demoSwitch) });
             grpBasic.Items.Add(new IconMenuViewItem("Image", "Image") { Tag = typeof(demoImage) });
@@ -44,17 +44,23 @@ namespace Smobiler.Tutorials
             grpBasic.Items.Add(new IconMenuViewItem("SegmentedControl", "SegmentedControl") { Tag = typeof(demoSegmentedControl) });
             grpBasic.Items.Add(new IconMenuViewItem("MapTagView", "MapTagView") { Tag = typeof(demoMapTagView) });
             grpBasic.Items.Add(new IconMenuViewItem("BarcodeView", "BarcodeView") { Tag = typeof(demoBarcodeView) });
+            grpBasic.Items.Add(new IconMenuViewItem("ListView", "SectionListView") { Tag = typeof(demoSectionListView) });
+            grpBasic.Items.Add(new IconMenuViewItem("Spinner", "ComboBox") { Tag = typeof(demoComboBox) });
+            grpBasic.Items.Add(new IconMenuViewItem("SwipeView", "SwipeView") { Tag = typeof(demoSwipeView) });
+            grpBasic.Items.Add(new IconMenuViewItem("WebView", "WebView") { Tag = typeof(demoWebView) });
             this.iconMenuView1.Groups.Add(grpBasic);
 
             //Container Control
             IconMenuViewGroup grpContainer = new IconMenuViewGroup("容器控件");
-            grpContainer.Items.Add(new IconMenuViewItem("TouchablePanel", "TouchablePanel") { Tag = typeof(demoTouchablePanel) });
-            grpContainer.Items.Add(new IconMenuViewItem("ScrollablePanel", "ScrollablePanel") { Tag = typeof(demoScrollablePanel) });
+            grpContainer.Items.Add(new IconMenuViewItem("TouchablePanel", "Panel") { Tag = typeof(demoPanel) });
+            //grpContainer.Items.Add(new IconMenuViewItem("ScrollablePanel", "ScrollablePanel") { Tag = typeof(demoScrollablePanel) });
             grpContainer.Items.Add(new IconMenuViewItem("TabPageView", "TabPageView") { Tag = typeof(demoTabPageView) });
             this.iconMenuView1.Groups.Add(grpContainer);
 
             //Template Control
             IconMenuViewGroup grpTemplate = new IconMenuViewGroup("模板控件");
+            grpTemplate.Items.Add(new IconMenuViewItem("GridView", "GridView") { Tag = typeof(demoGridView) });
+            grpTemplate.Items.Add(new IconMenuViewItem("ListView", "ListView") { Tag = typeof(demoListView) });
             grpTemplate.Items.Add(new IconMenuViewItem("PageView", "PageView") { Tag = typeof(demoPageView) });
             this.iconMenuView1.Groups.Add(grpTemplate);
 
@@ -96,6 +102,13 @@ namespace Smobiler.Tutorials
             grpControls.Items.Add(new IconMenuViewItem("RatingBar", "RatingBar") { Tag = typeof(demoRatingBar) });
             grpControls.Items.Add(new IconMenuViewItem("Title", "Title") { Tag = typeof(demoTitle) });
             grpControls.Items.Add(new IconMenuViewItem("ToolBar", "ToolBar") { Tag = typeof(demoToolBar) });
+            grpControls.Items.Add(new IconMenuViewItem("phone", "PhoneButton") { Tag = typeof(demoPhoneButton) });
+            grpControls.Items.Add(new IconMenuViewItem("ImageEx", "ImageEx") { Tag = typeof(demoImageEx) });
+            grpControls.Items.Add(new IconMenuViewItem("NodeView", "NodeView") { Tag = typeof(demoNodeView) });
+            grpControls.Items.Add(new IconMenuViewItem("Camera", "OfflineCameraButton") { Tag = typeof(demoOfflineCameraButton) });
+            grpControls.Items.Add(new IconMenuViewItem("TableView", "TableView") { Tag = typeof(demoTableView) });
+            grpControls.Items.Add(new IconMenuViewItem("Camera", "CameraButton") { Tag = typeof(demoCameraButton) });
+            grpControls.Items.Add(new IconMenuViewItem("BarCodeScanner", "demoBarcodeScannerButton") { Tag = typeof(demoBarcodeScannerButton) });
             this.iconMenuView1.Groups.Add(grpControls);
 
             //Plugins
@@ -103,7 +116,7 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("AliPay", "AliPay") { Tag = typeof(demoAliPay) });
             grpPlugins.Items.Add(new IconMenuViewItem("FingerPrint", "FingerPrint") { Tag = typeof(demoFingerPrint) });
             grpPlugins.Items.Add(new IconMenuViewItem("HTMLView", "HTMLView") { Tag = typeof(demoHTMLView) });
-            
+
             grpPlugins.Items.Add(new IconMenuViewItem("LiveStream", "LiveStream") { Tag = typeof(demoLiveStream) });
             grpPlugins.Items.Add(new IconMenuViewItem("SignatureView", "SignatureView") { Tag = typeof(demoSignatureView) });
             grpPlugins.Items.Add(new IconMenuViewItem("WeiXin", "WeiXin") { Tag = typeof(demoWeiXin) });
@@ -119,6 +132,24 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("NFC", "NFC") { Tag = typeof(demoNFC) });
             grpPlugins.Items.Add(new IconMenuViewItem("TTS", "TTS") { Tag = typeof(demoTTS) });
             grpPlugins.Items.Add(new IconMenuViewItem("Audio", "Audio") { Tag = typeof(demoAudio) });
+            grpPlugins.Items.Add(new IconMenuViewItem("PDFView", "PDFView") { Tag = typeof(demoPDFView) });
+            grpPlugins.Items.Add(new IconMenuViewItem("mediaview", "VLCPlayer") { Tag = typeof(demoVLCPlayer) });
+            grpPlugins.Items.Add(new IconMenuViewItem("Textbox", "TextboxField") { Tag = typeof(demoTextboxField) });
+            grpPlugins.Items.Add(new IconMenuViewItem("SwitchSelector", "SwitchSelector") { Tag = typeof(demoSwitchSelector) });
+            grpPlugins.Items.Add(new IconMenuViewItem("PulseLoader", "PulseLoader") { Tag = typeof(demoPulseLoader) });
+            grpPlugins.Items.Add(new IconMenuViewItem("ProgressView", "PercentageCircle") { Tag = typeof(demoPercentageCircle) });
+            grpPlugins.Items.Add(new IconMenuViewItem("LiveStream", "LiveStreamPlayer") { Tag = typeof(demoLiveStreamPlayer) });
+            grpPlugins.Items.Add(new IconMenuViewItem("Calendar", "CalenderStrip") { Tag = typeof(demoCalenderStrip) });
+            grpPlugins.Items.Add(new IconMenuViewItem("DropdownAert", "DropdownAlert") { Tag = typeof(demoDropdownAert) });
+            grpPlugins.Items.Add(new IconMenuViewItem("HighLightLabel", "HighLightLabel") { Tag = typeof(demoHighLightLabel) });
+            grpPlugins.Items.Add(new IconMenuViewItem("GPS", "MapView") { Tag = typeof(demoMapView) });
+            grpPlugins.Items.Add(new IconMenuViewItem("GPS", "MapTrimView") { Tag = typeof(demoMapTrimView) });
+            grpPlugins.Items.Add(new IconMenuViewItem("MapRoute", "MapRoute") { Tag = typeof(demoMapRoute) });
+            grpPlugins.Items.Add(new IconMenuViewItem("logon", "USBSerial") { Tag = typeof(demoUSBSerial) });
+            grpPlugins.Items.Add(new IconMenuViewItem("ArcFace", "ArcFace") { Tag = typeof(demoArcFace) });
+            grpPlugins.Items.Add(new IconMenuViewItem("ArcFace", "ArcFacePro") { Tag = typeof(demoArcFacePro) });
+            grpPlugins.Items.Add(new IconMenuViewItem("ProgressView", "ProgressView") { Tag = typeof(demoProgressView) });
+            grpPlugins.Items.Add(new IconMenuViewItem("MediaView", "MediaView") { Tag = typeof(demoMediaView) });
             this.iconMenuView1.Groups.Add(grpPlugins);
 
             //Devices

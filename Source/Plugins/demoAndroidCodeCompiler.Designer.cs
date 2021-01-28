@@ -32,6 +32,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // label1
             // 
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(18, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(268, 203);
@@ -39,6 +40,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(81)))));
             this.button1.Location = new System.Drawing.Point(18, 310);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 30);
@@ -52,6 +54,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // label2
             // 
+            this.label2.FontSize = 15F;
             this.label2.Location = new System.Drawing.Point(18, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(268, 35);
@@ -68,6 +71,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(100)))));
             this.button2.Location = new System.Drawing.Point(186, 310);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 30);
@@ -76,6 +80,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // label3
             // 
+            this.label3.FontSize = 15F;
             this.label3.Location = new System.Drawing.Point(18, 346);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(268, 43);
@@ -83,6 +88,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btngetOcrRegister
             // 
+            this.btngetOcrRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
             this.btngetOcrRegister.Location = new System.Drawing.Point(18, 396);
             this.btngetOcrRegister.Name = "btngetOcrRegister";
             this.btngetOcrRegister.Size = new System.Drawing.Size(100, 30);
@@ -91,7 +97,8 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btngetOcrParams
             // 
-            this.btngetOcrParams.Location = new System.Drawing.Point(150, 396);
+            this.btngetOcrParams.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(80)))));
+            this.btngetOcrParams.Location = new System.Drawing.Point(186, 396);
             this.btngetOcrParams.Name = "btngetOcrParams";
             this.btngetOcrParams.Size = new System.Drawing.Size(100, 30);
             this.btngetOcrParams.Text = "文字识别";
@@ -99,7 +106,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnIDCardParams
             // 
-            this.btnIDCardParams.Location = new System.Drawing.Point(150, 438);
+            this.btnIDCardParams.Location = new System.Drawing.Point(102, 443);
             this.btnIDCardParams.Name = "btnIDCardParams";
             this.btnIDCardParams.Size = new System.Drawing.Size(100, 30);
             this.btnIDCardParams.Text = "身份证识别";

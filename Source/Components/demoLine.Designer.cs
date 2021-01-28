@@ -72,6 +72,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);

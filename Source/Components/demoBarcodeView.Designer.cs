@@ -70,6 +70,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -105,6 +106,7 @@ namespace Smobiler.Tutorials.Components
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(0, 192);
             this.label1.Name = "label1";
             this.label1.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -113,7 +115,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // barCodeView3
             // 
-            this.barCodeView3.Location = new System.Drawing.Point(23, 246);
+            this.barCodeView3.Location = new System.Drawing.Point(23, 267);
             this.barCodeView3.Name = "barCodeView3";
             this.barCodeView3.Size = new System.Drawing.Size(100, 100);
             this.barCodeView3.Value = "smobiler";
@@ -121,7 +123,7 @@ namespace Smobiler.Tutorials.Components
             // barCodeView4
             // 
             this.barCodeView4.BarcodeType = Smobiler.Core.Controls.BarcodeType.Code128;
-            this.barCodeView4.Location = new System.Drawing.Point(161, 246);
+            this.barCodeView4.Location = new System.Drawing.Point(161, 275);
             this.barCodeView4.Name = "barCodeView4";
             this.barCodeView4.Size = new System.Drawing.Size(129, 100);
             this.barCodeView4.Value = "smobiler";

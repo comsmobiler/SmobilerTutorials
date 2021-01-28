@@ -82,6 +82,7 @@ namespace Smobiler.Tutorials.Controls
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -101,6 +102,7 @@ namespace Smobiler.Tutorials.Controls
             // 
             // label1
             // 
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(0, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(290, 35);
@@ -108,14 +110,15 @@ namespace Smobiler.Tutorials.Controls
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(0, 202);
+            this.label2.Location = new System.Drawing.Point(0, 198);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(290, 43);
+            this.label2.Size = new System.Drawing.Size(290, 47);
             this.label2.Text = "ResourceID与SelectedResourceID、ResourceColor与SelectedResourceColor属性可设置未选中与选择状态的图像" +
     "资源与颜色:\r\n";
             // 
             // label3
             // 
+            this.label3.FontSize = 15F;
             this.label3.Location = new System.Drawing.Point(0, 328);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(290, 35);
@@ -123,6 +126,7 @@ namespace Smobiler.Tutorials.Controls
             // 
             // label4
             // 
+            this.label4.FontSize = 15F;
             this.label4.Location = new System.Drawing.Point(0, 410);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(290, 35);
@@ -132,14 +136,14 @@ namespace Smobiler.Tutorials.Controls
             // 
             this.ratingBar1.Location = new System.Drawing.Point(0, 121);
             this.ratingBar1.Name = "ratingBar1";
-            this.ratingBar1.Size = new System.Drawing.Size(290, 35);
+            this.ratingBar1.Size = new System.Drawing.Size(202, 35);
             // 
             // ratingBar2
             // 
             this.ratingBar2.Location = new System.Drawing.Point(0, 156);
             this.ratingBar2.Name = "ratingBar2";
             this.ratingBar2.NumRatings = 3;
-            this.ratingBar2.Size = new System.Drawing.Size(290, 35);
+            this.ratingBar2.Size = new System.Drawing.Size(202, 35);
             // 
             // ratingBar3
             // 
@@ -147,7 +151,7 @@ namespace Smobiler.Tutorials.Controls
             this.ratingBar3.Name = "ratingBar3";
             this.ratingBar3.ResourceID = "thumbs-o-up";
             this.ratingBar3.SelectedResourceID = "thumbs-up";
-            this.ratingBar3.Size = new System.Drawing.Size(290, 35);
+            this.ratingBar3.Size = new System.Drawing.Size(202, 35);
             // 
             // ratingBar4
             // 
@@ -155,9 +159,9 @@ namespace Smobiler.Tutorials.Controls
             this.ratingBar4.Name = "ratingBar4";
             this.ratingBar4.ResourceColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ratingBar4.ResourceID = "thumbs-o-up";
-            this.ratingBar4.SelectedResourceColor = System.Drawing.Color.Red;
+            this.ratingBar4.SelectedResourceColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(99)))));
             this.ratingBar4.SelectedResourceID = "thumbs-up";
-            this.ratingBar4.Size = new System.Drawing.Size(290, 35);
+            this.ratingBar4.Size = new System.Drawing.Size(202, 35);
             // 
             // ratingBar5
             // 
@@ -166,7 +170,7 @@ namespace Smobiler.Tutorials.Controls
             this.ratingBar5.Name = "ratingBar5";
             this.ratingBar5.ResourceID = "logon";
             this.ratingBar5.SelectedResourceID = "logon";
-            this.ratingBar5.Size = new System.Drawing.Size(290, 35);
+            this.ratingBar5.Size = new System.Drawing.Size(202, 35);
             // 
             // ratingBar6
             // 
@@ -174,8 +178,9 @@ namespace Smobiler.Tutorials.Controls
             this.ratingBar6.Name = "ratingBar6";
             this.ratingBar6.ResourceColor = System.Drawing.Color.Silver;
             this.ratingBar6.ResourceID = "thumbs-o-up";
+            this.ratingBar6.SelectedResourceColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
             this.ratingBar6.SelectedResourceID = "thumbs-up";
-            this.ratingBar6.Size = new System.Drawing.Size(290, 35);
+            this.ratingBar6.Size = new System.Drawing.Size(202, 35);
             this.ratingBar6.Value = 2;
             // 
             // ratingBar7
@@ -184,7 +189,7 @@ namespace Smobiler.Tutorials.Controls
             this.ratingBar7.Name = "ratingBar7";
             this.ratingBar7.ResourceID = "thumbs-o-up";
             this.ratingBar7.SelectedResourceID = "thumbs-up";
-            this.ratingBar7.Size = new System.Drawing.Size(290, 35);
+            this.ratingBar7.Size = new System.Drawing.Size(202, 35);
             this.ratingBar7.Value = 5;
             // 
             // demoRatingBar

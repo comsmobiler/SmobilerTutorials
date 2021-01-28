@@ -72,6 +72,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -94,7 +95,7 @@ namespace Smobiler.Tutorials.Components
             this.fontIcon1.Location = new System.Drawing.Point(0, 89);
             this.fontIcon1.Name = "fontIcon1";
             this.fontIcon1.ResourceID = "angle-double-left";
-            this.fontIcon1.Size = new System.Drawing.Size(98, 60);
+            this.fontIcon1.Size = new System.Drawing.Size(98, 40);
             // 
             // fontIcon2
             // 
@@ -102,7 +103,7 @@ namespace Smobiler.Tutorials.Components
             this.fontIcon2.Location = new System.Drawing.Point(98, 89);
             this.fontIcon2.Name = "fontIcon2";
             this.fontIcon2.ResourceID = "users";
-            this.fontIcon2.Size = new System.Drawing.Size(98, 60);
+            this.fontIcon2.Size = new System.Drawing.Size(98, 40);
             // 
             // fontIcon3
             // 
@@ -110,28 +111,28 @@ namespace Smobiler.Tutorials.Components
             this.fontIcon3.Location = new System.Drawing.Point(197, 89);
             this.fontIcon3.Name = "fontIcon3";
             this.fontIcon3.ResourceID = "times";
-            this.fontIcon3.Size = new System.Drawing.Size(98, 60);
+            this.fontIcon3.Size = new System.Drawing.Size(98, 40);
             // 
             // fontIcon4
             // 
             this.fontIcon4.Location = new System.Drawing.Point(0, 165);
             this.fontIcon4.Name = "fontIcon4";
             this.fontIcon4.ResourceID = "hand-peace-o";
-            this.fontIcon4.Size = new System.Drawing.Size(100, 30);
+            this.fontIcon4.Size = new System.Drawing.Size(100, 40);
             // 
             // fontIcon5
             // 
             this.fontIcon5.Location = new System.Drawing.Point(100, 165);
             this.fontIcon5.Name = "fontIcon5";
             this.fontIcon5.ResourceID = "hand-o-up";
-            this.fontIcon5.Size = new System.Drawing.Size(100, 30);
+            this.fontIcon5.Size = new System.Drawing.Size(100, 40);
             // 
             // fontIcon6
             // 
             this.fontIcon6.Location = new System.Drawing.Point(200, 165);
             this.fontIcon6.Name = "fontIcon6";
             this.fontIcon6.ResourceID = "chevron-circle-left";
-            this.fontIcon6.Size = new System.Drawing.Size(100, 30);
+            this.fontIcon6.Size = new System.Drawing.Size(100, 40);
             // 
             // demoFontIcon
             // 

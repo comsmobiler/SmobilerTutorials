@@ -26,45 +26,35 @@ namespace Smobiler.Tutorials.Components
             this.labTitle = new Smobiler.Core.Controls.Label();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.btnAlbumCount3 = new Smobiler.Core.Controls.Button();
-            this.btnAlbumCount9 = new Smobiler.Core.Controls.Button();
             this.label2 = new Smobiler.Core.Controls.Label();
-            this.labAlbumCount = new Smobiler.Core.Controls.Label();
             this.btnAllowEditT = new Smobiler.Core.Controls.Button();
-            this.btnAllowEditF = new Smobiler.Core.Controls.Button();
-            this.labAllowEdit = new Smobiler.Core.Controls.Label();
             this.label3 = new Smobiler.Core.Controls.Label();
             this.btnCompressedQuality1 = new Smobiler.Core.Controls.Button();
-            this.btnCompressedQuality2 = new Smobiler.Core.Controls.Button();
-            this.labCompressedQuality = new Smobiler.Core.Controls.Label();
             this.label4 = new Smobiler.Core.Controls.Label();
             this.btnCompressedResolution1 = new Smobiler.Core.Controls.Button();
-            this.btnCompressedResolution2 = new Smobiler.Core.Controls.Button();
-            this.labCompressedResolution = new Smobiler.Core.Controls.Label();
             this.label7 = new Smobiler.Core.Controls.Label();
             this.btnContinuousNumber1 = new Smobiler.Core.Controls.Button();
-            this.btnContinuousNumber2 = new Smobiler.Core.Controls.Button();
-            this.labContinuousNumber = new Smobiler.Core.Controls.Label();
             this.label8 = new Smobiler.Core.Controls.Label();
             this.btnQualityMode1 = new Smobiler.Core.Controls.Button();
-            this.btnQualityMode2 = new Smobiler.Core.Controls.Button();
-            this.labQualityMode = new Smobiler.Core.Controls.Label();
             this.label9 = new Smobiler.Core.Controls.Label();
             this.btnTimeOut1 = new Smobiler.Core.Controls.Button();
-            this.btnTimeOut2 = new Smobiler.Core.Controls.Button();
-            this.labTimeOut = new Smobiler.Core.Controls.Label();
             this.label10 = new Smobiler.Core.Controls.Label();
             this.btnVideoCompressedQuality1 = new Smobiler.Core.Controls.Button();
-            this.btnVideoCompressedQuality2 = new Smobiler.Core.Controls.Button();
-            this.labVideoCompressedQuality = new Smobiler.Core.Controls.Label();
             this.label11 = new Smobiler.Core.Controls.Label();
             this.btnVideoDuration1 = new Smobiler.Core.Controls.Button();
-            this.btnVideoDuration2 = new Smobiler.Core.Controls.Button();
-            this.labVideoDuration = new Smobiler.Core.Controls.Label();
-            this.panel2 = new Smobiler.Core.Controls.Panel();
-            this.label6 = new Smobiler.Core.Controls.Label();
-            this.btnGetPhoto = new Smobiler.Core.Controls.Button();
+            this.spAlbumCount = new Smobiler.Core.Controls.Spinner();
+            this.spAllowEdit = new Smobiler.Core.Controls.Spinner();
+            this.spCompressedQuality = new Smobiler.Core.Controls.Spinner();
+            this.spCompressedResolution = new Smobiler.Core.Controls.Spinner();
+            this.spContinuousNumber = new Smobiler.Core.Controls.Spinner();
+            this.spQualityMode = new Smobiler.Core.Controls.Spinner();
+            this.spVideoCompressedQuality = new Smobiler.Core.Controls.Spinner();
+            this.spTimeOut = new Smobiler.Core.Controls.Spinner();
+            this.spVideoDuration = new Smobiler.Core.Controls.Spinner();
             this.spinner1 = new Smobiler.Core.Controls.Spinner();
             this.btnGetPhotoOffline = new Smobiler.Core.Controls.Button();
+            this.btnGetPhoto = new Smobiler.Core.Controls.Button();
+            this.label6 = new Smobiler.Core.Controls.Label();
             this.btnGetClientPhotoPath = new Smobiler.Core.Controls.Button();
             this.panel3 = new Smobiler.Core.Controls.Panel();
             this.label5 = new Smobiler.Core.Controls.Label();
@@ -85,7 +75,6 @@ namespace Smobiler.Tutorials.Components
             // 
             this.panel10.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1,
-            this.panel2,
             this.panel3,
             this.tabPageView1});
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -105,43 +94,39 @@ namespace Smobiler.Tutorials.Components
             this.labTitle,
             this.label1,
             this.btnAlbumCount3,
-            this.btnAlbumCount9,
             this.label2,
-            this.labAlbumCount,
             this.btnAllowEditT,
-            this.btnAllowEditF,
-            this.labAllowEdit,
             this.label3,
             this.btnCompressedQuality1,
-            this.btnCompressedQuality2,
-            this.labCompressedQuality,
             this.label4,
             this.btnCompressedResolution1,
-            this.btnCompressedResolution2,
-            this.labCompressedResolution,
             this.label7,
             this.btnContinuousNumber1,
-            this.btnContinuousNumber2,
-            this.labContinuousNumber,
             this.label8,
             this.btnQualityMode1,
-            this.btnQualityMode2,
-            this.labQualityMode,
             this.label9,
             this.btnTimeOut1,
-            this.btnTimeOut2,
-            this.labTimeOut,
             this.label10,
             this.btnVideoCompressedQuality1,
-            this.btnVideoCompressedQuality2,
-            this.labVideoCompressedQuality,
             this.label11,
             this.btnVideoDuration1,
-            this.btnVideoDuration2,
-            this.labVideoDuration});
+            this.spAlbumCount,
+            this.spAllowEdit,
+            this.spCompressedQuality,
+            this.spCompressedResolution,
+            this.spContinuousNumber,
+            this.spQualityMode,
+            this.spVideoCompressedQuality,
+            this.spTimeOut,
+            this.spVideoDuration,
+            this.spinner1,
+            this.btnGetPhotoOffline,
+            this.btnGetPhoto,
+            this.label6,
+            this.btnGetClientPhotoPath});
             this.panel1.Location = new System.Drawing.Point(5, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 727);
+            this.panel1.Size = new System.Drawing.Size(290, 910);
             // 
             // labContent
             // 
@@ -165,309 +150,255 @@ namespace Smobiler.Tutorials.Components
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(0, 79);
+            this.label1.FontSize = 14F;
+            this.label1.Location = new System.Drawing.Point(0, 213);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(290, 35);
             this.label1.Text = "AlbumCount:获取和设置在CameraMode为Alubum时，上传的数量";
             // 
             // btnAlbumCount3
             // 
-            this.btnAlbumCount3.Location = new System.Drawing.Point(90, 114);
+            this.btnAlbumCount3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.btnAlbumCount3.Location = new System.Drawing.Point(168, 248);
             this.btnAlbumCount3.Name = "btnAlbumCount3";
             this.btnAlbumCount3.Size = new System.Drawing.Size(100, 30);
-            this.btnAlbumCount3.Text = "3";
-            this.btnAlbumCount3.Press += new System.EventHandler(this.btnAlbumCount3_Press);
-            // 
-            // btnAlbumCount9
-            // 
-            this.btnAlbumCount9.Location = new System.Drawing.Point(190, 114);
-            this.btnAlbumCount9.Name = "btnAlbumCount9";
-            this.btnAlbumCount9.Size = new System.Drawing.Size(100, 30);
-            this.btnAlbumCount9.Text = "9";
-            this.btnAlbumCount9.Press += new System.EventHandler(this.btnAlbumCount9_Press);
+            this.btnAlbumCount3.Text = "拍照";
+            this.btnAlbumCount3.Press += new System.EventHandler(this.btnAllowEditT_Press);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(0, 149);
+            this.label2.FontSize = 14F;
+            this.label2.Location = new System.Drawing.Point(0, 283);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(290, 35);
             this.label2.Text = "AllowEdit:获取和设置一个值，该值指示是否允许编辑图片";
             // 
-            // labAlbumCount
-            // 
-            this.labAlbumCount.Location = new System.Drawing.Point(0, 114);
-            this.labAlbumCount.Name = "labAlbumCount";
-            this.labAlbumCount.Size = new System.Drawing.Size(90, 30);
-            this.labAlbumCount.Text = "9";
-            // 
             // btnAllowEditT
             // 
-            this.btnAllowEditT.Location = new System.Drawing.Point(90, 184);
+            this.btnAllowEditT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.btnAllowEditT.Location = new System.Drawing.Point(168, 318);
             this.btnAllowEditT.Name = "btnAllowEditT";
             this.btnAllowEditT.Size = new System.Drawing.Size(100, 30);
-            this.btnAllowEditT.Text = "true";
+            this.btnAllowEditT.Text = "拍照";
             this.btnAllowEditT.Press += new System.EventHandler(this.btnAllowEditT_Press);
-            // 
-            // btnAllowEditF
-            // 
-            this.btnAllowEditF.Location = new System.Drawing.Point(190, 184);
-            this.btnAllowEditF.Name = "btnAllowEditF";
-            this.btnAllowEditF.Size = new System.Drawing.Size(100, 30);
-            this.btnAllowEditF.Text = "false";
-            this.btnAllowEditF.Press += new System.EventHandler(this.btnAllowEditF_Press);
-            // 
-            // labAllowEdit
-            // 
-            this.labAllowEdit.Location = new System.Drawing.Point(0, 184);
-            this.labAllowEdit.Name = "labAllowEdit";
-            this.labAllowEdit.Size = new System.Drawing.Size(90, 30);
-            this.labAllowEdit.Text = "false";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(0, 221);
+            this.label3.FontSize = 15F;
+            this.label3.Location = new System.Drawing.Point(0, 355);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(290, 35);
             this.label3.Text = "CompressedQuality:获取和设置压缩质量";
             // 
             // btnCompressedQuality1
             // 
-            this.btnCompressedQuality1.Location = new System.Drawing.Point(90, 256);
+            this.btnCompressedQuality1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.btnCompressedQuality1.Location = new System.Drawing.Point(168, 390);
             this.btnCompressedQuality1.Name = "btnCompressedQuality1";
             this.btnCompressedQuality1.Size = new System.Drawing.Size(100, 30);
-            this.btnCompressedQuality1.Text = "30";
-            this.btnCompressedQuality1.Press += new System.EventHandler(this.btnCompressedQuality1_Press);
-            // 
-            // btnCompressedQuality2
-            // 
-            this.btnCompressedQuality2.Location = new System.Drawing.Point(190, 256);
-            this.btnCompressedQuality2.Name = "btnCompressedQuality2";
-            this.btnCompressedQuality2.Size = new System.Drawing.Size(100, 30);
-            this.btnCompressedQuality2.Text = "60";
-            this.btnCompressedQuality2.Press += new System.EventHandler(this.btnCompressedQuality2_Press);
-            // 
-            // labCompressedQuality
-            // 
-            this.labCompressedQuality.Location = new System.Drawing.Point(0, 256);
-            this.labCompressedQuality.Name = "labCompressedQuality";
-            this.labCompressedQuality.Size = new System.Drawing.Size(90, 30);
-            this.labCompressedQuality.Text = "60";
+            this.btnCompressedQuality1.Text = "拍照";
+            this.btnCompressedQuality1.Press += new System.EventHandler(this.btnAllowEditT_Press);
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(0, 293);
+            this.label4.FontSize = 15F;
+            this.label4.Location = new System.Drawing.Point(0, 427);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(290, 35);
             this.label4.Text = "CompressedResolution:获取和设置压缩分辨率";
             // 
             // btnCompressedResolution1
             // 
-            this.btnCompressedResolution1.Location = new System.Drawing.Point(90, 328);
+            this.btnCompressedResolution1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.btnCompressedResolution1.Location = new System.Drawing.Point(168, 462);
             this.btnCompressedResolution1.Name = "btnCompressedResolution1";
             this.btnCompressedResolution1.Size = new System.Drawing.Size(100, 30);
-            this.btnCompressedResolution1.Text = "720";
-            this.btnCompressedResolution1.Press += new System.EventHandler(this.btnCompressedResolution1_Press);
-            // 
-            // btnCompressedResolution2
-            // 
-            this.btnCompressedResolution2.Location = new System.Drawing.Point(190, 328);
-            this.btnCompressedResolution2.Name = "btnCompressedResolution2";
-            this.btnCompressedResolution2.Size = new System.Drawing.Size(100, 30);
-            this.btnCompressedResolution2.Text = "1280";
-            this.btnCompressedResolution2.Press += new System.EventHandler(this.btnCompressedResolution2_Press);
-            // 
-            // labCompressedResolution
-            // 
-            this.labCompressedResolution.Location = new System.Drawing.Point(0, 328);
-            this.labCompressedResolution.Name = "labCompressedResolution";
-            this.labCompressedResolution.Size = new System.Drawing.Size(90, 30);
-            this.labCompressedResolution.Text = "1280";
+            this.btnCompressedResolution1.Text = "拍照";
+            this.btnCompressedResolution1.Press += new System.EventHandler(this.btnAllowEditT_Press);
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(0, 364);
+            this.label7.FontSize = 14F;
+            this.label7.Location = new System.Drawing.Point(0, 498);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(290, 35);
             this.label7.Text = "ContinuousNumber:获取和设置连续拍照的最大张数";
             // 
             // btnContinuousNumber1
             // 
-            this.btnContinuousNumber1.Location = new System.Drawing.Point(90, 399);
+            this.btnContinuousNumber1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.btnContinuousNumber1.Location = new System.Drawing.Point(168, 533);
             this.btnContinuousNumber1.Name = "btnContinuousNumber1";
             this.btnContinuousNumber1.Size = new System.Drawing.Size(100, 30);
-            this.btnContinuousNumber1.Text = "3";
-            this.btnContinuousNumber1.Press += new System.EventHandler(this.btnContinuousNumber1_Press);
-            // 
-            // btnContinuousNumber2
-            // 
-            this.btnContinuousNumber2.Location = new System.Drawing.Point(190, 399);
-            this.btnContinuousNumber2.Name = "btnContinuousNumber2";
-            this.btnContinuousNumber2.Size = new System.Drawing.Size(100, 30);
-            this.btnContinuousNumber2.Text = "5";
-            this.btnContinuousNumber2.Press += new System.EventHandler(this.btnContinuousNumber2_Press);
-            // 
-            // labContinuousNumber
-            // 
-            this.labContinuousNumber.Location = new System.Drawing.Point(0, 399);
-            this.labContinuousNumber.Name = "labContinuousNumber";
-            this.labContinuousNumber.Size = new System.Drawing.Size(90, 30);
-            this.labContinuousNumber.Text = "3";
+            this.btnContinuousNumber1.Text = "拍照";
+            this.btnContinuousNumber1.Press += new System.EventHandler(this.btnAllowEditT_Press);
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(0, 436);
+            this.label8.FontSize = 15F;
+            this.label8.Location = new System.Drawing.Point(0, 570);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(290, 35);
             this.label8.Text = "QualityMode:获取或设置相机组件图像质量";
             // 
             // btnQualityMode1
             // 
-            this.btnQualityMode1.Location = new System.Drawing.Point(90, 471);
+            this.btnQualityMode1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.btnQualityMode1.Location = new System.Drawing.Point(168, 605);
             this.btnQualityMode1.Name = "btnQualityMode1";
             this.btnQualityMode1.Size = new System.Drawing.Size(100, 30);
-            this.btnQualityMode1.Text = "压缩";
-            this.btnQualityMode1.Press += new System.EventHandler(this.btnQualityMode1_Press);
-            // 
-            // btnQualityMode2
-            // 
-            this.btnQualityMode2.Location = new System.Drawing.Point(190, 471);
-            this.btnQualityMode2.Name = "btnQualityMode2";
-            this.btnQualityMode2.Size = new System.Drawing.Size(100, 30);
-            this.btnQualityMode2.Text = "原图";
-            this.btnQualityMode2.Press += new System.EventHandler(this.btnQualityMode2_Press);
-            // 
-            // labQualityMode
-            // 
-            this.labQualityMode.Location = new System.Drawing.Point(0, 471);
-            this.labQualityMode.Name = "labQualityMode";
-            this.labQualityMode.Size = new System.Drawing.Size(90, 30);
-            this.labQualityMode.Text = "压缩";
+            this.btnQualityMode1.Text = "拍照";
+            this.btnQualityMode1.Press += new System.EventHandler(this.btnAllowEditT_Press);
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(0, 507);
+            this.label9.FontSize = 14F;
+            this.label9.Location = new System.Drawing.Point(0, 641);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(290, 35);
             this.label9.Text = "TimeOut:获取或设置客户端获取图像的超时时间[毫秒]";
             // 
             // btnTimeOut1
             // 
-            this.btnTimeOut1.Location = new System.Drawing.Point(90, 542);
+            this.btnTimeOut1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.btnTimeOut1.Location = new System.Drawing.Point(168, 676);
             this.btnTimeOut1.Name = "btnTimeOut1";
             this.btnTimeOut1.Size = new System.Drawing.Size(100, 30);
-            this.btnTimeOut1.Text = "30000";
-            this.btnTimeOut1.Press += new System.EventHandler(this.btnTimeOut1_Press);
-            // 
-            // btnTimeOut2
-            // 
-            this.btnTimeOut2.Location = new System.Drawing.Point(190, 542);
-            this.btnTimeOut2.Name = "btnTimeOut2";
-            this.btnTimeOut2.Size = new System.Drawing.Size(100, 30);
-            this.btnTimeOut2.Text = "60000";
-            this.btnTimeOut2.Press += new System.EventHandler(this.btnTimeOut2_Press);
-            // 
-            // labTimeOut
-            // 
-            this.labTimeOut.Location = new System.Drawing.Point(0, 542);
-            this.labTimeOut.Name = "labTimeOut";
-            this.labTimeOut.Size = new System.Drawing.Size(90, 30);
-            this.labTimeOut.Text = "60000";
+            this.btnTimeOut1.Text = "拍照";
+            this.btnTimeOut1.Press += new System.EventHandler(this.btnAllowEditT_Press);
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(0, 579);
+            this.label10.FontSize = 14F;
+            this.label10.Location = new System.Drawing.Point(0, 713);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(290, 35);
             this.label10.Text = "VideoCompressedQuality:获取或设置相机组件视频质量";
             // 
             // btnVideoCompressedQuality1
             // 
-            this.btnVideoCompressedQuality1.Location = new System.Drawing.Point(90, 614);
+            this.btnVideoCompressedQuality1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.btnVideoCompressedQuality1.Location = new System.Drawing.Point(168, 748);
             this.btnVideoCompressedQuality1.Name = "btnVideoCompressedQuality1";
             this.btnVideoCompressedQuality1.Size = new System.Drawing.Size(100, 30);
-            this.btnVideoCompressedQuality1.Text = "640*480";
-            this.btnVideoCompressedQuality1.Press += new System.EventHandler(this.btnVideoCompressedQuality1_Press);
-            // 
-            // btnVideoCompressedQuality2
-            // 
-            this.btnVideoCompressedQuality2.Location = new System.Drawing.Point(190, 614);
-            this.btnVideoCompressedQuality2.Name = "btnVideoCompressedQuality2";
-            this.btnVideoCompressedQuality2.Size = new System.Drawing.Size(100, 30);
-            this.btnVideoCompressedQuality2.Text = "1920*1080";
-            this.btnVideoCompressedQuality2.Press += new System.EventHandler(this.btnVideoCompressedQuality2_Press);
-            // 
-            // labVideoCompressedQuality
-            // 
-            this.labVideoCompressedQuality.Location = new System.Drawing.Point(0, 614);
-            this.labVideoCompressedQuality.Name = "labVideoCompressedQuality";
-            this.labVideoCompressedQuality.Size = new System.Drawing.Size(90, 30);
-            this.labVideoCompressedQuality.Text = "中质量";
+            this.btnVideoCompressedQuality1.Text = "拍照";
+            this.btnVideoCompressedQuality1.Press += new System.EventHandler(this.btnAllowEditT_Press);
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(5, 650);
+            this.label11.FontSize = 15F;
+            this.label11.Location = new System.Drawing.Point(0, 784);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(290, 35);
             this.label11.Text = "VideoDuration:获取和设置视频拍摄时长（秒）";
             // 
             // btnVideoDuration1
             // 
-            this.btnVideoDuration1.Location = new System.Drawing.Point(95, 685);
+            this.btnVideoDuration1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.btnVideoDuration1.Location = new System.Drawing.Point(168, 819);
             this.btnVideoDuration1.Name = "btnVideoDuration1";
             this.btnVideoDuration1.Size = new System.Drawing.Size(100, 30);
-            this.btnVideoDuration1.Text = "8";
-            this.btnVideoDuration1.Press += new System.EventHandler(this.btnVideoDuration1_Press);
+            this.btnVideoDuration1.Text = "拍照";
+            this.btnVideoDuration1.Press += new System.EventHandler(this.btnAllowEditT_Press);
             // 
-            // btnVideoDuration2
+            // spAlbumCount
             // 
-            this.btnVideoDuration2.Location = new System.Drawing.Point(195, 685);
-            this.btnVideoDuration2.Name = "btnVideoDuration2";
-            this.btnVideoDuration2.Size = new System.Drawing.Size(100, 30);
-            this.btnVideoDuration2.Text = "15";
-            this.btnVideoDuration2.Press += new System.EventHandler(this.btnVideoDuration2_Press);
+            this.spAlbumCount.Items = new string[] {
+        "3",
+        "5"};
+            this.spAlbumCount.Location = new System.Drawing.Point(0, 248);
+            this.spAlbumCount.Name = "spAlbumCount";
+            this.spAlbumCount.Size = new System.Drawing.Size(151, 35);
+            this.spAlbumCount.Text = "3";
+            this.spAlbumCount.ItemSelected += new System.EventHandler<Smobiler.Core.Controls.SpinnerItemSelectedEventArgs>(this.spAlbumCount_ItemSelected);
             // 
-            // labVideoDuration
+            // spAllowEdit
             // 
-            this.labVideoDuration.Location = new System.Drawing.Point(5, 685);
-            this.labVideoDuration.Name = "labVideoDuration";
-            this.labVideoDuration.Size = new System.Drawing.Size(90, 30);
-            this.labVideoDuration.Text = "15";
+            this.spAllowEdit.Items = new string[] {
+        "true",
+        "false"};
+            this.spAllowEdit.Location = new System.Drawing.Point(0, 318);
+            this.spAllowEdit.Name = "spAllowEdit";
+            this.spAllowEdit.Size = new System.Drawing.Size(151, 37);
+            this.spAllowEdit.Text = "false";
+            this.spAllowEdit.ItemSelected += new System.EventHandler<Smobiler.Core.Controls.SpinnerItemSelectedEventArgs>(this.spAllowEdit_ItemSelected);
             // 
-            // panel2
+            // spCompressedQuality
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Border = new Smobiler.Core.Controls.Border(1F);
-            this.panel2.BorderColor = System.Drawing.Color.Silver;
-            this.panel2.BorderRadius = 5;
-            this.panel2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.label6,
-            this.btnGetPhoto,
-            this.spinner1,
-            this.btnGetPhotoOffline,
-            this.btnGetClientPhotoPath});
-            this.panel2.Location = new System.Drawing.Point(5, 747);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(290, 111);
+            this.spCompressedQuality.Items = new string[] {
+        "30",
+        "60"};
+            this.spCompressedQuality.Location = new System.Drawing.Point(0, 390);
+            this.spCompressedQuality.Name = "spCompressedQuality";
+            this.spCompressedQuality.Size = new System.Drawing.Size(151, 37);
+            this.spCompressedQuality.Text = "30";
+            this.spCompressedQuality.ItemSelected += new System.EventHandler<Smobiler.Core.Controls.SpinnerItemSelectedEventArgs>(this.spCompressedQuality_ItemSelected);
             // 
-            // label6
+            // spCompressedResolution
             // 
-            this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Border = new Smobiler.Core.Controls.Border(0F, 0F, 0F, 1F);
-            this.label6.BorderColor = System.Drawing.Color.DarkSeaGreen;
-            this.label6.FontSize = 16F;
-            this.label6.Name = "label6";
-            this.label6.Padding = new Smobiler.Core.Controls.Padding(5F);
-            this.label6.Size = new System.Drawing.Size(290, 26);
-            this.label6.Text = "获取或设置相机组件获取图像的模式";
+            this.spCompressedResolution.Items = new string[] {
+        "720",
+        "1280"};
+            this.spCompressedResolution.Location = new System.Drawing.Point(0, 462);
+            this.spCompressedResolution.Name = "spCompressedResolution";
+            this.spCompressedResolution.Size = new System.Drawing.Size(151, 35);
+            this.spCompressedResolution.Text = "720";
+            this.spCompressedResolution.ItemSelected += new System.EventHandler<Smobiler.Core.Controls.SpinnerItemSelectedEventArgs>(this.spCompressedResolution_ItemSelected);
             // 
-            // btnGetPhoto
+            // spContinuousNumber
             // 
-            this.btnGetPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnGetPhoto.Location = new System.Drawing.Point(0, 77);
-            this.btnGetPhoto.Name = "btnGetPhoto";
-            this.btnGetPhoto.Size = new System.Drawing.Size(86, 30);
-            this.btnGetPhoto.Text = "在线上传";
-            this.btnGetPhoto.Press += new System.EventHandler(this.btnGetPhoto_Press);
+            this.spContinuousNumber.Items = new string[] {
+        "3",
+        "5"};
+            this.spContinuousNumber.Location = new System.Drawing.Point(0, 533);
+            this.spContinuousNumber.Name = "spContinuousNumber";
+            this.spContinuousNumber.Size = new System.Drawing.Size(151, 37);
+            this.spContinuousNumber.Text = "3";
+            this.spContinuousNumber.ItemSelected += new System.EventHandler<Smobiler.Core.Controls.SpinnerItemSelectedEventArgs>(this.spContinuousNumber_ItemSelected);
+            // 
+            // spQualityMode
+            // 
+            this.spQualityMode.Items = new string[] {
+        "Custom：用户自己选择上传方式",
+        "Compressed：压缩上传",
+        "Original：原图上传"};
+            this.spQualityMode.Location = new System.Drawing.Point(0, 605);
+            this.spQualityMode.Name = "spQualityMode";
+            this.spQualityMode.Size = new System.Drawing.Size(151, 35);
+            this.spQualityMode.Text = "Original：原图上传";
+            this.spQualityMode.ItemSelected += new System.EventHandler<Smobiler.Core.Controls.SpinnerItemSelectedEventArgs>(this.spQualityMode_ItemSelected);
+            // 
+            // spVideoCompressedQuality
+            // 
+            this.spVideoCompressedQuality.Items = new string[] {
+        "640*480",
+        "1920*1080"};
+            this.spVideoCompressedQuality.Location = new System.Drawing.Point(0, 748);
+            this.spVideoCompressedQuality.Name = "spVideoCompressedQuality";
+            this.spVideoCompressedQuality.Size = new System.Drawing.Size(151, 35);
+            this.spVideoCompressedQuality.Text = "1920*1080";
+            this.spVideoCompressedQuality.ItemSelected += new System.EventHandler<Smobiler.Core.Controls.SpinnerItemSelectedEventArgs>(this.spVideoCompressedQuality_ItemSelected);
+            // 
+            // spTimeOut
+            // 
+            this.spTimeOut.Items = new string[] {
+        "30000",
+        "60000"};
+            this.spTimeOut.Location = new System.Drawing.Point(0, 676);
+            this.spTimeOut.Name = "spTimeOut";
+            this.spTimeOut.Size = new System.Drawing.Size(151, 37);
+            this.spTimeOut.Text = "30000";
+            // 
+            // spVideoDuration
+            // 
+            this.spVideoDuration.Items = new string[] {
+        "8",
+        "15"};
+            this.spVideoDuration.Location = new System.Drawing.Point(0, 819);
+            this.spVideoDuration.Name = "spVideoDuration";
+            this.spVideoDuration.Size = new System.Drawing.Size(151, 35);
+            this.spVideoDuration.Text = "8";
+            this.spVideoDuration.ItemSelected += new System.EventHandler<Smobiler.Core.Controls.SpinnerItemSelectedEventArgs>(this.spVideoDuration_ItemSelected);
             // 
             // spinner1
             // 
@@ -479,7 +410,7 @@ namespace Smobiler.Tutorials.Components
         "CameraContinuous:相机连拍",
         "CameraVideo:相机拍摄视频",
         "AlbumVideo:相册上传视频"};
-            this.spinner1.Location = new System.Drawing.Point(7, 41);
+            this.spinner1.Location = new System.Drawing.Point(6, 113);
             this.spinner1.Name = "spinner1";
             this.spinner1.Size = new System.Drawing.Size(274, 30);
             this.spinner1.Text = "Mode";
@@ -488,16 +419,35 @@ namespace Smobiler.Tutorials.Components
             // btnGetPhotoOffline
             // 
             this.btnGetPhotoOffline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnGetPhotoOffline.Location = new System.Drawing.Point(100, 77);
+            this.btnGetPhotoOffline.ForeColor = System.Drawing.Color.Gray;
+            this.btnGetPhotoOffline.Location = new System.Drawing.Point(100, 172);
             this.btnGetPhotoOffline.Name = "btnGetPhotoOffline";
             this.btnGetPhotoOffline.Size = new System.Drawing.Size(86, 30);
             this.btnGetPhotoOffline.Text = "离线上传";
             this.btnGetPhotoOffline.Press += new System.EventHandler(this.btnGetPhotoOffline_Press);
             // 
+            // btnGetPhoto
+            // 
+            this.btnGetPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(99)))));
+            this.btnGetPhoto.Location = new System.Drawing.Point(6, 172);
+            this.btnGetPhoto.Name = "btnGetPhoto";
+            this.btnGetPhoto.Size = new System.Drawing.Size(86, 31);
+            this.btnGetPhoto.Text = "在线上传";
+            this.btnGetPhoto.Press += new System.EventHandler(this.btnGetPhoto_Press);
+            // 
+            // label6
+            // 
+            this.label6.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.label6.FontSize = 16F;
+            this.label6.Location = new System.Drawing.Point(0, 81);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(290, 26);
+            this.label6.Text = "获取或设置相机组件获取图像的模式";
+            // 
             // btnGetClientPhotoPath
             // 
-            this.btnGetClientPhotoPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnGetClientPhotoPath.Location = new System.Drawing.Point(204, 77);
+            this.btnGetClientPhotoPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(81)))));
+            this.btnGetClientPhotoPath.Location = new System.Drawing.Point(194, 172);
             this.btnGetClientPhotoPath.Name = "btnGetClientPhotoPath";
             this.btnGetClientPhotoPath.Size = new System.Drawing.Size(86, 30);
             this.btnGetClientPhotoPath.Text = "获取图像地址";
@@ -512,7 +462,7 @@ namespace Smobiler.Tutorials.Components
             this.panel3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.label5,
             this.label12});
-            this.panel3.Location = new System.Drawing.Point(5, 865);
+            this.panel3.Location = new System.Drawing.Point(5, 930);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(290, 105);
             // 
@@ -530,6 +480,7 @@ namespace Smobiler.Tutorials.Components
             // label12
             // 
             this.label12.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label12.FontSize = 14F;
             this.label12.Location = new System.Drawing.Point(0, 26);
             this.label12.Name = "label12";
             this.label12.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -540,7 +491,7 @@ namespace Smobiler.Tutorials.Components
             // tabPageView1
             // 
             this.tabPageView1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
-            this.tabPageView1.Location = new System.Drawing.Point(0, 970);
+            this.tabPageView1.Location = new System.Drawing.Point(0, 1035);
             this.tabPageView1.Name = "tabPageView1";
             this.tabPageView1.Size = new System.Drawing.Size(300, 300);
             // 
@@ -558,7 +509,8 @@ namespace Smobiler.Tutorials.Components
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.title1,
             this.panel10});
-            this.Size = new System.Drawing.Size(300, 1300);
+            this.Size = new System.Drawing.Size(300, 1400);
+            this.Load += new System.EventHandler(this.demoCamera_Load);
             this.Name = "demoCamera";
 
         }
@@ -569,52 +521,42 @@ namespace Smobiler.Tutorials.Components
         private Core.Controls.Panel panel1;
         private Core.Controls.Label labContent;
         private Core.Controls.Label labTitle;
-        private Core.Controls.Panel panel2;
-        private Core.Controls.Label label6;
         private Core.Controls.Camera camera1;
         private Core.Controls.Label label1;
         private Core.Controls.Button btnAlbumCount3;
-        private Core.Controls.Button btnAlbumCount9;
         private Core.Controls.Label label2;
-        private Core.Controls.Label labAlbumCount;
         private Core.Controls.Button btnAllowEditT;
-        private Core.Controls.Button btnAllowEditF;
-        private Core.Controls.Label labAllowEdit;
         private Core.Controls.Label label3;
         private Core.Controls.Button btnCompressedQuality1;
-        private Core.Controls.Button btnCompressedQuality2;
-        private Core.Controls.Label labCompressedQuality;
         private Core.Controls.Label label4;
         private Core.Controls.Button btnCompressedResolution1;
-        private Core.Controls.Button btnCompressedResolution2;
-        private Core.Controls.Label labCompressedResolution;
         private Core.Controls.Label label7;
         private Core.Controls.Button btnContinuousNumber1;
-        private Core.Controls.Button btnContinuousNumber2;
-        private Core.Controls.Label labContinuousNumber;
         private Core.Controls.Label label8;
         private Core.Controls.Button btnQualityMode1;
-        private Core.Controls.Button btnQualityMode2;
-        private Core.Controls.Label labQualityMode;
         private Core.Controls.Label label9;
         private Core.Controls.Button btnTimeOut1;
-        private Core.Controls.Button btnTimeOut2;
-        private Core.Controls.Label labTimeOut;
         private Core.Controls.Label label10;
         private Core.Controls.Button btnVideoCompressedQuality1;
-        private Core.Controls.Button btnVideoCompressedQuality2;
-        private Core.Controls.Label labVideoCompressedQuality;
         private Core.Controls.Label label11;
         private Core.Controls.Button btnVideoDuration1;
-        private Core.Controls.Button btnVideoDuration2;
-        private Core.Controls.Label labVideoDuration;
-        private Core.Controls.Button btnGetPhoto;
-        private Core.Controls.Spinner spinner1;
-        private Core.Controls.Button btnGetPhotoOffline;
-        private Core.Controls.Button btnGetClientPhotoPath;
         private Core.Controls.Panel panel3;
         private Core.Controls.Label label5;
         private Core.Controls.Label label12;
         private Core.Controls.TabPageView tabPageView1;
+        private Core.Controls.Spinner spAlbumCount;
+        private Core.Controls.Spinner spAllowEdit;
+        private Core.Controls.Spinner spCompressedQuality;
+        private Core.Controls.Spinner spCompressedResolution;
+        private Core.Controls.Spinner spContinuousNumber;
+        private Core.Controls.Spinner spQualityMode;
+        private Core.Controls.Spinner spVideoCompressedQuality;
+        private Core.Controls.Spinner spTimeOut;
+        private Core.Controls.Spinner spVideoDuration;
+        private Core.Controls.Spinner spinner1;
+        private Core.Controls.Button btnGetPhotoOffline;
+        private Core.Controls.Button btnGetPhoto;
+        private Core.Controls.Label label6;
+        private Core.Controls.Button btnGetClientPhotoPath;
     }
 }

@@ -65,6 +65,7 @@ namespace Smobiler.Tutorials.Controls
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -93,6 +94,7 @@ namespace Smobiler.Tutorials.Controls
             // 
             // listMenuView1
             // 
+            this.listMenuView1.BackColor = System.Drawing.Color.White;
             this.listMenuView1.Location = new System.Drawing.Point(0, 140);
             this.listMenuView1.Name = "listMenuView1";
             this.listMenuView1.Size = new System.Drawing.Size(300, 300);

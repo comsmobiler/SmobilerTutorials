@@ -69,10 +69,11 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 14F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
-            this.labContent.Size = new System.Drawing.Size(290, 54);
+            this.labContent.Size = new System.Drawing.Size(290, 57);
             this.labContent.Text = "进度条控件，基础控件，Value、TrackColor、ValueColor属性设置不同样式的进度条控件\r\n";
             // 
             // labTitle
@@ -98,7 +99,7 @@ namespace Smobiler.Tutorials.Components
             this.progress2.Name = "progress2";
             this.progress2.Size = new System.Drawing.Size(280, 15);
             this.progress2.Value = 0.3F;
-            this.progress2.ValueColor = System.Drawing.Color.Red;
+            this.progress2.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(81)))));
             // 
             // progress3
             // 

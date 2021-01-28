@@ -30,10 +30,10 @@ namespace Smobiler.Tutorials.Components
             this.label3 = new Smobiler.Core.Controls.Label();
             this.label4 = new Smobiler.Core.Controls.Label();
             this.panel2 = new Smobiler.Core.Controls.Panel();
-            this.btnScrollToTop = new Smobiler.Core.Controls.Button();
-            this.btnScrollToBottom = new Smobiler.Core.Controls.Button();
-            this.label6 = new Smobiler.Core.Controls.Label();
             this.label5 = new Smobiler.Core.Controls.Label();
+            this.label6 = new Smobiler.Core.Controls.Label();
+            this.btnScrollToBottom = new Smobiler.Core.Controls.Button();
+            this.btnScrollToTop = new Smobiler.Core.Controls.Button();
             // 
             // title1
             // 
@@ -71,6 +71,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 14F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -105,9 +106,9 @@ namespace Smobiler.Tutorials.Components
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(15, 72);
+            this.label1.Location = new System.Drawing.Point(0, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 71);
+            this.label1.Size = new System.Drawing.Size(295, 71);
             this.label1.Text = "设置Scrollable为true，并且当panel中的内容超过panel设定的高度时，可以滚动";
             // 
             // label2
@@ -145,21 +146,15 @@ namespace Smobiler.Tutorials.Components
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(290, 127);
             // 
-            // btnScrollToTop
+            // label5
             // 
-            this.btnScrollToTop.Location = new System.Drawing.Point(151, 83);
-            this.btnScrollToTop.Name = "btnScrollToTop";
-            this.btnScrollToTop.Size = new System.Drawing.Size(100, 30);
-            this.btnScrollToTop.Text = "滚动到顶部";
-            this.btnScrollToTop.Press += new System.EventHandler(this.btnScrollToTop_Press);
-            // 
-            // btnScrollToBottom
-            // 
-            this.btnScrollToBottom.Location = new System.Drawing.Point(25, 83);
-            this.btnScrollToBottom.Name = "btnScrollToBottom";
-            this.btnScrollToBottom.Size = new System.Drawing.Size(100, 30);
-            this.btnScrollToBottom.Text = "滚动到底部";
-            this.btnScrollToBottom.Press += new System.EventHandler(this.btnScrollToBottom_Press);
+            this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
+            this.label5.Location = new System.Drawing.Point(0, 26);
+            this.label5.Name = "label5";
+            this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
+            this.label5.Size = new System.Drawing.Size(290, 42);
+            this.label5.Text = "ScrollToBottom、ScrollToTop方法可使Panel滚动到底部、顶部\r\n";
             // 
             // label6
             // 
@@ -172,14 +167,22 @@ namespace Smobiler.Tutorials.Components
             this.label6.Size = new System.Drawing.Size(290, 26);
             this.label6.Text = "Panel滚动方法";
             // 
-            // label5
+            // btnScrollToBottom
             // 
-            this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(0, 26);
-            this.label5.Name = "label5";
-            this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
-            this.label5.Size = new System.Drawing.Size(290, 42);
-            this.label5.Text = "ScrollToBottom、ScrollToTop方法可使Panel滚动到底部、顶部\r\n";
+            this.btnScrollToBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
+            this.btnScrollToBottom.Location = new System.Drawing.Point(25, 83);
+            this.btnScrollToBottom.Name = "btnScrollToBottom";
+            this.btnScrollToBottom.Size = new System.Drawing.Size(100, 30);
+            this.btnScrollToBottom.Text = "滚动到底部";
+            this.btnScrollToBottom.Press += new System.EventHandler(this.btnScrollToBottom_Press);
+            // 
+            // btnScrollToTop
+            // 
+            this.btnScrollToTop.Location = new System.Drawing.Point(151, 83);
+            this.btnScrollToTop.Name = "btnScrollToTop";
+            this.btnScrollToTop.Size = new System.Drawing.Size(100, 30);
+            this.btnScrollToTop.Text = "滚动到顶部";
+            this.btnScrollToTop.Press += new System.EventHandler(this.btnScrollToTop_Press);
             // 
             // demoScrollablePanel
             // 

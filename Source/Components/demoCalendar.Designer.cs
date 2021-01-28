@@ -24,11 +24,11 @@ namespace Smobiler.Tutorials.Components
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.labContent = new Smobiler.Core.Controls.Label();
             this.labTitle = new Smobiler.Core.Controls.Label();
+            this.calendar1 = new Smobiler.Core.Controls.Calendar();
+            this.calendar2 = new Smobiler.Core.Controls.Calendar();
             this.panel3 = new Smobiler.Core.Controls.Panel();
             this.label13 = new Smobiler.Core.Controls.Label();
             this.label14 = new Smobiler.Core.Controls.Label();
-            this.calendar1 = new Smobiler.Core.Controls.Calendar();
-            this.calendar2 = new Smobiler.Core.Controls.Calendar();
             this.calendar3 = new Smobiler.Core.Controls.Calendar();
             // 
             // title1
@@ -64,11 +64,12 @@ namespace Smobiler.Tutorials.Components
             this.calendar2});
             this.panel1.Location = new System.Drawing.Point(5, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 523);
+            this.panel1.Size = new System.Drawing.Size(290, 575);
             // 
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -86,6 +87,26 @@ namespace Smobiler.Tutorials.Components
             this.labTitle.Size = new System.Drawing.Size(290, 26);
             this.labTitle.Text = "不同样式的日历控件";
             // 
+            // calendar1
+            // 
+            this.calendar1.Location = new System.Drawing.Point(24, 92);
+            this.calendar1.Name = "calendar1";
+            this.calendar1.SelectDateBackColor = System.Drawing.Color.Peru;
+            this.calendar1.Size = new System.Drawing.Size(240, 230);
+            this.calendar1.WeekForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(81)))));
+            // 
+            // calendar2
+            // 
+            this.calendar2.DayForeColor = System.Drawing.Color.Blue;
+            this.calendar2.DisabledDayForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.calendar2.Location = new System.Drawing.Point(24, 334);
+            this.calendar2.Name = "calendar2";
+            this.calendar2.SelectDateBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.calendar2.SelectDateForeColor = System.Drawing.Color.DimGray;
+            this.calendar2.Size = new System.Drawing.Size(240, 230);
+            this.calendar2.TodayForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.calendar2.WeekForeColor = System.Drawing.Color.Blue;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
@@ -96,13 +117,14 @@ namespace Smobiler.Tutorials.Components
             this.label13,
             this.label14,
             this.calendar3});
-            this.panel3.Location = new System.Drawing.Point(5, 553);
+            this.panel3.Location = new System.Drawing.Point(5, 592);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(290, 315);
+            this.panel3.Size = new System.Drawing.Size(290, 344);
             // 
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.FontSize = 15F;
             this.label13.Location = new System.Drawing.Point(0, 26);
             this.label13.Name = "label13";
             this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -120,29 +142,11 @@ namespace Smobiler.Tutorials.Components
             this.label14.Size = new System.Drawing.Size(290, 26);
             this.label14.Text = "日历控件事件";
             // 
-            // calendar1
-            // 
-            this.calendar1.Location = new System.Drawing.Point(24, 97);
-            this.calendar1.Name = "calendar1";
-            this.calendar1.Size = new System.Drawing.Size(240, 200);
-            // 
-            // calendar2
-            // 
-            this.calendar2.DayForeColor = System.Drawing.Color.Blue;
-            this.calendar2.DisabledDayForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.calendar2.Location = new System.Drawing.Point(24, 311);
-            this.calendar2.Name = "calendar2";
-            this.calendar2.SelectDateBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.calendar2.SelectDateForeColor = System.Drawing.Color.DimGray;
-            this.calendar2.Size = new System.Drawing.Size(240, 200);
-            this.calendar2.TodayForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.calendar2.WeekForeColor = System.Drawing.Color.Blue;
-            // 
             // calendar3
             // 
             this.calendar3.Location = new System.Drawing.Point(24, 97);
             this.calendar3.Name = "calendar3";
-            this.calendar3.Size = new System.Drawing.Size(240, 200);
+            this.calendar3.Size = new System.Drawing.Size(240, 230);
             this.calendar3.DateChanged += new System.EventHandler(this.calendar3_DateChanged);
             // 
             // demoCalendar

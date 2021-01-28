@@ -78,6 +78,7 @@ namespace Smobiler.Tutorials.Controls
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -97,6 +98,7 @@ namespace Smobiler.Tutorials.Controls
             // 
             // label1
             // 
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(0, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(290, 35);
@@ -104,6 +106,7 @@ namespace Smobiler.Tutorials.Controls
             // 
             // label2
             // 
+            this.label2.FontSize = 15F;
             this.label2.Location = new System.Drawing.Point(0, 192);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(290, 35);
@@ -111,6 +114,7 @@ namespace Smobiler.Tutorials.Controls
             // 
             // label3
             // 
+            this.label3.FontSize = 15F;
             this.label3.Location = new System.Drawing.Point(0, 270);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(295, 35);
@@ -118,21 +122,22 @@ namespace Smobiler.Tutorials.Controls
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(0, 350);
+            this.label4.FontSize = 14F;
+            this.label4.Location = new System.Drawing.Point(0, 343);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(290, 35);
+            this.label4.Size = new System.Drawing.Size(290, 48);
             this.label4.Text = "MaxValue、MinValue、Value、Variation可设置数量控件可设置的最大值、最小值、显示的默认值、值变化时的增量";
             // 
             // numeric1
             // 
             this.numeric1.Location = new System.Drawing.Point(0, 121);
             this.numeric1.Name = "numeric1";
-            this.numeric1.Size = new System.Drawing.Size(290, 25);
+            this.numeric1.Size = new System.Drawing.Size(168, 25);
             // 
             // numeric2
             // 
             this.numeric2.FontSize = 13F;
-            this.numeric2.Location = new System.Drawing.Point(62, 146);
+            this.numeric2.Location = new System.Drawing.Point(0, 156);
             this.numeric2.Name = "numeric2";
             this.numeric2.Size = new System.Drawing.Size(168, 25);
             // 
@@ -141,7 +146,7 @@ namespace Smobiler.Tutorials.Controls
             this.numeric3.IconVisible = false;
             this.numeric3.Location = new System.Drawing.Point(0, 227);
             this.numeric3.Name = "numeric3";
-            this.numeric3.Size = new System.Drawing.Size(290, 25);
+            this.numeric3.Size = new System.Drawing.Size(168, 25);
             // 
             // numeric4
             // 
@@ -149,17 +154,33 @@ namespace Smobiler.Tutorials.Controls
             this.numeric4.MinusIconColor = System.Drawing.Color.Lime;
             this.numeric4.Name = "numeric4";
             this.numeric4.PlusIconColor = System.Drawing.Color.Red;
-            this.numeric4.Size = new System.Drawing.Size(290, 25);
+            this.numeric4.Size = new System.Drawing.Size(168, 25);
             // 
             // numeric5
             // 
-            this.numeric5.Location = new System.Drawing.Point(0, 385);
-            this.numeric5.MaxValue = 1000;
-            this.numeric5.MinValue = 100;
+            this.numeric5.Location = new System.Drawing.Point(0, 391);
+            this.numeric5.MaxValue = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numeric5.MinValue = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
             this.numeric5.Name = "numeric5";
-            this.numeric5.Size = new System.Drawing.Size(290, 25);
-            this.numeric5.Value = 100;
-            this.numeric5.Variation = 100;
+            this.numeric5.Size = new System.Drawing.Size(168, 28);
+            this.numeric5.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numeric5.Variation = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
             // 
             // demoNumeric
             // 

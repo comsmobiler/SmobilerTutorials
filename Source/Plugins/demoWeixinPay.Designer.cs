@@ -50,22 +50,25 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnWXPay
             // 
-            this.btnWXPay.Location = new System.Drawing.Point(39, 43);
+            this.btnWXPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(80)))));
+            this.btnWXPay.Location = new System.Drawing.Point(8, 48);
             this.btnWXPay.Name = "btnWXPay";
-            this.btnWXPay.Size = new System.Drawing.Size(100, 30);
+            this.btnWXPay.Size = new System.Drawing.Size(100, 42);
             this.btnWXPay.Text = "支付1分钱";
             this.btnWXPay.Press += new System.EventHandler(this.btnWXPay_Press);
             // 
             // btnWXLogin
             // 
-            this.btnWXLogin.Location = new System.Drawing.Point(39, 91);
+            this.btnWXLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(80)))));
+            this.btnWXLogin.Location = new System.Drawing.Point(183, 48);
             this.btnWXLogin.Name = "btnWXLogin";
-            this.btnWXLogin.Size = new System.Drawing.Size(100, 30);
+            this.btnWXLogin.Size = new System.Drawing.Size(106, 42);
             this.btnWXLogin.Text = "微信登陆";
             this.btnWXLogin.Press += new System.EventHandler(this.btnWXLogin_Press);
             // 
             // btnOutOrder
             // 
+            this.btnOutOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(80)))));
             this.btnOutOrder.Location = new System.Drawing.Point(200, 1);
             this.btnOutOrder.Name = "btnOutOrder";
             this.btnOutOrder.Size = new System.Drawing.Size(100, 35);

@@ -28,7 +28,7 @@ namespace Smobiler.Tutorials.Components
 
         private void btnShow_Press(object sender, EventArgs e)
         {
-           
+         
         }
 
         private void datePicker12_ValueChanged(object sender, EventArgs e)

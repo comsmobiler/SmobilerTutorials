@@ -71,6 +71,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -90,6 +91,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // btnGetRecorderAudio
             // 
+            this.btnGetRecorderAudio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
             this.btnGetRecorderAudio.Location = new System.Drawing.Point(87, 99);
             this.btnGetRecorderAudio.Name = "btnGetRecorderAudio";
             this.btnGetRecorderAudio.Size = new System.Drawing.Size(120, 30);
@@ -98,6 +100,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // btnGetRecorderAudioOffline
             // 
+            this.btnGetRecorderAudioOffline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(99)))));
             this.btnGetRecorderAudioOffline.Location = new System.Drawing.Point(87, 151);
             this.btnGetRecorderAudioOffline.Name = "btnGetRecorderAudioOffline";
             this.btnGetRecorderAudioOffline.Size = new System.Drawing.Size(120, 30);
@@ -106,6 +109,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // btnGetClientRecorderAudio
             // 
+            this.btnGetClientRecorderAudio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(81)))));
             this.btnGetClientRecorderAudio.Location = new System.Drawing.Point(87, 203);
             this.btnGetClientRecorderAudio.Name = "btnGetClientRecorderAudio";
             this.btnGetClientRecorderAudio.Size = new System.Drawing.Size(120, 30);
@@ -128,6 +132,7 @@ namespace Smobiler.Tutorials.Components
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.FontSize = 15F;
             this.label13.Location = new System.Drawing.Point(0, 26);
             this.label13.Name = "label13";
             this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);

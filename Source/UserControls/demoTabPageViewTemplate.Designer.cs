@@ -40,7 +40,7 @@ namespace Smobiler.Tutorials.usercontrol
             this.label1.Location = new System.Drawing.Point(18, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(262, 91);
-            this.label1.Text = "TabPageView不可再设计器中可视化设计页面，\r\n用户可添加自定义控件。即可设计自定义控件后添加到TabPageView\r\n";
+            this.label1.Text = "TabPageView可在设计器中可视化设计页面，也可设计自定义控件后将其添加到TabPageView\r\n";
             // 
             // demoTabPageViewTemplate
             // 

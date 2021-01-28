@@ -58,120 +58,14 @@ namespace Smobiler.Tutorials.Components
         {
             this.camera1.GetPhotoOffline();
         }
-
         private void btnGetClientPhotoPath_Press(object sender, EventArgs e)
         {
             this.camera1.GetClientPhotoPath();
         }
-
-        private void btnAlbumCount3_Press(object sender, EventArgs e)
-        {
-            camera1.AlbumCount = 3;
-            labAlbumCount.Text = "3";
-        }
-
-        private void btnAlbumCount9_Press(object sender, EventArgs e)
-        {
-            camera1.AlbumCount = 9;
-            labAlbumCount.Text = "9";
-        }
-
         private void btnAllowEditT_Press(object sender, EventArgs e)
         {
-            camera1.AllowEdit = true;
-            labAllowEdit.Text = "true";
+            camera1.GetPhoto();
         }
-
-        private void btnAllowEditF_Press(object sender, EventArgs e)
-        {
-            camera1.AllowEdit = false;
-            labAllowEdit.Text = "false";
-        }
-
-        private void btnCompressedQuality1_Press(object sender, EventArgs e)
-        {
-            camera1.CompressedQuality = 30;
-            labCompressedQuality.Text = "30";
-        }
-
-        private void btnCompressedQuality2_Press(object sender, EventArgs e)
-        {
-            camera1.CompressedQuality = 60;
-            labCompressedQuality.Text = "60";
-        }
-
-        private void btnCompressedResolution1_Press(object sender, EventArgs e)
-        {
-            camera1.CompressedResolution = 720;
-            labCompressedResolution.Text = "720";
-        }
-
-        private void btnCompressedResolution2_Press(object sender, EventArgs e)
-        {
-            camera1.CompressedResolution = 1280;
-            labCompressedResolution.Text = "1280";
-        }
-
-        private void btnContinuousNumber1_Press(object sender, EventArgs e)
-        {
-            camera1.ContinuousNumber = 3;
-            labContinuousNumber.Text = "3";
-        }
-
-        private void btnContinuousNumber2_Press(object sender, EventArgs e)
-        {
-            camera1.ContinuousNumber = 5;
-            labContinuousNumber.Text = "5";
-        }
-
-        private void btnQualityMode1_Press(object sender, EventArgs e)
-        {
-            camera1.QualityMode = ImageQualityMode.Compressed;
-            labQualityMode.Text = "压缩";
-        }
-
-        private void btnQualityMode2_Press(object sender, EventArgs e)
-        {
-            camera1.QualityMode = ImageQualityMode.Original;
-            labQualityMode.Text = "原图";
-        }
-
-        private void btnTimeOut1_Press(object sender, EventArgs e)
-        {
-            camera1.TimeOut = 30000;
-            labTimeOut.Text = "30000";
-        }
-
-        private void btnTimeOut2_Press(object sender, EventArgs e)
-        {
-            camera1.TimeOut = 60000;
-            labTimeOut.Text = "60000";
-        }
-
-        private void btnVideoCompressedQuality1_Press(object sender, EventArgs e)
-        {
-            camera1.VideoCompressedQuality = VideoCompressedQuality.Size640_480;
-            labVideoCompressedQuality.Text = "640*480";
-        }
-
-        private void btnVideoCompressedQuality2_Press(object sender, EventArgs e)
-        {
-            camera1.VideoCompressedQuality = VideoCompressedQuality.Size1920_1080;
-            labVideoCompressedQuality.Text = "1920*1080";
-        }
-
-        private void btnVideoDuration1_Press(object sender, EventArgs e)
-        {
-            camera1.VideoDuration = 8;
-            labVideoDuration.Text = "8";
-        }
-
-        private void btnVideoDuration2_Press(object sender, EventArgs e)
-        {
-            camera1.VideoDuration = 15;
-            labVideoDuration.Text = "15";
-        }
-
         private void camera1_ImageCaptured(object sender, BinaryResultArgs e)
         {
             if (e.isError == true)
@@ -221,7 +115,68 @@ namespace Smobiler.Tutorials.Components
 
         private void camera1_OfflineImageCaptured(object sender, ResourcesResultArgs e)
         {
-            //可在关于页手动上传
+            //可在关于页界面手动上传
+        }
+
+        private void spAlbumCount_ItemSelected(object sender, SpinnerItemSelectedEventArgs e)
+        {
+            camera1.AlbumCount = Convert.ToInt32(e.Item);
+        }
+
+        private void spAllowEdit_ItemSelected(object sender, SpinnerItemSelectedEventArgs e)
+        {
+            if (e.Item == "true")
+                camera1.AllowEdit = true;
+            else
+                camera1.AllowEdit = false;
+        }
+
+        private void spCompressedQuality_ItemSelected(object sender, SpinnerItemSelectedEventArgs e)
+        {
+            camera1.CompressedQuality = Convert.ToInt32(e.Item);
+        }
+
+        private void spCompressedResolution_ItemSelected(object sender, SpinnerItemSelectedEventArgs e)
+        {
+            camera1.CompressedResolution = Convert.ToInt32(e.Item);
+        }
+
+        private void spContinuousNumber_ItemSelected(object sender, SpinnerItemSelectedEventArgs e)
+        {
+            camera1.ContinuousNumber = Convert.ToInt32(e.Item);
+        }
+
+        private void demoCamera_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void spQualityMode_ItemSelected(object sender, SpinnerItemSelectedEventArgs e)
+        {
+            switch (e.Item)
+            {
+                case "Custom：用户自己选择上传方式":
+                    camera1.QualityMode = ImageQualityMode.Custom;
+                    break;
+                case " Compressed：压缩上传":
+                    camera1.QualityMode = ImageQualityMode.Compressed;
+                    break;
+                case " Original：原图上传":
+                    camera1.QualityMode = ImageQualityMode.Original;
+                    break;
+            }
+        }
+
+        private void spVideoDuration_ItemSelected(object sender, SpinnerItemSelectedEventArgs e)
+        {
+            camera1.VideoDuration = Convert.ToInt32(e.Item);
+        }
+
+        private void spVideoCompressedQuality_ItemSelected(object sender, SpinnerItemSelectedEventArgs e)
+        {   if (e.Item == "1920*1080")
+                camera1.VideoCompressedQuality = VideoCompressedQuality.Size1920_1080;
+            else
+                camera1.VideoCompressedQuality = VideoCompressedQuality.Size640_480;
         }
     }
 }

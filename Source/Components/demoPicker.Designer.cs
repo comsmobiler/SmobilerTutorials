@@ -24,10 +24,10 @@ namespace Smobiler.Tutorials.Components
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.labContent = new Smobiler.Core.Controls.Label();
             this.labTitle = new Smobiler.Core.Controls.Label();
-            this.panel2 = new Smobiler.Core.Controls.Panel();
-            this.label13 = new Smobiler.Core.Controls.Label();
             this.picker1 = new Smobiler.Core.Controls.Picker();
             this.picker2 = new Smobiler.Core.Controls.Picker();
+            this.panel2 = new Smobiler.Core.Controls.Panel();
+            this.label13 = new Smobiler.Core.Controls.Label();
             this.label14 = new Smobiler.Core.Controls.Label();
             this.picker3 = new Smobiler.Core.Controls.Picker();
             // 
@@ -69,6 +69,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -85,6 +86,36 @@ namespace Smobiler.Tutorials.Components
             this.labTitle.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.labTitle.Size = new System.Drawing.Size(290, 26);
             this.labTitle.Text = "不同样式的元素选择控件";
+            // 
+            // picker1
+            // 
+            this.picker1.FontSize = 15F;
+            this.picker1.Items = new string[] {
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"};
+            this.picker1.Location = new System.Drawing.Point(0, 80);
+            this.picker1.Name = "picker1";
+            this.picker1.Size = new System.Drawing.Size(140, 98);
+            // 
+            // picker2
+            // 
+            this.picker2.FontSize = 16F;
+            this.picker2.ForeColor = System.Drawing.Color.LightGray;
+            this.picker2.Items = new string[] {
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"};
+            this.picker2.Location = new System.Drawing.Point(150, 80);
+            this.picker2.Name = "picker2";
+            this.picker2.SelectedForeColor = System.Drawing.Color.Red;
+            this.picker2.SelectedIndex = 1;
+            this.picker2.Size = new System.Drawing.Size(140, 98);
             // 
             // panel2
             // 
@@ -103,39 +134,12 @@ namespace Smobiler.Tutorials.Components
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.FontSize = 15F;
             this.label13.Location = new System.Drawing.Point(0, 26);
             this.label13.Name = "label13";
             this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.label13.Size = new System.Drawing.Size(290, 54);
             this.label13.Text = "SelectedIndexChanged当选择索引改变时触发。";
-            // 
-            // picker1
-            // 
-            this.picker1.Items = new string[] {
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"};
-            this.picker1.Location = new System.Drawing.Point(0, 80);
-            this.picker1.Name = "picker1";
-            this.picker1.Size = new System.Drawing.Size(140, 98);
-            // 
-            // picker2
-            // 
-            this.picker2.FontSize = 16F;
-            this.picker2.ForeColor = System.Drawing.Color.LightGray;
-            this.picker2.Items = new string[] {
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"};
-            this.picker2.Location = new System.Drawing.Point(150, 80);
-            this.picker2.Name = "picker2";
-            this.picker2.SelectedForeColor = System.Drawing.Color.Red;
-            this.picker2.SelectedIndex = 2;
-            this.picker2.Size = new System.Drawing.Size(140, 98);
             // 
             // label14
             // 

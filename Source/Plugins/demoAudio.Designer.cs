@@ -37,6 +37,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnstart
             // 
+            this.btnstart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
             this.btnstart.Location = new System.Drawing.Point(93, 100);
             this.btnstart.Name = "btnstart";
             this.btnstart.Size = new System.Drawing.Size(100, 30);
@@ -45,6 +46,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnstop
             // 
+            this.btnstop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(81)))));
             this.btnstop.Location = new System.Drawing.Point(93, 298);
             this.btnstop.Name = "btnstop";
             this.btnstop.Size = new System.Drawing.Size(100, 30);
@@ -53,6 +55,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnpause
             // 
+            this.btnpause.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
             this.btnpause.Location = new System.Drawing.Point(93, 169);
             this.btnpause.Name = "btnpause";
             this.btnpause.Size = new System.Drawing.Size(100, 30);
@@ -61,6 +64,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnresume
             // 
+            this.btnresume.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(100)))));
             this.btnresume.Location = new System.Drawing.Point(93, 231);
             this.btnresume.Name = "btnresume";
             this.btnresume.Size = new System.Drawing.Size(100, 30);

@@ -39,6 +39,7 @@ namespace Smobiler.Tutorials.Components
             this.label13 = new Smobiler.Core.Controls.Label();
             this.label14 = new Smobiler.Core.Controls.Label();
             this.checkBox9 = new Smobiler.Core.Controls.CheckBox();
+            this.checkBox10 = new Smobiler.Core.Controls.CheckBox();
             // 
             // title1
             // 
@@ -81,11 +82,13 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 14F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
-            this.labContent.Size = new System.Drawing.Size(290, 54);
-            this.labContent.Text = "复选框控件，基础控件，Checked、TintColor、Style设置复选框样式";
+            this.labContent.Size = new System.Drawing.Size(290, 66);
+            this.labContent.Text = "复选框控件，基础控件，Checked(是否选中)、TintColor（样式颜色）、Style（显示样式：(a) Circular：圆形\r\n(b) Square：方" +
+    "形）设置复选框样式";
             // 
             // labTitle
             // 
@@ -148,6 +151,7 @@ namespace Smobiler.Tutorials.Components
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
             this.label5.Location = new System.Drawing.Point(0, 26);
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -208,7 +212,8 @@ namespace Smobiler.Tutorials.Components
             this.panel3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.label13,
             this.label14,
-            this.checkBox9});
+            this.checkBox9,
+            this.checkBox10});
             this.panel3.Location = new System.Drawing.Point(5, 401);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(290, 151);
@@ -216,6 +221,7 @@ namespace Smobiler.Tutorials.Components
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.FontSize = 15F;
             this.label13.Location = new System.Drawing.Point(0, 26);
             this.label13.Name = "label13";
             this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -235,10 +241,18 @@ namespace Smobiler.Tutorials.Components
             // 
             // checkBox9
             // 
-            this.checkBox9.Location = new System.Drawing.Point(133, 107);
+            this.checkBox9.Location = new System.Drawing.Point(61, 105);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(22, 22);
             this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.Location = new System.Drawing.Point(186, 105);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(22, 22);
+            this.checkBox10.Style = Smobiler.Core.Controls.CheckBoxStyle.Circular;
+            this.checkBox10.TintColor = System.Drawing.Color.Salmon;
             // 
             // demoCheckBox
             // 
@@ -271,5 +285,6 @@ namespace Smobiler.Tutorials.Components
         private Core.Controls.CheckBox checkBox7;
         private Core.Controls.CheckBox checkBox8;
         private Core.Controls.CheckBox checkBox9;
+        private Core.Controls.CheckBox checkBox10;
     }
 }

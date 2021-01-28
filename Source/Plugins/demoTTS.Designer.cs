@@ -40,25 +40,31 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(85, 72);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(100)))));
+            this.button1.FontSize = 15F;
+            this.button1.Location = new System.Drawing.Point(75, 69);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 30);
+            this.button1.Size = new System.Drawing.Size(119, 32);
             this.button1.Text = "中文 1.5倍";
             this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(85, 189);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(80)))));
+            this.button2.FontSize = 15F;
+            this.button2.Location = new System.Drawing.Point(75, 185);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 30);
+            this.button2.Size = new System.Drawing.Size(119, 29);
             this.button2.Text = "stop";
             this.button2.Press += new System.EventHandler(this.button2_Press);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(85, 131);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(80)))));
+            this.button3.FontSize = 15F;
+            this.button3.Location = new System.Drawing.Point(75, 126);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 30);
+            this.button3.Size = new System.Drawing.Size(119, 29);
             this.button3.Text = "英文 正常速";
             this.button3.Press += new System.EventHandler(this.button3_Press);
             // 

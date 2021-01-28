@@ -71,6 +71,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -90,6 +91,8 @@ namespace Smobiler.Tutorials.Components
             // 
             // btnGetBarcode
             // 
+            this.btnGetBarcode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
+            this.btnGetBarcode.BorderStyle = Smobiler.Core.Controls.BorderStyle.Dashed;
             this.btnGetBarcode.Location = new System.Drawing.Point(81, 97);
             this.btnGetBarcode.Name = "btnGetBarcode";
             this.btnGetBarcode.Size = new System.Drawing.Size(132, 30);
@@ -98,6 +101,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // btnGetBarcodeAsync
             // 
+            this.btnGetBarcodeAsync.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(99)))));
             this.btnGetBarcodeAsync.Location = new System.Drawing.Point(81, 211);
             this.btnGetBarcodeAsync.Name = "btnGetBarcodeAsync";
             this.btnGetBarcodeAsync.Size = new System.Drawing.Size(132, 30);
@@ -106,6 +110,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // label1
             // 
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(0, 158);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(290, 35);
@@ -127,6 +132,7 @@ namespace Smobiler.Tutorials.Components
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.FontSize = 15F;
             this.label13.Location = new System.Drawing.Point(0, 26);
             this.label13.Name = "label13";
             this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);

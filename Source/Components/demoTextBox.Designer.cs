@@ -114,6 +114,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -183,6 +184,7 @@ namespace Smobiler.Tutorials.Components
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
             this.label5.Location = new System.Drawing.Point(0, 26);
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -246,6 +248,7 @@ namespace Smobiler.Tutorials.Components
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.FontSize = 15F;
             this.label13.Location = new System.Drawing.Point(0, 26);
             this.label13.Name = "label13";
             this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -290,6 +293,7 @@ namespace Smobiler.Tutorials.Components
             // label16
             // 
             this.label16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label16.FontSize = 15F;
             this.label16.Location = new System.Drawing.Point(0, 26);
             this.label16.Name = "label16";
             this.label16.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -309,22 +313,24 @@ namespace Smobiler.Tutorials.Components
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(15, 89);
+            this.textBox9.Location = new System.Drawing.Point(7, 89);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(110, 45);
+            this.textBox9.Size = new System.Drawing.Size(115, 45);
             this.textBox9.Text = "Multiline设置为true，可显示多行\r\n";
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(153, 87);
+            this.textBox10.Location = new System.Drawing.Point(129, 87);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(114, 47);
+            this.textBox10.Size = new System.Drawing.Size(155, 47);
             this.textBox10.Text = "Multiline设置为flase，显示单行";
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(19, 151);
+            this.textBox11.FontSize = 15F;
+            this.textBox11.Location = new System.Drawing.Point(7, 151);
             this.textBox11.MaxLength = 7;
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(248, 35);
@@ -347,6 +353,7 @@ namespace Smobiler.Tutorials.Components
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(0, 26);
             this.label1.Name = "label1";
             this.label1.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -370,7 +377,7 @@ namespace Smobiler.Tutorials.Components
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(238, 27);
             this.textBox12.WaterMarkText = "设置水印，可提示输入";
-            this.textBox12.WaterMarkTextColor = System.Drawing.Color.Silver;
+            this.textBox12.WaterMarkTextColor = System.Drawing.Color.Black;
             // 
             // panel6
             // 
@@ -394,6 +401,7 @@ namespace Smobiler.Tutorials.Components
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.FontSize = 15F;
             this.label3.Location = new System.Drawing.Point(0, 26);
             this.label3.Name = "label3";
             this.label3.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -480,6 +488,7 @@ namespace Smobiler.Tutorials.Components
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.FontSize = 15F;
             this.label7.Location = new System.Drawing.Point(0, 26);
             this.label7.Name = "label7";
             this.label7.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -499,6 +508,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // textBoxFocusOrBlur
             // 
+            this.textBoxFocusOrBlur.FontSize = 14F;
             this.textBoxFocusOrBlur.Location = new System.Drawing.Point(23, 91);
             this.textBoxFocusOrBlur.Name = "textBoxFocusOrBlur";
             this.textBoxFocusOrBlur.Size = new System.Drawing.Size(238, 27);
@@ -506,6 +516,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // btnFocus
             // 
+            this.btnFocus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(99)))));
             this.btnFocus.Location = new System.Drawing.Point(23, 131);
             this.btnFocus.Name = "btnFocus";
             this.btnFocus.Size = new System.Drawing.Size(100, 30);
@@ -514,6 +525,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // btnBlur
             // 
+            this.btnBlur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
             this.btnBlur.Location = new System.Drawing.Point(161, 131);
             this.btnBlur.Name = "btnBlur";
             this.btnBlur.Size = new System.Drawing.Size(100, 30);
@@ -537,6 +549,7 @@ namespace Smobiler.Tutorials.Components
             // label9
             // 
             this.label9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label9.FontSize = 15F;
             this.label9.Location = new System.Drawing.Point(0, 26);
             this.label9.Name = "label9";
             this.label9.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -556,6 +569,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // textBox19
             // 
+            this.textBox19.FontSize = 14F;
             this.textBox19.Location = new System.Drawing.Point(23, 91);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(238, 27);

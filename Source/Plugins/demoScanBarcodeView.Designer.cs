@@ -46,6 +46,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnOpenFlashLight
             // 
+            this.btnOpenFlashLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
             this.btnOpenFlashLight.Location = new System.Drawing.Point(16, 188);
             this.btnOpenFlashLight.Name = "btnOpenFlashLight";
             this.btnOpenFlashLight.Size = new System.Drawing.Size(100, 30);
@@ -54,6 +55,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnCloseFlashLight
             // 
+            this.btnCloseFlashLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(100)))));
             this.btnCloseFlashLight.Location = new System.Drawing.Point(178, 188);
             this.btnCloseFlashLight.Name = "btnCloseFlashLight";
             this.btnCloseFlashLight.Size = new System.Drawing.Size(100, 30);
@@ -70,6 +72,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnScanStart
             // 
+            this.btnScanStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(80)))));
             this.btnScanStart.Location = new System.Drawing.Point(16, 236);
             this.btnScanStart.Name = "btnScanStart";
             this.btnScanStart.Size = new System.Drawing.Size(100, 30);
@@ -78,6 +81,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnScanStop
             // 
+            this.btnScanStop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(80)))));
             this.btnScanStop.Location = new System.Drawing.Point(178, 236);
             this.btnScanStop.Name = "btnScanStop";
             this.btnScanStop.Size = new System.Drawing.Size(100, 30);

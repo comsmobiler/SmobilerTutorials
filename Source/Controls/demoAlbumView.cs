@@ -20,7 +20,7 @@ namespace Smobiler.Tutorials.Controls
         {
             this.Close();
         }
-
+        
         private void button1_Press(object sender, EventArgs e)
         {
             this.popList1.ShowDialog();
@@ -43,10 +43,11 @@ namespace Smobiler.Tutorials.Controls
             switch (popList1.Selections[0].Text)
             {
                 case "Items":
-                    for (int i = 0; i < 5; i++)
-                    {
-                        this.albumView1.Items.Add(new AlbumViewItem("logon"));
-                    }
+                    this.albumView1.Items.Add(new AlbumViewItem("设计师.png"));
+                    this.albumView1.Items.Add(new AlbumViewItem("拟定合同.png"));
+                    this.albumView1.Items.Add(new AlbumViewItem("搜索.png"));
+                    this.albumView1.Items.Add(new AlbumViewItem("咨询.png"));
+                    this.albumView1.Items.Add(new AlbumViewItem("方案.png"));
                     labContent.Text = "相册数据添加";
                     break;
                 case "AlbumItemHight":

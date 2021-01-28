@@ -83,6 +83,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 14F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -102,6 +103,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // btnGetGps
             // 
+            this.btnGetGps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(99)))));
             this.btnGetGps.Location = new System.Drawing.Point(23, 99);
             this.btnGetGps.Name = "btnGetGps";
             this.btnGetGps.Size = new System.Drawing.Size(100, 30);
@@ -110,6 +112,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // btnGetGpsAsyn
             // 
+            this.btnGetGpsAsyn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
             this.btnGetGpsAsyn.Location = new System.Drawing.Point(165, 99);
             this.btnGetGpsAsyn.Name = "btnGetGpsAsyn";
             this.btnGetGpsAsyn.Size = new System.Drawing.Size(100, 30);
@@ -181,6 +184,7 @@ namespace Smobiler.Tutorials.Components
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
             this.label5.Location = new System.Drawing.Point(0, 26);
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);

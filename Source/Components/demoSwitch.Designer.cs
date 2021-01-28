@@ -24,15 +24,15 @@ namespace Smobiler.Tutorials.Components
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.labContent = new Smobiler.Core.Controls.Label();
             this.labTitle = new Smobiler.Core.Controls.Label();
-            this.panel2 = new Smobiler.Core.Controls.Panel();
-            this.label5 = new Smobiler.Core.Controls.Label();
-            this.label6 = new Smobiler.Core.Controls.Label();
             this.switch1 = new Smobiler.Core.Controls.Switch();
             this.switch2 = new Smobiler.Core.Controls.Switch();
             this.switch3 = new Smobiler.Core.Controls.Switch();
             this.switch4 = new Smobiler.Core.Controls.Switch();
             this.switch5 = new Smobiler.Core.Controls.Switch();
             this.switch6 = new Smobiler.Core.Controls.Switch();
+            this.panel2 = new Smobiler.Core.Controls.Panel();
+            this.label5 = new Smobiler.Core.Controls.Label();
+            this.label6 = new Smobiler.Core.Controls.Label();
             this.switch7 = new Smobiler.Core.Controls.Switch();
             // 
             // title1
@@ -77,6 +77,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -93,6 +94,52 @@ namespace Smobiler.Tutorials.Components
             this.labTitle.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.labTitle.Size = new System.Drawing.Size(290, 26);
             this.labTitle.Text = "不同样式的开关控件";
+            // 
+            // switch1
+            // 
+            this.switch1.Location = new System.Drawing.Point(21, 89);
+            this.switch1.Name = "switch1";
+            this.switch1.Size = new System.Drawing.Size(70, 30);
+            // 
+            // switch2
+            // 
+            this.switch2.Checked = true;
+            this.switch2.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
+            this.switch2.Location = new System.Drawing.Point(21, 135);
+            this.switch2.Name = "switch2";
+            this.switch2.Size = new System.Drawing.Size(70, 30);
+            // 
+            // switch3
+            // 
+            this.switch3.CircleColor = System.Drawing.Color.DimGray;
+            this.switch3.Location = new System.Drawing.Point(113, 89);
+            this.switch3.Name = "switch3";
+            this.switch3.Size = new System.Drawing.Size(70, 30);
+            this.switch3.UnCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            // 
+            // switch4
+            // 
+            this.switch4.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.switch4.Location = new System.Drawing.Point(113, 135);
+            this.switch4.Name = "switch4";
+            this.switch4.Size = new System.Drawing.Size(70, 30);
+            this.switch4.UnCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(81)))));
+            // 
+            // switch5
+            // 
+            this.switch5.Enabled = false;
+            this.switch5.Location = new System.Drawing.Point(205, 89);
+            this.switch5.Name = "switch5";
+            this.switch5.Size = new System.Drawing.Size(70, 30);
+            this.switch5.UnCheckedColor = System.Drawing.Color.Red;
+            // 
+            // switch6
+            // 
+            this.switch6.Checked = true;
+            this.switch6.Enabled = false;
+            this.switch6.Location = new System.Drawing.Point(205, 135);
+            this.switch6.Name = "switch6";
+            this.switch6.Size = new System.Drawing.Size(70, 30);
             // 
             // panel2
             // 
@@ -111,6 +158,7 @@ namespace Smobiler.Tutorials.Components
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
             this.label5.Location = new System.Drawing.Point(0, 26);
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -128,56 +176,12 @@ namespace Smobiler.Tutorials.Components
             this.label6.Size = new System.Drawing.Size(290, 26);
             this.label6.Text = "开关控件事件";
             // 
-            // switch1
-            // 
-            this.switch1.Location = new System.Drawing.Point(21, 89);
-            this.switch1.Name = "switch1";
-            this.switch1.Size = new System.Drawing.Size(70, 30);
-            // 
-            // switch2
-            // 
-            this.switch2.Checked = true;
-            this.switch2.Location = new System.Drawing.Point(21, 135);
-            this.switch2.Name = "switch2";
-            this.switch2.Size = new System.Drawing.Size(70, 30);
-            // 
-            // switch3
-            // 
-            this.switch3.CircleColor = System.Drawing.Color.DimGray;
-            this.switch3.Location = new System.Drawing.Point(113, 89);
-            this.switch3.Name = "switch3";
-            this.switch3.Size = new System.Drawing.Size(70, 30);
-            this.switch3.UnCheckedColor = System.Drawing.Color.Red;
-            // 
-            // switch4
-            // 
-            this.switch4.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.switch4.Location = new System.Drawing.Point(113, 135);
-            this.switch4.Name = "switch4";
-            this.switch4.Size = new System.Drawing.Size(70, 30);
-            this.switch4.UnCheckedColor = System.Drawing.Color.Green;
-            // 
-            // switch5
-            // 
-            this.switch5.Enabled = false;
-            this.switch5.Location = new System.Drawing.Point(205, 89);
-            this.switch5.Name = "switch5";
-            this.switch5.Size = new System.Drawing.Size(70, 30);
-            this.switch5.UnCheckedColor = System.Drawing.Color.Red;
-            // 
-            // switch6
-            // 
-            this.switch6.Checked = true;
-            this.switch6.Enabled = false;
-            this.switch6.Location = new System.Drawing.Point(205, 135);
-            this.switch6.Name = "switch6";
-            this.switch6.Size = new System.Drawing.Size(70, 30);
-            // 
             // switch7
             // 
             this.switch7.Location = new System.Drawing.Point(111, 93);
             this.switch7.Name = "switch7";
             this.switch7.Size = new System.Drawing.Size(70, 30);
+            this.switch7.UnCheckedColor = System.Drawing.Color.Empty;
             this.switch7.CheckedChanged += new System.EventHandler(this.switch7_CheckedChanged);
             // 
             // demoSwitch
@@ -185,7 +189,6 @@ namespace Smobiler.Tutorials.Components
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.title1,
             this.panel10});
-            this.Name = "demoSwitch";
             this.Size = new System.Drawing.Size(300, 1000);
             this.Name = "demoSwitch";
 

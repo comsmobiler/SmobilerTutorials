@@ -37,22 +37,25 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnGetBarcode
             // 
-            this.btnGetBarcode.Location = new System.Drawing.Point(72, 99);
+            this.btnGetBarcode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(100)))));
+            this.btnGetBarcode.Location = new System.Drawing.Point(72, 114);
             this.btnGetBarcode.Name = "btnGetBarcode";
-            this.btnGetBarcode.Size = new System.Drawing.Size(134, 30);
+            this.btnGetBarcode.Size = new System.Drawing.Size(134, 33);
             this.btnGetBarcode.Text = "GetBarcode";
             this.btnGetBarcode.Press += new System.EventHandler(this.btnGetBarcode_Press);
             // 
             // btnRelease
             // 
-            this.btnRelease.Location = new System.Drawing.Point(72, 234);
+            this.btnRelease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(80)))));
+            this.btnRelease.Location = new System.Drawing.Point(72, 247);
             this.btnRelease.Name = "btnRelease";
-            this.btnRelease.Size = new System.Drawing.Size(134, 30);
+            this.btnRelease.Size = new System.Drawing.Size(134, 34);
             this.btnRelease.Text = "Release";
             this.btnRelease.Press += new System.EventHandler(this.btnRelease_Press);
             // 
             // label1
             // 
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(0, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(300, 35);
@@ -60,6 +63,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // label2
             // 
+            this.label2.FontSize = 15F;
             this.label2.Location = new System.Drawing.Point(0, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(300, 69);

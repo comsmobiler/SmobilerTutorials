@@ -36,6 +36,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // title
             // 
+            this.title.FontSize = 15F;
             this.title.Location = new System.Drawing.Point(0, 8);
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(300, 35);
@@ -43,14 +44,16 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnGetBarcode
             // 
-            this.btnGetBarcode.Location = new System.Drawing.Point(184, 43);
+            this.btnGetBarcode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(99)))));
+            this.btnGetBarcode.Location = new System.Drawing.Point(184, 58);
             this.btnGetBarcode.Name = "btnGetBarcode";
-            this.btnGetBarcode.Size = new System.Drawing.Size(116, 53);
+            this.btnGetBarcode.Size = new System.Drawing.Size(116, 38);
             this.btnGetBarcode.Text = "扫码";
             this.btnGetBarcode.Press += new System.EventHandler(this.btnGetBarcode_Press);
             // 
             // btnSetScanModel
             // 
+            this.btnSetScanModel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
             this.btnSetScanModel.Location = new System.Drawing.Point(182, 150);
             this.btnSetScanModel.Name = "btnSetScanModel";
             this.btnSetScanModel.Size = new System.Drawing.Size(100, 30);
@@ -59,6 +62,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnSetScanDelaySetting
             // 
+            this.btnSetScanDelaySetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
             this.btnSetScanDelaySetting.Location = new System.Drawing.Point(182, 200);
             this.btnSetScanDelaySetting.Name = "btnSetScanDelaySetting";
             this.btnSetScanDelaySetting.Size = new System.Drawing.Size(100, 30);
@@ -67,7 +71,8 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnSetScanSound
             // 
-            this.btnSetScanSound.Location = new System.Drawing.Point(182, 254);
+            this.btnSetScanSound.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
+            this.btnSetScanSound.Location = new System.Drawing.Point(184, 254);
             this.btnSetScanSound.Name = "btnSetScanSound";
             this.btnSetScanSound.Size = new System.Drawing.Size(100, 30);
             this.btnSetScanSound.Text = "设置扫描声音";
@@ -75,7 +80,8 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnsetScanVibrate
             // 
-            this.btnsetScanVibrate.Location = new System.Drawing.Point(182, 310);
+            this.btnsetScanVibrate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
+            this.btnsetScanVibrate.Location = new System.Drawing.Point(184, 310);
             this.btnsetScanVibrate.Name = "btnsetScanVibrate";
             this.btnsetScanVibrate.Size = new System.Drawing.Size(100, 30);
             this.btnsetScanVibrate.Text = "设置扫描震动";
@@ -95,9 +101,10 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(0, 41);
+            this.label1.FontSize = 14F;
+            this.label1.Location = new System.Drawing.Point(0, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 63);
+            this.label1.Size = new System.Drawing.Size(184, 45);
             this.label1.Text = "点击按钮开启扫描，亦可使用设备两侧按钮开启扫描";
             // 
             // spinner2
@@ -136,7 +143,8 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnshow
             // 
-            this.btnshow.Location = new System.Drawing.Point(52, 420);
+            this.btnshow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
+            this.btnshow.Location = new System.Drawing.Point(51, 382);
             this.btnshow.Name = "btnshow";
             this.btnshow.Size = new System.Drawing.Size(196, 30);
             this.btnshow.Text = "跳转打印";
@@ -149,9 +157,10 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(52, 115);
+            this.label2.FontSize = 15F;
+            this.label2.Location = new System.Drawing.Point(14, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(242, 35);
+            this.label2.Size = new System.Drawing.Size(268, 35);
             this.label2.Text = "“设置扫描模式”仅对侧边按钮生效";
             // 
             // demoCN6508

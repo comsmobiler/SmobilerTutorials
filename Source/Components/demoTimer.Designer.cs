@@ -45,7 +45,7 @@ namespace Smobiler.Tutorials.Components
             this.title1.Name = "title1";
             this.title1.ResourceID = "angle-left";
             this.title1.Size = new System.Drawing.Size(300, 30);
-            this.title1.Text = "CheckBox";
+            this.title1.Text = "Timer";
             this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
             // 
             // panel10
@@ -81,11 +81,13 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
-            this.labContent.Size = new System.Drawing.Size(290, 54);
+            this.labContent.Size = new System.Drawing.Size(290, 63);
             this.labContent.Text = "计时器控件，基础控件，Interval属性控制触发Tick事件的间隔时间（s），Enabled属性指示计时器是否正在运行\r\n";
+            this.labContent.VerticalAlignment = Smobiler.Core.Controls.VerticalAlignment.Top;
             // 
             // labTitle
             // 
@@ -100,26 +102,26 @@ namespace Smobiler.Tutorials.Components
             // 
             // progress1
             // 
-            this.progress1.Location = new System.Drawing.Point(0, 89);
+            this.progress1.Location = new System.Drawing.Point(0, 101);
             this.progress1.Name = "progress1";
             this.progress1.Size = new System.Drawing.Size(280, 15);
             // 
             // switch1
             // 
-            this.switch1.Location = new System.Drawing.Point(11, 117);
+            this.switch1.Location = new System.Drawing.Point(11, 129);
             this.switch1.Name = "switch1";
             this.switch1.Size = new System.Drawing.Size(70, 30);
             // 
             // checkBox1
             // 
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(101, 115);
+            this.checkBox1.Location = new System.Drawing.Point(101, 127);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(42, 32);
             // 
             // checkBox2
             // 
-            this.checkBox2.Location = new System.Drawing.Point(163, 117);
+            this.checkBox2.Location = new System.Drawing.Point(163, 129);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(40, 30);
             this.checkBox2.Style = Smobiler.Core.Controls.CheckBoxStyle.Circular;
@@ -128,7 +130,7 @@ namespace Smobiler.Tutorials.Components
             // label1
             // 
             this.label1.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
-            this.label1.Location = new System.Drawing.Point(224, 117);
+            this.label1.Location = new System.Drawing.Point(224, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 30);
             // 
@@ -150,6 +152,7 @@ namespace Smobiler.Tutorials.Components
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
             this.label5.Location = new System.Drawing.Point(0, 26);
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -169,6 +172,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // btnstart
             // 
+            this.btnstart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
             this.btnstart.Location = new System.Drawing.Point(31, 105);
             this.btnstart.Name = "btnstart";
             this.btnstart.Size = new System.Drawing.Size(100, 30);
@@ -177,6 +181,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // btnstop
             // 
+            this.btnstop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
             this.btnstop.Location = new System.Drawing.Point(161, 105);
             this.btnstop.Name = "btnstop";
             this.btnstop.Size = new System.Drawing.Size(100, 30);
@@ -199,10 +204,11 @@ namespace Smobiler.Tutorials.Components
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.FontSize = 15F;
             this.label13.Location = new System.Drawing.Point(0, 26);
             this.label13.Name = "label13";
             this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);
-            this.label13.Size = new System.Drawing.Size(290, 54);
+            this.label13.Size = new System.Drawing.Size(290, 58);
             this.label13.Text = "Tick当指定的计时器间隔已过去而且计时器处于启用状态时发生";
             // 
             // label14

@@ -89,6 +89,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 14F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -118,7 +119,7 @@ namespace Smobiler.Tutorials.Components
             // 
             this.label2.Bold = true;
             this.label2.Italic = true;
-            this.label2.Location = new System.Drawing.Point(17, 135);
+            this.label2.Location = new System.Drawing.Point(15, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 35);
             this.label2.Text = "粗体斜体";
@@ -161,6 +162,7 @@ namespace Smobiler.Tutorials.Components
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
             this.label5.Location = new System.Drawing.Point(0, 26);
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -253,6 +255,7 @@ namespace Smobiler.Tutorials.Components
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.FontSize = 15F;
             this.label13.Location = new System.Drawing.Point(0, 26);
             this.label13.Name = "label13";
             this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -297,6 +300,7 @@ namespace Smobiler.Tutorials.Components
             // label16
             // 
             this.label16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label16.FontSize = 15F;
             this.label16.Location = new System.Drawing.Point(0, 26);
             this.label16.Name = "label16";
             this.label16.Padding = new Smobiler.Core.Controls.Padding(5F);

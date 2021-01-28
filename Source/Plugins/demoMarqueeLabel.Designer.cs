@@ -64,10 +64,11 @@ namespace Smobiler.Tutorials.Plugins
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 14F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
-            this.labContent.Size = new System.Drawing.Size(290, 42);
+            this.labContent.Size = new System.Drawing.Size(290, 53);
             this.labContent.Text = "跑马灯效果文本，Text设置显示的文本，ScrollDurationt获取与设置文字轮播一页所消耗的时间";
             // 
             // labTitle
@@ -86,14 +87,11 @@ namespace Smobiler.Tutorials.Plugins
             this.marqueeLabel1.FontSize = 20F;
             this.marqueeLabel1.ForeColor = System.Drawing.Color.Red;
             this.marqueeLabel1.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
-            this.marqueeLabel1.Italic = true;
-            this.marqueeLabel1.Location = new System.Drawing.Point(2, 68);
+            this.marqueeLabel1.Location = new System.Drawing.Point(1, 86);
             this.marqueeLabel1.Name = "marqueeLabel1";
             this.marqueeLabel1.NumberOfLines = 2;
-            this.marqueeLabel1.Selectable = true;
-            this.marqueeLabel1.Size = new System.Drawing.Size(288, 39);
+            this.marqueeLabel1.Size = new System.Drawing.Size(288, 48);
             this.marqueeLabel1.Text = "Text获取与设置显示的文字 (若想添加组显示，文字中间添加空格)";
-            this.marqueeLabel1.Underline = true;
             // 
             // spinner1
             // 
@@ -110,9 +108,9 @@ namespace Smobiler.Tutorials.Plugins
         "Selectable-true",
         "Text - CurrentDate",
         "UnderLine-true"};
-            this.spinner1.Location = new System.Drawing.Point(1, 122);
+            this.spinner1.Location = new System.Drawing.Point(1, 147);
             this.spinner1.Name = "spinner1";
-            this.spinner1.Size = new System.Drawing.Size(289, 30);
+            this.spinner1.Size = new System.Drawing.Size(289, 34);
             this.spinner1.Text = "设置属性";
             this.spinner1.ItemSelected += new System.EventHandler<Smobiler.Core.Controls.SpinnerItemSelectedEventArgs>(this.spinner1_ItemSelected);
             // 

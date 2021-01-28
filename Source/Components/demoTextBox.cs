@@ -45,5 +45,10 @@ namespace Smobiler.Tutorials.Components
         {
             Toast("TouchLeave");
         }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

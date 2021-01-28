@@ -69,6 +69,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -94,7 +95,7 @@ namespace Smobiler.Tutorials.Components
         "3",
         "4",
         "5"};
-            this.spinner1.Location = new System.Drawing.Point(15, 113);
+            this.spinner1.Location = new System.Drawing.Point(11, 113);
             this.spinner1.Name = "spinner1";
             this.spinner1.Size = new System.Drawing.Size(120, 30);
             // 
@@ -108,7 +109,7 @@ namespace Smobiler.Tutorials.Components
         "3",
         "4",
         "5"};
-            this.spinner2.Location = new System.Drawing.Point(157, 113);
+            this.spinner2.Location = new System.Drawing.Point(158, 113);
             this.spinner2.Name = "spinner2";
             this.spinner2.Size = new System.Drawing.Size(120, 30);
             this.spinner2.Text = "下拉列表控件";
@@ -130,6 +131,7 @@ namespace Smobiler.Tutorials.Components
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
             this.label5.Location = new System.Drawing.Point(0, 26);
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);

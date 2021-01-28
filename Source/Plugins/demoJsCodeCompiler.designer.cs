@@ -28,14 +28,16 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(96, 394);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
+            this.button1.Location = new System.Drawing.Point(56, 394);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 30);
+            this.button1.Size = new System.Drawing.Size(170, 30);
             this.button1.Text = "震动";
             this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
             // label1
             // 
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(18, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(268, 265);
@@ -48,6 +50,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // label2
             // 
+            this.label2.FontSize = 15F;
             this.label2.Location = new System.Drawing.Point(18, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(268, 35);
@@ -64,9 +67,10 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(96, 443);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(99)))));
+            this.button2.Location = new System.Drawing.Point(56, 443);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 30);
+            this.button2.Size = new System.Drawing.Size(170, 30);
             this.button2.Text = "打开微信";
             this.button2.Press += new System.EventHandler(this.button2_Press);
             // 

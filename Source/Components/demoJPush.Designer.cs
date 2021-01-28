@@ -78,6 +78,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // textBox1
             // 
+            this.textBox1.FontSize = 15F;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(0, 30);
             this.textBox1.Text = "devices";
@@ -85,6 +86,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // textBox2
             // 
+            this.textBox2.FontSize = 15F;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(0, 30);
             this.textBox2.Text = "Push content";
@@ -98,6 +100,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button1
             // 
+            this.button1.FontSize = 15F;
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(0, 30);
             this.button1.Text = "设置别名（devices）";
@@ -105,6 +108,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button12
             // 
+            this.button12.FontSize = 15F;
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(0, 30);
             this.button12.Text = "查询别名";
@@ -112,6 +116,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button13
             // 
+            this.button13.FontSize = 15F;
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(0, 30);
             this.button13.Text = "删除别名";
@@ -125,6 +130,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button2
             // 
+            this.button2.FontSize = 15F;
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(0, 30);
             this.button2.Text = "向指定设备推送消息（应用弹出）";
@@ -132,6 +138,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button4
             // 
+            this.button4.FontSize = 15F;
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(0, 30);
             this.button4.Text = "向指定设备推送通知（抬头栏）";
@@ -139,6 +146,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button6
             // 
+            this.button6.FontSize = 15F;
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(0, 30);
             this.button6.Text = "指定推送点击跳转URL链接的消息";
@@ -146,6 +154,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button8
             // 
+            this.button8.FontSize = 15F;
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(0, 30);
             this.button8.Text = "指定推送点击触发客户端回调的消息";
@@ -153,6 +162,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button10
             // 
+            this.button10.FontSize = 15F;
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(0, 30);
             this.button10.Text = "向指定设备推送通知（抬头栏）大段文本样式";
@@ -166,6 +176,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button3
             // 
+            this.button3.FontSize = 15F;
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(0, 30);
             this.button3.Text = "向全部设备推送消息（应用弹出）";
@@ -173,6 +184,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button5
             // 
+            this.button5.FontSize = 15F;
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(0, 30);
             this.button5.Text = "向全部设备推送通知（抬头栏）";
@@ -180,6 +192,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button7
             // 
+            this.button7.FontSize = 15F;
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(0, 30);
             this.button7.Text = "全部推送点击跳转URL链接的消息";
@@ -187,6 +200,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button9
             // 
+            this.button9.FontSize = 15F;
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(0, 30);
             this.button9.Text = "全部推送点击触发客户端回调的消息";
@@ -194,6 +208,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // button11
             // 
+            this.button11.FontSize = 15F;
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(0, 30);
             this.button11.Text = "向全部设备推送通知（抬头栏）大段文本样式";

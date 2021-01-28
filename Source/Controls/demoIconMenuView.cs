@@ -60,7 +60,7 @@ namespace Smobiler.Tutorials.Controls
                     this.iconMenuView1.Groups.Clear();
                     for (int i = 0; i < 5; i++)
                     {
-                        AddGroup();
+                        AddGroup(i);
                     }
                     labContent.Text = "设置菜单组集合";
                     break;
@@ -144,13 +144,15 @@ namespace Smobiler.Tutorials.Controls
                     break;
             }
         }
-        private void AddGroup()
+        private void AddGroup( int i)
         {
-            IconMenuViewGroup mvg = new IconMenuViewGroup(this.iconMenuView1.Groups.Count.ToString());
-            for (int j = 0; j < 3; j++)
-                mvg.Items.Add(new IconMenuViewItem("logon", j.ToString()));
-            for (int j = 0; j < 2; j++)
-                mvg.Items.Add(new IconMenuViewItem(j.ToString(),"logon", j.ToString(), j.ToString(), j.ToString()));
+            IconMenuViewGroup mvg = new IconMenuViewGroup(this.iconMenuView1.Groups.Count.ToString("类别"+i.ToString()));
+            mvg.ShowTitle = true;
+            mvg.Items.Add(new IconMenuViewItem("设计师.png", "设计师"));
+            mvg.Items.Add(new IconMenuViewItem("拟定合同.png", "拟定合同"));
+            mvg.Items.Add(new IconMenuViewItem("搜索.png", "搜索"));
+            mvg.Items.Add(new IconMenuViewItem("咨询.png", "咨询", "1", "1", "1"));
+            mvg.Items.Add(new IconMenuViewItem("方案.png", "方案", "2", "2", "2"));
             this.iconMenuView1.Groups.Add(mvg);
         }
 

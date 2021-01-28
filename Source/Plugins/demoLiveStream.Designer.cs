@@ -39,39 +39,47 @@ namespace Smobiler.Tutorials.Plugins
             // 
             this.liveStream1.Location = new System.Drawing.Point(0, 30);
             this.liveStream1.Name = "liveStream1";
-            this.liveStream1.Size = new System.Drawing.Size(300, 372);
+            this.liveStream1.Size = new System.Drawing.Size(300, 339);
             this.liveStream1.Url = "rtmp://192.168.2.230/live/livestream";
             this.liveStream1.OnChanged += new Smobiler.Plugins.LiveStreamOnChangedEventHandler(this.liveStream1_OnChanged);
             // 
             // btnstartStreaming
             // 
-            this.btnstartStreaming.Location = new System.Drawing.Point(0, 446);
+            this.btnstartStreaming.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
+            this.btnstartStreaming.FontSize = 15F;
+            this.btnstartStreaming.Location = new System.Drawing.Point(0, 438);
             this.btnstartStreaming.Name = "btnstartStreaming";
-            this.btnstartStreaming.Size = new System.Drawing.Size(100, 30);
+            this.btnstartStreaming.Size = new System.Drawing.Size(100, 38);
             this.btnstartStreaming.Text = "startStreaming";
             this.btnstartStreaming.Press += new System.EventHandler(this.btnstartStreaming_Press);
             // 
             // btnstopStreaming
             // 
-            this.btnstopStreaming.Location = new System.Drawing.Point(100, 446);
+            this.btnstopStreaming.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(80)))));
+            this.btnstopStreaming.FontSize = 15F;
+            this.btnstopStreaming.Location = new System.Drawing.Point(100, 438);
             this.btnstopStreaming.Name = "btnstopStreaming";
-            this.btnstopStreaming.Size = new System.Drawing.Size(100, 30);
+            this.btnstopStreaming.Size = new System.Drawing.Size(100, 38);
             this.btnstopStreaming.Text = "stopStreaming";
             this.btnstopStreaming.Press += new System.EventHandler(this.btnstopStreaming_Press);
             // 
             // btnswapCamera
             // 
-            this.btnswapCamera.Location = new System.Drawing.Point(200, 446);
+            this.btnswapCamera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(100)))));
+            this.btnswapCamera.FontSize = 15F;
+            this.btnswapCamera.Location = new System.Drawing.Point(200, 438);
             this.btnswapCamera.Name = "btnswapCamera";
-            this.btnswapCamera.Size = new System.Drawing.Size(100, 30);
+            this.btnswapCamera.Size = new System.Drawing.Size(100, 38);
             this.btnswapCamera.Text = "swapCamera";
             this.btnswapCamera.Press += new System.EventHandler(this.btnswapCamera_Press);
             // 
             // btnfilter
             // 
-            this.btnfilter.Location = new System.Drawing.Point(0, 412);
+            this.btnfilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(80)))));
+            this.btnfilter.FontSize = 16F;
+            this.btnfilter.Location = new System.Drawing.Point(0, 382);
             this.btnfilter.Name = "btnfilter";
-            this.btnfilter.Size = new System.Drawing.Size(300, 30);
+            this.btnfilter.Size = new System.Drawing.Size(300, 43);
             this.btnfilter.Text = "filter false";
             this.btnfilter.Press += new System.EventHandler(this.btnfilter_Press);
             // 

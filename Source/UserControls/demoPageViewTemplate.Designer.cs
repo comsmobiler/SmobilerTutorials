@@ -24,14 +24,15 @@ namespace Smobiler.Tutorials.usercontrol
             // 
             this.image1.DataMember = "image";
             this.image1.DisplayMember = "image";
-            this.image1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.image1.Flex = 1;
             this.image1.Name = "image1";
-            this.image1.Size = new System.Drawing.Size(45, 45);
+            this.image1.Size = new System.Drawing.Size(0, 0);
             // 
             // demoPageViewTemplate
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.image1});
+            this.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.Size = new System.Drawing.Size(300, 200);
             this.Name = "demoPageViewTemplate";
 

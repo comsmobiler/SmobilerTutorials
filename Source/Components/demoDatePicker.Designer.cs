@@ -95,10 +95,11 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 14F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
-            this.labContent.Size = new System.Drawing.Size(290, 54);
+            this.labContent.Size = new System.Drawing.Size(290, 59);
             this.labContent.Text = "日期选择控件，基础控件，Value、Mode、MinDate、MaxDate、ForeColor、FontSize、HorizontalAlignment属性设置" +
     "不同的样式\r\n";
             // 
@@ -115,20 +116,20 @@ namespace Smobiler.Tutorials.Components
             // 
             // datePicker1
             // 
-            this.datePicker1.Location = new System.Drawing.Point(25, 87);
+            this.datePicker1.Location = new System.Drawing.Point(25, 97);
             this.datePicker1.Name = "datePicker1";
             this.datePicker1.Size = new System.Drawing.Size(100, 30);
             // 
             // datePicker2
             // 
-            this.datePicker2.Location = new System.Drawing.Point(25, 125);
+            this.datePicker2.Location = new System.Drawing.Point(25, 139);
             this.datePicker2.Mode = Smobiler.Core.Controls.DatePickerMode.DateTime;
             this.datePicker2.Name = "datePicker2";
             this.datePicker2.Size = new System.Drawing.Size(100, 30);
             // 
             // datePicker3
             // 
-            this.datePicker3.Location = new System.Drawing.Point(25, 165);
+            this.datePicker3.Location = new System.Drawing.Point(25, 179);
             this.datePicker3.Mode = Smobiler.Core.Controls.DatePickerMode.Time;
             this.datePicker3.Name = "datePicker3";
             this.datePicker3.Size = new System.Drawing.Size(100, 30);
@@ -136,7 +137,7 @@ namespace Smobiler.Tutorials.Components
             // datePicker4
             // 
             this.datePicker4.FontSize = 16F;
-            this.datePicker4.Location = new System.Drawing.Point(165, 87);
+            this.datePicker4.Location = new System.Drawing.Point(165, 97);
             this.datePicker4.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
             this.datePicker4.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.datePicker4.Name = "datePicker4";
@@ -146,7 +147,7 @@ namespace Smobiler.Tutorials.Components
             // 
             this.datePicker5.FontSize = 11F;
             this.datePicker5.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Left;
-            this.datePicker5.Location = new System.Drawing.Point(165, 125);
+            this.datePicker5.Location = new System.Drawing.Point(165, 139);
             this.datePicker5.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
             this.datePicker5.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.datePicker5.Mode = Smobiler.Core.Controls.DatePickerMode.DateTime;
@@ -157,7 +158,7 @@ namespace Smobiler.Tutorials.Components
             // 
             this.datePicker6.FontSize = 16F;
             this.datePicker6.ForeColor = System.Drawing.Color.Red;
-            this.datePicker6.Location = new System.Drawing.Point(165, 165);
+            this.datePicker6.Location = new System.Drawing.Point(165, 179);
             this.datePicker6.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
             this.datePicker6.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.datePicker6.Mode = Smobiler.Core.Controls.DatePickerMode.Time;
@@ -183,6 +184,7 @@ namespace Smobiler.Tutorials.Components
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
             this.label5.Location = new System.Drawing.Point(0, 26);
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -202,6 +204,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // datePicker7
             // 
+            this.datePicker7.FontSize = 15F;
             this.datePicker7.Location = new System.Drawing.Point(95, 91);
             this.datePicker7.Mode = Smobiler.Core.Controls.DatePickerMode.Time;
             this.datePicker7.Name = "datePicker7";
@@ -209,16 +212,18 @@ namespace Smobiler.Tutorials.Components
             // 
             // datePicker8
             // 
+            this.datePicker8.FontSize = 15F;
             this.datePicker8.Location = new System.Drawing.Point(95, 129);
             this.datePicker8.Name = "datePicker8";
             this.datePicker8.Size = new System.Drawing.Size(100, 30);
             // 
             // datePicker9
             // 
-            this.datePicker9.Location = new System.Drawing.Point(95, 169);
+            this.datePicker9.FontSize = 15F;
+            this.datePicker9.Location = new System.Drawing.Point(80, 169);
             this.datePicker9.Mode = Smobiler.Core.Controls.DatePickerMode.DateTime;
             this.datePicker9.Name = "datePicker9";
-            this.datePicker9.Size = new System.Drawing.Size(100, 30);
+            this.datePicker9.Size = new System.Drawing.Size(133, 30);
             // 
             // panel3
             // 
@@ -238,6 +243,7 @@ namespace Smobiler.Tutorials.Components
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.FontSize = 15F;
             this.label13.Location = new System.Drawing.Point(0, 26);
             this.label13.Name = "label13";
             this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -285,6 +291,7 @@ namespace Smobiler.Tutorials.Components
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(0, 26);
             this.label1.Name = "label1";
             this.label1.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -327,6 +334,7 @@ namespace Smobiler.Tutorials.Components
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.FontSize = 15F;
             this.label3.Location = new System.Drawing.Point(0, 26);
             this.label3.Name = "label3";
             this.label3.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -346,6 +354,7 @@ namespace Smobiler.Tutorials.Components
             // 
             // datePicker12
             // 
+            this.datePicker12.FontSize = 15F;
             this.datePicker12.Location = new System.Drawing.Point(95, 99);
             this.datePicker12.Name = "datePicker12";
             this.datePicker12.Size = new System.Drawing.Size(100, 30);

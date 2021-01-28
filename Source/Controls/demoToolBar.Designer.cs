@@ -19,7 +19,6 @@ namespace Smobiler.Tutorials.Controls
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(demoToolBar));
             Smobiler.Core.Controls.ToolBarItem toolBarItem1 = new Smobiler.Core.Controls.ToolBarItem();
             Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
             Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
@@ -99,11 +98,14 @@ namespace Smobiler.Tutorials.Controls
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 14F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.labContent.Size = new System.Drawing.Size(290, 148);
-            this.labContent.Text = resources.GetString("labContent.Text");
+            this.labContent.Text = "Items属性设置工具栏菜单项:\n其中IconColor设置图标颜色\nIconID设置按钮图标名称\nImageExBorderRadius设置图像资源圆角\nIma" +
+    "geType设置图像类型（重要）\nMessageText设置消息数据显示的文本\nName设置工具条名称\nSelectIconColor设置选中图标颜色\nSele" +
+    "ctIconID设置选中状态图标名称\nText设置显示的文本\n";
             // 
             // labTitle
             // 
@@ -118,18 +120,18 @@ namespace Smobiler.Tutorials.Controls
             // 
             // toolBar1
             // 
-            toolBarItem1.IconID = "logon";
-            toolBarItem1.SelectIconID = "logon";
-            toolBarItem1.Text = "1";
-            toolBarItem2.IconID = "logon";
-            toolBarItem2.SelectIconID = "logon";
-            toolBarItem2.Text = "2";
-            toolBarItem3.IconID = "logon";
-            toolBarItem3.SelectIconID = "logon";
-            toolBarItem3.Text = "3";
-            toolBarItem4.IconID = "logon";
-            toolBarItem4.SelectIconID = "logon";
-            toolBarItem4.Text = "4";
+            toolBarItem1.IconID = "方案.png";
+            toolBarItem1.SelectIconID = "方案r.png";
+            toolBarItem1.Text = "方案";
+            toolBarItem2.IconID = "咨询.png";
+            toolBarItem2.SelectIconID = "咨询r.png";
+            toolBarItem2.Text = "咨询";
+            toolBarItem3.IconID = "搜索.png";
+            toolBarItem3.SelectIconID = "搜索r.png";
+            toolBarItem3.Text = "搜索";
+            toolBarItem4.IconID = "设计师.png";
+            toolBarItem4.SelectIconID = "设计师r.png";
+            toolBarItem4.Text = "设计师";
             this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
             toolBarItem1,
             toolBarItem2,
@@ -155,6 +157,7 @@ namespace Smobiler.Tutorials.Controls
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 14F;
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.label5.Size = new System.Drawing.Size(290, 50);
@@ -164,18 +167,18 @@ namespace Smobiler.Tutorials.Controls
             // 
             this.toolBar2.FontSize = 16F;
             this.toolBar2.ForeColor = System.Drawing.Color.Silver;
-            toolBarItem5.IconID = "logon";
-            toolBarItem5.SelectIconID = "logon";
-            toolBarItem5.Text = "1";
-            toolBarItem6.IconID = "logon";
-            toolBarItem6.SelectIconID = "logon";
-            toolBarItem6.Text = "2";
-            toolBarItem7.IconID = "logon";
-            toolBarItem7.SelectIconID = "logon";
-            toolBarItem7.Text = "3";
-            toolBarItem8.IconID = "logon";
-            toolBarItem8.SelectIconID = "logon";
-            toolBarItem8.Text = "4";
+            toolBarItem5.IconID = "方案.png";
+            toolBarItem5.SelectIconID = "方案r.png";
+            toolBarItem5.Text = "方案";
+            toolBarItem6.IconID = "咨询.png";
+            toolBarItem6.SelectIconID = "咨询r.png";
+            toolBarItem6.Text = "咨询";
+            toolBarItem7.IconID = "搜索.png";
+            toolBarItem7.SelectIconID = "搜索r.png";
+            toolBarItem7.Text = "搜索";
+            toolBarItem8.IconID = "设计师.png";
+            toolBarItem8.SelectIconID = "设计师r.png";
+            toolBarItem8.Text = "设计师";
             this.toolBar2.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
             toolBarItem5,
             toolBarItem6,
@@ -183,7 +186,7 @@ namespace Smobiler.Tutorials.Controls
             toolBarItem8});
             this.toolBar2.Location = new System.Drawing.Point(73, 101);
             this.toolBar2.Name = "toolBar2";
-            this.toolBar2.SelectBackColor = System.Drawing.Color.ForestGreen;
+            this.toolBar2.SelectBackColor = System.Drawing.Color.MistyRose;
             this.toolBar2.SelectForeColor = System.Drawing.Color.DimGray;
             this.toolBar2.Size = new System.Drawing.Size(100, 50);
             // 
@@ -203,6 +206,7 @@ namespace Smobiler.Tutorials.Controls
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.FontSize = 15F;
             this.label6.Name = "label6";
             this.label6.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.label6.Size = new System.Drawing.Size(290, 50);
@@ -213,18 +217,18 @@ namespace Smobiler.Tutorials.Controls
             this.toolBar3.FontSize = 16F;
             this.toolBar3.ForeColor = System.Drawing.Color.Silver;
             this.toolBar3.ItemCount = 2;
-            toolBarItem9.IconID = "logon";
-            toolBarItem9.SelectIconID = "logon";
-            toolBarItem9.Text = "1";
-            toolBarItem10.IconID = "logon";
-            toolBarItem10.SelectIconID = "logon";
-            toolBarItem10.Text = "2";
-            toolBarItem11.IconID = "logon";
-            toolBarItem11.SelectIconID = "logon";
-            toolBarItem11.Text = "3";
-            toolBarItem12.IconID = "logon";
-            toolBarItem12.SelectIconID = "logon";
-            toolBarItem12.Text = "4";
+            toolBarItem9.IconID = "方案.png";
+            toolBarItem9.SelectIconID = "方案r.png";
+            toolBarItem9.Text = "方案";
+            toolBarItem10.IconID = "咨询.png";
+            toolBarItem10.SelectIconID = "咨询r.png";
+            toolBarItem10.Text = "咨询";
+            toolBarItem11.IconID = "搜索.png";
+            toolBarItem11.SelectIconID = "搜索r.png";
+            toolBarItem11.Text = "搜索";
+            toolBarItem12.IconID = "设计师.png";
+            toolBarItem12.SelectIconID = "设计师r.png";
+            toolBarItem12.Text = "设计师";
             this.toolBar3.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
             toolBarItem9,
             toolBarItem10,
@@ -233,7 +237,7 @@ namespace Smobiler.Tutorials.Controls
             this.toolBar3.ItemWidth = 35;
             this.toolBar3.Location = new System.Drawing.Point(73, 101);
             this.toolBar3.Name = "toolBar3";
-            this.toolBar3.SelectBackColor = System.Drawing.Color.ForestGreen;
+            this.toolBar3.SelectBackColor = System.Drawing.Color.MistyRose;
             this.toolBar3.SelectedIndex = 1;
             this.toolBar3.SelectForeColor = System.Drawing.Color.DimGray;
             this.toolBar3.Size = new System.Drawing.Size(100, 50);
@@ -254,6 +258,7 @@ namespace Smobiler.Tutorials.Controls
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.FontSize = 14F;
             this.label1.Name = "label1";
             this.label1.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.label1.Size = new System.Drawing.Size(290, 50);
@@ -261,28 +266,29 @@ namespace Smobiler.Tutorials.Controls
             // 
             // toolBar4
             // 
-            toolBarItem13.IconID = "logon";
+            toolBarItem13.IconID = "方案.png";
             toolBarItem13.MessageText = "1";
-            toolBarItem13.SelectIconID = "logon";
-            toolBarItem13.Text = "1";
-            toolBarItem14.IconID = "logon";
+            toolBarItem13.SelectIconID = "方案r.png";
+            toolBarItem13.Text = "方案";
+            toolBarItem14.IconID = "咨询.png";
             toolBarItem14.MessageText = "2";
-            toolBarItem14.SelectIconID = "logon";
-            toolBarItem14.Text = "2";
-            toolBarItem15.IconID = "logon";
+            toolBarItem14.SelectIconID = "咨询r.png";
+            toolBarItem14.Text = "咨询";
+            toolBarItem15.IconID = "搜索.png";
             toolBarItem15.MessageText = "3";
-            toolBarItem15.SelectIconID = "logon";
-            toolBarItem15.Text = "3";
-            toolBarItem16.IconID = "logon";
+            toolBarItem15.SelectIconID = "搜索r.png";
+            toolBarItem15.Text = "搜索";
+            toolBarItem16.IconID = "设计师.png";
             toolBarItem16.MessageText = "4";
-            toolBarItem16.SelectIconID = "logon";
-            toolBarItem16.Text = "4";
+            toolBarItem16.SelectIconID = "设计师r.png";
+            toolBarItem16.Text = "设计师";
             this.toolBar4.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
             toolBarItem13,
             toolBarItem14,
             toolBarItem15,
             toolBarItem16});
             this.toolBar4.Location = new System.Drawing.Point(73, 101);
+            this.toolBar4.MessageForeColor = System.Drawing.Color.White;
             this.toolBar4.Name = "toolBar4";
             this.toolBar4.Size = new System.Drawing.Size(100, 50);
             // 
@@ -302,6 +308,7 @@ namespace Smobiler.Tutorials.Controls
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.FontSize = 15F;
             this.label2.Name = "label2";
             this.label2.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.label2.Size = new System.Drawing.Size(290, 50);
@@ -309,32 +316,31 @@ namespace Smobiler.Tutorials.Controls
             // 
             // toolBar5
             // 
-            toolBarItem17.IconID = "logon";
+            toolBarItem17.IconID = "方案.png";
             toolBarItem17.MessageText = "1";
-            toolBarItem17.Name = "1";
-            toolBarItem17.SelectIconID = "logon";
-            toolBarItem17.Text = "1";
-            toolBarItem18.IconID = "logon";
+            toolBarItem17.Name = "方案";
+            toolBarItem17.SelectIconID = "方案r.png";
+            toolBarItem17.Text = "方案";
+            toolBarItem18.IconID = "咨询.png";
             toolBarItem18.MessageText = "2";
-            toolBarItem18.Name = "2";
-            toolBarItem18.SelectIconID = "logon";
-            toolBarItem18.Text = "2";
-            toolBarItem19.IconID = "logon";
-            toolBarItem19.MessageText = "3";
-            toolBarItem19.Name = "3";
-            toolBarItem19.SelectIconID = "logon";
-            toolBarItem19.Text = "3";
-            toolBarItem20.IconID = "logon";
-            toolBarItem20.MessageText = "4";
-            toolBarItem20.Name = "4";
-            toolBarItem20.SelectIconID = "logon";
-            toolBarItem20.Text = "4";
+            toolBarItem18.Name = "咨询";
+            toolBarItem18.SelectIconID = "咨询r.png";
+            toolBarItem18.Text = "咨询";
+            toolBarItem19.IconID = "搜索.png";
+            toolBarItem19.Name = "搜索";
+            toolBarItem19.SelectIconID = "搜索r.png";
+            toolBarItem19.Text = "搜索";
+            toolBarItem20.IconID = "设计师.png";
+            toolBarItem20.Name = "设计师";
+            toolBarItem20.SelectIconID = "设计师r.png";
+            toolBarItem20.Text = "设计师";
             this.toolBar5.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
             toolBarItem17,
             toolBarItem18,
             toolBarItem19,
             toolBarItem20});
             this.toolBar5.Location = new System.Drawing.Point(73, 101);
+            this.toolBar5.MessageForeColor = System.Drawing.Color.White;
             this.toolBar5.Name = "toolBar5";
             this.toolBar5.Size = new System.Drawing.Size(100, 50);
             this.toolBar5.ToolbarItemClick += new Smobiler.Core.Controls.ToolbarItemClickEventHandler(this.toolBar5_ToolbarItemClick);

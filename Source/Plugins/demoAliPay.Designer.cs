@@ -37,7 +37,8 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnCreateOrder
             // 
-            this.btnCreateOrder.Location = new System.Drawing.Point(24, 134);
+            this.btnCreateOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(78)))));
+            this.btnCreateOrder.Location = new System.Drawing.Point(39, 142);
             this.btnCreateOrder.Name = "btnCreateOrder";
             this.btnCreateOrder.Size = new System.Drawing.Size(100, 30);
             this.btnCreateOrder.Text = "创建订单";
@@ -45,7 +46,8 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnOrderStatus
             // 
-            this.btnOrderStatus.Location = new System.Drawing.Point(142, 134);
+            this.btnOrderStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(81)))));
+            this.btnOrderStatus.Location = new System.Drawing.Point(157, 142);
             this.btnOrderStatus.Name = "btnOrderStatus";
             this.btnOrderStatus.Size = new System.Drawing.Size(100, 30);
             this.btnOrderStatus.Text = "支付状态查询";
@@ -53,8 +55,10 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnOutOrder
             // 
+            this.btnOutOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
             this.btnOutOrder.BorderRadius = 0;
-            this.btnOutOrder.Location = new System.Drawing.Point(0, 66);
+            this.btnOutOrder.FontSize = 15F;
+            this.btnOutOrder.Location = new System.Drawing.Point(190, 81);
             this.btnOutOrder.Name = "btnOutOrder";
             this.btnOutOrder.Size = new System.Drawing.Size(100, 35);
             this.btnOutOrder.Text = "生成订单编号";
@@ -62,9 +66,11 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // labOutOrder
             // 
-            this.labOutOrder.Location = new System.Drawing.Point(100, 66);
+            this.labOutOrder.BackColor = System.Drawing.Color.White;
+            this.labOutOrder.FontSize = 15F;
+            this.labOutOrder.Location = new System.Drawing.Point(9, 81);
             this.labOutOrder.Name = "labOutOrder";
-            this.labOutOrder.Size = new System.Drawing.Size(200, 35);
+            this.labOutOrder.Size = new System.Drawing.Size(181, 35);
             this.labOutOrder.Text = "[外部订单]";
             // 
             // aliPay1

@@ -31,11 +31,11 @@ namespace Smobiler.Tutorials.Components
             this.image2 = new Smobiler.Core.Controls.Image();
             this.panel3 = new Smobiler.Core.Controls.Panel();
             this.label13 = new Smobiler.Core.Controls.Label();
+            this.image3 = new Smobiler.Core.Controls.Image();
+            this.image4 = new Smobiler.Core.Controls.Image();
             this.panel4 = new Smobiler.Core.Controls.Panel();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.label2 = new Smobiler.Core.Controls.Label();
-            this.image3 = new Smobiler.Core.Controls.Image();
-            this.image4 = new Smobiler.Core.Controls.Image();
             this.panel5 = new Smobiler.Core.Controls.Panel();
             this.label3 = new Smobiler.Core.Controls.Label();
             this.label4 = new Smobiler.Core.Controls.Label();
@@ -82,6 +82,7 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -103,7 +104,7 @@ namespace Smobiler.Tutorials.Components
             // 
             this.image1.Location = new System.Drawing.Point(93, 91);
             this.image1.Name = "image1";
-            this.image1.ResourceID = "logon";
+            this.image1.ResourceID = "logon1";
             this.image1.Size = new System.Drawing.Size(97, 75);
             // 
             // panel2
@@ -123,6 +124,7 @@ namespace Smobiler.Tutorials.Components
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.FontSize = 15F;
             this.label5.Location = new System.Drawing.Point(0, 26);
             this.label5.Name = "label5";
             this.label5.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -144,7 +146,7 @@ namespace Smobiler.Tutorials.Components
             // 
             this.image2.Location = new System.Drawing.Point(99, 91);
             this.image2.Name = "image2";
-            this.image2.ResourceID = "logon";
+            this.image2.ResourceID = "logon1";
             this.image2.Size = new System.Drawing.Size(91, 79);
             this.image2.Zooming = true;
             // 
@@ -165,10 +167,27 @@ namespace Smobiler.Tutorials.Components
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.FontSize = 15F;
             this.label13.Name = "label13";
             this.label13.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.label13.Size = new System.Drawing.Size(290, 54);
             this.label13.Text = "sizeMode属性设置图片的显示模式(下面分别设置Cover、Strecth)";
+            // 
+            // image3
+            // 
+            this.image3.Location = new System.Drawing.Point(21, 64);
+            this.image3.Name = "image3";
+            this.image3.ResourceID = "logon1";
+            this.image3.Size = new System.Drawing.Size(97, 94);
+            this.image3.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Cover;
+            // 
+            // image4
+            // 
+            this.image4.Location = new System.Drawing.Point(165, 88);
+            this.image4.Name = "image4";
+            this.image4.ResourceID = "logon1";
+            this.image4.Size = new System.Drawing.Size(97, 52);
+            this.image4.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             // 
             // panel4
             // 
@@ -186,6 +205,7 @@ namespace Smobiler.Tutorials.Components
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(0, 26);
             this.label1.Name = "label1";
             this.label1.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -202,22 +222,6 @@ namespace Smobiler.Tutorials.Components
             this.label2.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.label2.Size = new System.Drawing.Size(290, 26);
             this.label2.Text = "重新加载方法";
-            // 
-            // image3
-            // 
-            this.image3.Location = new System.Drawing.Point(21, 64);
-            this.image3.Name = "image3";
-            this.image3.ResourceID = "logon";
-            this.image3.Size = new System.Drawing.Size(97, 94);
-            this.image3.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Cover;
-            // 
-            // image4
-            // 
-            this.image4.Location = new System.Drawing.Point(165, 88);
-            this.image4.Name = "image4";
-            this.image4.ResourceID = "logon";
-            this.image4.Size = new System.Drawing.Size(97, 52);
-            this.image4.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             // 
             // panel5
             // 
@@ -237,6 +241,7 @@ namespace Smobiler.Tutorials.Components
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.FontSize = 15F;
             this.label3.Location = new System.Drawing.Point(0, 26);
             this.label3.Name = "label3";
             this.label3.Padding = new Smobiler.Core.Controls.Padding(5F);
@@ -258,7 +263,7 @@ namespace Smobiler.Tutorials.Components
             // 
             this.image5.Location = new System.Drawing.Point(63, 91);
             this.image5.Name = "image5";
-            this.image5.Size = new System.Drawing.Size(179, 96);
+            this.image5.Size = new System.Drawing.Size(179, 85);
             // 
             // button1
             // 

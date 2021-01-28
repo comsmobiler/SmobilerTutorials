@@ -49,6 +49,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnopen
             // 
+            this.btnopen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(80)))));
             this.btnopen.Location = new System.Drawing.Point(0, 48);
             this.btnopen.Name = "btnopen";
             this.btnopen.Size = new System.Drawing.Size(144, 38);
@@ -57,6 +58,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnClose
             // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(100)))));
             this.btnClose.Location = new System.Drawing.Point(0, 102);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(144, 38);
@@ -65,6 +67,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(80)))));
             this.btnSearch.Location = new System.Drawing.Point(0, 166);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(144, 38);
@@ -73,6 +76,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnConnect
             // 
+            this.btnConnect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(80)))));
             this.btnConnect.Location = new System.Drawing.Point(0, 216);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(144, 38);
@@ -81,6 +85,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnCloseConnect
             // 
+            this.btnCloseConnect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(80)))));
             this.btnCloseConnect.Location = new System.Drawing.Point(0, 280);
             this.btnCloseConnect.Name = "btnCloseConnect";
             this.btnCloseConnect.Size = new System.Drawing.Size(144, 38);
@@ -89,6 +94,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnWriteMessage
             // 
+            this.btnWriteMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(80)))));
             this.btnWriteMessage.Location = new System.Drawing.Point(0, 332);
             this.btnWriteMessage.Name = "btnWriteMessage";
             this.btnWriteMessage.Size = new System.Drawing.Size(144, 38);
@@ -97,20 +103,23 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // label1
             // 
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
             this.label1.Location = new System.Drawing.Point(132, 433);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 35);
             // 
             // btnGetStatus
             // 
-            this.btnGetStatus.Location = new System.Drawing.Point(0, 399);
+            this.btnGetStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(67)))), ((int)(((byte)(80)))));
+            this.btnGetStatus.Location = new System.Drawing.Point(0, 387);
             this.btnGetStatus.Name = "btnGetStatus";
-            this.btnGetStatus.Size = new System.Drawing.Size(144, 24);
+            this.btnGetStatus.Size = new System.Drawing.Size(144, 36);
             this.btnGetStatus.Text = "GetStatus";
             this.btnGetStatus.Press += new System.EventHandler(this.btnGetStatus_Press);
             // 
             // label2
             // 
+            this.label2.FontSize = 14F;
             this.label2.Location = new System.Drawing.Point(6, 433);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 35);
@@ -128,6 +137,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnSearchBle
             // 
+            this.btnSearchBle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
             this.btnSearchBle.Location = new System.Drawing.Point(156, 166);
             this.btnSearchBle.Name = "btnSearchBle";
             this.btnSearchBle.Size = new System.Drawing.Size(144, 38);
@@ -136,6 +146,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnConnectBle
             // 
+            this.btnConnectBle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
             this.btnConnectBle.Location = new System.Drawing.Point(156, 216);
             this.btnConnectBle.Name = "btnConnectBle";
             this.btnConnectBle.Size = new System.Drawing.Size(144, 38);
@@ -144,6 +155,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnCloseConnectBle
             // 
+            this.btnCloseConnectBle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
             this.btnCloseConnectBle.Location = new System.Drawing.Point(156, 280);
             this.btnCloseConnectBle.Name = "btnCloseConnectBle";
             this.btnCloseConnectBle.Size = new System.Drawing.Size(144, 38);
@@ -152,6 +164,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnWriteBleMessage
             // 
+            this.btnWriteBleMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
             this.btnWriteBleMessage.Location = new System.Drawing.Point(156, 332);
             this.btnWriteBleMessage.Name = "btnWriteBleMessage";
             this.btnWriteBleMessage.Size = new System.Drawing.Size(144, 38);
@@ -160,14 +173,16 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // btnGetBleStatus
             // 
-            this.btnGetBleStatus.Location = new System.Drawing.Point(156, 399);
+            this.btnGetBleStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(250)))));
+            this.btnGetBleStatus.Location = new System.Drawing.Point(156, 387);
             this.btnGetBleStatus.Name = "btnGetBleStatus";
-            this.btnGetBleStatus.Size = new System.Drawing.Size(144, 24);
+            this.btnGetBleStatus.Size = new System.Drawing.Size(144, 36);
             this.btnGetBleStatus.Text = "GetBleStatus";
             this.btnGetBleStatus.Press += new System.EventHandler(this.btnGetBleStatus_Press);
             // 
             // label3
             // 
+            this.label3.FontSize = 14F;
             this.label3.Location = new System.Drawing.Point(164, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 92);

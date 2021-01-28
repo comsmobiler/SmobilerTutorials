@@ -104,9 +104,9 @@ namespace Smobiler.Tutorials.Components
         {
             pageTable = new DataTable();
             pageTable.Columns.Add("image");
-            pageTable.Rows.Add("logon");
-            pageTable.Rows.Add("logon");
-            pageTable.Rows.Add("logon");
+            pageTable.Rows.Add("page1");
+            pageTable.Rows.Add("page2");
+            pageTable.Rows.Add("page3");
             if (pageTable.Rows.Count > 0)
             {
                 pageView1.DataSource = pageTable;

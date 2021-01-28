@@ -66,12 +66,12 @@ namespace Smobiler.Tutorials.Components
             // labContent
             // 
             this.labContent.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labContent.FontSize = 15F;
             this.labContent.Location = new System.Drawing.Point(0, 26);
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.labContent.Size = new System.Drawing.Size(290, 74);
             this.labContent.Text = "Panel控件的Touchable属性可使panel触发点击事件,可点击下方灰色panel，触发点击事件";
-            this.labContent.Underline = true;
             // 
             // labTitle
             // 
