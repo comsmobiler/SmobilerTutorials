@@ -2,7 +2,7 @@
 using Smobiler.Core;
 namespace Smobiler.Tutorials.Plugins
 {
-    partial class demoWeiXinApi : Smobiler.Core.Controls.MobileForm
+    partial class demoWeiXinENTApi : Smobiler.Core.Controls.MobileForm
     {
         #region "SmobilerForm generated code "
 
@@ -20,9 +20,9 @@ namespace Smobiler.Tutorials.Plugins
         private void InitializeComponent()
         {
             this.title1 = new Smobiler.Core.Controls.Title();
-            this.weiXinApi1 = new Smobiler.Plugins.WeiXinApi();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.listMenuView1 = new Smobiler.Core.Controls.ListMenuView();
+            this.weiXinENTApi1 = new Smobiler.Plugins.WeiXinENTApi();
             // 
             // title1
             // 
@@ -30,15 +30,8 @@ namespace Smobiler.Tutorials.Plugins
             this.title1.Name = "title1";
             this.title1.ResourceID = "angle-left";
             this.title1.Size = new System.Drawing.Size(300, 30);
-            this.title1.Text = "WeiXinApi";
+            this.title1.Text = "WeiXinENTApi";
             this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
-            // 
-            // weiXinApi1
-            // 
-            this.weiXinApi1.AppID = null;
-            this.weiXinApi1.Name = "weiXinApi1";
-            this.weiXinApi1.Afterlogin += new Smobiler.Plugins.WeiXinApiLoginEventHandler(this.weiXinApi1_Afterlogin);
-            this.weiXinApi1.AfterMiniPay += new Smobiler.Plugins.WeiXinApiMiniPayEventHandler(this.weiXinApi1_AfterMiniPay);
             // 
             // label1
             // 
@@ -46,7 +39,7 @@ namespace Smobiler.Tutorials.Plugins
             this.label1.Location = new System.Drawing.Point(0, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(300, 45);
-            this.label1.Text = "WeiXinApi控件，仅在网页中可使用";
+            this.label1.Text = "WeiXinENTApi控件，仅在企业微信中可使用";
             // 
             // listMenuView1
             // 
@@ -56,23 +49,30 @@ namespace Smobiler.Tutorials.Plugins
             this.listMenuView1.Size = new System.Drawing.Size(300, 300);
             this.listMenuView1.ItemPress += new Smobiler.Core.Controls.ListMenuViewItemPressEventHandler(this.listMenuView1_ItemPress);
             // 
-            // demoWeiXinApi
+            // weiXinENTApi1
+            // 
+            this.weiXinENTApi1.AppID = null;
+            this.weiXinENTApi1.CorpID = null;
+            this.weiXinENTApi1.Name = "weiXinENTApi1";
+            this.weiXinENTApi1.Afterlogin += new Smobiler.Plugins.WeiXinENTApiLoginEventHandler(this.weiXinENTApi1_Afterlogin);
+            // 
+            // demoWeiXinENTApi
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
-            this.weiXinApi1});
+            this.weiXinENTApi1});
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.title1,
             this.label1,
             this.listMenuView1});
-            this.Load += new System.EventHandler(this.demoWeiXinApi_Load);
-            this.Name = "demoWeiXinApi";
+            this.Load += new System.EventHandler(this.demoWeiXinENTApi_Load);
+            this.Name = "demoWeiXinENTApi";
 
         }
         #endregion
 
         private Core.Controls.Title title1;
-        private Smobiler.Plugins.WeiXinApi weiXinApi1;
         private Core.Controls.Label label1;
         private Core.Controls.ListMenuView listMenuView1;
+        private Smobiler.Plugins.WeiXinENTApi weiXinENTApi1;
     }
 }
