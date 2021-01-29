@@ -85,6 +85,12 @@
     <Compile Include="AI\demoSpeech.Designer.cs">
       <DependentUpon>demoSpeech.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\deleteTemplat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\deleteTemplat.Designer.cs">
+      <DependentUpon>deleteTemplat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\demoBarChart.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -145,6 +151,12 @@
     <Compile Include="Components\demoClient.Designer.cs">
       <DependentUpon>demoClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\demoComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoComboBox.Designer.cs">
+      <DependentUpon>demoComboBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\demoDatePicker.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -163,6 +175,12 @@
     </Compile>
     <Compile Include="Components\demoGPS.Designer.cs">
       <DependentUpon>demoGPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoGridView.Designer.cs">
+      <DependentUpon>demoGridView.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\demoImage.cs">
       <SubType>Component</SubType>
@@ -194,6 +212,18 @@
     <Compile Include="Components\demoLineChart.Designer.cs">
       <DependentUpon>demoLineChart.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\demoListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoListView.Designer.cs">
+      <DependentUpon>demoListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoListViewTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoListViewTemplate.Designer.cs">
+      <DependentUpon>demoListViewTemplate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\demoMapTagView.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -205,6 +235,12 @@
     </Compile>
     <Compile Include="Components\demoPageView.Designer.cs">
       <DependentUpon>demoPageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoPanel.Designer.cs">
+      <DependentUpon>demoPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\demoPicker.cs">
       <SubType>Component</SubType>
@@ -242,6 +278,18 @@
     <Compile Include="Components\demoScrollablePanel.Designer.cs">
       <DependentUpon>demoScrollablePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\demoSectionListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoSectionListView.Designer.cs">
+      <DependentUpon>demoSectionListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoSectionListViewTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoSectionListViewTemplate.Designer.cs">
+      <DependentUpon>demoSectionListViewTemplate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\demoSegmentedControl.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -266,11 +314,23 @@
     <Compile Include="Components\demoSpinner.Designer.cs">
       <DependentUpon>demoSpinner.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\demoSwipeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoSwipeView.Designer.cs">
+      <DependentUpon>demoSwipeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\demoSwitch.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Components\demoSwitch.Designer.cs">
       <DependentUpon>demoSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoTableView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoTableView.Designer.cs">
+      <DependentUpon>demoTableView.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\demoTabPageView.cs">
       <SubType>Component</SubType>
@@ -308,11 +368,59 @@
     <Compile Include="Components\demoZoomImage.Designer.cs">
       <DependentUpon>demoZoomImage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\editLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\editLayout.Designer.cs">
+      <DependentUpon>editLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\gridViewTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\gridViewTemplate.Designer.cs">
+      <DependentUpon>gridViewTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\listViewTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\listViewTemplate.Designer.cs">
+      <DependentUpon>listViewTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\swipeListviewTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\swipeListviewTemplate.Designer.cs">
+      <DependentUpon>swipeListviewTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\swipeViewTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\swipeViewTemplate.Designer.cs">
+      <DependentUpon>swipeViewTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\tableTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\tableTemplate.Designer.cs">
+      <DependentUpon>tableTemplate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\demoAlbumView.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\demoAlbumView.Designer.cs">
       <DependentUpon>demoAlbumView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoBarcodeScannerButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoBarcodeScannerButton.Designer.cs">
+      <DependentUpon>demoBarcodeScannerButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoCameraButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoCameraButton.Designer.cs">
+      <DependentUpon>demoCameraButton.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\demoIconMenuView.cs">
       <SubType>Component</SubType>
@@ -326,17 +434,41 @@
     <Compile Include="Controls\demoImageButton.Designer.cs">
       <DependentUpon>demoImageButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\demoImageEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoImageEx.Designer.cs">
+      <DependentUpon>demoImageEx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\demoListMenuView.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\demoListMenuView.Designer.cs">
       <DependentUpon>demoListMenuView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\demoNodeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoNodeView.Designer.cs">
+      <DependentUpon>demoNodeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\demoNumeric.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\demoNumeric.Designer.cs">
       <DependentUpon>demoNumeric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoOfflineCameraButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoOfflineCameraButton.Designer.cs">
+      <DependentUpon>demoOfflineCameraButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\demoPhoneButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\demoPhoneButton.Designer.cs">
+      <DependentUpon>demoPhoneButton.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\demoPopList.cs">
       <SubType>Component</SubType>
@@ -470,6 +602,18 @@
     <Compile Include="Plugins\demoAndroidCodeCompiler.designer.cs">
       <DependentUpon>demoAndroidCodeCompiler.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoArcFace.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoArcFace.designer.cs">
+      <DependentUpon>demoArcFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoArcFacePro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoArcFacePro.designer.cs">
+      <DependentUpon>demoArcFacePro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoAudio.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -488,6 +632,12 @@
     <Compile Include="Plugins\demoBluetooth.Designer.cs">
       <DependentUpon>demoBluetooth.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoCalenderStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoCalenderStrip.Designer.cs">
+      <DependentUpon>demoCalenderStrip.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoCN6508Printer.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -500,6 +650,12 @@
     <Compile Include="Plugins\demoCN6508Scan.designer.cs">
       <DependentUpon>demoCN6508Scan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoDropdownAert.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoDropdownAert.Designer.cs">
+      <DependentUpon>demoDropdownAert.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoECharts.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -511,6 +667,12 @@
     </Compile>
     <Compile Include="Plugins\demoFingerPrint.Designer.cs">
       <DependentUpon>demoFingerPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoHighLightLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoHighLightLabel.Designer.cs">
+      <DependentUpon>demoHighLightLabel.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoHTMLView.cs">
       <SubType>Component</SubType>
@@ -530,17 +692,71 @@
     <Compile Include="Plugins\demoLiveStream.Designer.cs">
       <DependentUpon>demoLiveStream.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoLiveStreamPlayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoLiveStreamPlayer.Designer.cs">
+      <DependentUpon>demoLiveStreamPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoMapRoute.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoMapRoute.Designer.cs">
+      <DependentUpon>demoMapRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoMapTrimView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoMapTrimView.Designer.cs">
+      <DependentUpon>demoMapTrimView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoMapView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoMapView.Designer.cs">
+      <DependentUpon>demoMapView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoMarqueeLabel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Plugins\demoMarqueeLabel.Designer.cs">
       <DependentUpon>demoMarqueeLabel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoMediaView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoMediaView.Designer.cs">
+      <DependentUpon>demoMediaView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoNFC.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Plugins\demoNFC.Designer.cs">
       <DependentUpon>demoNFC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoPDFView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoPDFView.Designer.cs">
+      <DependentUpon>demoPDFView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoPercentageCircle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoPercentageCircle.Designer.cs">
+      <DependentUpon>demoPercentageCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoProgressView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoProgressView.Designer.cs">
+      <DependentUpon>demoProgressView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoPulseLoader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoPulseLoader.Designer.cs">
+      <DependentUpon>demoPulseLoader.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoScanBarcodeView.cs">
       <SubType>Component</SubType>
@@ -554,11 +770,35 @@
     <Compile Include="Plugins\demoSignatureView.Designer.cs">
       <DependentUpon>demoSignatureView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoSwitchSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoSwitchSelector.Designer.cs">
+      <DependentUpon>demoSwitchSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoTextboxField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoTextboxField.Designer.cs">
+      <DependentUpon>demoTextboxField.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoTTS.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Plugins\demoTTS.Designer.cs">
       <DependentUpon>demoTTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoUSBSerial.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoUSBSerial.Designer.cs">
+      <DependentUpon>demoUSBSerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoVLCPlayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoVLCPlayer.Designer.cs">
+      <DependentUpon>demoVLCPlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoWeiXin.cs">
       <SubType>Component</SubType>
@@ -811,6 +1051,9 @@
     <EmbeddedResource Include="AI\demoSpeech.resx">
       <DependentUpon>demoSpeech.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\deleteTemplat.resx">
+      <DependentUpon>deleteTemplat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\demoBarChart.resx">
       <DependentUpon>demoBarChart.cs</DependentUpon>
     </EmbeddedResource>
@@ -841,6 +1084,9 @@
     <EmbeddedResource Include="Components\demoClient.resx">
       <DependentUpon>demoClient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoComboBox.resx">
+      <DependentUpon>demoComboBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\demoDatePicker.resx">
       <DependentUpon>demoDatePicker.cs</DependentUpon>
     </EmbeddedResource>
@@ -849,6 +1095,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\demoGPS.resx">
       <DependentUpon>demoGPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoGridView.resx">
+      <DependentUpon>demoGridView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\demoImage.resx">
       <DependentUpon>demoImage.cs</DependentUpon>
@@ -865,11 +1114,20 @@
     <EmbeddedResource Include="Components\demoLineChart.resx">
       <DependentUpon>demoLineChart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoListView.resx">
+      <DependentUpon>demoListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoListViewTemplate.resx">
+      <DependentUpon>demoListViewTemplate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\demoMapTagView.resx">
       <DependentUpon>demoMapTagView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\demoPageView.resx">
       <DependentUpon>demoPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoPanel.resx">
+      <DependentUpon>demoPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\demoPicker.resx">
       <DependentUpon>demoPicker.cs</DependentUpon>
@@ -889,6 +1147,12 @@
     <EmbeddedResource Include="Components\demoScrollablePanel.resx">
       <DependentUpon>demoScrollablePanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoSectionListView.resx">
+      <DependentUpon>demoSectionListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoSectionListViewTemplate.resx">
+      <DependentUpon>demoSectionListViewTemplate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\demoSegmentedControl.resx">
       <DependentUpon>demoSegmentedControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -901,8 +1165,14 @@
     <EmbeddedResource Include="Components\demoSpinner.resx">
       <DependentUpon>demoSpinner.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoSwipeView.resx">
+      <DependentUpon>demoSwipeView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\demoSwitch.resx">
       <DependentUpon>demoSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoTableView.resx">
+      <DependentUpon>demoTableView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\demoTabPageView.resx">
       <DependentUpon>demoTabPageView.cs</DependentUpon>
@@ -922,8 +1192,32 @@
     <EmbeddedResource Include="Components\demoZoomImage.resx">
       <DependentUpon>demoZoomImage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\editLayout.resx">
+      <DependentUpon>editLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\gridViewTemplate.resx">
+      <DependentUpon>gridViewTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\listViewTemplate.resx">
+      <DependentUpon>listViewTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\swipeListviewTemplate.resx">
+      <DependentUpon>swipeListviewTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\swipeViewTemplate.resx">
+      <DependentUpon>swipeViewTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\tableTemplate.resx">
+      <DependentUpon>tableTemplate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\demoAlbumView.resx">
       <DependentUpon>demoAlbumView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoBarcodeScannerButton.resx">
+      <DependentUpon>demoBarcodeScannerButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoCameraButton.resx">
+      <DependentUpon>demoCameraButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\demoIconMenuView.resx">
       <DependentUpon>demoIconMenuView.cs</DependentUpon>
@@ -931,11 +1225,23 @@
     <EmbeddedResource Include="Controls\demoImageButton.resx">
       <DependentUpon>demoImageButton.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoImageEx.resx">
+      <DependentUpon>demoImageEx.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\demoListMenuView.resx">
       <DependentUpon>demoListMenuView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoNodeView.resx">
+      <DependentUpon>demoNodeView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\demoNumeric.resx">
       <DependentUpon>demoNumeric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoOfflineCameraButton.resx">
+      <DependentUpon>demoOfflineCameraButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\demoPhoneButton.resx">
+      <DependentUpon>demoPhoneButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\demoPopList.resx">
       <DependentUpon>demoPopList.cs</DependentUpon>
@@ -1003,6 +1309,12 @@
     <EmbeddedResource Include="Plugins\demoAndroidCodeCompiler.resx">
       <DependentUpon>demoAndroidCodeCompiler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoArcFace.resx">
+      <DependentUpon>demoArcFace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoArcFacePro.resx">
+      <DependentUpon>demoArcFacePro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoAudio.resx">
       <DependentUpon>demoAudio.cs</DependentUpon>
     </EmbeddedResource>
@@ -1012,17 +1324,26 @@
     <EmbeddedResource Include="Plugins\demoBluetooth.resx">
       <DependentUpon>demoBluetooth.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoCalenderStrip.resx">
+      <DependentUpon>demoCalenderStrip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoCN6508Printer.resx">
       <DependentUpon>demoCN6508Printer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoCN6508Scan.resx">
       <DependentUpon>demoCN6508Scan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoDropdownAert.resx">
+      <DependentUpon>demoDropdownAert.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoECharts.resx">
       <DependentUpon>demoECharts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoFingerPrint.resx">
       <DependentUpon>demoFingerPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoHighLightLabel.resx">
+      <DependentUpon>demoHighLightLabel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoHTMLView.resx">
       <DependentUpon>demoHTMLView.cs</DependentUpon>
@@ -1033,11 +1354,38 @@
     <EmbeddedResource Include="Plugins\demoLiveStream.resx">
       <DependentUpon>demoLiveStream.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoLiveStreamPlayer.resx">
+      <DependentUpon>demoLiveStreamPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoMapRoute.resx">
+      <DependentUpon>demoMapRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoMapTrimView.resx">
+      <DependentUpon>demoMapTrimView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoMapView.resx">
+      <DependentUpon>demoMapView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoMarqueeLabel.resx">
       <DependentUpon>demoMarqueeLabel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoMediaView.resx">
+      <DependentUpon>demoMediaView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoNFC.resx">
       <DependentUpon>demoNFC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoPDFView.resx">
+      <DependentUpon>demoPDFView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoPercentageCircle.resx">
+      <DependentUpon>demoPercentageCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoProgressView.resx">
+      <DependentUpon>demoProgressView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoPulseLoader.resx">
+      <DependentUpon>demoPulseLoader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoScanBarcodeView.resx">
       <DependentUpon>demoScanBarcodeView.cs</DependentUpon>
@@ -1045,8 +1393,20 @@
     <EmbeddedResource Include="Plugins\demoSignatureView.resx">
       <DependentUpon>demoSignatureView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoSwitchSelector.resx">
+      <DependentUpon>demoSwitchSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoTextboxField.resx">
+      <DependentUpon>demoTextboxField.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoTTS.resx">
       <DependentUpon>demoTTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoUSBSerial.resx">
+      <DependentUpon>demoUSBSerial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoVLCPlayer.resx">
+      <DependentUpon>demoVLCPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoWeiXin.resx">
       <DependentUpon>demoWeiXin.cs</DependentUpon>
