@@ -2,7 +2,7 @@
 using Smobiler.Core;
 namespace Smobiler.Tutorials.Components
 {
-    partial class editLayout : Smobiler.Core.Controls.MobileUserControl
+    partial class gridAddTemplate : Smobiler.Core.Controls.MobileUserControl
     {
         #region "SmobilerUserControl generated code "
 
@@ -21,12 +21,11 @@ namespace Smobiler.Tutorials.Components
             this.title1 = new Smobiler.Core.Controls.Title();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.image1 = new Smobiler.Core.Controls.Image();
-            this.textBox1 = new Smobiler.Core.Controls.TextBox();
-            this.textBox2 = new Smobiler.Core.Controls.TextBox();
+            this.nametxt = new Smobiler.Core.Controls.TextBox();
+            this.sextxt = new Smobiler.Core.Controls.TextBox();
             this.button1 = new Smobiler.Core.Controls.Button();
             this.button2 = new Smobiler.Core.Controls.Button();
-            this.label1 = new Smobiler.Core.Controls.Label();
-            this.label2 = new Smobiler.Core.Controls.Label();
+            this.idtxt = new Smobiler.Core.Controls.TextBox();
             // 
             // title1
             // 
@@ -38,12 +37,11 @@ namespace Smobiler.Tutorials.Components
             // 
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.image1,
-            this.textBox1,
-            this.textBox2,
+            this.nametxt,
+            this.sextxt,
             this.button1,
             this.button2,
-            this.label1,
-            this.label2});
+            this.idtxt});
             this.panel1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
             this.panel1.Flex = 1;
             this.panel1.Name = "panel1";
@@ -54,23 +52,26 @@ namespace Smobiler.Tutorials.Components
             // 
             this.image1.Location = new System.Drawing.Point(27, 55);
             this.image1.Name = "image1";
+            this.image1.ResourceID = "logon";
             this.image1.Size = new System.Drawing.Size(81, 79);
             // 
-            // textBox1
+            // nametxt
             // 
-            this.textBox1.Border = new Smobiler.Core.Controls.Border(1F);
-            this.textBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
-            this.textBox1.Location = new System.Drawing.Point(142, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 35);
+            this.nametxt.Border = new Smobiler.Core.Controls.Border(1F);
+            this.nametxt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.nametxt.Location = new System.Drawing.Point(142, 83);
+            this.nametxt.Name = "nametxt";
+            this.nametxt.Size = new System.Drawing.Size(120, 35);
+            this.nametxt.WaterMarkText = "姓名";
             // 
-            // textBox2
+            // sextxt
             // 
-            this.textBox2.Border = new Smobiler.Core.Controls.Border(1F);
-            this.textBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
-            this.textBox2.Location = new System.Drawing.Point(142, 134);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 35);
+            this.sextxt.Border = new Smobiler.Core.Controls.Border(1F);
+            this.sextxt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.sextxt.Location = new System.Drawing.Point(142, 134);
+            this.sextxt.Name = "sextxt";
+            this.sextxt.Size = new System.Drawing.Size(120, 35);
+            this.sextxt.WaterMarkText = "性别";
             // 
             // button1
             // 
@@ -90,22 +91,16 @@ namespace Smobiler.Tutorials.Components
             this.button2.Text = "保存";
             this.button2.Press += new System.EventHandler(this.button2_Press);
             // 
-            // label1
+            // idtxt
             // 
-            this.label1.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Right;
-            this.label1.Location = new System.Drawing.Point(142, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 35);
-            this.label1.Text = "id：";
+            this.idtxt.Border = new Smobiler.Core.Controls.Border(1F);
+            this.idtxt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(176)))), ((int)(((byte)(249)))));
+            this.idtxt.Location = new System.Drawing.Point(142, 34);
+            this.idtxt.Name = "idtxt";
+            this.idtxt.Size = new System.Drawing.Size(120, 35);
+            this.idtxt.WaterMarkText = "id";
             // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(190, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 35);
-            this.label2.Text = "label2";
-            // 
-            // editLayout
+            // gridAddTemplate
             // 
             this.BackColor = System.Drawing.Color.White;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
@@ -113,7 +108,7 @@ namespace Smobiler.Tutorials.Components
             this.panel1});
             this.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.Size = new System.Drawing.Size(300, 300);
-            this.Name = "editLayout";
+            this.Name = "gridAddTemplate";
 
         }
         #endregion
@@ -121,11 +116,10 @@ namespace Smobiler.Tutorials.Components
         private Core.Controls.Title title1;
         private Core.Controls.Panel panel1;
         private Core.Controls.Image image1;
-        private Core.Controls.TextBox textBox1;
-        private Core.Controls.TextBox textBox2;
+        private Core.Controls.TextBox nametxt;
+        private Core.Controls.TextBox sextxt;
         private Core.Controls.Button button1;
         private Core.Controls.Button button2;
-        private Core.Controls.Label label1;
-        private Core.Controls.Label label2;
+        private Core.Controls.TextBox idtxt;
     }
 }

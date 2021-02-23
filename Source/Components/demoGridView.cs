@@ -26,6 +26,7 @@ namespace Smobiler.Tutorials.Components
             pg1.AddListItem("删除行");
             pg1.AddListItem("清空");
             pg1.AddListItem("新增行");
+            pg1.AddListItem("页面上新增行");
             pg1.AddListItem("编辑");
             popList1.Groups.Add(pg1);
             DataTable dt = new DataTable();
@@ -37,7 +38,7 @@ namespace Smobiler.Tutorials.Components
             string[] pic = new string[] { "boy.png", "girl.png" };
             for (int i = 0; i < 8; i++)
             {
-                dt.Rows.Add(pic[i%2], i, "user" + i.ToString(), sex[i % 2]);
+                dt.Rows.Add(pic[i % 2], i, "user" + i.ToString(), sex[i % 2]);
             }
             //gridView2绑定数据
             gridView2.TemplateControl = new listViewTemplate();
@@ -99,9 +100,22 @@ namespace Smobiler.Tutorials.Components
                     string[] pic = new string[] { "boy.png", "girl.png" };
                     for (int i = 6; i < 12; i++)
                     {
-                        gridTable.Rows.Add(pic[i%2], i, "user" + i.ToString(), sex[i % 2]);
+                        gridTable.Rows.Add(pic[i % 2], i, "user" + i.ToString(), sex[i % 2]);
                     }
                     gridView1.NewCell(gridTable, "");
+                    labContent.Text = "gridView1.NewCell 新增行。";
+                    button1.Text = "新增行";
+                    break;
+                case "页面上新增行":
+                    gridAddTemplate uc = new gridAddTemplate();
+                    this.ShowDialog(uc, (obj, args) =>
+                    {
+                        if (uc.ShowResult == ShowResult.Yes && uc.dataTable.Rows.Count>0)
+                        {
+                            gridView1.NewCell(uc.dataTable, "");
+                        }
+                    });
+                   
                     labContent.Text = "gridView1.NewCell 新增行。";
                     button1.Text = "新增行";
                     break;
@@ -122,7 +136,7 @@ namespace Smobiler.Tutorials.Components
             string[] pic = new string[] { "boy.png", "girl.png" };
             for (int i = 0; i < 6; i++)
             {
-                gridTable.Rows.Add(pic[i%2], i, "user" + i.ToString(), sex[i % 2]);
+                gridTable.Rows.Add(pic[i % 2], i, "user" + i.ToString(), sex[i % 2]);
             }
 
             if (gridTable.Rows.Count > 0)
@@ -146,7 +160,7 @@ namespace Smobiler.Tutorials.Components
                 string[] pic = new string[] { "boy.png", "girl.png" };
                 for (int i = n; i < n + 5; i++)
                 {
-                    dt.Rows.Add(pic[i%2], i, "user" + i.ToString(), sex[i % 2]);
+                    dt.Rows.Add(pic[i % 2], i, "user" + i.ToString(), sex[i % 2]);
                 }
                 gridView3.NewCell(dt, "");
                 n += 5;

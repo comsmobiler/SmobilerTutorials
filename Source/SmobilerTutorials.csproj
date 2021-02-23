@@ -374,6 +374,12 @@
     <Compile Include="Components\editLayout.Designer.cs">
       <DependentUpon>editLayout.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\gridAddTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\gridAddTemplate.Designer.cs">
+      <DependentUpon>gridAddTemplate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\gridViewTemplate.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1194,6 +1200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\editLayout.resx">
       <DependentUpon>editLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\gridAddTemplate.resx">
+      <DependentUpon>gridAddTemplate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\gridViewTemplate.resx">
       <DependentUpon>gridViewTemplate.cs</DependentUpon>
