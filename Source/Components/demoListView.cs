@@ -85,7 +85,7 @@ namespace Smobiler.Tutorials.Components
                     {
                         int i = listView1.Rows.Count;
                         listView1.Rows.RemoveAt(i - 1);
-                        labContent.Text = "gridView1.Cells.Remove ,gridView1.Cells.RemoveAt删除行。";
+                        labContent.Text = "listView1.Rows.Remove ,listView1.Rows.RemoveAt删除行。";
                     }
                     button1.Text = "删除行";
                     break;
