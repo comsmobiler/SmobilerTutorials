@@ -150,6 +150,7 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("ArcFace", "ArcFacePro") { Tag = typeof(demoArcFacePro) });
             grpPlugins.Items.Add(new IconMenuViewItem("ProgressView", "ProgressView") { Tag = typeof(demoProgressView) });
             grpPlugins.Items.Add(new IconMenuViewItem("MediaView", "MediaView") { Tag = typeof(demoMediaView) });
+            grpPlugins.Items.Add(new IconMenuViewItem("logon", "DingDingApi") { Tag = typeof(demoDingDingApi) });
             this.iconMenuView1.Groups.Add(grpPlugins);
 
             //Devices

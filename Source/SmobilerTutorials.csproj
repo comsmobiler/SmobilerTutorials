@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Smobiler.Tutorials</RootNamespace>
     <AssemblyName>SmobilerTutorials</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -65,6 +65,9 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TopSdk">
+      <HintPath>..\DLL\TopSdk.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI\ctlSpeechTraining.cs">
@@ -655,6 +658,12 @@
     </Compile>
     <Compile Include="Plugins\demoCN6508Scan.designer.cs">
       <DependentUpon>demoCN6508Scan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoDingDingApi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoDingDingApi.Designer.cs">
+      <DependentUpon>demoDingDingApi.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoDropdownAert.cs">
       <SubType>Component</SubType>
@@ -1341,6 +1350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoCN6508Scan.resx">
       <DependentUpon>demoCN6508Scan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoDingDingApi.resx">
+      <DependentUpon>demoDingDingApi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoDropdownAert.resx">
       <DependentUpon>demoDropdownAert.cs</DependentUpon>
