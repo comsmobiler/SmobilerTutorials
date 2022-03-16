@@ -355,9 +355,11 @@ namespace Smobiler.Tutorials.Components
             // datePicker12
             // 
             this.datePicker12.FontSize = 15F;
-            this.datePicker12.Location = new System.Drawing.Point(95, 99);
+            this.datePicker12.Format = Smobiler.Core.Controls.DateFormat.YMDHMS;
+            this.datePicker12.Location = new System.Drawing.Point(60, 99);
+            this.datePicker12.Mode = Smobiler.Core.Controls.DatePickerMode.DateTime;
             this.datePicker12.Name = "datePicker12";
-            this.datePicker12.Size = new System.Drawing.Size(100, 30);
+            this.datePicker12.Size = new System.Drawing.Size(135, 30);
             this.datePicker12.ValueChanged += new System.EventHandler(this.datePicker12_ValueChanged);
             // 
             // demoDatePicker

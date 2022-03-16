@@ -19,12 +19,13 @@ namespace Smobiler.Tutorials.Components
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.TableViewLabelColumn tableViewLabelColumn1 = new Smobiler.Core.Controls.TableViewLabelColumn();
-            Smobiler.Core.Controls.TableViewLabelColumn tableViewLabelColumn2 = new Smobiler.Core.Controls.TableViewLabelColumn();
+            Smobiler.Core.Controls.TableViewLabelColumn tableViewLabelColumn4 = new Smobiler.Core.Controls.TableViewLabelColumn();
+            Smobiler.Core.Controls.TableViewLabelColumn tableViewLabelColumn5 = new Smobiler.Core.Controls.TableViewLabelColumn();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(demoTableView));
-            Smobiler.Core.Controls.TableViewCheckBoxColumn tableViewCheckBoxColumn1 = new Smobiler.Core.Controls.TableViewCheckBoxColumn();
-            Smobiler.Core.Controls.TableViewButtonColumn tableViewButtonColumn1 = new Smobiler.Core.Controls.TableViewButtonColumn();
-            Smobiler.Core.Controls.TableViewTextBoxColumn tableViewTextBoxColumn1 = new Smobiler.Core.Controls.TableViewTextBoxColumn();
+            Smobiler.Core.Controls.TableViewCheckBoxColumn tableViewCheckBoxColumn2 = new Smobiler.Core.Controls.TableViewCheckBoxColumn();
+            Smobiler.Core.Controls.TableViewLabelColumn tableViewLabelColumn6 = new Smobiler.Core.Controls.TableViewLabelColumn();
+            Smobiler.Core.Controls.TableViewButtonColumn tableViewButtonColumn2 = new Smobiler.Core.Controls.TableViewButtonColumn();
+            Smobiler.Core.Controls.TableViewTextBoxColumn tableViewTextBoxColumn2 = new Smobiler.Core.Controls.TableViewTextBoxColumn();
             this.title1 = new Smobiler.Core.Controls.Title();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.panel2 = new Smobiler.Core.Controls.Panel();
@@ -33,6 +34,10 @@ namespace Smobiler.Tutorials.Components
             this.tableView1 = new Smobiler.Core.Controls.TableView();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.tableView2 = new Smobiler.Core.Controls.TableView();
+            this.button1 = new Smobiler.Core.Controls.Button();
+            this.button2 = new Smobiler.Core.Controls.Button();
+            this.button3 = new Smobiler.Core.Controls.Button();
+            this.button4 = new Smobiler.Core.Controls.Button();
             // 
             // title1
             // 
@@ -63,10 +68,14 @@ namespace Smobiler.Tutorials.Components
             this.labTitle,
             this.tableView1,
             this.label1,
-            this.tableView2});
+            this.tableView2,
+            this.button1,
+            this.button2,
+            this.button3,
+            this.button4});
             this.panel2.Location = new System.Drawing.Point(5, 10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(290, 729);
+            this.panel2.Size = new System.Drawing.Size(290, 799);
             // 
             // labContent
             // 
@@ -93,14 +102,14 @@ namespace Smobiler.Tutorials.Components
             // 
             this.tableView1.Border = new Smobiler.Core.Controls.Border(1F, 1F, 0F, 0F);
             this.tableView1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            tableViewLabelColumn1.DataMember = "ID";
-            tableViewLabelColumn1.DisplayMember = "NAME";
-            tableViewLabelColumn1.HeaderText = "名称";
-            tableViewLabelColumn2.DisplayMember = "Value";
-            tableViewLabelColumn2.HeaderText = "数量";
+            tableViewLabelColumn4.DataMember = "ID";
+            tableViewLabelColumn4.DisplayMember = "NAME";
+            tableViewLabelColumn4.HeaderText = "名称";
+            tableViewLabelColumn5.DisplayMember = "Value";
+            tableViewLabelColumn5.HeaderText = "数量";
             this.tableView1.Columns.AddRange(new Smobiler.Core.Controls.TableViewColumn[] {
-            tableViewLabelColumn1,
-            tableViewLabelColumn2});
+            tableViewLabelColumn4,
+            tableViewLabelColumn5});
             this.tableView1.Location = new System.Drawing.Point(90, 97);
             this.tableView1.Name = "tableView1";
             this.tableView1.Size = new System.Drawing.Size(101, 126);
@@ -118,25 +127,59 @@ namespace Smobiler.Tutorials.Components
             // 
             // tableView2
             // 
-            this.tableView2.Border = new Smobiler.Core.Controls.Border(1F, 1F, 0F, 0F);
             this.tableView2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            tableViewButtonColumn1.DisplayMember = "NAME";
-            tableViewButtonColumn1.HeaderText = "名称";
-            tableViewTextBoxColumn1.DisplayMember = "Value";
-            tableViewTextBoxColumn1.HeaderText = "数量";
+            tableViewLabelColumn6.DisplayMember = "ID";
+            tableViewLabelColumn6.Text = "ID";
+            tableViewButtonColumn2.DisplayMember = "NAME";
+            tableViewButtonColumn2.HeaderText = "名称";
+            tableViewTextBoxColumn2.DisplayMember = "Value";
+            tableViewTextBoxColumn2.HeaderText = "数量";
             this.tableView2.Columns.AddRange(new Smobiler.Core.Controls.TableViewColumn[] {
-            tableViewCheckBoxColumn1,
-            tableViewButtonColumn1,
-            tableViewTextBoxColumn1});
-            this.tableView2.Location = new System.Drawing.Point(70, 524);
+            tableViewCheckBoxColumn2,
+            tableViewLabelColumn6,
+            tableViewButtonColumn2,
+            tableViewTextBoxColumn2});
+            this.tableView2.Location = new System.Drawing.Point(28, 524);
             this.tableView2.Name = "tableView2";
-            this.tableView2.Size = new System.Drawing.Size(151, 126);
+            this.tableView2.Size = new System.Drawing.Size(222, 126);
             this.tableView2.TextBoxCellTextChanged += new Smobiler.Core.Controls.TableViewTextBoxCellEventHandler(this.tableView2_TextBoxCellTextChanged);
             this.tableView2.TextBoxCellTouchEnter += new Smobiler.Core.Controls.TableViewTextBoxCellEventHandler(this.tableView2_TextBoxCellTouchEnter);
             this.tableView2.TextBoxCellTouchLeave += new Smobiler.Core.Controls.TableViewTextBoxCellEventHandler(this.tableView2_TextBoxCellTouchLeave);
             this.tableView2.ButtonCellLongPress += new Smobiler.Core.Controls.TableViewButtonCellEventHandler(this.tableView2_ButtonCellLongPress);
             this.tableView2.ButtonCellPress += new Smobiler.Core.Controls.TableViewButtonCellEventHandler(this.tableView2_ButtonCellPress);
             this.tableView2.CheckBoxCellCheckedChanged += new Smobiler.Core.Controls.TableViewCheckBoxCellEventHandler(this.tableView2_CheckBoxCellCheckedChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 682);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(133, 35);
+            this.button1.Text = "更改第三列Visible";
+            this.button1.Press += new System.EventHandler(this.button1_Press);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(148, 682);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(133, 35);
+            this.button2.Text = "滚动到第6行";
+            this.button2.Press += new System.EventHandler(this.button2_Press);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(6, 729);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(133, 35);
+            this.button3.Text = "增加新行";
+            this.button3.Press += new System.EventHandler(this.button3_Press);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(148, 729);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(133, 35);
+            this.button4.Text = "移除最后一行";
+            this.button4.Press += new System.EventHandler(this.button4_Press);
             // 
             // demoTableView
             // 
@@ -159,5 +202,9 @@ namespace Smobiler.Tutorials.Components
         private Core.Controls.TableView tableView1;
         private Core.Controls.Label label1;
         private Core.Controls.TableView tableView2;
+        private Core.Controls.Button button1;
+        private Core.Controls.Button button2;
+        private Core.Controls.Button button3;
+        private Core.Controls.Button button4;
     }
 }

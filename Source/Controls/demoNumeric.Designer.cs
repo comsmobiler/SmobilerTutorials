@@ -33,6 +33,11 @@ namespace Smobiler.Tutorials.Controls
             this.numeric3 = new Smobiler.Core.Controls.Numeric();
             this.numeric4 = new Smobiler.Core.Controls.Numeric();
             this.numeric5 = new Smobiler.Core.Controls.Numeric();
+            this.label5 = new Smobiler.Core.Controls.Label();
+            this.numeric6 = new Smobiler.Core.Controls.Numeric();
+            this.numeric7 = new Smobiler.Core.Controls.Numeric();
+            this.label6 = new Smobiler.Core.Controls.Label();
+            this.label7 = new Smobiler.Core.Controls.Label();
             // 
             // title1
             // 
@@ -70,10 +75,15 @@ namespace Smobiler.Tutorials.Controls
             this.numeric2,
             this.numeric3,
             this.numeric4,
-            this.numeric5});
+            this.numeric5,
+            this.label5,
+            this.numeric6,
+            this.numeric7,
+            this.label6,
+            this.label7});
             this.panel1.Location = new System.Drawing.Point(5, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 427);
+            this.panel1.Size = new System.Drawing.Size(290, 589);
             // 
             // labContent
             // 
@@ -117,13 +127,13 @@ namespace Smobiler.Tutorials.Controls
             this.label3.FontSize = 15F;
             this.label3.Location = new System.Drawing.Point(0, 270);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(295, 35);
+            this.label3.Size = new System.Drawing.Size(295, 51);
             this.label3.Text = "PlusIconColor、MinusIconColor属性可设置加号、减号图标字体颜色：\r\n";
             // 
             // label4
             // 
             this.label4.FontSize = 14F;
-            this.label4.Location = new System.Drawing.Point(0, 343);
+            this.label4.Location = new System.Drawing.Point(0, 360);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(290, 48);
             this.label4.Text = "MaxValue、MinValue、Value、Variation可设置数量控件可设置的最大值、最小值、显示的默认值、值变化时的增量";
@@ -150,7 +160,7 @@ namespace Smobiler.Tutorials.Controls
             // 
             // numeric4
             // 
-            this.numeric4.Location = new System.Drawing.Point(0, 305);
+            this.numeric4.Location = new System.Drawing.Point(0, 322);
             this.numeric4.MinusIconColor = System.Drawing.Color.Lime;
             this.numeric4.Name = "numeric4";
             this.numeric4.PlusIconColor = System.Drawing.Color.Red;
@@ -158,7 +168,7 @@ namespace Smobiler.Tutorials.Controls
             // 
             // numeric5
             // 
-            this.numeric5.Location = new System.Drawing.Point(0, 391);
+            this.numeric5.Location = new System.Drawing.Point(0, 408);
             this.numeric5.MaxValue = new decimal(new int[] {
             1000,
             0,
@@ -181,6 +191,81 @@ namespace Smobiler.Tutorials.Controls
             0,
             0,
             0});
+            // 
+            // label5
+            // 
+            this.label5.FontSize = 14F;
+            this.label5.Location = new System.Drawing.Point(0, 448);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(290, 31);
+            this.label5.Text = "ReadOnly 可设置是否通过虚拟键盘输入";
+            // 
+            // numeric6
+            // 
+            this.numeric6.Location = new System.Drawing.Point(0, 489);
+            this.numeric6.MaxValue = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numeric6.MinValue = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numeric6.Name = "numeric6";
+            this.numeric6.Size = new System.Drawing.Size(168, 28);
+            this.numeric6.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numeric6.Variation = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // numeric7
+            // 
+            this.numeric7.Location = new System.Drawing.Point(0, 527);
+            this.numeric7.MaxValue = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numeric7.MinValue = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numeric7.Name = "numeric7";
+            this.numeric7.ReadOnly = true;
+            this.numeric7.Size = new System.Drawing.Size(168, 28);
+            this.numeric7.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numeric7.Variation = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(179, 489);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 35);
+            this.label6.Text = "ReadOnly：False";
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(179, 524);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 35);
+            this.label7.Text = "ReadOnly：True";
             // 
             // demoNumeric
             // 
@@ -207,5 +292,10 @@ namespace Smobiler.Tutorials.Controls
         private Core.Controls.Numeric numeric3;
         private Core.Controls.Numeric numeric4;
         private Core.Controls.Numeric numeric5;
+        private Core.Controls.Label label5;
+        private Core.Controls.Numeric numeric6;
+        private Core.Controls.Numeric numeric7;
+        private Core.Controls.Label label6;
+        private Core.Controls.Label label7;
     }
 }
