@@ -230,7 +230,8 @@ namespace Smobiler.Tutorials.Components
         "Text - CurrentDate",
         "HorizontalAlignment - Left",
         "HorizontalAlignment - Center",
-        "HorizontalAlignment - Right"};
+        "HorizontalAlignment - Right",
+        "Shadow"};
             this.spinner1.Location = new System.Drawing.Point(0, 80);
             this.spinner1.Name = "spinner1";
             this.spinner1.Size = new System.Drawing.Size(290, 30);

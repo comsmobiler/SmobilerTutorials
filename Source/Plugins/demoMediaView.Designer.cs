@@ -26,6 +26,8 @@ namespace Smobiler.Tutorials.Plugins
             this.labTitle = new Smobiler.Core.Controls.Label();
             this.mediaView1 = new Smobiler.Plugins.MediaView();
             this.label1 = new Smobiler.Core.Controls.Label();
+            this.button1 = new Smobiler.Core.Controls.Button();
+            this.button2 = new Smobiler.Core.Controls.Button();
             // 
             // title1
             // 
@@ -55,7 +57,9 @@ namespace Smobiler.Tutorials.Plugins
             this.labContent,
             this.labTitle,
             this.mediaView1,
-            this.label1});
+            this.label1,
+            this.button1,
+            this.button2});
             this.panel2.Location = new System.Drawing.Point(5, 9);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(290, 570);
@@ -97,6 +101,24 @@ namespace Smobiler.Tutorials.Plugins
             this.label1.Size = new System.Drawing.Size(290, 40);
             this.label1.Text = "StateChanged事件在视频状态改变后触发\r\n";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(25, 409);
+            this.button1.Margin = new Smobiler.Core.Controls.Margin(0F, 30F, 0F, 0F);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 35);
+            this.button1.Text = "跳转20s";
+            this.button1.Press += new System.EventHandler(this.button1_Press);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(25, 409);
+            this.button2.Margin = new Smobiler.Core.Controls.Margin(0F, 80F, 0F, 0F);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 35);
+            this.button2.Text = "暂停/播放";
+            this.button2.Press += new System.EventHandler(this.button2_Press);
+            // 
             // demoMediaView
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
@@ -116,5 +138,7 @@ namespace Smobiler.Tutorials.Plugins
         private Core.Controls.Label labTitle;
         private Smobiler.Plugins.MediaView mediaView1;
         private Core.Controls.Label label1;
+        private Core.Controls.Button button1;
+        private Core.Controls.Button button2;
     }
 }

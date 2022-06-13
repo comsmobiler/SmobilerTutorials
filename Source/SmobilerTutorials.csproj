@@ -695,11 +695,29 @@
     <Compile Include="Plugins\demoHTMLView.Designer.cs">
       <DependentUpon>demoHTMLView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoiOSBluetooth.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoiOSBluetooth.Designer.cs">
+      <DependentUpon>demoiOSBluetooth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoiOSPay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoiOSPay.Designer.cs">
+      <DependentUpon>demoiOSPay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoJsCodeCompiler.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Plugins\demoJsCodeCompiler.designer.cs">
       <DependentUpon>demoJsCodeCompiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoKeepAlive.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoKeepAlive.Designer.cs">
+      <DependentUpon>demoKeepAlive.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoLiveStream.cs">
       <SubType>Component</SubType>
@@ -742,6 +760,12 @@
     </Compile>
     <Compile Include="Plugins\demoMediaView.Designer.cs">
       <DependentUpon>demoMediaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoMobileClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoMobileClient.Designer.cs">
+      <DependentUpon>demoMobileClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoNFC.cs">
       <SubType>Component</SubType>
@@ -808,6 +832,12 @@
     </Compile>
     <Compile Include="Plugins\demoUSBSerial.Designer.cs">
       <DependentUpon>demoUSBSerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoViewShot.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoViewShot.Designer.cs">
+      <DependentUpon>demoViewShot.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoVLCPlayer.cs">
       <SubType>Component</SubType>
@@ -1369,8 +1399,17 @@
     <EmbeddedResource Include="Plugins\demoHTMLView.resx">
       <DependentUpon>demoHTMLView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoiOSBluetooth.resx">
+      <DependentUpon>demoiOSBluetooth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoiOSPay.resx">
+      <DependentUpon>demoiOSPay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoJsCodeCompiler.resx">
       <DependentUpon>demoJsCodeCompiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoKeepAlive.resx">
+      <DependentUpon>demoKeepAlive.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoLiveStream.resx">
       <DependentUpon>demoLiveStream.cs</DependentUpon>
@@ -1392,6 +1431,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoMediaView.resx">
       <DependentUpon>demoMediaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoMobileClient.resx">
+      <DependentUpon>demoMobileClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoNFC.resx">
       <DependentUpon>demoNFC.cs</DependentUpon>

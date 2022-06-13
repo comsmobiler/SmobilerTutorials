@@ -151,6 +151,8 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("ProgressView", "ProgressView") { Tag = typeof(demoProgressView) });
             grpPlugins.Items.Add(new IconMenuViewItem("MediaView", "MediaView") { Tag = typeof(demoMediaView) });
             grpPlugins.Items.Add(new IconMenuViewItem("logon", "DingDingApi") { Tag = typeof(demoDingDingApi) });
+            grpPlugins.Items.Add(new IconMenuViewItem("logon", "MobileClient") { Tag = typeof(demoMobileClient) });
+            grpPlugins.Items.Add(new IconMenuViewItem("Logon", "KeepAlive") { Tag = typeof(demoKeepAlive) });
             this.iconMenuView1.Groups.Add(grpPlugins);
 
             //Devices
@@ -187,6 +189,12 @@ namespace Smobiler.Tutorials
             grpWeb.Items.Add(new IconMenuViewItem("WeiXinApi", "WeiXinApi") { Tag = typeof(demoWeiXinApi) });
             grpWeb.Items.Add(new IconMenuViewItem("ECharts", "ECharts") { Tag = typeof(demoEChart) });
             this.iconMenuView1.Groups.Add(grpWeb);
+
+            //探索功能
+            IconMenuViewGroup grTSs = new IconMenuViewGroup("探索功能");
+            grTSs.Items.Add(new IconMenuViewItem("logon", "iOSPay") { Tag = typeof(demoiOSPay) });
+            grTSs.Items.Add(new IconMenuViewItem("Bluetooth", "iOSBluetooth") { Tag = typeof(demoiOSBluetooth) });
+            this.iconMenuView1.Groups.Add(grTSs);
         }
 
         private void iconMenuView1_ItemPress(object sender, IconMenuViewItemPressEventArgs e)

@@ -59,6 +59,9 @@ namespace Smobiler.Tutorials.Components
                 case "HorizontalAlignment - Right":
                     this.button1.HorizontalAlignment = HorizontalAlignment.Right;
                     break;
+                case "Shadow":
+                    this.button1.Shadow = 3;
+                    break;
             }
         }
 

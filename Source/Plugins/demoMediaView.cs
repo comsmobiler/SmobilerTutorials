@@ -30,5 +30,16 @@ namespace Smobiler.Tutorials.Plugins
             mediaView1.Url = "https://www.smobiler.com/video/video/video_001.mp4";
            // string url=MobileResourceManager.GetResourceURL(this.Client.SessionID, "名称.mp4", MobileResourceManager.DefaultUploadResourceName); 将upload下的文件转换为url
         }
+
+        private void button1_Press(object sender, EventArgs e)
+        {
+            mediaView1.Seek(20);
+        }
+        private bool flag = false;
+        private void button2_Press(object sender, EventArgs e)
+        {
+            mediaView1.Pause(flag);
+            flag = !flag;
+        }
     }
 }

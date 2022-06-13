@@ -202,5 +202,18 @@ namespace Smobiler.Tutorials.Plugins
                 }
             });
         }
+
+        private void button1_Press(object sender, EventArgs e)
+        {
+            bluetooth1.ConnectWithSearch("00:0D:18:00:19:9C", (obj, args) => {
+                if (args.isError)
+                    Toast(args.error);
+                else
+                {
+                    Toast(args.args.ToString());
+                }
+            });
+
+        }
     }
 }

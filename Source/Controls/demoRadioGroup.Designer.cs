@@ -31,6 +31,12 @@ namespace Smobiler.Tutorials.Controls
             Smobiler.Core.Controls.RadioButton radioButton10 = new Smobiler.Core.Controls.RadioButton();
             Smobiler.Core.Controls.RadioButton radioButton11 = new Smobiler.Core.Controls.RadioButton();
             Smobiler.Core.Controls.RadioButton radioButton12 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton13 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton14 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton15 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton16 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton17 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton18 = new Smobiler.Core.Controls.RadioButton();
             this.title1 = new Smobiler.Core.Controls.Title();
             this.panel10 = new Smobiler.Core.Controls.Panel();
             this.panel1 = new Smobiler.Core.Controls.Panel();
@@ -44,6 +50,9 @@ namespace Smobiler.Tutorials.Controls
             this.radioGroup2 = new Smobiler.Core.Controls.RadioGroup();
             this.radioGroup3 = new Smobiler.Core.Controls.RadioGroup();
             this.radioGroup4 = new Smobiler.Core.Controls.RadioGroup();
+            this.radioGroup5 = new Smobiler.Core.Controls.RadioGroup();
+            this.label5 = new Smobiler.Core.Controls.Label();
+            this.radioGroup6 = new Smobiler.Core.Controls.RadioGroup();
             // 
             // title1
             // 
@@ -58,11 +67,10 @@ namespace Smobiler.Tutorials.Controls
             // 
             this.panel10.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(0, 30);
             this.panel10.Name = "panel10";
             this.panel10.Scrollable = true;
-            this.panel10.Size = new System.Drawing.Size(300, 970);
+            this.panel10.Size = new System.Drawing.Size(300, 500);
             // 
             // panel1
             // 
@@ -80,10 +88,13 @@ namespace Smobiler.Tutorials.Controls
             this.radioGroup1,
             this.radioGroup2,
             this.radioGroup3,
-            this.radioGroup4});
+            this.radioGroup4,
+            this.radioGroup5,
+            this.label5,
+            this.radioGroup6});
             this.panel1.Location = new System.Drawing.Point(5, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 737);
+            this.panel1.Size = new System.Drawing.Size(290, 1000);
             // 
             // labContent
             // 
@@ -228,12 +239,61 @@ namespace Smobiler.Tutorials.Controls
             this.radioGroup4.Size = new System.Drawing.Size(290, 105);
             this.radioGroup4.ButtonPress += new Smobiler.Core.Controls.RadioButtonPressEventHandler(this.radioGroup4_ButtonPress);
             // 
+            // radioGroup5
+            // 
+            radioButton13.ID = "1";
+            radioButton13.Text = "第一行LabelBreak默认True换行，设置false时不换行。比如当前行是否 有换行";
+            radioButton13.Value = "1";
+            radioButton14.ID = "2";
+            radioButton14.Text = "第二行LabelBreak默认True换行，设置false时不换行。比如当前行是否 有换行";
+            radioButton14.Value = "2";
+            radioButton15.ID = "3";
+            radioButton15.Text = "第三行LabelBreak默认True换行，设置false时不换行。比如当前行是否 有换行";
+            radioButton15.Value = "3";
+            this.radioGroup5.Buttons.AddRange(new Smobiler.Core.Controls.RadioButton[] {
+            radioButton13,
+            radioButton14,
+            radioButton15});
+            this.radioGroup5.GridLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.radioGroup5.Location = new System.Drawing.Point(0, 767);
+            this.radioGroup5.Name = "radioGroup5";
+            this.radioGroup5.Size = new System.Drawing.Size(290, 105);
+            this.radioGroup5.ButtonPress += new Smobiler.Core.Controls.RadioButtonPressEventHandler(this.radioGroup4_ButtonPress);
+            // 
+            // label5
+            // 
+            this.label5.FontSize = 14F;
+            this.label5.Location = new System.Drawing.Point(0, 716);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(290, 43);
+            this.label5.Text = "LabelBreak设置true 文本 自动换行；设置false不换行";
+            // 
+            // radioGroup6
+            // 
+            radioButton16.ID = "1";
+            radioButton16.Text = "第一行LabelBreak默认True换行，设置false时不换行。比如当前行是否 有换行";
+            radioButton16.Value = "1";
+            radioButton17.ID = "2";
+            radioButton17.Text = "第二行LabelBreak默认True换行，设置false时不换行。比如当前行是否 有换行";
+            radioButton17.Value = "2";
+            radioButton18.ID = "3";
+            radioButton18.Text = "第三行LabelBreak默认True换行，设置false时不换行。比如当前行是否 有换行";
+            radioButton18.Value = "3";
+            this.radioGroup6.Buttons.AddRange(new Smobiler.Core.Controls.RadioButton[] {
+            radioButton16,
+            radioButton17,
+            radioButton18});
+            this.radioGroup6.GridLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.radioGroup6.Location = new System.Drawing.Point(0, 885);
+            this.radioGroup6.Name = "radioGroup6";
+            this.radioGroup6.Size = new System.Drawing.Size(290, 105);
+            this.radioGroup6.ButtonPress += new Smobiler.Core.Controls.RadioButtonPressEventHandler(this.radioGroup4_ButtonPress);
+            // 
             // demoRadioGroup
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.title1,
             this.panel10});
-            this.Size = new System.Drawing.Size(300, 1000);
             this.Load += new System.EventHandler(this.demoRadioGroup_Load);
             this.Name = "demoRadioGroup";
 
@@ -253,5 +313,8 @@ namespace Smobiler.Tutorials.Controls
         private Core.Controls.RadioGroup radioGroup2;
         private Core.Controls.RadioGroup radioGroup3;
         private Core.Controls.RadioGroup radioGroup4;
+        private Core.Controls.RadioGroup radioGroup5;
+        private Core.Controls.Label label5;
+        private Core.Controls.RadioGroup radioGroup6;
     }
 }
