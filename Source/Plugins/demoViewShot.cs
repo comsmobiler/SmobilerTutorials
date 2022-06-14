@@ -14,5 +14,22 @@ namespace Smobiler.Tutorials.Plugins
             //This call is required by the SmobilerForm.
             InitializeComponent();
         }
+
+        private void title1_ImagePress(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnRectangle_Press(object sender, EventArgs e)
+        {
+            viewShot1.Save();
+        }
+
+        private void viewShot1_OnViewShotImageSave(object sender, BinaryResultArgs e)
+        {
+            e.SaveFile("shot.png");
+            image1.ResourceID = "shot.png";
+            image1.Refresh(); 
+        }
     }
 }

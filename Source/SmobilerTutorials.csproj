@@ -1468,6 +1468,9 @@
     <EmbeddedResource Include="Plugins\demoUSBSerial.resx">
       <DependentUpon>demoUSBSerial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoViewShot.resx">
+      <DependentUpon>demoViewShot.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoVLCPlayer.resx">
       <DependentUpon>demoVLCPlayer.cs</DependentUpon>
     </EmbeddedResource>
