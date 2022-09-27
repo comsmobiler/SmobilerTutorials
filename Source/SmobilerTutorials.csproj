@@ -46,6 +46,18 @@
     <Reference Include="AopSdk">
       <HintPath>..\DLL\AopSdk.dll</HintPath>
     </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\DLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2-beta2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Smobiler.AI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1c93005509649d9e, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Core, Version=6.0.0.0, Culture=neutral, PublicKeyToken=c28d201d12639a97, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Core.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=276522cd3fa3b955, processorArchitecture=MSIL" />
@@ -67,6 +79,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="TopSdk">
       <HintPath>..\DLL\TopSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="upacp_sdk_net">
+      <HintPath>..\DLL\upacp_sdk_net.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -599,6 +614,24 @@
     <Compile Include="Devices\demoV7000.Designer.cs">
       <DependentUpon>demoV7000.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoAdvert.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoAdvert.Designer.cs">
+      <DependentUpon>demoAdvert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoCAPTCHA.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoCAPTCHA.Designer.cs">
+      <DependentUpon>demoCAPTCHA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoMobileQuickLogin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoMobileQuickLogin.Designer.cs">
+      <DependentUpon>demoMobileQuickLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoAliPay.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -803,6 +836,12 @@
     <Compile Include="Plugins\demoScanBarcodeView.Designer.cs">
       <DependentUpon>demoScanBarcodeView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoScreenShied.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoScreenShied.Designer.cs">
+      <DependentUpon>demoScreenShied.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoSignatureView.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -826,6 +865,12 @@
     </Compile>
     <Compile Include="Plugins\demoTTS.Designer.cs">
       <DependentUpon>demoTTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoUnionpay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoUnionpay.Designer.cs">
+      <DependentUpon>demoUnionpay.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoUSBSerial.cs">
       <SubType>Component</SubType>
@@ -1351,6 +1396,15 @@
     <EmbeddedResource Include="Devices\demoV7000.resx">
       <DependentUpon>demoV7000.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoAdvert.resx">
+      <DependentUpon>demoAdvert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoCAPTCHA.resx">
+      <DependentUpon>demoCAPTCHA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoMobileQuickLogin.resx">
+      <DependentUpon>demoMobileQuickLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoAliPay.resx">
       <DependentUpon>demoAliPay.cs</DependentUpon>
     </EmbeddedResource>
@@ -1453,6 +1507,9 @@
     <EmbeddedResource Include="Plugins\demoScanBarcodeView.resx">
       <DependentUpon>demoScanBarcodeView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoScreenShied.resx">
+      <DependentUpon>demoScreenShied.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoSignatureView.resx">
       <DependentUpon>demoSignatureView.cs</DependentUpon>
     </EmbeddedResource>
@@ -1464,6 +1521,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoTTS.resx">
       <DependentUpon>demoTTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoUnionpay.resx">
+      <DependentUpon>demoUnionpay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoUSBSerial.resx">
       <DependentUpon>demoUSBSerial.cs</DependentUpon>
@@ -1595,6 +1655,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="log4net.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

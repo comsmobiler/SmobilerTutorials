@@ -67,5 +67,16 @@ namespace Smobiler.Tutorials.Plugins
                 flag = !flag;
             });
         }
+
+        private void button5_Press(object sender, EventArgs e)
+        {
+            mobileClient1.SetScreenShot(false, (obj, args) => {
+
+                if (args.isError == false)
+                    Toast("success");
+                else
+                    Toast(args.error);
+            });
+        }
     }
 }

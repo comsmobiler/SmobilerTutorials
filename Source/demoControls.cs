@@ -154,6 +154,11 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("logon", "MobileClient") { Tag = typeof(demoMobileClient) });
             grpPlugins.Items.Add(new IconMenuViewItem("Logon", "KeepAlive") { Tag = typeof(demoKeepAlive) });
             grpPlugins.Items.Add(new IconMenuViewItem("Logon", "ViewShot") { Tag = typeof(demoViewShot) });
+            grpPlugins.Items.Add(new IconMenuViewItem("Logon", "MobileQuickLogin") { Tag = typeof(demoMobileQuickLogin) });
+            grpPlugins.Items.Add(new IconMenuViewItem("Logon", "UnionPay"){Tag= typeof(demoUnionpay) });
+            grpPlugins.Items.Add(new IconMenuViewItem("Image", "CPATCHA") { Tag = typeof(demoCAPTCHA) });
+            grpPlugins.Items.Add(new IconMenuViewItem("Logon", "ScreenShield") { Tag = typeof(demoScreenShied) });
+            grpPlugins.Items.Add(new IconMenuViewItem("Logon", "Advert") { Tag = typeof(demoAdvert) });
             this.iconMenuView1.Groups.Add(grpPlugins);
 
             //Devices
