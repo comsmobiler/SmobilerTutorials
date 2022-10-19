@@ -6,6 +6,7 @@ using Smobiler.Core;
 using Smobiler.Core.Controls;
 using Smobiler.Tutorials.Samples.Layout;
 using Smobiler.Tutorials.Samples.ListView;
+using Smobiler.Tutorials.Samples.Speech;
 using Smobiler.Tutorials.Samples.Transparent;
 using Smobiler.Tutorials.Samples.WebView;
 
@@ -37,6 +38,7 @@ namespace Smobiler.Tutorials.Samples
             grp1.Items.Add(new ListMenuViewItem("logon", "双向滚动", "", "") { Tag = "demoTwoWayScrolling" });
             grp1.Items.Add(new ListMenuViewItem("logon", "基于 TagPageView 的 Toolbar", "", "") { Tag = "demoTabToolbar" });
             grp1.Items.Add(new ListMenuViewItem("logon", "WebView控件和网页调用的示例", "", "") { Tag = "demoHtmlInteraction" });
+            grp1.Items.Add(new ListMenuViewItem("logon", "服务端语音转文字示例", "", "") { Tag = "demoSpeech" });
 
 
             //将ListMenuViewGroup添加到当前的ListMenuView中
@@ -164,6 +166,9 @@ namespace Smobiler.Tutorials.Samples
                     break;
                 case "demoListViewRowBind":
                     this.Show(new demoListViewRowBind());
+                    break;
+                case "demoSpeech":
+                    this.Show(new demoSpeech());
                     break;
             }
         }

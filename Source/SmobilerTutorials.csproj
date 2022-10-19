@@ -43,6 +43,9 @@
     <ApplicationIcon>Smobiler_128.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AipSdk, Version=4.15.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Baidu.AI.4.15.10\lib\net45\AipSdk.dll</HintPath>
+    </Reference>
     <Reference Include="AopSdk">
       <HintPath>..\DLL\AopSdk.dll</HintPath>
     </Reference>
@@ -1064,6 +1067,12 @@
     <Compile Include="Samples\demoSamples.designer.cs">
       <DependentUpon>demoSamples.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\Speech\demoSpeech.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Speech\demoSpeech.Designer.cs">
+      <DependentUpon>demoSpeech.cs</DependentUpon>
+    </Compile>
     <Compile Include="Samples\Transparent\demoTransparent.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1620,6 +1629,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Samples\demoSamples.resx">
       <DependentUpon>demoSamples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Speech\demoSpeech.resx">
+      <DependentUpon>demoSpeech.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Samples\Transparent\demoTransparent.resx">
       <DependentUpon>demoTransparent.cs</DependentUpon>
