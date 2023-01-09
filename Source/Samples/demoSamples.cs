@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Smobiler.Core;
 using Smobiler.Core.Controls;
+using Smobiler.Tutorials.Samples.Barcode;
 using Smobiler.Tutorials.Samples.Layout;
 using Smobiler.Tutorials.Samples.ListView;
 using Smobiler.Tutorials.Samples.Speech;
@@ -39,6 +40,8 @@ namespace Smobiler.Tutorials.Samples
             grp1.Items.Add(new ListMenuViewItem("logon", "基于 TagPageView 的 Toolbar", "", "") { Tag = "demoTabToolbar" });
             grp1.Items.Add(new ListMenuViewItem("logon", "WebView控件和网页调用的示例", "", "") { Tag = "demoHtmlInteraction" });
             grp1.Items.Add(new ListMenuViewItem("logon", "服务端语音转文字示例", "", "") { Tag = "demoSpeech" });
+            grp1.Items.Add(new ListMenuViewItem("logon", "服务端生成条码示例", "", "") { Tag = "demoBarcode" });
+
 
 
             //将ListMenuViewGroup添加到当前的ListMenuView中
@@ -169,6 +172,9 @@ namespace Smobiler.Tutorials.Samples
                     break;
                 case "demoSpeech":
                     this.Show(new demoSpeech());
+                    break;
+                case "demoBarcode":
+                    this.Show(new demoBarcode());
                     break;
             }
         }

@@ -6,6 +6,7 @@ using Smobiler.Core;
 using Smobiler.Core.Controls;
 using System.Data;
 using System.IO;
+using Smobiler.Core.Web;
 
 namespace Smobiler.Tutorials.Samples
 {
@@ -66,6 +67,11 @@ namespace Smobiler.Tutorials.Samples
             context.Response.StatusCode = 200;
             context.Response.OutputStream.Write(dataResponse, 0, dataResponse.Length);
             context.Response.OutputStream.Close();
+        }
+
+        public void ProcessRequest(IHttpContext context, HttpHandlerData handlerdata)
+        {
+            //throw new NotImplementedException();
         }
     }
 }

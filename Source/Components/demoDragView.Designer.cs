@@ -1,9 +1,9 @@
 ﻿using Smobiler.Core;
 using System;
 
-namespace Smobiler.Tutorials.Plugins
+namespace Smobiler.Tutorials.Components
 {
-    partial class demoAdvert : Smobiler.Core.Controls.MobileForm
+    partial class demoDragView : Smobiler.Core.Controls.MobileForm
     {
         #region "SmobilerForm generated code "
 
@@ -21,12 +21,11 @@ namespace Smobiler.Tutorials.Plugins
         private void InitializeComponent()
         {
             this.title1 = new Smobiler.Core.Controls.Title();
-            this.advert1 = new Smobiler.Plugins.Advert();
             this.panel2 = new Smobiler.Core.Controls.Panel();
             this.labContent = new Smobiler.Core.Controls.Label();
             this.labTitle = new Smobiler.Core.Controls.Label();
             this.button1 = new Smobiler.Core.Controls.Button();
-            this.button2 = new Smobiler.Core.Controls.Button();
+            this.dragView1 = new Smobiler.Core.Controls.DragView();
             // 
             // title1
             // 
@@ -34,12 +33,8 @@ namespace Smobiler.Tutorials.Plugins
             this.title1.Name = "title1";
             this.title1.ResourceID = "angle-left";
             this.title1.Size = new System.Drawing.Size(300, 30);
-            this.title1.Text = "Advert";
+            this.title1.Text = "DragView";
             this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
-            // 
-            // advert1
-            // 
-            this.advert1.Name = "advert1";
             // 
             // panel2
             // 
@@ -50,11 +45,10 @@ namespace Smobiler.Tutorials.Plugins
             this.panel2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.labContent,
             this.labTitle,
-            this.button1,
-            this.button2});
-            this.panel2.Location = new System.Drawing.Point(4, 39);
+            this.button1});
+            this.panel2.Location = new System.Drawing.Point(5, 10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(290, 223);
+            this.panel2.Size = new System.Drawing.Size(290, 168);
             // 
             // labContent
             // 
@@ -64,7 +58,7 @@ namespace Smobiler.Tutorials.Plugins
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.labContent.Size = new System.Drawing.Size(290, 87);
-            this.labContent.Text = "使用需要登陆注册腾讯优量汇平台，并获取APPID和激励位ID";
+            this.labContent.Text = "可进行数据绑定，添加数据集，删除数据集，清除数据集，设置数据集的操作\r\nDragView没有点击事件，可以使用其模板页中控件的事件作为点击事件\r\n";
             this.labContent.VerticalAlignment = Smobiler.Core.Controls.VerticalAlignment.Top;
             // 
             // labTitle
@@ -76,44 +70,45 @@ namespace Smobiler.Tutorials.Plugins
             this.labTitle.Name = "labTitle";
             this.labTitle.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.labTitle.Size = new System.Drawing.Size(290, 26);
-            this.labTitle.Text = "腾讯优量汇广告插件（仅支持APP端）";
+            this.labTitle.Text = "可拖拽移动位置的gridView控件";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Moccasin;
-            this.button1.Location = new System.Drawing.Point(40, 122);
+            this.button1.Location = new System.Drawing.Point(42, 127);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 35);
-            this.button1.Text = "Android点击";
+            this.button1.Size = new System.Drawing.Size(212, 30);
+            this.button1.Text = "可以拖拽下方控件的行项";
             this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
-            // button2
+            // dragView1
             // 
-            this.button2.BackColor = System.Drawing.Color.Moccasin;
-            this.button2.Location = new System.Drawing.Point(40, 176);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(212, 35);
-            this.button2.Text = "iOS点击";
-            this.button2.Press += new System.EventHandler(this.button2_Press);
+            this.dragView1.Deletable = false;
+            this.dragView1.Margin = new Smobiler.Core.Controls.Margin(0F, 30F, 0F, 0F);
+            this.dragView1.Name = "dragView1";
+            this.dragView1.Size = new System.Drawing.Size(0, 175);
+            this.dragView1.TemplateControlName = "DragTemplate";
+            this.dragView1.CellBind += new Smobiler.Core.Controls.DragViewTemplateBindEventHandler(this.dragView1_CellBind);
+            this.dragView1.CellChanged += new Smobiler.Core.Controls.DragViewCellChangedEventHandler(this.dragView1_CellChanged);
             // 
-            // demoAdvert
+            // demoDragView
             // 
-            this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
-            this.advert1});
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.title1,
-            this.panel2});
-            this.Name = "demoAdvert";
+            this.panel2,
+            this.dragView1});
+            this.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.Load += new System.EventHandler(this.demoDragView_Load);
+            this.Name = "demoDragView";
 
         }
         #endregion
 
         private Core.Controls.Title title1;
-        private Smobiler.Plugins.Advert advert1;
         private Core.Controls.Panel panel2;
         private Core.Controls.Label labContent;
         private Core.Controls.Label labTitle;
         private Core.Controls.Button button1;
-        private Core.Controls.Button button2;
+        private Core.Controls.DragView dragView1;
     }
 }

@@ -61,13 +61,38 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.2-beta2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Smobiler.AI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1c93005509649d9e, processorArchitecture=MSIL" />
-    <Reference Include="Smobiler.Core, Version=6.0.0.0, Culture=neutral, PublicKeyToken=c28d201d12639a97, processorArchitecture=MSIL" />
-    <Reference Include="Smobiler.Core.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=276522cd3fa3b955, processorArchitecture=MSIL" />
-    <Reference Include="Smobiler.Device, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e0b1d6c313d28ffc, processorArchitecture=MSIL" />
-    <Reference Include="Smobiler.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9301bc54ca0d7a69, processorArchitecture=MSIL" />
-    <Reference Include="Smobiler.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a049c84bba5d5e7a, processorArchitecture=MSIL" />
-    <Reference Include="Smobiler.Utility.JPush, Version=1.0.0.0, Culture=neutral, PublicKeyToken=94877191d79edf78, processorArchitecture=MSIL" />
+    <Reference Include="Smobiler.AI, Version=6.0.0.0, Culture=neutral, PublicKeyToken=1c93005509649d9e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.AI.dll</HintPath>
+    </Reference>
+    <Reference Include="Smobiler.Core, Version=6.0.0.0, Culture=neutral, PublicKeyToken=c28d201d12639a97, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Smobiler.Core.Controls, Version=6.0.0.0, Culture=neutral, PublicKeyToken=276522cd3fa3b955, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.Core.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Smobiler.Design, Version=6.0.0.0, Culture=neutral, PublicKeyToken=f1ac7264a7cfc183, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Smobiler.Device, Version=6.0.0.0, Culture=neutral, PublicKeyToken=e0b1d6c313d28ffc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.Device.dll</HintPath>
+    </Reference>
+    <Reference Include="Smobiler.Plugins, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9301bc54ca0d7a69, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="Smobiler.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a049c84bba5d5e7a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Smobiler.Utility.JPush, Version=6.0.0.0, Culture=neutral, PublicKeyToken=94877191d79edf78, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.Utility.JPush.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -85,6 +110,12 @@
     </Reference>
     <Reference Include="upacp_sdk_net">
       <HintPath>..\DLL\upacp_sdk_net.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.8\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.8\lib\net47\zxing.presentation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +214,12 @@
     </Compile>
     <Compile Include="Components\demoDatePicker.Designer.cs">
       <DependentUpon>demoDatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\demoDragView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\demoDragView.Designer.cs">
+      <DependentUpon>demoDragView.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\demoFontIcon.cs">
       <SubType>Component</SubType>
@@ -388,6 +425,12 @@
     </Compile>
     <Compile Include="Components\demoZoomImage.Designer.cs">
       <DependentUpon>demoZoomImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\DragTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\DragTemplate.Designer.cs">
+      <DependentUpon>DragTemplate.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\editLayout.cs">
       <SubType>Component</SubType>
@@ -622,6 +665,12 @@
     </Compile>
     <Compile Include="Plugins\demoAdvert.Designer.cs">
       <DependentUpon>demoAdvert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\demoAdvertbanner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoAdvertbanner.Designer.cs">
+      <DependentUpon>demoAdvertbanner.cs</DependentUpon>
     </Compile>
     <Compile Include="Plugins\demoCAPTCHA.cs">
       <SubType>Component</SubType>
@@ -917,6 +966,12 @@
     <Compile Include="Plugins\demoWeixinPay.Designer.cs">
       <DependentUpon>demoWeixinPay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\Barcode\demoBarcode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Barcode\demoBarcode.Designer.cs">
+      <DependentUpon>demoBarcode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Samples\FilterView\userFilter.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1189,6 +1244,9 @@
     <EmbeddedResource Include="Components\demoDatePicker.resx">
       <DependentUpon>demoDatePicker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\demoDragView.resx">
+      <DependentUpon>demoDragView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\demoFontIcon.resx">
       <DependentUpon>demoFontIcon.cs</DependentUpon>
     </EmbeddedResource>
@@ -1290,6 +1348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\demoZoomImage.resx">
       <DependentUpon>demoZoomImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\DragTemplate.resx">
+      <DependentUpon>DragTemplate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\editLayout.resx">
       <DependentUpon>editLayout.cs</DependentUpon>
@@ -1407,6 +1468,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoAdvert.resx">
       <DependentUpon>demoAdvert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoAdvertbanner.resx">
+      <DependentUpon>demoAdvertbanner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoCAPTCHA.resx">
       <DependentUpon>demoCAPTCHA.cs</DependentUpon>
@@ -1554,6 +1618,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoWeixinPay.resx">
       <DependentUpon>demoWeixinPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Barcode\demoBarcode.resx">
+      <DependentUpon>demoBarcode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Samples\FilterView\userFilter.resx">
       <DependentUpon>userFilter.cs</DependentUpon>

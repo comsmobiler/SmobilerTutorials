@@ -62,6 +62,8 @@ namespace Smobiler.Tutorials
             grpTemplate.Items.Add(new IconMenuViewItem("GridView", "GridView") { Tag = typeof(demoGridView) });
             grpTemplate.Items.Add(new IconMenuViewItem("ListView", "ListView") { Tag = typeof(demoListView) });
             grpTemplate.Items.Add(new IconMenuViewItem("PageView", "PageView") { Tag = typeof(demoPageView) });
+            grpTemplate.Items.Add(new IconMenuViewItem("GridView", "DragView") { Tag = typeof(demoDragView) });
+
             this.iconMenuView1.Groups.Add(grpTemplate);
 
             //Components
@@ -159,6 +161,8 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("Image", "CPATCHA") { Tag = typeof(demoCAPTCHA) });
             grpPlugins.Items.Add(new IconMenuViewItem("Logon", "ScreenShield") { Tag = typeof(demoScreenShied) });
             grpPlugins.Items.Add(new IconMenuViewItem("Logon", "Advert") { Tag = typeof(demoAdvert) });
+            grpPlugins.Items.Add(new IconMenuViewItem("Logon", "AdvertBanner") { Tag = typeof(demoAdvertbanner) });
+
             this.iconMenuView1.Groups.Add(grpPlugins);
 
             //Devices

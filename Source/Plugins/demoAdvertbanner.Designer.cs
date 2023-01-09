@@ -3,7 +3,7 @@ using System;
 
 namespace Smobiler.Tutorials.Plugins
 {
-    partial class demoAdvert : Smobiler.Core.Controls.MobileForm
+    partial class demoAdvertbanner : Smobiler.Core.Controls.MobileForm
     {
         #region "SmobilerForm generated code "
 
@@ -21,12 +21,10 @@ namespace Smobiler.Tutorials.Plugins
         private void InitializeComponent()
         {
             this.title1 = new Smobiler.Core.Controls.Title();
-            this.advert1 = new Smobiler.Plugins.Advert();
             this.panel2 = new Smobiler.Core.Controls.Panel();
             this.labContent = new Smobiler.Core.Controls.Label();
             this.labTitle = new Smobiler.Core.Controls.Label();
-            this.button1 = new Smobiler.Core.Controls.Button();
-            this.button2 = new Smobiler.Core.Controls.Button();
+            this.advertBanner1 = new Smobiler.Plugins.AdvertBanner();
             // 
             // title1
             // 
@@ -34,12 +32,8 @@ namespace Smobiler.Tutorials.Plugins
             this.title1.Name = "title1";
             this.title1.ResourceID = "angle-left";
             this.title1.Size = new System.Drawing.Size(300, 30);
-            this.title1.Text = "Advert";
+            this.title1.Text = "AdvertBanner";
             this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
-            // 
-            // advert1
-            // 
-            this.advert1.Name = "advert1";
             // 
             // panel2
             // 
@@ -50,11 +44,10 @@ namespace Smobiler.Tutorials.Plugins
             this.panel2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.labContent,
             this.labTitle,
-            this.button1,
-            this.button2});
-            this.panel2.Location = new System.Drawing.Point(4, 39);
+            this.advertBanner1});
+            this.panel2.Location = new System.Drawing.Point(5, 10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(290, 223);
+            this.panel2.Size = new System.Drawing.Size(290, 201);
             // 
             // labContent
             // 
@@ -64,7 +57,7 @@ namespace Smobiler.Tutorials.Plugins
             this.labContent.Name = "labContent";
             this.labContent.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.labContent.Size = new System.Drawing.Size(290, 87);
-            this.labContent.Text = "使用需要登陆注册腾讯优量汇平台，并获取APPID和激励位ID";
+            this.labContent.Text = "使用需要登陆注册腾讯优量汇平台，并获取APPID和激励位ID。\r\n该插件仅支持Android Web端\r\n";
             this.labContent.VerticalAlignment = Smobiler.Core.Controls.VerticalAlignment.Top;
             // 
             // labTitle
@@ -76,44 +69,34 @@ namespace Smobiler.Tutorials.Plugins
             this.labTitle.Name = "labTitle";
             this.labTitle.Padding = new Smobiler.Core.Controls.Padding(5F);
             this.labTitle.Size = new System.Drawing.Size(290, 26);
-            this.labTitle.Text = "腾讯优量汇广告插件（仅支持APP端）";
+            this.labTitle.Text = "腾讯优量汇广告banner插件";
             // 
-            // button1
+            // advertBanner1
             // 
-            this.button1.BackColor = System.Drawing.Color.Moccasin;
-            this.button1.Location = new System.Drawing.Point(40, 122);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 35);
-            this.button1.Text = "Android点击";
-            this.button1.Press += new System.EventHandler(this.button1_Press);
+            this.advertBanner1.AppID = "1201219966";
+            this.advertBanner1.BackColor = System.Drawing.Color.White;
+            this.advertBanner1.Location = new System.Drawing.Point(0, 132);
+            this.advertBanner1.Name = "advertBanner1";
+            this.advertBanner1.PosID = "4074344664717161";
+            this.advertBanner1.Size = new System.Drawing.Size(288, 45);
+            this.advertBanner1.OnChange += new Smobiler.Plugins.AdvertBannerOnChangedEventHandler(this.advertBanner1_OnChange);
             // 
-            // button2
+            // demoAdvertbanner
             // 
-            this.button2.BackColor = System.Drawing.Color.Moccasin;
-            this.button2.Location = new System.Drawing.Point(40, 176);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(212, 35);
-            this.button2.Text = "iOS点击";
-            this.button2.Press += new System.EventHandler(this.button2_Press);
-            // 
-            // demoAdvert
-            // 
-            this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
-            this.advert1});
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.title1,
             this.panel2});
-            this.Name = "demoAdvert";
+            this.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.Load += new System.EventHandler(this.demoAdvertbanner_Load);
+            this.Name = "demoAdvertbanner";
 
         }
         #endregion
 
         private Core.Controls.Title title1;
-        private Smobiler.Plugins.Advert advert1;
         private Core.Controls.Panel panel2;
         private Core.Controls.Label labContent;
         private Core.Controls.Label labTitle;
-        private Core.Controls.Button button1;
-        private Core.Controls.Button button2;
+        private Smobiler.Plugins.AdvertBanner advertBanner1;
     }
 }

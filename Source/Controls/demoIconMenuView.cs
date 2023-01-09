@@ -53,7 +53,7 @@ namespace Smobiler.Tutorials.Controls
         }
         Random rd = new Random();
         private void popList1_Selected(object sender, EventArgs e)
-        {
+        { 
             switch (popList1.Selections[0].Text)
             {
                 case "Groups":
