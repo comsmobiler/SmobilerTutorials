@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Smobiler.Tutorials</RootNamespace>
     <AssemblyName>SmobilerTutorials</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -112,10 +112,10 @@
       <HintPath>..\DLL\upacp_sdk_net.dll</HintPath>
     </Reference>
     <Reference Include="zxing, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
-      <HintPath>..\packages\ZXing.Net.0.16.8\lib\net47\zxing.dll</HintPath>
+      <HintPath>..\packages\ZXing.Net.0.16.8\lib\net45\zxing.dll</HintPath>
     </Reference>
     <Reference Include="zxing.presentation, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
-      <HintPath>..\packages\ZXing.Net.0.16.8\lib\net47\zxing.presentation.dll</HintPath>
+      <HintPath>..\packages\ZXing.Net.0.16.8\lib\net45\zxing.presentation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -966,6 +966,12 @@
     <Compile Include="Plugins\demoWeixinPay.Designer.cs">
       <DependentUpon>demoWeixinPay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\AnimationDialog\animationDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\AnimationDialog\animationDialog.Designer.cs">
+      <DependentUpon>animationDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Samples\Barcode\demoBarcode.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1618,6 +1624,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoWeixinPay.resx">
       <DependentUpon>demoWeixinPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\AnimationDialog\animationDialog.resx">
+      <DependentUpon>animationDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Samples\Barcode\demoBarcode.resx">
       <DependentUpon>demoBarcode.cs</DependentUpon>

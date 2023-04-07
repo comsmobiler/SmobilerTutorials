@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Smobiler.Core;
 using Smobiler.Core.Controls;
+using Smobiler.Tutorials.Samples.AnimationDialog;
 using Smobiler.Tutorials.Samples.Barcode;
 using Smobiler.Tutorials.Samples.Layout;
 using Smobiler.Tutorials.Samples.ListView;
@@ -27,6 +28,7 @@ namespace Smobiler.Tutorials.Samples
             grp1.Items.Add(new ListMenuViewItem("logon", "数据选择", "", "") { Tag = "userFilter" });
             grp1.Items.Add(new ListMenuViewItem("logon", "底部弹出输入Dialog", "", "") { Tag = "userFooterDialog" });
             grp1.Items.Add(new ListMenuViewItem("logon", "弹出密码输入框", "", "") { Tag = "userDialogPassword" });
+            grp1.Items.Add(new ListMenuViewItem("logon", "带弹出效果的弹窗", "", "") { Tag = "AnimationDialog" });
             grp1.Items.Add(new ListMenuViewItem("logon", "ShowDialog后获取数据", "", "") { Tag = "demogetdata" });
             grp1.Items.Add(new ListMenuViewItem("logon", "WebView加载各种资源", "", "") { Tag = "demoWebView" });
             grp1.Items.Add(new ListMenuViewItem("logon", "Image动态加载图像", "", "") { Tag = "demoCustomResource" });
@@ -175,6 +177,10 @@ namespace Smobiler.Tutorials.Samples
                     break;
                 case "demoBarcode":
                     this.Show(new demoBarcode());
+                    break;
+                case "AnimationDialog":
+                    this.ShowAnimationDialog(new animationDialog(),new AnimationDialogOptions() { 
+                    SwipeToClose=false});
                     break;
             }
         }
