@@ -72,10 +72,21 @@ namespace Smobiler.Tutorials.Plugins
         {
             mobileClient1.SetScreenShot(false, (obj, args) => {
 
-                if (args.isError == false)
+                if (args.isError ==false)
                     Toast("success");
                 else
                     Toast(args.error);
+            });
+        }
+
+        private void button6_Press(object sender, EventArgs e)
+        {
+            mobileClient1.IsRootSystem( (obj, args) => {
+
+                if (args.isError)
+                    Toast(args.error);
+                else
+                    Toast(args.IsRoot.ToString());
             });
         }
     }

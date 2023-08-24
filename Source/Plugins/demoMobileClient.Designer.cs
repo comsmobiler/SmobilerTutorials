@@ -27,6 +27,7 @@ namespace Smobiler.Tutorials.Plugins
             this.button4 = new Smobiler.Core.Controls.Button();
             this.mobileClient1 = new Smobiler.Plugins.MobileClient();
             this.button5 = new Smobiler.Core.Controls.Button();
+            this.button6 = new Smobiler.Core.Controls.Button();
             // 
             // title1
             // 
@@ -81,6 +82,14 @@ namespace Smobiler.Tutorials.Plugins
             this.button5.Text = "Android 防止截屏";
             this.button5.Press += new System.EventHandler(this.button5_Press);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(84, 398);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(138, 35);
+            this.button6.Text = "判断Android是否root";
+            this.button6.Press += new System.EventHandler(this.button6_Press);
+            // 
             // demoMobileClient
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
@@ -91,7 +100,8 @@ namespace Smobiler.Tutorials.Plugins
             this.button2,
             this.button3,
             this.button4,
-            this.button5});
+            this.button5,
+            this.button6});
             this.Name = "demoMobileClient";
 
         }
@@ -104,5 +114,6 @@ namespace Smobiler.Tutorials.Plugins
         private Core.Controls.Button button4;
         private Smobiler.Plugins.MobileClient mobileClient1;
         private Core.Controls.Button button5;
+        private Core.Controls.Button button6;
     }
 }
