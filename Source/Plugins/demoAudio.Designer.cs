@@ -74,9 +74,11 @@ namespace Smobiler.Tutorials.Plugins
             // audio1
             // 
             this.audio1.AudioDuration = 0F;
+            this.audio1.AudioEncodingBitRate = 96000;
             this.audio1.Channels = 2;
             this.audio1.IncludeByte = false;
             this.audio1.Name = "audio1";
+            this.audio1.Quality = Smobiler.Plugins.ToneQuality.High;
             this.audio1.SampleRate = 44100F;
             this.audio1.Recorded += new Smobiler.Plugins.AudioRecordedEventHandler(this.audio1_Recorded);
             // 

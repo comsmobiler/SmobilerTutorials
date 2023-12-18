@@ -19,7 +19,6 @@ namespace Smobiler.Tutorials.Devices
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            this.title1 = new Smobiler.Core.Controls.Title();
             this.btnbarcodeScan = new Smobiler.Core.Controls.Button();
             this.btnstopBarcodeScan = new Smobiler.Core.Controls.Button();
             this.btnbarcodeSetting = new Smobiler.Core.Controls.Button();
@@ -29,15 +28,7 @@ namespace Smobiler.Tutorials.Devices
             this.label1 = new Smobiler.Core.Controls.Label();
             this.b100Scanner1 = new Smobiler.Device.B100Scanner();
             this.label2 = new Smobiler.Core.Controls.Label();
-            // 
-            // title1
-            // 
-            this.title1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            this.title1.Name = "title1";
-            this.title1.ResourceID = "angle-left";
-            this.title1.Size = new System.Drawing.Size(300, 30);
-            this.title1.Text = "B100";
-            this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
+            this.title1 = new Smobiler.Core.Controls.Title();
             // 
             // btnbarcodeScan
             // 
@@ -116,6 +107,15 @@ namespace Smobiler.Tutorials.Devices
             this.label2.Size = new System.Drawing.Size(254, 35);
             this.label2.Text = "label2";
             // 
+            // title1
+            // 
+            this.title1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            this.title1.Name = "title1";
+            this.title1.ResourceID = "angle-left";
+            this.title1.Size = new System.Drawing.Size(300, 30);
+            this.title1.Text = "B100";
+            this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
+            // 
             // demoB100
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
@@ -134,8 +134,6 @@ namespace Smobiler.Tutorials.Devices
 
         }
         #endregion
-
-        private Core.Controls.Title title1;
         private Core.Controls.Button btnbarcodeScan;
         private Core.Controls.Button btnstopBarcodeScan;
         private Core.Controls.Button btnbarcodeSetting;
@@ -145,5 +143,6 @@ namespace Smobiler.Tutorials.Devices
         private Core.Controls.Label label1;
         private Device.B100Scanner b100Scanner1;
         private Core.Controls.Label label2;
+        private Core.Controls.Title title1;
     }
 }

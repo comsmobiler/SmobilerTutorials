@@ -642,6 +642,18 @@
     <Compile Include="Devices\demoR2000.Designer.cs">
       <DependentUpon>demoR2000.cs</DependentUpon>
     </Compile>
+    <Compile Include="Devices\demoRK25.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoRK25.Designer.cs">
+      <DependentUpon>demoRK25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devices\demoRS35.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devices\demoRS35.Designer.cs">
+      <DependentUpon>demoRS35.cs</DependentUpon>
+    </Compile>
     <Compile Include="Devices\demoS5000.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1468,6 +1480,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Devices\demoR2000.resx">
       <DependentUpon>demoR2000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoRK25.resx">
+      <DependentUpon>demoRK25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\demoRS35.resx">
+      <DependentUpon>demoRS35.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Devices\demoS5000.resx">
       <DependentUpon>demoS5000.cs</DependentUpon>
