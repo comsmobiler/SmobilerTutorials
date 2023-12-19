@@ -35,7 +35,7 @@ namespace Smobiler.Tutorials.Devices
             this.title1.Name = "title1";
             this.title1.ResourceID = "angle-left";
             this.title1.Size = new System.Drawing.Size(300, 30);
-            this.title1.Text = "RK25";
+            this.title1.Text = "RS35";
             this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
             // 
             // button1
