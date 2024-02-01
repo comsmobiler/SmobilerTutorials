@@ -149,7 +149,7 @@ namespace Smobiler.Tutorials.Plugins
                 return;
             }
             GpsLocationUpdateOptions options = new GpsLocationUpdateOptions();
-            options.AmapKey = "412197b219d3a25ebccfcf1aa05a624c";
+            options.AmapKey = "";// 测试前请填写高德key 
             options.RequestLocation = true;
             GPS.StartLocationUpdate(this.Client.SessionID, options, (obj, args) => {
                 if (args.isError == false)
