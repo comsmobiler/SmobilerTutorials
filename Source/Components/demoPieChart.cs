@@ -111,19 +111,20 @@ namespace Smobiler.Tutorials.Components
                     List<string> xLabels = new List<string>();
                     xLabels.AddRange(new string[] { "1", "2", "3", "4" });
                     PieData data = new PieData(xLabels);
-
+                    Random countRandom = new Random();
                     ChartYAxisValueCollection<ChartYAxisValue> yVals = new ChartYAxisValueCollection<ChartYAxisValue>();
-                        yVals.Add(new BarYAxisValue(1111111));
-                    yVals.Add(new BarYAxisValue(3333333));
-                    yVals.Add(new BarYAxisValue(666666666666));
-                    yVals.Add(new BarYAxisValue(333333333333));
+                    for (int i = 0; i < xLabels.Count; i++)
+                    {
+                        yVals.Add(new BarYAxisValue(countRandom.Next(0, xLabels.Count)));
+                    }
                     PieSeries set1 = new PieSeries(yVals, "DataSet 1");
                     set1.AddColor(DemoGlobal.GetRandomColor());
                     set1.AddColor(DemoGlobal.GetRandomColor());
                     set1.AddColor(DemoGlobal.GetRandomColor());
 
-                    data.AddSeries(set1);
-                    this.pieChart1.Data = data;
+                      data.AddSeries(set1);
+                      this.pieChart1.Data = data;
+           
                     break;
             }
         }
