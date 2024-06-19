@@ -1125,8 +1125,14 @@
     <Compile Include="Samples\Resource\demoCustomResource.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Samples\Resource\demoHttpResource.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Samples\Resource\demoCustomResource.Designer.cs">
       <DependentUpon>demoCustomResource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Resource\demoHttpResource.Designer.cs">
+      <DependentUpon>demoHttpResource.cs</DependentUpon>
     </Compile>
     <Compile Include="Samples\Scroll\demoTwoWayScrolling.cs">
       <SubType>Component</SubType>
@@ -1729,6 +1735,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Samples\Resource\demoCustomResource.resx">
       <DependentUpon>demoCustomResource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Resource\demoHttpResource.resx">
+      <DependentUpon>demoHttpResource.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Samples\Scroll\demoTwoWayScrolling.resx">
       <DependentUpon>demoTwoWayScrolling.cs</DependentUpon>

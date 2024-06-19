@@ -32,6 +32,7 @@ namespace Smobiler.Tutorials.Samples
             grp1.Items.Add(new ListMenuViewItem("logon", "ShowDialog后获取数据", "", "") { Tag = "demogetdata" });
             grp1.Items.Add(new ListMenuViewItem("logon", "WebView加载各种资源", "", "") { Tag = "demoWebView" });
             grp1.Items.Add(new ListMenuViewItem("logon", "Image动态加载图像", "", "") { Tag = "demoCustomResource" });
+            grp1.Items.Add(new ListMenuViewItem("logon", "Web自定义资源", "", "") { Tag = "demoHttpResource" });
 
             grp1.Items.Add(new ListMenuViewItem("logon", "绝对布局", "", "") { Tag = "demoLoginAbsoluteLayout" });
             grp1.Items.Add(new ListMenuViewItem("logon", "相对布局", "", "") { Tag = "demoLoginRelativeLayout" });
@@ -134,6 +135,10 @@ namespace Smobiler.Tutorials.Samples
                 case "demoCustomResource":
                     //显示demoCustomResource窗体
                     this.Show(new demoCustomResource());
+                    break;
+                case "demoHttpResource":
+                    //显示demoHttpResource窗体
+                    this.Show(new demoHttpResource());
                     break;
                 case "demoLoginRelativeLayout":
                     //显示demoLoginRelativeLayout窗体
