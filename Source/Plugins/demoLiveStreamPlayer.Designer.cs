@@ -57,8 +57,8 @@ namespace Smobiler.Tutorials.Plugins
             // 
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 65);
-            this.label1.Text = "直播流播放器。LiveStreamPlayer可设置Url播放视频流(支持rtmp、http、hls、hks)。\r\nStateChanged事件在播放器状态改变时" +
-    "触发";
+            this.label1.Text = "直播流播放器。LiveStreamPlayer可设置Url播放视频流(支持rtmp、http、hls、hks)。\r\n设置AspectRatio 更改视频播放尺寸\r" +
+    "\nStateChanged事件在播放器状态改变时触发。";
             // 
             // demoLiveStreamPlayer
             // 

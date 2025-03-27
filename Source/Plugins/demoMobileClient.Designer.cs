@@ -28,6 +28,7 @@ namespace Smobiler.Tutorials.Plugins
             this.mobileClient1 = new Smobiler.Plugins.MobileClient();
             this.button5 = new Smobiler.Core.Controls.Button();
             this.button6 = new Smobiler.Core.Controls.Button();
+            this.label1 = new Smobiler.Core.Controls.Label();
             // 
             // title1
             // 
@@ -40,7 +41,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(84, 98);
+            this.button1.Location = new System.Drawing.Point(65, 49);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 35);
             this.button1.Text = "android  闹钟";
@@ -48,7 +49,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(84, 162);
+            this.button2.Location = new System.Drawing.Point(65, 113);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 35);
             this.button2.Text = "ios  闹钟";
@@ -56,7 +57,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(84, 229);
+            this.button3.Location = new System.Drawing.Point(65, 180);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 35);
             this.button3.Text = "日历";
@@ -64,7 +65,7 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(84, 287);
+            this.button4.Location = new System.Drawing.Point(65, 238);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 35);
             this.button4.Text = "息屏";
@@ -73,10 +74,11 @@ namespace Smobiler.Tutorials.Plugins
             // mobileClient1
             // 
             this.mobileClient1.Name = "mobileClient1";
+            this.mobileClient1.PhysicalButtonPress += new Smobiler.Plugins.PhysicalButtonsCallbackHandler(this.mobileClient1_PhysicalButtonPress);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(84, 346);
+            this.button5.Location = new System.Drawing.Point(65, 297);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 35);
             this.button5.Text = "Android 防止截屏";
@@ -84,11 +86,18 @@ namespace Smobiler.Tutorials.Plugins
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(84, 398);
+            this.button6.Location = new System.Drawing.Point(65, 349);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(138, 35);
             this.button6.Text = "判断Android是否root";
             this.button6.Press += new System.EventHandler(this.button6_Press);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(51, 410);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(209, 57);
+            this.label1.Text = "请按下安卓物理按键以触发事件";
             // 
             // demoMobileClient
             // 
@@ -101,7 +110,8 @@ namespace Smobiler.Tutorials.Plugins
             this.button3,
             this.button4,
             this.button5,
-            this.button6});
+            this.button6,
+            this.label1});
             this.Name = "demoMobileClient";
 
         }
@@ -115,5 +125,6 @@ namespace Smobiler.Tutorials.Plugins
         private Smobiler.Plugins.MobileClient mobileClient1;
         private Core.Controls.Button button5;
         private Core.Controls.Button button6;
+        private Core.Controls.Label label1;
     }
 }

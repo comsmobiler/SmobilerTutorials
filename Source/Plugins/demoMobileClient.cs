@@ -22,7 +22,8 @@ namespace Smobiler.Tutorials.Plugins
 
         private void button1_Press(object sender, EventArgs e)
         {
-            mobileClient1.SetAlarm(5, 25, "xxxxx", true, (obj, args) => {
+            mobileClient1.SetAlarm(5, 25, "xxxxx", true, (obj, args) =>
+            {
 
                 if (args.isError == false)
                     Toast("success");
@@ -34,7 +35,8 @@ namespace Smobiler.Tutorials.Plugins
 
         private void button2_Press(object sender, EventArgs e)
         {
-            mobileClient1.SetAlarm(8, 25, "xxxxx", "key", true, (obj, args) => {
+            mobileClient1.SetAlarm(8, 25, "xxxxx", "key", true, (obj, args) =>
+            {
 
                 if (args.isError == false)
                     Toast("success");
@@ -58,7 +60,8 @@ namespace Smobiler.Tutorials.Plugins
         private bool flag = false;
         private void button4_Press(object sender, EventArgs e)
         {
-            mobileClient1.SetIdleTimerDisabled(flag, (obj, args) => {
+            mobileClient1.SetIdleTimerDisabled(flag, (obj, args) =>
+            {
 
                 if (args.isError == false)
                     Toast("success");
@@ -70,9 +73,10 @@ namespace Smobiler.Tutorials.Plugins
 
         private void button5_Press(object sender, EventArgs e)
         {
-            mobileClient1.SetScreenShot(false, (obj, args) => {
+            mobileClient1.SetScreenShot(false, (obj, args) =>
+            {
 
-                if (args.isError ==false)
+                if (args.isError == false)
                     Toast("success");
                 else
                     Toast(args.error);
@@ -81,13 +85,19 @@ namespace Smobiler.Tutorials.Plugins
 
         private void button6_Press(object sender, EventArgs e)
         {
-            mobileClient1.IsRootSystem( (obj, args) => {
+            mobileClient1.IsRootSystem((obj, args) =>
+            {
 
                 if (args.isError)
                     Toast(args.error);
                 else
                     Toast(args.IsRoot.ToString());
             });
+        }
+
+        private void mobileClient1_PhysicalButtonPress(object sender, Smobiler.Plugins.PhysicalButtonsCallbackArgs e)
+        {
+            Toast($"code：{ e.KeyCode} type:{e.KeyType.ToString()} event：{e.KeyEvent}");
         }
     }
 }
