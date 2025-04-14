@@ -73,10 +73,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.Core.Controls.dll</HintPath>
     </Reference>
-    <Reference Include="Smobiler.Design, Version=6.0.0.0, Culture=neutral, PublicKeyToken=f1ac7264a7cfc183, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.Design.dll</HintPath>
-    </Reference>
+    <Reference Include="Smobiler.Design, Version=6.0.0.0, Culture=neutral, PublicKeyToken=f1ac7264a7cfc183, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Device, Version=6.0.0.0, Culture=neutral, PublicKeyToken=e0b1d6c313d28ffc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.Device.dll</HintPath>
@@ -1032,6 +1029,12 @@
     <Compile Include="Samples\GetData\demogetdataTemplate.Designer.cs">
       <DependentUpon>demogetdataTemplate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\Layout\demoLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Samples\Layout\demoLabel.Designer.cs">
+      <DependentUpon>demoLabel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Samples\Layout\demoLoginAbsoluteLayout.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1687,6 +1690,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Samples\GetData\demogetdataTemplate.resx">
       <DependentUpon>demogetdataTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Layout\demoLabel.resx">
+      <DependentUpon>demoLabel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Samples\Layout\demoLoginAbsoluteLayout.resx">
       <DependentUpon>demoLoginAbsoluteLayout.cs</DependentUpon>

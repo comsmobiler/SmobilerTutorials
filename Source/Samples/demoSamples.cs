@@ -36,7 +36,7 @@ namespace Smobiler.Tutorials.Samples
 
             grp1.Items.Add(new ListMenuViewItem("logon", "绝对布局", "", "") { Tag = "demoLoginAbsoluteLayout" });
             grp1.Items.Add(new ListMenuViewItem("logon", "相对布局", "", "") { Tag = "demoLoginRelativeLayout" });
-
+            grp1.Items.Add(new ListMenuViewItem("logon", "label自适应大小", "", "") { Tag = "demoLabel" });
             grp1.Items.Add(new ListMenuViewItem("logon", "透明度", "", "") { Tag = "demoTransparent" });
 
             grp1.Items.Add(new ListMenuViewItem("logon", "双向滚动", "", "") { Tag = "demoTwoWayScrolling" });
@@ -186,6 +186,10 @@ namespace Smobiler.Tutorials.Samples
                 case "AnimationDialog":
                     this.ShowAnimationDialog(new animationDialog(),new AnimationDialogOptions() { 
                     SwipeToClose=false});
+                    break;
+                    break;
+                case "demoLabel":
+                    this.Show(new demoLabel());
                     break;
             }
         }
