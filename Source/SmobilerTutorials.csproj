@@ -699,6 +699,12 @@
     <Compile Include="Plugins\demoCAPTCHA.Designer.cs">
       <DependentUpon>demoCAPTCHA.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plugins\demoGestureView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\demoGestureView.Designer.cs">
+      <DependentUpon>demoGestureView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\demoMobileQuickLogin.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1525,6 +1531,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoCAPTCHA.resx">
       <DependentUpon>demoCAPTCHA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\demoGestureView.resx">
+      <DependentUpon>demoGestureView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins\demoMobileQuickLogin.resx">
       <DependentUpon>demoMobileQuickLogin.cs</DependentUpon>

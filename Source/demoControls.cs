@@ -162,7 +162,7 @@ namespace Smobiler.Tutorials
             grpPlugins.Items.Add(new IconMenuViewItem("Logon", "ScreenShield") { Tag = typeof(demoScreenShied) });
             grpPlugins.Items.Add(new IconMenuViewItem("Logon", "Advert") { Tag = typeof(demoAdvert) });
             grpPlugins.Items.Add(new IconMenuViewItem("Logon", "AdvertBanner") { Tag = typeof(demoAdvertbanner) });
-
+            grpPlugins.Items.Add(new IconMenuViewItem("TouchablePanel", "GestureView") { Tag = typeof(demoGestureView) });
             this.iconMenuView1.Groups.Add(grpPlugins);
 
             //Devices
